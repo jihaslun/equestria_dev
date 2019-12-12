@@ -1140,7 +1140,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_global_flag = GRI_empire_rising
+			has_global_flag = GRI_empire_rising_flag
 			NOT = { is_in_faction_with = event_target:griffonian_empire }
 			event_target:griffonian_empire = {
 				any_neighbor_country = {
@@ -1163,7 +1163,15 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		will_lead_to_war_with = GRI
+		will_lead_to_war_with = ANG
+		will_lead_to_war_with = PYT
+		will_lead_to_war_with = YAL
+		will_lead_to_war_with = ROU
+		will_lead_to_war_with = KAT
+		will_lead_to_war_with = STW
+		will_lead_to_war_with = BRZ
+		will_lead_to_war_with = FEA
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LCT_strike_at_the_source"
 			if = {
@@ -2295,7 +2303,7 @@ focus_tree = {
 
 	focus = {
 		id = LCT_expand_frontier
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_LCT_expand_frontier
 		prerequisite = { focus = LCT_fan_fanaticism focus = LCT_balustar_arms focus = LCT_focus_on_offence }
 		x = 0
 		y = 1
@@ -2384,7 +2392,7 @@ focus_tree = {
 
 	focus = {
 		id = LCT_strike_the_south
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_goal_LCT_strike_south
 		prerequisite = {focus = LCT_fan_fanaticism focus = LCT_balustar_arms focus = LCT_focus_on_offence }
 		x = 2
 		y = 1
@@ -2476,7 +2484,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_global_flag = GRI_empire_rising
+			has_global_flag = GRI_empire_rising_flag
 			NOT = { is_in_faction_with = event_target:griffonian_empire }
 			event_target:griffonian_empire = {
 				any_neighbor_country = {
@@ -2497,6 +2505,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		will_lead_to_war_with = GRI
+		will_lead_to_war_with = ANG
+		will_lead_to_war_with = PYT
+		will_lead_to_war_with = YAL
+		will_lead_to_war_with = ROU
+		will_lead_to_war_with = KAT
+		will_lead_to_war_with = STW
+		will_lead_to_war_with = BRZ
+		will_lead_to_war_with = FEA
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LCT_destroy_true_enemy"
 			create_wargoal = {
@@ -3070,19 +3086,12 @@ focus_tree = {
 			factor = 10
 		}
 
-
-
-
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LCT_science_instatute"
-		}
-
-		completion_reward = {
 			if = {
 				limit = { 
 				    amount_research_slots < 5 
