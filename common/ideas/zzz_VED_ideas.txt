@@ -377,6 +377,7 @@ ideas = {
 	political_advisor = {
 			
 		VED_captain_of_industry = {
+			picture = unknown_advisor
 			allowed = {
 				original_tag = VED
 			}
@@ -385,6 +386,7 @@ ideas = {
 		}
 		
 		VED_fortification_engineer = {
+			picture = unknown_advisor
 			allowed = {
 				original_tag = VED
 			}
@@ -466,7 +468,7 @@ ideas = {
 	high_command = {
 		
 		VED_army_art = {
-			picture = HAU_army_regrouping
+			picture = unknown_advisor
 			allowed = {
 				original_tag = VED
 			}
@@ -475,6 +477,7 @@ ideas = {
 		}
 		
 		VED_army_log = {
+			picture = unknown_advisor
 			allowed = {
 				original_tag = VED
 			}

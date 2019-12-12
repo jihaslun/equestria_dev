@@ -566,7 +566,10 @@ MIT_borderwar = {
 			FROM = {
 				owns_state = 446
 				has_full_control_of_state = 446
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 
@@ -629,7 +632,10 @@ MIT_borderwar = {
 			FROM = {
 				owns_state = 507
 				has_full_control_of_state = 507
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 

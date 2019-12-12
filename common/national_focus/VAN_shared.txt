@@ -337,7 +337,6 @@ shared_focus = {
 
 	available = {
 		has_government = communism
-		capital_scope = { is_owned_and_controlled_by = ROOT }
 	}
 
 	bypass = {
@@ -354,11 +353,10 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus VAN_Backyard_Steel_Production"
-		capital_scope = {
-			add_resource = {
-				type = steel
-				amount = 6
-			}
+		modify_building_resources = {
+			building = industrial_complex
+			resource = steel
+			amount = 1
 		}
 	}
 }

@@ -19,11 +19,8 @@ division_template = {
 	division_names_group = TRD_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
 	}
 
 	support = {
@@ -64,7 +61,6 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 	}
 }
-
 division_template = {
 	name = "Protection Company"
 	division_names_group = TRD_GAR_01
@@ -77,30 +73,28 @@ division_template = {
 	}
 	priority = 0
 }
-
 units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12739
+		location = 12882
 		division_template = "Griffon Armoured Group"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.30
+		force_equipment_variants = { gw_tank_equipment = { owner = "TRD" creator = "EQS" } }
 	}
-	
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 8031
+		location = 1963
 		division_template = "Skyfall Company"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.00
 	}
-	
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -108,76 +102,29 @@ units = {
 		}
 		location = 10564
 		division_template = "Skyfall Company"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.00
 	}
-	
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 10536
+		location = 9142
 		division_template = "Skyfall Company"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.00
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 8053
-		division_template = "Skyfall Company"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.00
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location = 10913
-		division_template = "Skyfall Company"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.00
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 12
-		}
-		location = 1828
-		division_template = "Skyfall Company"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.00
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 14
-		}
-		location = 10806
-		division_template = "Skyfall Company"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.00
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1741
-		division_template = "Naval Infantry"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.00
 	}
-	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12739
+		division_template = "Naval Infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.00
+	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -186,30 +133,19 @@ units = {
 		location = 12882
 		division_template = "Knights of Skyfall"
 		start_experience_factor = 1.0
-		start_equipment_factor = 1.0 
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 1963
-		division_template = "Knights of Skyfall"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0 
-	}
+		start_equipment_factor = 1.0 }
+
 }
 
 air_wings = {
 	380 = {
 		fighter_equipment_0 = {
 			owner = "TRD"
-			amount = 50
+			amount = 40
 		}
 		tac_bomber_equipment_0 =  {
 			owner = "TRD"
-			amount = 40
+			amount = 20
 		}
 	}
 }
@@ -217,7 +153,7 @@ air_wings = {
 instant_effect = {
 	add_equipment_to_stockpile = {
 		type = infantry_equipment
-		amount = 2700
+		amount = 900
 		producer = TRD
 	}
 	add_equipment_production = {
@@ -225,7 +161,7 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "TRD"
 		}
-		requested_factories = 2
+		requested_factories = 3
 		progress = 0.1
 		efficiency = 50
 	}
@@ -235,7 +171,7 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "TRD"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
 	}

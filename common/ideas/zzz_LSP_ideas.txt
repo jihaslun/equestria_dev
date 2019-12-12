@@ -2,6 +2,7 @@ ideas = {
 	political_advisor = {
 
 		LSP_ball_and_chain = {
+			picture = unknown_advisor
 			allowed = {
 				original_tag = LSP
 			}
@@ -181,7 +182,11 @@ ideas = {
 		LSP_commie_chief = {
 			picture = unknown_advisor
 			allowed = {
-				original_tag = LSP			
+				original_tag = LSP
+				OR = {
+					has_government = communism
+					has_country_flag = LSP_socdems_won	
+				}				
 			}
 			visible = {
 				OR = {
@@ -239,6 +244,7 @@ ideas = {
 	}
 	air_chief = {
 		LSP_air_chief_1 = {
+			picture = unknown_advisor
 			allowed = {
 				original_tag = LSP
 			}
@@ -428,6 +434,7 @@ ideas = {
 	}
 	theorist = {
 		LSP_theorist_1 = {
+			picture = unknown_advisor
 			allowed = {
 				original_tag = LSP
 			}
@@ -499,7 +506,7 @@ ideas = {
 				artillery_manufacturer
 			}			
 		}
-		LSP_guns_rearington = {
+		LSP_guns = {
 			picture = rearington_arms
 			allowed = {
 				original_tag = LSP
@@ -1535,7 +1542,7 @@ ideas = {
 					instant = yes
 				}
 			}
-			picture = HUN_secret_rearmament	
+			picture = guns_shield	
 	}
     LSP_mechanised_boost = {
 			equipment_bonus = {

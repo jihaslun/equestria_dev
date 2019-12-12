@@ -5,16 +5,13 @@ state={
 	provinces={
 		12882
 	}
-	resources={
-		steel=24.000
-	}
-	manpower=4004005
+	manpower=3904005
 	history={
 		owner = TRD
 		add_core_of = TRD
 		victory_points = { 12882 50 }
 		buildings = {
-			infrastructure = 10
+			infrastructure = 8
 			industrial_complex = 5
 			arms_factory = 3
 			dockyard = 2

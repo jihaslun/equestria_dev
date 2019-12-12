@@ -340,18 +340,20 @@ SCS_claim_the_strip = {
 				owns_state = 94
 			}
 			owns_state = 42
-			94 = { owner = { can_have_border_war_with_ROOT = yes } }
 		}
 
 		highlight_states = {
-			state = 94
+			OR = {
+				state = 94
+				state = 42
+			}
 		}
 
 		cost = 100
 		days_re_enable = 90
 
 		ai_will_do = {
-			factor = 200
+			factor = 10
 		}
 
 		fire_only_once = no
@@ -359,7 +361,7 @@ SCS_claim_the_strip = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_attack_aetherlands"
 			start_border_war = {
-				change_state_after_war = yes
+				change_state_after_war = no
 				attacker = {
 					state = 42
 					num_provinces = 4
@@ -398,18 +400,20 @@ SCS_claim_the_strip = {
 				owns_state = 38
 			}
 			owns_state = 20
-			38 = { owner = { can_have_border_war_with_ROOT = yes } }
 		}
 
 		highlight_states = {
-			state = 38
+			OR = {
+				state = 38
+				state = 20
+			}
 		}
 
 		cost = 100
 		days_re_enable = 90
 
 		ai_will_do = {
-			factor = 200
+			factor = 10
 		}
 
 		fire_only_once = no
@@ -417,7 +421,7 @@ SCS_claim_the_strip = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_attack_rockville"
 			start_border_war = {
-				change_state_after_war = yes
+				change_state_after_war = no
 				attacker = {
 					state = 20
 					num_provinces = 4
@@ -463,10 +467,6 @@ SCS_royalist_buildup = {
 				state = 20
 				state = 85
 			}
-		}
-
-		ai_will_do = {
-			factor = 100
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SCS_cross_the_desert"
@@ -530,9 +530,6 @@ SCS_royalist_buildup = {
 		}
 		days_remove = 50
 		fire_only_once = yes
-		ai_will_do = {
-			factor = 100
-		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SCS_expand_rosemarein"
 
@@ -559,9 +556,6 @@ SCS_royalist_buildup = {
 		}
 		fire_only_once = yes
 		days_remove = 50
-		ai_will_do = {
-			factor = 100
-		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SCS_new_investment"
 
@@ -612,10 +606,6 @@ SCS_royalist_buildup = {
 			}
 		}
 		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 100
-		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SCS_oil_for_us_and_them"
 			42 = {
@@ -640,7 +630,7 @@ SCS_royalist_buildup = {
 		days_remove = 50
 	}
 }
-SCS_LSP_tourist_trap = {#These don't do anything yet. Wait until MTG allows for state-specific modifiers     ###These are disabled
+SCS_LSP_tourist_trap = {#These don't do anything yet. Wait until MTG allows for state-specific modifiers
 	SCS_build_golden_apple_casino = {
 		icon = generic_industry
 		cost = 50
@@ -725,9 +715,6 @@ SCS_golden_circle = {
 			has_equipment = { convoy > 0 }
 		}
 		fire_only_once = yes
-		ai_will_do = {
-			factor = 100
-		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SCS_stage_maine_explosion"
 			country_event = {
@@ -744,9 +731,6 @@ SCS_golden_circle = {
 			has_equipment = { infantry_equipment > 1999 }
 			has_manpower > 2000
 			
-		}
-		ai_will_do = {
-			factor = 100
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SCS_troops_buildup"
@@ -769,9 +753,6 @@ SCS_golden_circle = {
 			NOT = {
 				has_country_flag = SCS_owns_guantanamo
 			}
-		}
-		ai_will_do = {
-			factor = 100
 		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_seize_naval_base"
@@ -807,9 +788,6 @@ SCS_golden_circle = {
 				has_country_flag = SCS_invaded_trotico
 			}		
 		}
-		ai_will_do = {
-			factor = 100
-		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_invade_trotico"
 			custom_effect_tooltip = SCS_costs_5_power
@@ -834,9 +812,6 @@ SCS_golden_circle = {
 		available = {
 			has_country_flag = SCS_invaded_trotico
 		}
-		ai_will_do = {
-			factor = 100
-		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SCS_develop_trotico"
 			add_offsite_building = { type = industrial_complex level = 1 }
@@ -850,9 +825,6 @@ SCS_golden_circle = {
 		cost = 50
 		available = {
 			has_country_flag = SCS_invaded_trotico
-		}
-		ai_will_do = {
-			factor = 100
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_conscript_from_trotico"
@@ -881,9 +853,6 @@ SCS_golden_circle = {
 			NOT = {
 				has_country_flag = SCS_invaded_islands			
 			}
-		}
-		ai_will_do = {
-			factor = 100
 		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_invade_islands"
@@ -918,9 +887,6 @@ SCS_golden_circle = {
 				has_country_flag = SCS_staged_aby
 			}		
 		}
-		ai_will_do = {
-			factor = 100
-		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_invade_abyssinia_1"
 			custom_effect_tooltip = SCS_costs_5_power
@@ -954,9 +920,6 @@ SCS_golden_circle = {
 				has_country_flag = SCS_aby_conquered
 			}		
 		}
-		ai_will_do = {
-			factor = 100
-		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_invade_abyssinia_2"
 			custom_effect_tooltip = SCS_costs_5_power
@@ -980,9 +943,6 @@ SCS_golden_circle = {
 		cost = 50
 		available = {
 			has_country_flag = SCS_aby_conquered
-		}
-		ai_will_do = {
-			factor = 100
 		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SCS_exploit_cats"

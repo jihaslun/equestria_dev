@@ -161,7 +161,7 @@ LSP_deal_with_famine = {
         cost = 40
         days_remove = 30
         ai_will_do = {
-            factor = 200
+            factor = 100
         }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove LSP_mayor_trade_for_food_from target: [From.GetName]"
@@ -208,7 +208,7 @@ LSP_deal_with_famine = {
         cost = 40
         days_remove = 30
         ai_will_do = {
-            factor = 200
+            factor = 100
         }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove LSP_pinechest_trade_for_food_from target: [From.GetName]"
@@ -234,7 +234,7 @@ LSP_deal_with_famine = {
 		cost = 20
 
         ai_will_do = {
-            factor = 200
+            factor = 150
         }
 		days_remove = 60
 		fixed_random_seed = no
@@ -374,20 +374,20 @@ LSP_border_war_cat = {
 				owns_state = 94
 			}
 			owns_state = 100
-			94 = {
-				owner = { can_have_border_war_with_ROOT = yes }
-			}
 		}
 
 		highlight_states = {
-			state = 94
+			OR = {
+				state = 94
+				state = 100
+			}
 		}
 
 		cost = 100
 		days_re_enable = 90
 
 		ai_will_do = {
-			factor = 200
+			factor = 10
 		}
 
 		fire_only_once = no
@@ -395,7 +395,7 @@ LSP_border_war_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LSP_attack_aetherlands"
 			start_border_war = {
-				change_state_after_war = yes
+				change_state_after_war = no
 				attacker = {
 					state = 100
 					num_provinces = 4
@@ -441,20 +441,20 @@ LSP_border_war_cat = {
 				owns_state = 38
 			}
 			owns_state = 100
-			38 = {
-				owner = { can_have_border_war_with_ROOT = yes }
-			}
 		}
 
 		highlight_states = {
-			state = 38
+			OR = {
+				state = 38
+				state = 100
+			}
 		}
 
 		cost = 100
 		days_re_enable = 90
 
 		ai_will_do = {
-			factor = 200
+			factor = 10
 		}
 
 		fire_only_once = no
@@ -462,7 +462,7 @@ LSP_border_war_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LSP_attack_rockville"
 			start_border_war = {
-				change_state_after_war = yes
+				change_state_after_war = no
 				attacker = {
 					state = 100
 					num_provinces = 4
@@ -506,20 +506,20 @@ LSP_border_war_cat = {
 				owns_state = 118
 			}
 			owns_state = 66
-			118 = {
-				owner = { can_have_border_war_with_ROOT = yes }
-			}
 		}
 
 		highlight_states = {
-			state = 118
+			OR = {
+				state = 66
+				state = 118
+			}
 		}
 
 		cost = 100
 		days_re_enable = 90
 
 		ai_will_do = {
-			factor = 200
+			factor = 10
 		}
 
 		fire_only_once = no
@@ -571,20 +571,20 @@ LSP_border_war_cat = {
 				owns_state = 119
 			}
 			owns_state = 66
-			119 = {
-				owner = { can_have_border_war_with_ROOT = yes }
-			}
 		}
 
 		highlight_states = {
-			state = 119
+			OR = {
+				state = 66
+				state = 119
+			}
 		}
 
 		cost = 100
 		days_re_enable = 90
 
 		ai_will_do = {
-			factor = 200
+			factor = 10
 		}
 
 		fire_only_once = no
@@ -635,20 +635,20 @@ LSP_border_war_cat = {
 				owns_state = 41
 			}
 			owns_state = 66
-			41 = {
-				owner = { can_have_border_war_with_ROOT = yes }
-			}
 		}
 
 		highlight_states = {
-			state = 41
+			OR = {
+				state = 41
+				state = 66
+			}
 		}
 
 		cost = 100
 		days_re_enable = 90
 
 		ai_will_do = {
-			factor = 200
+			factor = 10
 		}
 
 		fire_only_once = no
@@ -701,20 +701,20 @@ LSP_border_war_cat = {
 				owns_state = 95
 			}
 			owns_state = 119
-			95 = {
-				owner = { can_have_border_war_with_ROOT = yes }
-			}
 		}
 
 		highlight_states = {
-			state = 95
+			OR = {
+				state = 95
+				state = 119
+			}
 		}
 
 		cost = 100
 		days_re_enable = 1
 
 		ai_will_do = {
-			factor = 200
+			factor = 10
 		}
 
 		fire_only_once = no
@@ -763,7 +763,7 @@ LSP_invite_BAL_cat = {
 		}			
 	}
 	visible = {}
-	cost = 200
+	cost = 100
 	ai_will_do = {
 		factor = 15
 		}
@@ -783,7 +783,7 @@ LSP_red_eqs_cat = {
 		cost = 200
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 200
+			factor = 160
 		}
 		available = {
 			EQS = {

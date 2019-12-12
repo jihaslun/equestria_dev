@@ -2,6 +2,7 @@ ideas = {
 
 	political_advisor = {
 		LNS_PA_SilWork = {
+			picture = unknown_advisor
 
 			allowed = {
 				original_tag = LNS

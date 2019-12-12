@@ -11,9 +11,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 10
-		}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -47,9 +44,6 @@ shared_focus = {
 	bypass = {
 		has_country_flag = SCS_finished_convention
 	}
-	ai_will_do = {
-			factor = 10
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_the_southern_economy"
 		custom_effect_tooltip = SCS_eco_will_bypass
@@ -75,9 +69,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -116,9 +107,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -153,9 +141,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -186,9 +171,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -219,9 +201,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -258,9 +237,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -295,9 +271,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -339,9 +312,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -384,9 +354,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -419,9 +386,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -458,9 +422,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 		focus = SCS_national_oil_company
 	}
@@ -498,9 +459,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -543,9 +501,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -579,9 +534,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -619,9 +571,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 		focus = SCS_support_oil_barons
 	}
@@ -663,9 +612,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -708,9 +654,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -745,9 +688,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 10
-		}
 	mutually_exclusive = {
 		focus = SCS_nanny_state
 		focus = SCS_sober_middle_ground
@@ -784,9 +724,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -846,9 +783,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -891,9 +825,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 10
-		}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -926,9 +857,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -966,9 +894,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 10
-		}
 	mutually_exclusive = {
 		focus = SCS_sober_middle_ground
 		focus = SCS_no_regulations
@@ -1002,9 +927,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1044,9 +966,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1111,9 +1030,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1155,9 +1071,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1201,9 +1114,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 
 	}
@@ -1238,9 +1148,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1278,9 +1185,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1317,9 +1221,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1360,9 +1261,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1405,9 +1303,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1445,9 +1340,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1484,9 +1376,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1527,9 +1416,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1572,9 +1458,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1617,9 +1500,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -1663,9 +1543,7 @@ shared_focus = {
 
 	bypass = {
 
-	}ai_will_do = {
-			factor = 20
-		}
+	}
 	mutually_exclusive = {
 
 	}
@@ -1838,9 +1716,6 @@ shared_focus = {
 
 	bypass = {
 	}
-	ai_will_do = {
-			factor = 20
-		}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -1878,9 +1753,6 @@ shared_focus = {
 			}
 		}
 	}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 		focus = SCS_a_fair_deal
 		focus = SCS_appeasement
@@ -1919,9 +1791,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 
 	}
@@ -1961,14 +1830,10 @@ shared_focus = {
 
 	bypass = {
 	}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 		focus = SCS_take_whats_ours
 		focus = SCS_a_fair_deal
 	}
-	will_lead_to_war_with = BUF
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -2001,9 +1866,6 @@ shared_focus = {
 
 	bypass = {
 	}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 
 	}
@@ -2037,14 +1899,10 @@ shared_focus = {
 
 	bypass = {
 	}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 		focus = SCS_take_whats_ours
 		focus = SCS_appeasement
 	}
-	will_lead_to_war_with = BUF
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -2078,9 +1936,6 @@ shared_focus = {
 
 	bypass = {
 	}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -2113,9 +1968,6 @@ shared_focus = {
 
 	bypass = {
 	}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -2159,13 +2011,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-		factor = 8
-			modifier = {
-			factor = 10
-			has_war = yes
-			}
-		}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -2199,9 +2044,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -2240,9 +2082,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -2320,9 +2159,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 	}
 	cancel_if_invalid = yes
@@ -2401,9 +2237,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -2490,9 +2323,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -2574,9 +2404,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -2610,9 +2437,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -2646,9 +2470,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -2681,9 +2502,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 		focus = SCS_fieldmarshal_advisor_stonewall
 		focus = SCS_fieldmarshal_advisor_stuart_recon_bonus
@@ -2725,9 +2543,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -2756,9 +2571,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -2788,9 +2600,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -2819,9 +2628,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -2851,9 +2657,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 		focus = SCS_fieldmarshal_advisor_lee
 		focus = SCS_fieldmarshal_advisor_stonewall
@@ -2895,9 +2698,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -2930,9 +2730,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -2968,9 +2765,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -2999,9 +2793,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -3034,9 +2825,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 		focus = SCS_fieldmarshal_advisor_lee
 		focus = SCS_fieldmarshal_advisor_stuart_recon_bonus
@@ -3079,9 +2867,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -3124,9 +2909,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -3161,9 +2943,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -3192,9 +2971,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 8
-		}
 	mutually_exclusive = {
 
 	}
@@ -3239,9 +3015,6 @@ shared_focus = {
 	bypass = {
 
 	}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 
 	}
@@ -3271,9 +3044,6 @@ shared_focus = {
 	bypass = {
 		has_country_flag = SCS_finished_convention
 	}
-	ai_will_do = {
-			factor = 5
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_naval_air"
 		custom_effect_tooltip = SCS_eco_will_bypass
@@ -3293,9 +3063,6 @@ shared_focus = {
 		owns_state = 80
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_navy_start"
 		navy_experience = 50
@@ -3327,9 +3094,6 @@ shared_focus = {
 	available = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	mutually_exclusive = {
 		focus = SCS_expeditionary_navy
 	}
@@ -3365,9 +3129,6 @@ shared_focus = {
 		}
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	mutually_exclusive = {
 		focus = SCS_defensive_navy
 	}
@@ -3399,9 +3160,6 @@ shared_focus = {
 	available = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	mutually_exclusive = {
 	}
 	completion_reward = {
@@ -3427,9 +3185,6 @@ shared_focus = {
 		owns_state = 80
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 7
-		}
 	mutually_exclusive = {
 	}
 	completion_reward = {
@@ -3462,9 +3217,6 @@ shared_focus = {
 	available = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	mutually_exclusive = {
 	}
 	completion_reward = {
@@ -3490,9 +3242,6 @@ shared_focus = {
 	available = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 20
-		}
 	mutually_exclusive = {
 	}
 	completion_reward = {
@@ -3513,9 +3262,6 @@ shared_focus = {
 	available = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_air_start"
 		air_experience = 50
@@ -3537,9 +3283,6 @@ shared_focus = {
 		focus = SCS_heavy_planes
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_light_planes"
 		add_tech_bonus = {
@@ -3565,9 +3308,6 @@ shared_focus = {
 		focus = SCS_light_planes
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_heavy_planes"
 		add_tech_bonus = {
@@ -3593,9 +3333,6 @@ shared_focus = {
 	mutually_exclusive = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_air_doctrine_bonus"
 		add_tech_bonus = {
@@ -3620,9 +3357,6 @@ shared_focus = {
 	mutually_exclusive = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_radar_bonus"
 		add_tech_bonus = {
@@ -3653,9 +3387,6 @@ shared_focus = {
 	mutually_exclusive = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 4
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_bigger_airfields"
 		20 = {
@@ -3684,9 +3415,6 @@ shared_focus = {
 	mutually_exclusive = {
 	}
 	bypass = {}
-	ai_will_do = {
-			factor = 20
-		}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SCS_plane_production_cost_bonus"
 		if = {

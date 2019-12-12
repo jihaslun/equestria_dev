@@ -479,10 +479,6 @@ focus_tree = {
 				factor = 0.8
 				date < 1010.1.1
 			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
 		}
 
 		completion_reward = {
@@ -551,10 +547,6 @@ focus_tree = {
 			modifier = {
 				strength_ratio = { tag = JER ratio > 1.5 }
 				factor = 2
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
 			}
 		}
 
@@ -648,10 +640,6 @@ focus_tree = {
 			modifier = {
 				strength_ratio = { tag = EQC ratio > 1.5 }
 				factor = 2
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
 			}
 		}
 		bypass = {
@@ -754,10 +742,6 @@ focus_tree = {
 		will_lead_to_war_with = MIT
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
 		}
 		bypass = {
 			MIT = {
@@ -788,9 +772,6 @@ focus_tree = {
 			focus = WNG_divide_new_mareland
 			focus = WNG_free_the_bulls
 		}
-		available = {
-			has_global_flag = GRI_empire_rising_flag
-		}
 		bypass = {
 			OR = {
 				event_target:griffonian_empire = { has_government = communism }
@@ -814,25 +795,16 @@ focus_tree = {
 				strength_ratio = { tag = event_target:griffonian_empire ratio > 1.5 }
 				factor = 5
 			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
 		}
 		will_lead_to_war_with = GRI
 		will_lead_to_war_with = BOI
 		will_lead_to_war_with = LAK
-		will_lead_to_war_with = EYR
-		will_lead_to_war_with = SIC
-		will_lead_to_war_with = GRI
 		will_lead_to_war_with = ANG
-		will_lead_to_war_with = PYT
+		will_lead_to_war_with = KAT
+		will_lead_to_war_with = EYR
 		will_lead_to_war_with = YAL
 		will_lead_to_war_with = ROU
-		will_lead_to_war_with = KAT
-		will_lead_to_war_with = STW
-		will_lead_to_war_with = BRZ
-		will_lead_to_war_with = FEA
+		will_lead_to_war_with = SIC
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_strike_at_the_empire"
@@ -941,7 +913,7 @@ focus_tree = {
 	#################
 	focus = {
 		id = WNG_meet_with_beakolini
-		icon = GFX_goal_WNG_meet_beakolini
+		icon = GFX_focus_HOL_deal_with_right
 		cost = 1.00
 		prerequisite = {
 			focus = WNG_march_on_karthin
@@ -1408,12 +1380,8 @@ focus_tree = {
 				has_army_size = { size > 24 }
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
 		}
-		will_lead_to_war_with = FAL
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_pressure_falcor"
 			FAL = { country_event = { id = wingbardy.107 } }
@@ -1429,7 +1397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WNG_reapproch_falcor
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 7.00
 		prerequisite = {
 			focus = WNG_southern_security_council
@@ -1453,7 +1421,8 @@ focus_tree = {
 				exists = yes
 				is_in_faction = no
 			}
-			has_full_control_of_state = 530
+			is_faction_leader = yes
+			NOT = { has_country_flag = FAL_friendship_rejected }
 		}
 
 		bypass = {
@@ -1469,15 +1438,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_reapproch_falcor"
-			530 = {
-				add_building_construction = { type = bunker province = 10296 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 1807 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 1724 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 4829 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 7754 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 10756 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 12779 level = 3 instant_build = yes }
-			}
+			FAL = { country_event = { id = wingbardy.110 } }
 		}
 	}
 	focus = {
@@ -1534,18 +1495,6 @@ focus_tree = {
 			modifier = {
 				strength_ratio = { tag = SIC ratio > 1.5 }
 				factor = 2
-			}
-			modifier = {
-				factor = 0
-				FAL = { exists = yes }
-				NOT = { 
-					is_in_faction_with = FAL 
-					FAL = { is_subject_of = WNG }
-				}
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
 			}
 		}
 
@@ -1644,10 +1593,6 @@ focus_tree = {
 				has_government = neutrality
 				factor = 0
 			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
 		}
 
 		completion_reward = {
@@ -1732,28 +1677,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = WNG_wingbard_empire
 		}
-		available = {
-			has_global_flag = GRI_empire_rising_flag
-		}
 		x = 10
 		y = 12
 
 		ai_will_do = {
 			factor = 5
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
 		}
-		will_lead_to_war_with = GRI
-		will_lead_to_war_with = ANG
-		will_lead_to_war_with = PYT
-		will_lead_to_war_with = YAL
-		will_lead_to_war_with = ROU
-		will_lead_to_war_with = KAT
-		will_lead_to_war_with = STW
-		will_lead_to_war_with = BRZ
-		will_lead_to_war_with = FEA
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_claim_the_throne"
 			add_state_claim = 382
@@ -1856,10 +1786,6 @@ focus_tree = {
 			modifier = {
 				EQC = { is_subject = no }
 				factor = 15
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
 			}
 		}
 
@@ -2159,17 +2085,7 @@ focus_tree = {
 				add_timed_idea = { idea = democratic_influence days = 1095 }
 				country_event = { id = generic.1 }
 			}
-			if = {
-				limit = {
-					FAL = {
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
-					}
-				}
-				give_guarantee = FAL
-			}
+			give_guarantee = FAL
 			add_political_power = 100
 		}
 	}

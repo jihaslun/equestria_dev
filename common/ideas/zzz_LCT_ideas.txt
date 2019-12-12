@@ -12,10 +12,6 @@ ideas = {
 
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -30,9 +26,6 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = yes
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = jap_zaibatsu
@@ -52,9 +45,6 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = yes
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = jap_zaibatsu
@@ -76,9 +66,6 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
 			removal_cost = -1
 			picture = jap_zaibatsu_control
 			modifier = {
@@ -95,9 +82,6 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = yes
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = jap_zaibatsu
@@ -117,9 +101,6 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
 			removal_cost = -1
 			picture = jap_zaibatsu
 			modifier = {
@@ -137,9 +118,6 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = yes
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = HUN_hungarian_monarchy
@@ -163,9 +141,6 @@ ideas = {
 					}
 				}
 			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
 			removal_cost = -1
 			picture = FRA_national_mobilization_focus
 			modifier = {
@@ -184,9 +159,6 @@ ideas = {
 						has_government = communism
 					}
 				}
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = pony_militarization
@@ -213,9 +185,6 @@ ideas = {
 					}
 				}
 			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
 			removal_cost = -1
 			picture = pony_militarization
 			modifier = {
@@ -240,9 +209,6 @@ ideas = {
 						has_government = communism
 					}
 				}
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = pony_militarization
@@ -269,9 +235,6 @@ ideas = {
 					}
 				}
 			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
 			removal_cost = -1
 			picture = pony_militarization
 			modifier = {
@@ -296,9 +259,6 @@ ideas = {
 						has_government = communism
 					}
 				}
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = pony_militarization
@@ -326,7 +286,6 @@ ideas = {
 			}
 			available = {
 				has_government = fascism
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = pony_militarization
@@ -356,7 +315,6 @@ ideas = {
 			}
 			available = {
 				has_government = fascism
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = pony_militarization
@@ -383,9 +341,6 @@ ideas = {
 						has_government = communism
 					}
 				}
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = pony_militarization
@@ -421,10 +376,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			traits = { popular_figurehead2 }
@@ -452,10 +403,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			traits = { popular_figurehead }
@@ -468,7 +415,6 @@ ideas = {
 			}
 			available = {
 				has_government = fascism
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			allowed_civil_war = {
 				has_government = fascism
@@ -486,9 +432,6 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = yes
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			modifier = {
@@ -511,7 +454,6 @@ ideas = {
 					has_idea = LCT_prince_snow_idea
 					has_country_leader = { name = "Grand Prince Heavenly Snow" ruling_only = yes }
 				}
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			modifier = {
@@ -528,9 +470,6 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = yes
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			modifier = {
@@ -549,7 +488,6 @@ ideas = {
 			}
 			available = {
 				has_government = fascism
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = generic_infantry_bonus
@@ -569,9 +507,6 @@ ideas = {
 				NOT = {
 					has_government = democratic
 				}
-			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = generic_production_bonus
@@ -598,7 +533,6 @@ ideas = {
 					has_idea = LCT_prince_snow_idea
 					has_country_leader = { name = "Grand Prince Heavenly Snow" ruling_only = yes }
 				}
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = warrior_traditions_idea
@@ -630,7 +564,6 @@ ideas = {
 					has_idea = LCT_prince_snow_idea
 					has_country_leader = { name = "Grand Prince Heavenly Snow" ruling_only = yes }
 				}
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 			removal_cost = -1
 			picture = generic_production_bonus
@@ -648,9 +581,6 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
 			removal_cost = -1
 			picture = generic_agrarian_society
 			modifier = {
@@ -659,10 +589,7 @@ ideas = {
 		}
 		LCT_preparations = {
 			allowed = { always = yes }
-			available = {
-				is_subject = no
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
+			available = { is_subject = no }
 			picture = generic_flexible_foreign_policy2
 			modifier = {
 				equipment_conversion_speed = 0.25
@@ -685,10 +612,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			picture = FRA_fortification_focus
@@ -708,10 +631,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			picture = FRA_fortification_focus
@@ -729,7 +648,6 @@ ideas = {
 
 			available = {
 				has_government = democratic
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			allowed_civil_war = {
@@ -754,7 +672,6 @@ ideas = {
 
 			available = {
 				has_government = democratic
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			allowed_civil_war = {
@@ -780,10 +697,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			picture = hospital
@@ -801,10 +714,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			removal_cost = -1
@@ -825,10 +734,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			removal_cost = -1
@@ -856,9 +761,6 @@ ideas = {
 					has_government = communism
 				}
 			}
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
@@ -879,10 +781,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			picture = FRA_fortification_focus
 
 			removal_cost = -1
@@ -900,10 +798,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			picture = FRA_scw_intervention_republicans_focus
@@ -926,10 +820,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			picture = generic_research_bonus
 
 			removal_cost = -1
@@ -947,10 +837,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			picture = generic_research_bonus
@@ -972,10 +858,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			picture = generic_research_bonus
@@ -1002,10 +884,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			picture = generic_manpower_bonus
 
 			removal_cost = -1
@@ -1024,10 +902,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			picture = anti_soviet_pact
@@ -1050,7 +924,6 @@ ideas = {
 				any_other_country = {
 					has_idea = LCT_macb_infiltration
 				}
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			allowed_civil_war = {
@@ -1074,7 +947,6 @@ ideas = {
 			available = {
 				is_subject = no
 				NOT = { has_government = communism }
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			allowed = {
@@ -1096,10 +968,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			picture = generic_navy_bonus
@@ -1129,10 +997,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			picture = air_support_focus
 
 			removal_cost = -1
@@ -1154,10 +1018,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			picture = generic_navy_carrier_bonus
@@ -1176,10 +1036,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1195,10 +1051,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1224,10 +1076,6 @@ ideas = {
 				always = yes
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
-			}
-
 			removal_cost = -1
 
 			picture = jap_zaibatsu
@@ -1246,10 +1094,6 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
-			}
-			
-			available = {
-				NOT = { has_cosmetic_tag = LCT_freistaat }
 			}
 
 			removal_cost = -1

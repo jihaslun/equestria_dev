@@ -796,7 +796,6 @@ technologies = {
 
 		dependencies = {
 			infantry_weapons = 1
-			tech_support = 1
 		}
 
 		enable_subunits = {
@@ -929,7 +928,6 @@ technologies = {
 
 		dependencies = {
 			melee_weapons1 = 1
-			tech_support = 1
 		}
 
 		enable_subunits = {
@@ -948,6 +946,12 @@ technologies = {
 				}
 				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		on_research_complete = {
 			hidden_effect = {
 				fix_weapon_techs = yes
 			}
@@ -1066,7 +1070,6 @@ technologies = {
 
 		dependencies = {
 			melee_weapons1 = 1
-			tech_support = 1
 		}
 
 		enable_subunits = {

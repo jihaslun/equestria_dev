@@ -15,8 +15,7 @@
 		}
 		x = 4
 		y = 0
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Imperium_Solis"
+		completion_reward = {
 			add_political_power = 200
 			add_stability = 0.15
 			effect_tooltip = {
@@ -66,8 +65,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -4
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_empress_protector"
+		completion_reward = {
 			add_country_leader_trait = daybreaker_protector
 			custom_effect_tooltip = super_combat_abilities_tt
 			hidden_effect = {
@@ -106,8 +104,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -4
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_defence_of_empire_act"
+		completion_reward = {
 			add_ideas = SOL_defence_of_empire_act_idea
 		}
 	}
@@ -130,8 +127,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -4
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_imperial_bureaucracy"
+		completion_reward = {
 			add_political_power = 50
 			add_ideas = SOL_imperial_bureaucracy_idea
 		}
@@ -160,8 +156,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -2
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Imperial_Corporation_Council"
+		completion_reward = {
 			add_ideas = SOL_Imperial_Corporation_Council_idea
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -190,8 +185,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -4
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Strong_Imperial_Government"
+		completion_reward = {
 			add_political_power = 150
 		}
 	}
@@ -214,8 +208,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -4
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Protect_the_Weak"
+		completion_reward = {
 			add_ideas = SOL_Protect_the_Weak_idea
 		}
 	}
@@ -243,8 +236,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -2
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_legion_of_labor"
+		completion_reward = {
 			add_ideas = SOL_legion_of_labor_idea
 		}
 	}
@@ -267,8 +259,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -4
 		y = 6
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Freedom_from_Fear"
+		completion_reward = {
 			add_political_power = 70
 			add_stability = 0.1
 			add_ideas = SOL_Freedom_from_Fear_idea
@@ -306,8 +297,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 0
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_empress_mother"
+		completion_reward = {
 			add_country_leader_trait = daybreaker_mother
 			custom_effect_tooltip = super_combat_abilities_tt
 		}
@@ -331,8 +321,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 0
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Maternal_Guidiance"
+		completion_reward = {
 			add_political_power = 100
 			add_ideas = SOL_Maternal_Guidiance_idea
 		}
@@ -356,8 +345,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 0
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Imperial_Investigative_Service"
+		completion_reward = {
 			add_ideas = SOL_Imperial_Investigative_Service_idea
 			if = {
 				limit = { has_idea = changeling_spies }
@@ -384,8 +372,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 0
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Harmony_through_Order"
+		completion_reward = {
 			add_political_power = 50
 			if = {
 				limit = { has_idea = eqs_order_idea}
@@ -413,8 +400,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 0
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Firm_but_Fair"
+		completion_reward = {
 			add_ideas = SOL_Firm_but_Fair_idea
 			unlock_decision_category_tooltip = SOL_dealing_with_resistance
 		}
@@ -438,8 +424,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 0
 		y = 6
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Empress_knows_Best"
+		completion_reward = {
 			add_stability = 0.15
 			add_political_power = 200
 			add_popularity = { ideology = fascism popularity = 0.1 }
@@ -472,8 +457,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 4
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_god_empress"
+		completion_reward = {
 			add_country_leader_trait = daybreaker_god
 			custom_effect_tooltip = super_combat_abilities_tt
 			hidden_effect = {
@@ -513,8 +497,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 4
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Solar_Cult"
+		completion_reward = {
 			add_political_power = 50
 			add_ideas = SOL_Solar_Cult_idea
 		}
@@ -538,8 +521,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 4
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Imperial_Inquisition"
+		completion_reward = {
 			add_ideas = SOL_Imperial_Inquisition_idea
 			if = {
 				limit = { has_idea = changeling_spies }
@@ -572,8 +554,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 2
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Lux_et_Tenebris"
+		completion_reward = {
 			if = {
 				limit = { has_idea = unicorn_academy }
 				swap_ideas = { add_idea = SOL_Lux_et_Tenebris_idea remove_idea = unicorn_academy }
@@ -616,8 +597,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 4
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Mandatory_Temple_Attendance"
+		completion_reward = {
 			swap_ideas = { add_idea = SOL_Solar_Cult_idea1 remove_idea = SOL_Solar_Cult_idea }
 		}
 	}
@@ -645,8 +625,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 2
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_State_Personified"
+		completion_reward = {
 			add_stability = 0.15
 			add_political_power = 250
 		}
@@ -670,8 +649,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 4
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Faith_Sacrifice_Worship"
+		completion_reward = {
 			swap_ideas = { add_idea = SOL_Solar_Cult_idea2 remove_idea = SOL_Solar_Cult_idea1 }
 			custom_effect_tooltip = SOL_Faith_Sacrifice_Worship_tp
 			hidden_effect = {
@@ -706,8 +684,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 4
 		y = 6
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_She_Who_Raises_the_Sun"
+		completion_reward = {
 			add_stability = 0.1
 			swap_ruler_traits = {
 				add = daybreaker_god2
@@ -752,8 +729,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -2
 		y = 7
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_reconquer_cry"
+		completion_reward = {
 			create_wargoal = { type = annex_everything target = CRY }
 		}
 	}
@@ -804,8 +780,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 2
 		y = 7
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_reconquer_stg"
+		completion_reward = {
 			if = {
 				limit = { country_exists = STG }
 				create_wargoal = { type = annex_everything target = STG }
@@ -856,8 +831,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -1
 		y = 8
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_conquer_chn"
+		completion_reward = {
 			if = {
 				limit = { country_exists = CHN }
 				create_wargoal = { type = annex_everything target = CHN }
@@ -901,8 +875,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 1
 		y = 8
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_conquer_ole"
+		completion_reward = {
 			create_wargoal = { type = annex_everything target = OLE }
 		}
 	}
@@ -935,8 +908,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -4
 		y = 8
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_conquer_drg"
+		completion_reward = {
 			create_wargoal = { type = annex_everything target = DRG }
 		}
 	}
@@ -982,8 +954,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 4
 		y = 8
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_conquer_grf"
+		completion_reward = {
 			if = {
 				limit = { country_exists = GRF }
 				create_wargoal = { type = annex_everything target = GRF }
@@ -1032,8 +1003,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -3
 		y = 9
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_conquer_yak"
+		completion_reward = {
 			if = {
 				limit = { country_exists = YAK }
 				create_wargoal = { type = annex_everything target = YAK }
@@ -1081,8 +1051,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 3
 		y = 9
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_conquer_north"
+		completion_reward = {
 			if = {
 				limit = { country_exists = PLB }
 				create_wargoal = { type = annex_everything target = PLB }
@@ -1125,8 +1094,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = -2
 		y = 10
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_core_cry"
+		completion_reward = {
 			every_state = {
 				limit = {
 					# we could and should iterate over an array, but that would give us no tooltip
@@ -1161,8 +1129,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 2
 		y = 10
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_core_stg"
+		completion_reward = {
 			every_state = {
 				limit = {
 					OR = {
@@ -1213,8 +1180,7 @@
 		relative_position_id = SOL_Imperium_Solis
 		x = 0
 		y = 11
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_conquer_GRI"
+		completion_reward = {
 			if = {
 				limit = { country_exists = event_target:griffonian_empire }
 				create_wargoal = { type = puppet_wargoal_focus target = event_target:griffonian_empire }
@@ -1258,8 +1224,7 @@
 			}
 			ROOT = { is_subject = no }
 		}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_civil_war_measures"
+		completion_reward = {
 			add_ideas = SOL_civil_war_measures_idea
 		}
 	}
@@ -1275,8 +1240,7 @@
 		available = {
 			eqs_civil_war_ended = yes
 		}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_end_of_civil_war"
+		completion_reward = {
 			set_province_name = { id = 6023 name = "Sol Invicta" }
 			EQS_remove_civil_war_ideas = yes
 			hidden_effect = { set_global_flag = eqs_civil_war_victory }
@@ -1327,8 +1291,7 @@
 		}
 		x = 10
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_reconquer_equestria"
+		completion_reward = {
 			every_other_country = {
 				limit = {
 					is_eqs_civil_war_tag = yes
@@ -1371,8 +1334,7 @@
 				has_completed_focus = SOL_god_empress
 			}
 		}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_twilight_ascend"
+		completion_reward = {
 			country_event = solarempire.13
 			if = {
 				limit = {
@@ -1423,8 +1385,7 @@
 		}
 		x = 12
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_increase_presense_inCRY"
+		completion_reward = {
 			if = {
 				limit = { CRY = { is_subject_of = ROOT } }
 				CRY = { 
@@ -1475,8 +1436,7 @@
 				has_completed_focus = SOL_god_empress
 			}
 		}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_bat_problems"
+		completion_reward = {
 			if = {
 				limit = {
 					has_completed_focus = SOL_empress_protector
@@ -1512,8 +1472,7 @@
 		}
 		x = 37
 		y = 0
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_military_reorganization"
+		completion_reward = {
 			army_experience = 20
 			air_experience = 10
 			navy_experience = 10
@@ -1539,8 +1498,7 @@
 		relative_position_id = SOL_military_reorganization
 		x = -9
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_generals_loyality"
+		completion_reward = {
 			add_political_power = 50
 		}
 	}
@@ -1564,8 +1522,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -1
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rehabilitate"
+		completion_reward = {
 			add_political_power = -200
 			add_war_support = -0.05
 			add_stability = -0.05
@@ -1668,8 +1625,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 1
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_purge"
+		completion_reward = {
 			add_political_power = 150
 			country_event = solarempire.10
 		}
@@ -1688,8 +1644,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 0
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_new_officers"
+		completion_reward = {
 			country_event = solarempire.11
 			custom_effect_tooltip = equestria_advisors
 			custom_effect_tooltip = equestria_generals
@@ -1722,8 +1677,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -3
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_superior_firepower_f"
+		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 1.0
@@ -1745,8 +1699,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -3
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_arty"
+		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_bonus
 				bonus = 1.0
@@ -1768,8 +1721,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -3
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_mech"
+		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 3
@@ -1790,8 +1742,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -3
 		y = 6
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_sup_fire_doc"
+		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 1.0
@@ -1829,8 +1780,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -1
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_gbp"
+		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 1.0
@@ -1852,8 +1802,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -1
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_inf"
+		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_bonus
 				bonus = 1.0
@@ -1875,8 +1824,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -1
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_support"
+		completion_reward = {
 			add_tech_bonus = {
 				name = support_bonus
 				bonus = 1.0
@@ -1898,8 +1846,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = -1
 		y = 6
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_gbp_doc"
+		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 1.0
@@ -1936,8 +1883,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 1
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_deep_battle"
+		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 1.0
@@ -1959,8 +1905,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 1
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_armor"
+		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -1982,8 +1927,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 1
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_pb_inf"
+		completion_reward = {
 			add_ideas = SOL_pb_inf_idea
 		}
 	}
@@ -2000,8 +1944,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 1
 		y = 6
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_mass_doc"
+		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 1.0
@@ -2029,8 +1972,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 3
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_mage_army"
+		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 0.65
@@ -2052,8 +1994,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 3
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_magic"
+		completion_reward = {
 			add_tech_bonus = {
 				name = unicorn_bonus2
 				bonus = 1.0
@@ -2075,8 +2016,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 3
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_pb_magical_weapons"
+		completion_reward = {
 			add_ideas = SOL_pb_magic_idea
 		}
 	}
@@ -2093,8 +2033,7 @@
 		relative_position_id = SOL_generals_loyality
 		x = 3
 		y = 6
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_magic_doc"
+		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 0.65
@@ -2124,8 +2063,7 @@
 		relative_position_id = SOL_military_reorganization
 		x = 0
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_air_force"
+		completion_reward = {
 			air_experience = 20
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = blaze
@@ -2177,8 +2115,7 @@
 		relative_position_id = SOL_air_force
 		x = -2
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_operational_integrity"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  air_doc_bonus
 				bonus = 1.0
@@ -2200,8 +2137,7 @@
 		relative_position_id = SOL_air_force
 		x = -2
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_fighter"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  fighter_bonus
 				bonus = 1.0
@@ -2223,8 +2159,7 @@
 		relative_position_id = SOL_air_force
 		x = -2
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_tac_bomber"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  tactical_bombers
 				bonus = 1.0
@@ -2246,8 +2181,7 @@
 		relative_position_id = SOL_air_force
 		x = -2
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_oi_doctrine"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  air_doc_bonus
 				bonus = 1.0
@@ -2269,8 +2203,7 @@
 		relative_position_id = SOL_air_force
 		x = -3
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_oi_napalm"
+		completion_reward = {
 			add_ideas = SOL_napalm
 		}
 	}
@@ -2288,8 +2221,7 @@
 		relative_position_id = SOL_air_force
 		x = -1
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_jets"
+		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_jet_effort
 				bonus = 1.0
@@ -2312,8 +2244,7 @@
 		relative_position_id = SOL_air_force
 		x = 1
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rockets"
+		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
@@ -2335,8 +2266,7 @@
 		relative_position_id = SOL_air_force
 		x = 0
 		y = 6
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_WMD"
+		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
@@ -2358,8 +2288,7 @@
 		relative_position_id = SOL_air_force
 		x = 0
 		y = 7
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_Nuclear_Power"
+		completion_reward = {
 			add_ideas = nuclear_power_EQS
 			add_tech_bonus = {
 				name = secret_bonus
@@ -2399,8 +2328,7 @@
 		relative_position_id = SOL_air_force
 		x = 2
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_strategic_destruction"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  air_doc_bonus
 				bonus = 1.0
@@ -2422,8 +2350,7 @@
 		relative_position_id = SOL_air_force
 		x = 2
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_heavy_fighter"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  fighter_bonus
 				bonus = 1.0
@@ -2445,8 +2372,7 @@
 		relative_position_id = SOL_air_force
 		x = 2
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_strat_bomber"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  bomber_bonus
 				bonus = 1.0
@@ -2468,8 +2394,7 @@
 		relative_position_id = SOL_air_force
 		x = 2
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_sd_doctrine"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  air_doc_bonus
 				bonus = 1.0
@@ -2491,8 +2416,7 @@
 		relative_position_id = SOL_air_force
 		x = 3
 		y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_sd_magical_payloads"
+		completion_reward = {
 			add_ideas = SOL_magical_payloads_idea
 		}
 	}
@@ -2522,8 +2446,7 @@
 		relative_position_id = SOL_military_reorganization
 		x = 9
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_navy"
+		completion_reward = {
 			navy_experience = 20
 			75 = {
 				if = {
@@ -2570,8 +2493,7 @@
 		relative_position_id = SOL_navy
 		x = -2
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_battleships"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  navdoctrine_bonus
 				bonus = 1.0
@@ -2593,8 +2515,7 @@
 		relative_position_id = SOL_navy
 		x = -2
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_battleships"
+		completion_reward = {
 			add_tech_bonus = {
 				name = navy_bonus
 				bonus = 1.0
@@ -2616,8 +2537,7 @@
 		relative_position_id = SOL_navy
 		x = -2
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_sun_never_sets"
+		completion_reward = {
 			add_ideas = SOL_sun_never_sets_idea
 			add_tech_bonus = {
 				name =  navdoctrine_bonus
@@ -2657,8 +2577,7 @@
 		relative_position_id = SOL_navy
 		x = 2
 		y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_carriers"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  navdoctrine_bonus
 				bonus = 1.0
@@ -2680,8 +2599,7 @@
 		relative_position_id = SOL_navy
 		x = 2
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_carriers"
+		completion_reward = {
 			add_tech_bonus = {
 				name = cv_bonus
 				bonus = 1.0
@@ -2703,8 +2621,7 @@
 		relative_position_id = SOL_navy
 		x = 2
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_naval_planes"
+		completion_reward = {
 			add_tech_bonus = {
 				name =  nav_bomber_bonus
 				bonus = 1.0
@@ -2733,8 +2650,7 @@
 		relative_position_id = SOL_navy
 		x = 0
 		y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_destroyers"
+		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 1.0
@@ -2758,8 +2674,7 @@
 		relative_position_id = SOL_navy
 		x = 0
 		y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_cruisers"
+		completion_reward = {
 			add_tech_bonus = {
 				name = navy_bonus
 				bonus = 1.0
@@ -2784,8 +2699,7 @@
 		relative_position_id = SOL_navy
 		x = 0
 		y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SOL_rb_marines"
+		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
 				bonus = 1.0

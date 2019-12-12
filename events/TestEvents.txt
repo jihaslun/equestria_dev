@@ -17,7 +17,7 @@ country_event = {
 			}
 		}
 		option = {
-				transfer_state = 384
+				print_majors_array = yes
 			}
 	}
 #

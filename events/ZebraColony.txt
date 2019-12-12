@@ -24,7 +24,7 @@ country_event = { ### Trade Event starts here
 
 	option = {
 		name = zeeb.2.a
-		OLV ={
+		NCH ={
 			country_event = {
 				id = zeeb.3
 			}
@@ -36,7 +36,7 @@ country_event = { ### Trade Event starts here
 
 	option = {
 		name = zeeb.2.b
-		BAR ={
+		TRD ={
 			country_event = {
 				id = zeeb.6
 			}

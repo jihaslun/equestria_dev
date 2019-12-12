@@ -15,6 +15,7 @@ raiding_category = {
 				}
 			}
 			NOT = { 
+                has_non_aggression_pact_with = FROM
 			    has_country_flag = raid_succeeded
 			    has_country_flag = raid_failed
 			    has_country_flag = raid_in_progress 
@@ -28,8 +29,10 @@ raiding_category = {
                 is_subject_of = FROM 
             }
 			FROM = {
-				can_have_border_war_with_ROOT = yes
+                exists = yes
 				NOT = { 
+                    is_subject_of = ROOT
+                    is_in_faction_with = ROOT
                     has_idea = detached_country
                 }
                 if = {
@@ -163,8 +166,11 @@ raiding_category = {
 
 		cancel_trigger = {
 			OR = {
+                is_subject_of = FROM
+                is_in_faction_with = FROM
+                has_war_with = FROM
                 FROM = {
-                    can_have_border_war_with_ROOT = no
+                    is_subject_of = ROOT
                 }
                 AND = {
                     original_tag = BAN
@@ -471,4 +477,5 @@ raiding_category = {
 			factor = 100
 		}
 	}
+	
 }

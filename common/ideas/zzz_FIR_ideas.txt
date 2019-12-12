@@ -579,7 +579,6 @@ ideas = {
 		designer = yes
 
 		FIR_advisor19 = {
-			picture = FIR_advisor23
 			allowed = {
 				can_form_river_fed = yes
 			}
@@ -635,6 +634,8 @@ ideas = {
 		designer = yes
 
 		FIR_advisor21 = {
+
+			picture = generic_artillery_manufacturer_3
 			allowed = {
 				can_form_river_fed = yes
 			}
@@ -661,7 +662,6 @@ ideas = {
 			}
 		}
 		FIR_advisor22 = {
-			picture = FBK_advisor22
 			allowed = {
 				can_form_river_fed = yes
 			}
@@ -1949,7 +1949,7 @@ ideas = {
 				always = yes
 			}
 			allowed = { always = no }
-			picture = man_five_year_plan_industry
+			picture = idea_man_five_year_plan_industry
 		}
 	}
 }

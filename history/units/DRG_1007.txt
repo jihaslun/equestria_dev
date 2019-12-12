@@ -2,7 +2,7 @@
 	name = "Dragon Warband"			#Infantry Division -
 
 	regiments = {
-		light_dragons = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 	}
 
 	support = {
@@ -21,7 +21,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = dragon_equipment_0
+			type = melee_equipment_1
 			creator = "DRG"
 		}
 		requested_factories = 1

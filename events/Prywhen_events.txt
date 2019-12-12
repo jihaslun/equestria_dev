@@ -252,6 +252,9 @@ country_event = {
 				has_government = communism
 			}
 		}
+		hidden_effect = {
+			load_oob = "BAN_war_with_comms"
+		}
 		declare_war_on = { target = GRW type = annex_everything }
 	}
 	option = {
@@ -1821,7 +1824,7 @@ country_event = {
 	option = {
 		if = {
 			limit = { threat < 0.5 }
-			add_threat = 50
+			add_threat = 0.5
 			set_global_flag = cw_threat_added
 		}
 		random_other_country = {
@@ -3416,7 +3419,7 @@ news_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event prywhen_news.3"}
 	title = prywhen_news.3.t
 	desc = prywhen_news.3.d
-	picture = GFX_news_griffon_diplomacy
+	picture = GFX_news_griffon_mountain_2
 	major = yes
 	is_triggered_only = yes
 	option = {

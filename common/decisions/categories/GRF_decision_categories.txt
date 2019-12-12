@@ -19,22 +19,13 @@ GFF_diplomacy = {
 
 GRF_sending_mercs_cat = {
 	allowed = {
-		OR = {
-			tag = GRF
-			tag = TRD
-		}
+		tag = GRF
 	}
 	priority = {
 		base = 110
 	}
 	visible = {
-		if = {
-			limit = { tag = GRF }
-			has_idea = GRF_send_mercs
-		}
-		else = {
-			has_completed_focus = TRD_robber_baron
-		}
+		has_idea = GRF_send_mercs
 		is_subject = no
 		has_war = no
 	}

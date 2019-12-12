@@ -294,6 +294,7 @@ ideas = {
 		}
 
 		aurelin = {
+			picture = JER_generic_advisor
 			allowed = {
 				original_tag = JER
 			}
@@ -432,7 +433,7 @@ ideas = {
 		}
 
 		lydie = {
-			picture = simon_l
+			picture = JER_generic_advisor
 			allowed = {
 				original_tag = JER
 			}
@@ -479,7 +480,7 @@ ideas = {
 			}
 		}
 		simon_l = {
-			picture = simon_l2
+			picture = JER_generic_advisor
 			allowed = {
 				original_tag = JER
 			}
@@ -490,6 +491,7 @@ ideas = {
 		}
 
 		cyril_l = {
+			picture = JER_generic_advisor
 			allowed = {
 				original_tag = JER
 			}
@@ -516,6 +518,7 @@ ideas = {
 	air_chief = {
 
 		renaud = {
+			picture = JER_generic_advisor
 			allowed = {
 				original_tag = JER
 			}
@@ -527,7 +530,7 @@ ideas = {
 		}
 
 		severine = {
-			picture = simon_l
+			picture = JER_generic_advisor
 			allowed = {
 				original_tag = JER
 			}
@@ -555,6 +558,8 @@ ideas = {
 	navy_chief = {
 
 		xavier = {
+			picture = JER_generic_advisor
+
 			allowed = {
 				original_tag = JER
 			}
@@ -565,6 +570,7 @@ ideas = {
 		}
 
 		albert = {
+			picture = JER_generic_advisor
 			allowed = {
 				original_tag = JER
 			}
@@ -578,6 +584,7 @@ ideas = {
 		}
 
 		gunther = {
+			picture = JER_generic_advisor
 			allowed = {
 				original_tag = JER
 			}

@@ -361,7 +361,6 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_anarch_teachers"
 		add_ideas = AET_teacher_control
 		add_ideas = big_science_base
-		decrease_illiteracy = yes
 		hidden_effect = { set_country_flag = big_science_base_unlocked }
 	}
 }
@@ -568,7 +567,6 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_expand_school_system"
 		add_research_slot = 1
-		decrease_illiteracy = yes
 	}
 }
 
@@ -1013,9 +1011,6 @@ shared_focus = {
 				has_completed_focus = AET_aquileian_economic_help
 			}
 		}
-	}
-	available = {
-		has_global_flag = GRI_empire_rising_flag
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_imperial_guarantee"
@@ -1751,7 +1746,6 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_new_science"
 		add_research_slot = 1
-		decrease_illiteracy = yes
 	}
 }
 
@@ -1768,7 +1762,6 @@ shared_focus = {
 		495 = {
 			add_manpower = 2000
 		}
-		decrease_illiteracy = yes
 		add_ideas = AET_heaven
 	}
 }
@@ -2244,7 +2237,6 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_language"
 		add_political_power = 50
 		add_ideas = AET_one_language
-		decrease_illiteracy = yes
 	}
 }
 
@@ -2260,7 +2252,6 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_church_research"
 		add_research_slot = 1
-		decrease_illiteracy = yes
 	}
 }
 
@@ -2313,8 +2304,6 @@ shared_focus = {
 	prerequisite = { focus = AET_destroy_HEL }
 	mutually_exclusive = { focus = AET_madness_calls }
 	available = {
-		is_subject = no
-		has_war = no
 		HEL = {
 			OR = {
 				exists = no
@@ -2323,12 +2312,8 @@ shared_focus = {
 		}
 		event_target:griffonian_empire = {
 			exists = yes
-			has_war = no
 			is_subject = no
 		}
-	}
-	bypass = {
-		is_subject_of = event_target:griffonian_empire
 	}
 	x = 25
 	y = 7
@@ -2337,13 +2322,19 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_fatherland_calls"
-		custom_effect_tooltip = GAME_OVER_TT
-		event_target:griffonian_empire = { 
-		    country_event = { 
-			    id = greifwald.23 
-				days = 1 
-			} 
-		} 
+		effect_tooltip = {
+			event_target:griffonian_empire = {
+				if = {
+					limit = { NOT = { has_dlc = "Together for Victory" } }
+					custom_effect_tooltip = GAME_OVER_TT
+					annex_country = { target = ROOT transfer_troops = yes }
+				}
+				else = {
+					set_autonomy = { target = ROOT autonomy_state = autonomy_subjugated_vassal }
+				}
+			}
+		}
+		hidden_effect = { event_target:griffonian_empire = { country_event = { id = greifwald.23 days = 1 } } }
 	}
 }
 
@@ -2354,7 +2345,6 @@ shared_focus = {
 	prerequisite = { focus = AET_destroy_HEL }
 	mutually_exclusive = { focus = AET_fatherland_calls }
 	available = {
-		is_subject = no
 		HEL = {
 			OR = {
 				exists = no
@@ -3461,7 +3451,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_modern_soc"
 		add_political_power = 50
-		hidden_effect = { set_country_flag = proper_science_base_unlocked }
+		hidden_effect = { set_country_flag = proper_science_base_unclocked }
 		add_ideas = proper_science_base
 		increase_society_development = yes
 	}
@@ -4584,7 +4574,7 @@ shared_focus = {
 
 shared_focus = {
 	id = AET_changeling_industrialists
-	icon = GFX_goal_chn_capitalist_harmony
+	icon = GFX_goal_chn_capitalist
 	cost = 8.00
 	prerequisite = { focus = AET_wave_one }
 	x = 15

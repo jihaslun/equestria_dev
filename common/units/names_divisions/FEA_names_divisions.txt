@@ -609,7 +609,8 @@ FEA_Inf_02 = {
 
 	for_countries = { FEA }
 
-	can_use = { has_government = fascism }
+	can_use = { has_completed_focus = FEA_sentinels_integrated
+	}
 
 	division_types = { "infantry" }
 

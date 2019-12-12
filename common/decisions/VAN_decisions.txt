@@ -366,7 +366,10 @@ VAN_expansion_category = {
 			}
 			FROM = {
 				owns_state = 59
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {
@@ -438,7 +441,10 @@ VAN_expansion_category = {
 			}
 			FROM = {
 				owns_state = 72
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {
@@ -510,7 +516,10 @@ VAN_expansion_category = {
 			}
 			FROM = {
 				owns_state = 172
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {
@@ -585,7 +594,10 @@ VAN_expansion_second_phase_category = {
 			}
 			FROM = {
 				owns_state = 46
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {
@@ -657,7 +669,10 @@ VAN_expansion_second_phase_category = {
 			}
 			FROM = {
 				owns_state = 60 
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {
@@ -729,7 +744,10 @@ VAN_expansion_second_phase_category = {
 			}
 			FROM = {
 				owns_state = 61
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {
@@ -801,7 +819,10 @@ VAN_expansion_second_phase_category = {
 			}
 			FROM = {
 				owns_state = 133
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {
@@ -873,7 +894,10 @@ VAN_expansion_second_phase_category = {
 			}
 			FROM = {
 				owns_state = 172
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {
@@ -945,7 +969,10 @@ VAN_expansion_second_phase_category = {
 			}
 			FROM = {
 				owns_state = 172
-				can_have_border_war_with_ROOT = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 		target_root_trigger = {

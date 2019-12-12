@@ -76,7 +76,7 @@ LUS_fascist_coup = {
 	LUS_plot_against_elias = {
 		icon = ger_reichskommissariats
 		ai_will_do = {
-			factor = 150
+			factor = 5
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
@@ -85,12 +85,16 @@ LUS_fascist_coup = {
 		visible = {
 			NOT = {
 				has_country_flag = coup_cancelled
+			}
+			NOT = {
 				has_government = communism
+			}
+			NOT = {
 				has_completed_focus = LUS_predict_the_revolution
 			}
 			is_subject = no
 		}
-		cost = 50
+		cost = 70
 		fire_only_once = yes
 		days_remove = 70
 		modifier = {
@@ -105,7 +109,7 @@ LUS_fascist_coup = {
 	LUS_kill_elias = {
 		icon = ger_reichskommissariats
 		ai_will_do = {
-			factor = 150
+			factor = 20
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
@@ -182,13 +186,12 @@ LUS_fascist_coup = {
 	LUS_fight_fascists_sympathisers = {
 		icon = anti_fascist
 		ai_will_do = {
-			factor = 150
+			factor = 5
 		}
 		visible = {
 			NOT = {
 				has_government = fascism
 				has_gerar_in_power = yes
-				has_country_flag = ready_to_kill_elias
 			}
 		}
 		cost = 50
@@ -208,7 +211,7 @@ LUS_politics = {
 	LUS_try_to_kill_drak = {
 		icon = ger_reichskommissariats
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		visible = {
 			has_idea = LUS_drak_lord
@@ -228,7 +231,7 @@ LUS_politics = {
 	LUS_army_disorder_fix = {
 		icon = rifles
 		ai_will_do = {
-			factor = 150
+			factor = 0
 		}
 		visible = {
 			has_idea = LUS_munities_and_disorder
@@ -244,7 +247,7 @@ LUS_politics = {
 	LUS_bribe_drak = {
 		icon = ger_mefo_bills
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		visible = {
 			has_idea = LUS_drak_lord
@@ -502,9 +505,6 @@ LUS_politics = {
 		}
 		visible = {
 			has_country_flag = lord_drak_left
-			632 = {
-				owner = { can_have_border_war_with_ROOT = yes }
-			}
 		}
 		cost = 0
 
@@ -523,7 +523,10 @@ LUS_politics = {
 		fire_only_once = yes
 
 		highlight_states = {
-			state = 632
+			OR = {
+				state = 591
+				state = 632
+			}
 		}
 
 		complete_effect = {
@@ -650,7 +653,7 @@ LUS_foreign_trade = {
 		icon = clover_lushi
 		cost = 50
 		ai_will_do = {
-			factor = 20
+			factor = 200
 		}
 		fire_only_once = yes
 		visible = {
@@ -708,7 +711,7 @@ LUS_foreign_trade = {
 		}
 		cost = 15
 		ai_will_do = {
-			factor = 30
+			factor = 300
 		}
 		fire_only_once = yes
 		target_array = neighbors
@@ -751,7 +754,7 @@ LUS_economic_problems = {
 		}
 		cost = 100
 		ai_will_do = {
-			factor = 20
+			factor = 200
 		}
 
 		days_remove = 200
@@ -769,7 +772,7 @@ LUS_economic_problems = {
 		}
 		cost = 15
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		fire_only_once = yes
 
@@ -788,7 +791,7 @@ LUS_economic_problems = {
 		}
 		cost = 15
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		fire_only_once = yes
 
@@ -807,7 +810,7 @@ LUS_economic_problems = {
 		}
 		cost = 15
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		fire_only_once = yes
 
@@ -826,7 +829,7 @@ LUS_economic_problems = {
 		}
 		cost = 15
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		fire_only_once = yes
 

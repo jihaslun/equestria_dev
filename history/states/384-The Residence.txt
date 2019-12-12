@@ -6,13 +6,12 @@ state={
 	history={
 		owner = BOI
 		add_core_of = BOI
-		add_claim_by = LAK
 		victory_points = {
 			753 5
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 1
 
 		}
 

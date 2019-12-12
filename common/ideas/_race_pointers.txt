@@ -5,9 +5,6 @@ ideas = {
 			allowed = {
 				has_tech = generic_race
 			}
-			visible = {
-				has_idea = generic_race_idea
-			}
 
 			removal_cost = -1
 			default = yes
@@ -23,9 +20,6 @@ ideas = {
 			allowed = {
 				is_pony_race = yes
 			}
-			visible = {
-				has_idea = pony_race
-			}
 			removal_cost = -1
 			cancel_if_invalid = no
 			ai_will_do = {
@@ -37,9 +31,6 @@ ideas = {
 			default = yes
 			allowed = {
 				is_changeling_race = yes
-			}
-			visible = {
-				has_idea = changeling_race
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
@@ -53,9 +44,6 @@ ideas = {
 			allowed = {
 				is_deer_race = yes
 			}
-			visible = {
-				has_idea = deer_race
-			}
 			removal_cost = -1
 			cancel_if_invalid = no
 			ai_will_do = {
@@ -68,9 +56,6 @@ ideas = {
 			allowed = {
 				is_griffon_race = yes
 			}
-			visible = {
-				has_idea = griffon_race
-			}
 			removal_cost = -1
 			cancel_if_invalid = no
 			ai_will_do = {
@@ -82,9 +67,6 @@ ideas = {
 			default = yes
 			allowed = {
 				is_diamond_dog_race = yes
-			}
-			visible = {
-				has_idea = diamond_dog_race
 			}
 			removal_cost = -1
 			cancel_if_invalid = no

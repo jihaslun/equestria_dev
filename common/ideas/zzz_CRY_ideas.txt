@@ -13,7 +13,7 @@ ideas = {
 			traits = { inspiration_leader }
 
 			ai_will_do = {
-				factor = 2
+				factor = 1
 			}
 		}
 		flurryheart_idea = {
@@ -38,7 +38,7 @@ ideas = {
 			traits = { popular_figurehead }
 
 			ai_will_do = {
-				factor = 2
+				factor = 1
 			}
 		}
 		sakira = {
@@ -60,23 +60,6 @@ ideas = {
 
 			traits = { captain_of_industry }
 		}
-		# CRY_erich = {
-		# 	picture = CRY_eric
-		# 	allowed = {
-		# 		original_tag = CRY
-		# 	}
-		# 	available = {
-		# 		has_government = democratic
-		# 	}
-		# 	visible = {
-		# 		has_government = democratic
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 0
-		# 	}
-
-		# 	traits = { legitimate_businessgriff }
-		# }
 		idol_hooves = {
 
 			allowed = {
@@ -142,9 +125,7 @@ ideas = {
 				original_tag = CRY
 			}
 			visible = {
-				has_focus_tree = crystal_empire_lunar_focus
-			}
-			available = {
+				has_government = fascism
 				has_completed_focus = CRY_NLR_invite_advisors
 			}
 			traits = { financial_expert }
@@ -169,7 +150,7 @@ ideas = {
 			traits = { crystal_landscaper }
 
 			ai_will_do = {
-				factor = 2
+				factor = 1
 			}
 		}
 	}
@@ -315,15 +296,13 @@ ideas = {
 			}
 		}
 		nlr_entrenchment = {
-			picture = unknown_advisor
+
 			allowed = {
 				original_tag = CRY
 			}
 			traits = { army_entrenchment_3 }
 			visible = {
-				has_focus_tree = crystal_empire_lunar_focus
-			}
-			available = {
+				has_government = fascism
 				has_completed_focus = CRY_NLR_invite_advisors
 			}
 			ai_will_do = {
@@ -453,10 +432,9 @@ ideas = {
 			allowed = {
 				original_tag = CRY
 			}
+
 			visible = {
-				has_focus_tree = crystalempire_sombra
-			}
-			available = {
+				has_government = fascism
 				has_completed_focus = CRY_somdustrial_concerns
 			}
 
@@ -475,10 +453,9 @@ ideas = {
 			allowed = {
 				original_tag = CRY
 			}
+
 			visible = {
-				has_focus_tree = crystalempire_sombra
-			}
-			available = {
+				has_government = fascism
 				has_completed_focus = CRY_somdustrial_concerns
 			}
 
@@ -526,9 +503,7 @@ ideas = {
 				original_tag = CRY
 			}
 			visible = {
-				has_focus_tree = crystalempire_sombra
-			}
-			available = {
+				has_government = fascism
 				has_completed_focus = CRY_somammocomplex
 			}
 			allowed_civil_war = {
@@ -545,9 +520,6 @@ ideas = {
 
 			allowed = {
 				original_tag = CRY
-			}
-			visible = {
-				has_focus_tree = crystalempire_sombra
 			}
 			available = {
 				has_completed_focus = CRY_darkar
@@ -568,9 +540,7 @@ ideas = {
 				original_tag = CRY
 			}
 			visible = {
-				has_focus_tree = crystal_empire_lunar_focus
-			}
-			available = {
+				has_government = fascism
 				has_completed_focus = CRY_NLR_weapons_for_cause
 			}
 			allowed_civil_war = {
@@ -678,9 +648,7 @@ ideas = {
 				original_tag = CRY
 			}
 			visible = {
-				has_focus_tree = crystalempire_sombra
-			}
-			available = {
+				has_government = fascism
 				has_completed_focus = CRY_somdustrial_concerns
 			}
 			research_bonus = {
@@ -1056,7 +1024,7 @@ ideas = {
 	country = {
 		flurryheart_imprisioned = {
 
-			picture = royal_family_imprisoned
+			picture = royalfamily_imprisioned
 			available = {
 				country_exists = event_target:solar_empire
 				event_target:solar_empire = { is_subject = no }
@@ -1075,7 +1043,7 @@ ideas = {
 	country = {
 		flurryheart_imprisioned1 = {
 
-			picture = royal_family_imprisoned
+			picture = royalfamily_imprisioned
 			available = {
 				country_exists = event_target:solar_empire
 				event_target:solar_empire = { is_subject = no }

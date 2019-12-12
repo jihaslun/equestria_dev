@@ -884,9 +884,8 @@ ideas = {
 			picture = anti_soviet_pact
 			removal_cost = -1
 
-			available = {
+			allowed = {
 				is_subject = yes
-				overlord = { original_tag = WNG }
 			}
 
 			modifier = {

@@ -5,8 +5,7 @@ state={
 
 	history={
 		owner = ERI
-		add_core_of = ERI
-		add_core_of = EYR
+		add_core_of = AVI
 		buildings = {
 			8007 = {
 				bunker = 1

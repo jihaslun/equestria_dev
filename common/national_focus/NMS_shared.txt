@@ -610,12 +610,9 @@ shared_focus = {
 shared_focus = {
 	id = NMS_end_of_war
 	icon = GFX_goal_nlr
-	cost = 1.50
+	cost = 2.00
 	x = 8
 	y = 0
-	mutually_exclusive = {
-		focus = NMS_the_third_position
-	}
 	ai_will_do = {
 		factor = 80
 	}
@@ -644,7 +641,7 @@ shared_focus = {
 	x = -5
 	y = 1
 	relative_position_id = NMS_end_of_war
-	cost = 4.40
+	cost = 5.00
 	prerequisite = { focus = NMS_end_of_war }
 	mutually_exclusive = { focus = NMS_military_government }
 	available = {
@@ -668,7 +665,7 @@ shared_focus = {
 	x = -3
 	y = 1
 	relative_position_id = NMS_the_new_governor
-	cost = 4.40
+	cost = 5.00
 	prerequisite = { focus = NMS_the_new_governor }
 	mutually_exclusive = { focus = NMS_governor_light }
 	available = {
@@ -690,7 +687,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_governor_glory }
 	available = {
 	    has_government = fascism
@@ -714,7 +711,7 @@ shared_focus = {
 	x = -2
 	y = 2
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_a_state_for_the_bats }
 	available = {
 	    has_government = fascism
@@ -735,7 +732,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_welfare_for_the_bats }
 	available = {
 	    has_government = fascism
@@ -766,7 +763,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_a_state_for_the_bats }
 	available = {
 	    has_government = fascism
@@ -826,7 +823,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_ressetlement_policies }
 	available = {
 	    has_government = fascism
@@ -852,7 +849,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_ammend_gun_laws }
 	prerequisite = { focus = NMS_encourage_children }
 	available = {
@@ -877,7 +874,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_secure_the_situation }
 	prerequisite = { focus = NMS_the_reservation_system }
 	available = {
@@ -902,7 +899,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_governor_glory }
 	available = {
 	    has_government = fascism
@@ -925,7 +922,7 @@ shared_focus = {
 	x = 2
 	y = 2
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_fight_the_natives }
 	prerequisite = { focus = NMS_education_reforms }
 	available = {
@@ -949,7 +946,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_reprisals }
 	available = {
 	    has_government = fascism
@@ -972,7 +969,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_assassinate_the_leaders }
 	available = {
 	    has_government = fascism
@@ -996,7 +993,7 @@ shared_focus = {
 	x = 3
 	y = 1
 	relative_position_id = NMS_governor_glory
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_governor_glory focus = NMS_governor_light }
 	available = {
 	    has_government = fascism
@@ -1017,7 +1014,7 @@ shared_focus = {
 	x = 3
 	y = 1
 	relative_position_id = NMS_the_new_governor
-	cost = 4.40
+	cost = 5.00
 	prerequisite = { focus = NMS_the_new_governor }
 	mutually_exclusive = { focus = NMS_governor_glory }
 	available = {
@@ -1039,7 +1036,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_governor_light }
 	available = {
 	    has_government = fascism
@@ -1062,7 +1059,7 @@ shared_focus = {
 	x = -2
 	y = 2
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_a_lighter_touch }
 	prerequisite = { focus = NMS_education_reforms }
 	available = {
@@ -1086,7 +1083,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_arrest_the_leaders }
 	available = {
 	    has_government = fascism
@@ -1109,7 +1106,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_open_dialouge }
 	available = {
 	    has_government = fascism
@@ -1142,7 +1139,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_governor_light }
 	available = {
 	    has_government = fascism
@@ -1168,7 +1165,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_a_state_of_states }
 	available = {
 	    has_government = fascism
@@ -1197,7 +1194,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_protect_local_governments }
 	available = {
 	    has_government = fascism
@@ -1289,7 +1286,7 @@ shared_focus = {
 	x = 2
 	y = 2
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_a_state_of_states }
 	available = {
 	    has_government = fascism
@@ -1323,7 +1320,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_local_democracy }
 	available = {
 	    has_government = fascism
@@ -1386,7 +1383,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_state_investment }
 	prerequisite = { focus = NMS_allow_non_socialist_unions }
 	available = {
@@ -1416,7 +1413,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = NMS_governor_light
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_ensure_rights }
 	prerequisite = { focus = NMS_a_better_south_east }
 	available = {
@@ -1441,7 +1438,7 @@ shared_focus = {
 	x = 5
 	y = 1
 	relative_position_id = NMS_end_of_war
-	cost = 4.40
+	cost = 5.00
 	prerequisite = { focus = NMS_end_of_war }
 	mutually_exclusive = { focus = NMS_the_new_governor }
 	available = {
@@ -1467,7 +1464,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_military_government }
 	available = {
 	    has_government = fascism
@@ -1490,7 +1487,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_military_government }
 	available = {
 	    has_government = fascism
@@ -1513,7 +1510,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_standardise_military_bureaucracy }
 	prerequisite = { focus = NMS_indefine_martial_law }
 	available = {
@@ -1537,7 +1534,7 @@ shared_focus = {
 	x = -2
 	y = 3
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_formalise_military_frontier }
 	available = {
 	    has_government = fascism
@@ -1559,7 +1556,7 @@ shared_focus = {
 	x = -2
 	y = 4
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_military_education }
 	available = {
 	    has_government = fascism
@@ -1588,7 +1585,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_formalise_military_frontier }
 	available = {
 	    has_government = fascism
@@ -1677,7 +1674,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_military_industrial_complex }
 	available = {
 	    has_government = fascism
@@ -1721,7 +1718,7 @@ shared_focus = {
 	x = 2
 	y = 3
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_formalise_military_frontier }
 	available = {
 	    has_government = fascism
@@ -1747,7 +1744,7 @@ shared_focus = {
 	x = 2
 	y = 4
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_secret_police }
 	available = {
 	    has_government = fascism
@@ -1786,7 +1783,7 @@ shared_focus = {
 	x = -1
 	y = 5
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_lunar_cadets }
 	prerequisite = { focus = NMS_mandatory_service }
 	prerequisite = { focus = NMS_open_the_camps }
@@ -1817,7 +1814,7 @@ shared_focus = {
 	x = 1
 	y = 5
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_lunar_cadets }
 	prerequisite = { focus = NMS_mandatory_service }
 	prerequisite = { focus = NMS_open_the_camps }
@@ -1844,7 +1841,7 @@ shared_focus = {
 	x = 0
 	y = 6
 	relative_position_id = NMS_military_government
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_control_the_cities }
 	prerequisite = { focus = NMS_control_the_countryside }
 	available = {
@@ -1860,417 +1857,17 @@ shared_focus = {
 	}
 }
 
-### The Third Position ###
-
-shared_focus = {
-	id = NMS_the_third_position
-	icon = GFX_HOL_crackdown_natpop
-	cost = 1.50
-	x = 21
-	y = 0
-	mutually_exclusive = {
-	    focus = NMS_end_of_war
-	}
-	ai_will_do = {
-		factor = 80
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_the_third_position"
-		country_event = { 
-			id = supporters.24
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_gather_the_tribes
-	icon = GFX_goal_bat
-	x = -2
-	y = 1
-	relative_position_id = NMS_the_third_position
-	cost = 2.90
-	prerequisite = { focus = NMS_the_third_position }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_gather_the_tribes"
-		country_event = { 
-			id = supporters.26
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_convince_the_remnants
-	icon = GFX_goal_bat_with_hat
-	x = 0
-	y = 1
-	relative_position_id = NMS_the_third_position
-	cost = 2.90
-	prerequisite = { focus = NMS_the_third_position }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_convince_the_remnants"
-		country_event = { 
-			id = supporters.27
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_gather_the_moonspeakers
-	icon = GFX_goal_nightmare_moon
-	x = 2
-	y = 1
-	relative_position_id = NMS_the_third_position
-	cost = 2.90
-	prerequisite = { focus = NMS_the_third_position }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_scatter_the_remnants"
-		country_event = { 
-			id = supporters.28
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_the_big_bat_that_makes_all_the_rules
-	icon = GFX_goal_NMS_Crown
-	x = 0
-	y = 2
-	relative_position_id = NMS_the_third_position
-	cost = 2.90
-	prerequisite = { focus = NMS_gather_the_tribes }
-	prerequisite = { focus = NMS_convince_the_remnants }
-	prerequisite = { focus = NMS_gather_the_moonspeakers }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_the_big_bat_that_makes_all_the_rules"
-		country_event = { 
-			id = supporters.29
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_talk_with_caballeron
-	icon = GFX_goal_foreign_diplomacy
-	x = -2
-	y = 1
-	relative_position_id = NMS_the_big_bat_that_makes_all_the_rules
-	cost = 5.80
-	prerequisite = { focus = NMS_the_big_bat_that_makes_all_the_rules }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_talk_with_caballeron"
-		country_event = { 
-			id = supporters.30
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_bury_the_hatchet
-	icon = GFX_goal_COS_Peace
-	x = -1
-	y = 1
-	relative_position_id = NMS_talk_with_caballeron
-	cost = 5.80
-	prerequisite = { focus = NMS_talk_with_caballeron }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_bury_the_hatchet"
-		add_political_power = -75
-		add_stability = -0.05
-		remove_ideas = NMS_native_resistance_4
-	}
-}
-
-shared_focus = {
-	id = NMS_religious_dialouge
-	icon = GFX_goal_break_rifle
-	x = 0
-	y = 2
-	relative_position_id = NMS_talk_with_caballeron
-	cost = 5.80
-	prerequisite = { focus = NMS_bury_the_hatchet }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_religious_dialouge"
-		custom_effect_tooltip = NMS_religious_dialouge_tp
-		add_timed_idea = { 
-		    idea = NMS_religious_dialouge_idea 
-		    days = 180 
-		}
-		hidden_effect = {
-		    country_event = { 
-			    id = supporters.34
-				days = 180
-		    }
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_embrace_bat_morality
-	icon = GFX_goal_ideology_social_conservative
-	x = 0
-	y = 1
-	relative_position_id = NMS_the_big_bat_that_makes_all_the_rules
-	cost = 5.80
-	prerequisite = { focus = NMS_the_big_bat_that_makes_all_the_rules }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_embrace_bat_morality"
-		country_event = { 
-			id = supporters.32
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_encourage_a_return
-	icon = GFX_goal_constitutional_guarantees
-	x = -1
-	y = 1
-	relative_position_id = NMS_embrace_bat_morality
-	cost = 5.80
-	prerequisite = { focus = NMS_embrace_bat_morality }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_encourage_a_return"
-		add_ideas = NMS_encourage_a_return_idea
-		every_owned_state = {
-		    limit = {
-			    is_core_of = NMS
-			}
-			add_manpower = 5000
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_unite_the_faith
-	icon = GFX_goal_POR_royal_edicts
-	x = 1
-	y = 1
-	relative_position_id = NMS_embrace_bat_morality
-	cost = 5.80
-	prerequisite = { focus = NMS_embrace_bat_morality }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_unite_the_faith"
-		add_research_slot = 1
-		add_popularity = { 
-		    ideology = fascism			
-		    popularity = -0.05 
-		}
-		hidden_effect = {
-		    country_event = { 
-			    id = supporters.33
-				days = 30
-		    }
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_moral_law
-	icon = GFX_goal_DOM_The_Trial
-	x = 0
-	y = 2
-	relative_position_id = NMS_embrace_bat_morality
-	cost = 5.80
-	prerequisite = { focus = NMS_encourage_a_return }
-	prerequisite = { focus = NMS_unite_the_faith }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_moral_law"
-		add_ideas = NMS_moral_law_idea
-	}
-}
-
-shared_focus = {
-	id = NMS_meet_with_the_unions
-	icon = GFX_goal_big_news
-	x = 2
-	y = 1
-	relative_position_id = NMS_the_big_bat_that_makes_all_the_rules
-	cost = 5.80
-	prerequisite = { focus = NMS_the_big_bat_that_makes_all_the_rules }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_meet_with_the_unions"
-		country_event = { 
-			id = supporters.31
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_implement_local_democracy
-	icon = GFX_goal_generic_elections
-	x = 1
-	y = 1
-	relative_position_id = NMS_meet_with_the_unions
-	cost = 5.80
-	prerequisite = { focus = NMS_meet_with_the_unions }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_implement_local_democracy"
-		add_stability = 0.05
-		add_political_power = 75
-		add_popularity = { 
-		    ideology = democratic 
-		    popularity = 0.03 
-		}
-		add_popularity = { 
-		    ideology = communism 
-		    popularity = 0.02 
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_encourage_communalism
-	icon = GFX_goal_commune_politics
-	x = 0
-	y = 2
-	relative_position_id = NMS_meet_with_the_unions
-	cost = 5.80
-	prerequisite = { focus = NMS_implement_local_democracy }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_encourage_communalism"
-		swap_ideas = {
-		    remove_idea = JUN_discontent_in_cities
-			add_idea = NMS_encourage_communalism_idea
-		}
-	}
-}
-
-shared_focus = {
-	id = NMS_the_organic_kingdom
-	icon = GFX_goal_government_icon
-	x = 0
-	y = 3
-	relative_position_id = NMS_embrace_bat_morality
-	cost = 5.80
-	prerequisite = { focus = NMS_religious_dialouge }
-	prerequisite = { focus = NMS_moral_law }
-	prerequisite = { focus = NMS_encourage_communalism }
-	available = {
-	    has_government = neutrality
-	}
-
-	ai_will_do = {
-		factor = 120
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus NMS_the_organic_kingdom"
-		swap_ideas = {
-		    remove_idea = NMS_moral_law_idea
-			add_idea = NMS_the_organic_kingdom_idea
-		}
-	}
-}
-
 ### Economic Tree ###
 shared_focus = {
 	id = NMS_economic_stuff
 	icon = GFX_goal_generic_position_armies
-	cost = 4.40
-	x = 29
+	cost = 5.00
+	x = 21
 	y = 0
 	available = {
 	    OR = {
 		    has_completed_focus = NMS_the_new_governor
 			has_completed_focus = NMS_military_government
-			has_completed_focus = NMS_the_big_bat_that_makes_all_the_rules
 		}
 	}
 	ai_will_do = {
@@ -2290,7 +1887,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = NMS_economic_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_economic_stuff }
 	available = { always = no }
 	mutually_exclusive = { focus = NMS_focus_on_cities }
@@ -2310,7 +1907,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = NMS_focus_on_countryside
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_focus_on_countryside }
 	available = {
 	    owns_state = 24
@@ -2347,7 +1944,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	relative_position_id = NMS_focus_on_countryside
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_focus_on_countryside }
 	available = {
 	    owns_state = 81
@@ -2408,7 +2005,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = NMS_focus_on_countryside
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_focus_on_countryside }
 
 	ai_will_do = {
@@ -2430,7 +2027,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = NMS_focus_on_countryside
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_coffee_plantations }
 	prerequisite = { focus = NMS_rubber_fields }
 	prerequisite = { focus = NMS_clear_the_jungles }
@@ -2453,7 +2050,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = NMS_focus_on_countryside
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_the_riches_of_the_jungle }
 	prerequisite = { focus = NMS_hydroelectricity }
 
@@ -2476,7 +2073,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = NMS_focus_on_countryside
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_the_riches_of_the_jungle }
 	prerequisite = { focus = NMS_hydroelectricity }
 	available = {
@@ -2564,7 +2161,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_economic_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_focus_on_countryside focus = NMS_focus_on_cities }
 
 	ai_will_do = {
@@ -2590,7 +2187,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = NMS_economic_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_connect_the_nation }
 	available = { 
 	    owns_state = 37
@@ -2627,7 +2224,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = NMS_economic_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_economic_stuff }
 	available = { always = no }
 	mutually_exclusive = { focus = NMS_focus_on_countryside }
@@ -2647,7 +2244,7 @@ shared_focus = {
 	x = -1
 	y = 2
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_focus_on_cities }
 	available = {
 	    owns_state = 28
@@ -2684,7 +2281,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_focus_on_cities }
 	available = {
 	    owns_state = 13
@@ -2720,7 +2317,7 @@ shared_focus = {
 	x = 1
 	y = 2
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_focus_on_cities }
 	available = {
 	    owns_state = 15
@@ -2748,7 +2345,7 @@ shared_focus = {
 	x = 0
 	y = 3
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_steel_mills }
 	prerequisite = { focus = NMS_baltimare_factories }
 	prerequisite = { focus = NMS_stableside_arms }
@@ -2771,7 +2368,7 @@ shared_focus = {
 	x = -1
 	y = 4
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_industrial_revolution }
 	prerequisite = { focus = NMS_hydroelectricity }
 
@@ -2793,7 +2390,7 @@ shared_focus = {
 	x = 1
 	y = 4
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_industrial_revolution }
 	prerequisite = { focus = NMS_hydroelectricity }
 	available = {
@@ -2889,7 +2486,7 @@ shared_focus = {
 	x = -4
 	y = 5
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_diamonds focus = NMS_further_industrial_development }
 	prerequisite = { focus = NMS_logging_industry focus = NMS_development_plan }
 
@@ -2913,7 +2510,7 @@ shared_focus = {
 	x = -2
 	y = 5
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_diamonds focus = NMS_further_industrial_development }
 	prerequisite = { focus = NMS_logging_industry focus = NMS_development_plan }
 
@@ -2937,7 +2534,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_diamonds focus = NMS_further_industrial_development }
 	prerequisite = { focus = NMS_logging_industry focus = NMS_development_plan }
 
@@ -2969,7 +2566,7 @@ shared_focus = {
 	x = -2
 	y = 6
 	relative_position_id = NMS_focus_on_cities
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_electronics_development }
 	prerequisite = { focus = NMS_modern_methods }
 	prerequisite = { focus = NMS_drilling }
@@ -2987,14 +2584,13 @@ shared_focus = {
 shared_focus = {
 	id = NMS_army_stuff
 	icon = GFX_goal_MAF_African_Pilots
-	cost = 4.40
+	cost = 5.00
 	x = -9
 	y = 0
 	available = {
 	    OR = {
 		    has_completed_focus = NMS_the_new_governor
 			has_completed_focus = NMS_military_government
-			has_completed_focus = NMS_the_big_bat_that_makes_all_the_rules
 		}
 	}
 	ai_will_do = {
@@ -3012,7 +2608,7 @@ shared_focus = {
 	x = -3
 	y = 1
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_army_stuff }
 	mutually_exclusive = { focus = NMS_bat_army }
 	available = {
@@ -3036,7 +2632,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = NMS_united_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_united_army }
 
 	ai_will_do = {
@@ -3057,7 +2653,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = NMS_united_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_united_army }
 	available = {
 		any_owned_state = {
@@ -3144,7 +2740,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_united_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_jungle_mastery }
 	prerequisite = { focus = NMS_localised_armouries }
 
@@ -3166,7 +2762,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = NMS_united_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_guerilla_warfare_f }
 
 	ai_will_do = {
@@ -3184,7 +2780,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = NMS_united_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_guerilla_warfare_f }
 
 	ai_will_do = {
@@ -3242,7 +2838,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = NMS_united_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_decentralised_command }
 	prerequisite = { focus = NMS_native_officers }
 
@@ -3264,12 +2860,11 @@ shared_focus = {
 	x = 3
 	y = 1
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_army_stuff }
 	mutually_exclusive = { focus = NMS_united_army }
 	available = {
 	    NOT = {
-		    has_completed_focus = NMS_the_big_bat_that_makes_all_the_rules
 		    has_completed_focus = NMS_governor_light
 		}
 	}
@@ -3289,7 +2884,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = NMS_bat_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_bat_army }
 
 	ai_will_do = {
@@ -3307,7 +2902,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = NMS_bat_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_bat_army }
 
 	ai_will_do = {
@@ -3325,7 +2920,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_bat_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_native_auxiliaries }
 	prerequisite = { focus = NMS_finest_equipment }
 
@@ -3347,7 +2942,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = NMS_bat_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_a_truly_elite_army }
 
 	ai_will_do = {
@@ -3393,7 +2988,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = NMS_bat_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_a_truly_elite_army }
 
 	ai_will_do = {
@@ -3412,7 +3007,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = NMS_bat_army
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_new_officers }
 	prerequisite = { focus = NMS_extreme_training }
 
@@ -3436,7 +3031,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_united_army focus = NMS_bat_army }
 
 	ai_will_do = {
@@ -3459,7 +3054,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_doctrine_f }
 
 	ai_will_do = {
@@ -3482,7 +3077,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_doctrine_f }
 
 	ai_will_do = {
@@ -3505,7 +3100,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_infantry_equipment_f }
 	prerequisite = { focus = NMS_artillery_equipment_f }
 
@@ -3529,7 +3124,7 @@ shared_focus = {
 	x = -1
 	y = 5
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_support_equipment_f }
 
 	ai_will_do = {
@@ -3552,7 +3147,7 @@ shared_focus = {
 	x = 1
 	y = 5
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_support_equipment_f }
 
 	ai_will_do = {
@@ -3575,7 +3170,7 @@ shared_focus = {
 	x = 0
 	y = 6
 	relative_position_id = NMS_army_stuff
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_tank_f }
 	prerequisite = { focus = NMS_motorized_f }
 	prerequisite = { focus = NMS_decentralised_army focus = NMS_put_them_through_hell }
@@ -3593,8 +3188,8 @@ shared_focus = {
 shared_focus = {
 	id = NMS_aztlan_navy
 	icon = GFX_goal_generic_navy_doctrines_tactics
-	cost = 4.40
-	x = 37
+	cost = 5.00
+	x = 29
 	y = 0
 	ai_will_do = {
 		factor = 30
@@ -3603,7 +3198,6 @@ shared_focus = {
 	    OR = {
 		    has_completed_focus = NMS_the_new_governor
 			has_completed_focus = NMS_military_government
-			has_completed_focus = NMS_the_big_bat_that_makes_all_the_rules
 		}
 	}
 	completion_reward = {
@@ -3618,7 +3212,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_aztlan_navy }
 	available = {
 	    owns_state = 13
@@ -3652,7 +3246,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_aztlan_navy }
 	available = {
 	    owns_state = 15
@@ -3686,7 +3280,7 @@ shared_focus = {
 	x = -2
 	y = 2
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_baltimare_port }
 
 	ai_will_do = {
@@ -3709,7 +3303,7 @@ shared_focus = {
 	x = -2
 	y = 4
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_destroyer_f }
 
 	ai_will_do = {
@@ -3732,7 +3326,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_baltimare_port }
 	prerequisite = { focus = NMS_stableside_port }
 	available = {
@@ -3767,7 +3361,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_saltmane_port }
 	prerequisite = { focus = NMS_destroyer_f }
 
@@ -3791,7 +3385,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_saltmane_port }
 	prerequisite = { focus = NMS_battleship_f }
 
@@ -3815,7 +3409,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_submarine_f }
 	prerequisite = { focus = NMS_heavy_cruiser_f }
 
@@ -3840,7 +3434,7 @@ shared_focus = {
 	x = 2
 	y = 2
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_baltimare_port }
 
 	ai_will_do = {
@@ -3864,7 +3458,7 @@ shared_focus = {
 	x = 2
 	y = 4
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_battleship_f }
 
 	ai_will_do = {
@@ -3887,7 +3481,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = NMS_aztlan_navy
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_light_cruiser_f }
 	prerequisite = { focus = NMS_doctrianl_development }
 	prerequisite = { focus = NMS_carrier_f }
@@ -3905,7 +3499,7 @@ shared_focus = {
 shared_focus = {
 	id = NMS_aztlan_airforce
 	icon = GFX_goal_generic_air_doctrine
-	cost = 4.40
+	cost = 5.00
 	x = -18
 	y = 0
 	ai_will_do = {
@@ -3915,7 +3509,6 @@ shared_focus = {
 	    OR = {
 		    has_completed_focus = NMS_the_new_governor
 			has_completed_focus = NMS_military_government
-			has_completed_focus = NMS_the_big_bat_that_makes_all_the_rules
 		}
 	}
 	completion_reward = {
@@ -3930,7 +3523,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_aztlan_airforce }
 
 	ai_will_do = {
@@ -3951,7 +3544,7 @@ shared_focus = {
 	x = -2
 	y = 2
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_import_fighters }
 
 	ai_will_do = {
@@ -3974,7 +3567,7 @@ shared_focus = {
 	x = -2
 	y = 4
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_light_aircraft }
 
 	ai_will_do = {
@@ -3997,7 +3590,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_aztlan_airforce }
 
 	ai_will_do = {
@@ -4018,7 +3611,7 @@ shared_focus = {
 	x = 2
 	y = 2
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_import_bombers }
 
 	ai_will_do = {
@@ -4041,7 +3634,7 @@ shared_focus = {
 	x = 2
 	y = 4
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_bomber_aircraft }
 
 	ai_will_do = {
@@ -4064,7 +3657,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_import_fighters }
 	prerequisite = { focus = NMS_import_bombers }
 	available = {
@@ -4111,7 +3704,7 @@ shared_focus = {
 	x = -1
 	y = 3
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_light_aircraft }
 	prerequisite = { focus = NMS_build_the_airstrips }
 
@@ -4136,7 +3729,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_bomber_aircraft }
 	prerequisite = { focus = NMS_build_the_airstrips }
 
@@ -4160,7 +3753,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_train_the_pilots }
 	prerequisite = { focus = NMS_heavier_fighters }
 
@@ -4186,7 +3779,7 @@ shared_focus = {
 	x = 0
 	y = 5
 	relative_position_id = NMS_aztlan_airforce
-	cost = 5.80
+	cost = 7.00
 	prerequisite = { focus = NMS_CAS_f }
 	prerequisite = { focus = NMS_night_fliers }
 	prerequisite = { focus = NMS_heavier_bombers }

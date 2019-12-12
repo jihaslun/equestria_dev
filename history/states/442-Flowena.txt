@@ -3,20 +3,19 @@ state={
 	id=442
 	name="STATE_442"
 	resources={
-		steel=6.000
+		steel=12.000
 	}
 
 	history={
 		owner = FLO
 		add_core_of = FLO
-		add_claim_by = POM
 		victory_points = {
-			12740 20
+			12740 15
 		}
 
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 4
+			industrial_complex = 3
 			arms_factory = 1
 
 		}
@@ -24,9 +23,9 @@ state={
 	}
 
 	provinces={
-		12740
+		5093 8118 12740
 	}
-	manpower=1050607
+	manpower=750607
 	buildings_max_level_factor=1.000
 	state_category=city
 }

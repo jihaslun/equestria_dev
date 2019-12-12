@@ -101,16 +101,7 @@ ideologies = {
 
 			}
 			syndicalism = {
-      
-      		}
-			socialist_monarchism = {
-      
-			}
-			religious_socialism = {
-      
-			}
-			juche = {
-      
+
 			}
 		}
 
@@ -212,9 +203,6 @@ ideologies = {
 			}
 
 			centrism = {
-			}
-			
-			technocracy = {
 			}
 		}
 

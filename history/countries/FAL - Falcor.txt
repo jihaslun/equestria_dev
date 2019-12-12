@@ -1,15 +1,16 @@
 ﻿capital = 529
 oob = "FAL_1007"
+
 set_research_slots = 3
 
 set_technology = {
 	griffon_race = 1
-	tech_knights = 1
 	melee_weapons = 1
 	melee_weapons1 = 1
 	pre_gw_artillery = 1
 	tech_griffon_army = 1
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	tech_recon = 1
 	tech_engineers = 1
 	gw_artillery = 1
@@ -23,6 +24,7 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		transport = 1
+		early_submarine = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 	}
@@ -41,17 +43,16 @@ if = {
 	set_naval_oob = "FAL_1007_naval"
 }
 
-add_manpower = 41667
-
 set_convoys = 70
 set_popularities = {
-	democratic = 15
-	fascism = 35
-	communism = 5
-	neutrality = 45
+	democratic = 65
+	fascism = 10
+	communism = 10
+	neutrality = 15
 }
 set_politics = {
-	ruling_party = neutrality
+
+	ruling_party = democratic
 	last_election = "1000.10.10"
 	election_frequency = 36
 	elections_allowed = no
@@ -60,17 +61,13 @@ add_ideas = {
 	poverty3
 	lack_of_scientists2
 	feudalism
-	pre_industrial_society 
-	FAL_angry_birbs
-	FAL_shattered
-	FAL_no_falcor
-	}
+	pre_industrial_society }
 
 set_stability = 0.50
 
 create_country_leader = {
 	name = "Princess Maximilliana"
-	desc = "nice_princess_birb_desc"
+	desc = ""
 	picture = "Maximilliana.tga"
 	expire = "1965.1.1"
 	ideology = despotism
@@ -79,8 +76,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gabriele d'Artiglio"
-	desc = "revenge_fucking_now_desc"
+	name = "Joaquim Picasso"
+	desc = ""
 	picture = "JoaquimPicasso.tga"
 	expire = "1965.1.1"
 	ideology = nazism
@@ -90,9 +87,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Queen Maximilliana"
-	desc = "long_live_the_queen_desc"
-	picture = "Queen_Maximilliana.tga"
+	name = "Princess Maximilliana"
+	desc = ""
+	picture = "Maximilliana.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -101,7 +98,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Andrea Ausiello"
+	name = "Vetranis Dreambreath"
 	desc = ""
 	picture = "Governor.tga"
 	expire = "1965.1.1"
@@ -109,19 +106,6 @@ create_country_leader = {
 	traits = {
 
 	}
-}
-
-create_field_marshal = {
-	name = "Prince-Consort Alberto"
-	picture = "Alfonso.tga"
-	traits = { politically_connected old_guard }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-	id = 62709
-
 }
 
 create_corps_commander = {
@@ -140,22 +124,11 @@ create_corps_commander = {
 	name = "Justus Lucius"
 	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_13.dds"
 	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Erika Von Feveros"
-	portrait_path = "gfx/leaders/FAL/Feveros.dds"
-	traits = { bearer_of_artillery brilliant_strategist }
-	desc = Fev_desc
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 set_rule = {
@@ -177,7 +150,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = empty
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_light_battery_1
 		}
 	}
 }

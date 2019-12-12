@@ -808,10 +808,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -841,10 +837,6 @@ ideas = {
 					has_government = fascism
 				}
 			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
 			removal_cost = -1
 
 			modifier = {
@@ -872,9 +864,6 @@ ideas = {
 				has_government = fascism
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
 			removal_cost = -1
 
 			modifier = {
@@ -902,9 +891,6 @@ ideas = {
 				has_government = communism
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
 			removal_cost = -1
 
 			modifier = {
@@ -935,10 +921,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -961,10 +943,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -985,10 +963,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1015,10 +989,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1041,10 +1011,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1094,10 +1060,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			equipment_bonus = {
@@ -1124,10 +1086,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1148,10 +1106,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1178,10 +1132,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1202,10 +1152,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1233,10 +1179,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1257,10 +1199,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1285,10 +1223,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1309,10 +1243,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1337,10 +1267,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1360,10 +1286,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1390,10 +1312,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1414,10 +1332,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1442,10 +1356,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1466,10 +1376,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1
@@ -1494,10 +1400,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			modifier = {
@@ -1520,10 +1422,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			targeted_modifier = {tag = GRY attack_bonus_against = 0.1}
@@ -1544,10 +1442,6 @@ ideas = {
 				}
 			}
 
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
-			}
-
 			removal_cost = -1
 
 			targeted_modifier = {tag = GRY defense_bonus_against = 0.1}
@@ -1565,10 +1459,6 @@ ideas = {
 					has_government = communism
 					has_government = neutrality
 				}
-			}
-
-			available = {
-				NOT = { has_cosmetic_tag = WIT_freistaat }
 			}
 
 			removal_cost = -1

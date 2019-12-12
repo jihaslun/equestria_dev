@@ -162,11 +162,8 @@ shared_focus = {
 					name = "Matrosenbrigade"
 					priority = 0
 					regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
 					}
 				}
 	
@@ -1305,7 +1302,7 @@ shared_focus = {
 
 shared_focus = {
 		id = CYA_special_industry
-		icon = GFX_goal_generic_crystals
+		icon = GFX_goal_generic_magic
 		prerequisite = { focus = CYA_steelworks }
 		prerequisite = { focus = CYA_outback_oil }
 		prerequisite = { focus = CYA_manufactory }
@@ -2038,8 +2035,6 @@ shared_focus = {
 					priority = 2
 					regiments = {
 						marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 0 y = 2 }
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
@@ -2136,8 +2131,6 @@ shared_focus = {
 					priority = 2
 					regiments = {
 						paratrooper = { x = 0 y = 0 }
-						paratrooper = { x = 0 y = 1 }
-						paratrooper = { x = 0 y = 2 }
 					}
 					support = {
 						recon = { x = 0 y = 0 }
@@ -2703,9 +2696,6 @@ shared_focus = {
 					priority = 2
 					regiments = {
 						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
@@ -2770,7 +2760,7 @@ shared_focus = {
 		prerequisite = { focus = CYA_horizontalised_military_structure }
 		prerequisite = { focus = CYA_collectivisation }
 		prerequisite = { focus = CYA_military_commissars }
-		icon = GFX_goal_classless_society
+		icon = GFX_focus_eqc_memories_of_our_town
 		x = -1
 		y = 3
 		relative_position_id = CYA_equalism
@@ -3546,20 +3536,11 @@ shared_focus = {
 			hidden_effect = {
 				division_template = {
 					name = "Schutztruppe-Brigade"
-						regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-
-	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
 					}
+				}
 	
 				random_owned_controlled_state = {
 					prioritize = { 671 }
@@ -3617,14 +3598,7 @@ shared_focus = {
 					name = "Strafbataillon"
 					priority = 0
 					regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
+						infantry = { x = 0 y = 0 }
 					}
 				}
 	
@@ -3737,10 +3711,6 @@ shared_focus = {
 					priority = 2
 					regiments = {
 						infantry = { x = 0 y = 0 }
-		                infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-		                infantry = { x = 1 y = 0 }
-		                infantry = { x = 1 y = 1 }
 					}
 					support = {
 						recon = { x = 0 y = 0 }
@@ -4914,6 +4884,7 @@ shared_focus = {
 			}
 			has_government = neutrality
 			is_subject = no
+			is_in_faction = no
 			has_war = no
 			event_target:griffonian_empire = {
 				exists = yes
@@ -4928,12 +4899,6 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYA_rejoin_the_fatherland"
-			if = {
-				limit = {
-					is_in_faction = yes
-				}
-				leave_faction = yes
-			}
 			event_target:griffonian_empire = { country_event = generic.2 }
 		}
 	}
@@ -5145,7 +5110,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYA_lands_acquisition_act"
-			671 = { add_extra_state_shared_building_slots = 1 }
+			671 = { add_extra_state_shared_building_slots = 3 }
 			add_political_power = -25
 			add_stability = -0.05
 		}
@@ -5175,7 +5140,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYA_tunnel_to_em"
 			671 = {
-				#add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -5648,7 +5613,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYA_tarmuth_rocket_site"
 			671 = {
-				#add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = rocket_site
 					level = 2
@@ -5751,10 +5716,6 @@ shared_focus = {
 					regiments = {
 						jager = { x = 0 y = 0 }
 						jager = { x = 0 y = 1 }
-						jager = { x = 0 y = 2 }
-						jager = { x = 1 y = 0 }
-						jager = { x = 1 y = 1 }
-						jager = { x = 1 y = 2 }
 					}
 					support = { 
 						recon = { x = 0 y = 0 }
@@ -5830,10 +5791,6 @@ shared_focus = {
 					regiments = {
 						pegasi = { x = 0 y = 0 }
 						pegasi = { x = 0 y = 1 }
-						pegasi = { x = 0 y = 2 }
-						pegasi = { x = 1 y = 0 }
-						pegasi = { x = 1 y = 1 }
-						pegasi = { x = 1 y = 2 }
 					}
 				}
 				random_owned_controlled_state = {
@@ -6024,10 +5981,6 @@ shared_focus = {
 					name = "Zivilgarde-Bataillon"
 					regiments = {
 						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 0 y = 4 }
 					}
 				}
 	
@@ -6121,17 +6074,10 @@ shared_focus = {
 					has_completed_focus = CYA_capital_ship_effort 
 				}
 				AND = { 
-					if = {
-				limit = { NOT = { has_dlc = "Man the Guns" } }
-				has_tech = basic_battleship
-				has_tech = basic_battlecruiser
-				has_tech = basic_light_cruiser
-				has_tech = basic_heavy_cruiser
-			}
-			else = { 
-				has_tech = basic_ship_hull_cruiser 
-				has_tech = basic_ship_hull_heavy 
-			}
+					has_tech = early_battleship 
+					has_tech = early_battlecruiser  
+					has_tech = basic_heavy_cruiser 
+					has_tech = basic_light_cruiser 
 				}
 			}
 		}
@@ -6203,7 +6149,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYA_land_reclamation_in_the_sea"
 			671 = {
-				#add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = naval_base
 					level = 1
@@ -6264,7 +6210,6 @@ shared_focus = {
 					regiments = {
 						anti_air_brigade = { x = 0 y = 0 }
 						anti_air_brigade = { x = 0 y = 1 }
-						anti_air_brigade = { x = 0 y = 2 }
 					}
 					support = { 
 						engineer = { x = 0 y = 0 }
@@ -6933,16 +6878,12 @@ shared_focus = {
 			has_full_control_of_state = 445
 			has_full_control_of_state = 386
 			MIT = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-				}
+				exists = no
+				is_subject_of = ROOT
 			}
 			SIC = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-				}
+				exists = no
+				is_subject_of = ROOT
 			}
 		}
 

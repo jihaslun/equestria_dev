@@ -64,9 +64,6 @@ foreign_politics = {
 	allowed = {
 		NOT = { tag = DED }
 	}
-	priority = {
-		base = 110
-	}
 }
 
 political_actions = {

@@ -56,7 +56,6 @@ political_actions = {
 				NOT = { has_unit_leader = 112 }
 				NOT = { has_unit_leader = 113 }
 				NOT = { has_unit_leader = 114 }
-				NOT = { has_unit_leader = 115 }
 			}
 		}
 

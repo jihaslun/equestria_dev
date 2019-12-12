@@ -252,7 +252,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GFF_annexation"
 			country_event = { id = frontier.5 days = 1}
 			hidden_effect = {
-				set_country_flag = proper_science_base_unlocked
+				set_country_flag = proper_science_base_unclocked
 				add_ideas = {
 					modern_society
 					proper_science_base
@@ -637,7 +637,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GFF_crytals
-		icon = GFX_goal_generic_crystals
+		icon = GFX_goal_generic_construction2
 		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = {
@@ -1166,7 +1166,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GFF_virgilian_research"
 			add_research_slot = 1
-			set_country_flag = proper_science_base_unlocked
+			set_country_flag = proper_science_base_unclocked
 			add_ideas = proper_science_base
 		}
 	}
@@ -1501,7 +1501,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GFF_research"
 			add_research_slot = 1
-			set_country_flag = proper_science_base_unlocked
+			set_country_flag = proper_science_base_unclocked
 			add_ideas = proper_science_base
 		}
 	}

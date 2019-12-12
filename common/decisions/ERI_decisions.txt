@@ -13,19 +13,12 @@ ERI_rivalry = {
 			is_subject = no
 		}
 		visible = {
-			has_idea = E_E_rivalry
-			AVI = { NOT = { has_completed_focus = ending_the_rivalry } }
 			has_war = no
 			is_subject = no
 			NOT = { has_country_flag = skirmish_timeout }
 			owns_state = 400
 			ERI = {
 				owns_state = 401
-			}
-			401 = {
-				owner = {
-					can_have_border_war_with_ROOT = yes
-				}
 			}
 			400 = { has_border_war = no }
 			401 = { has_border_war = no }
@@ -38,7 +31,10 @@ ERI_rivalry = {
 		days_re_enable = 50
 
 		highlight_states = {
-			state = 401
+			OR = {
+				state = 401
+				state = 400
+			}
 		}
 
 		complete_effect = {
@@ -111,19 +107,12 @@ ERI_rivalry = {
 			is_subject = no
 		}
 		visible = {
-			has_idea = E_E_rivalry
-			AVI = { NOT = { has_completed_focus = ending_the_rivalry } }
 			has_war = no
 			is_subject = no
 			NOT = { has_country_flag = skirmish_timeout }
 			owns_state = 401
 			EYR = {
 				owns_state = 400
-			}
-			400 = {
-				owner = {
-					can_have_border_war_with_ROOT = yes
-				}
 			}
 			400 = { has_border_war = no }
 			401 = { has_border_war = no }
@@ -136,7 +125,10 @@ ERI_rivalry = {
 		days_re_enable = 50
 
 		highlight_states = {
-			state = 401
+			OR = {
+				state = 401
+				state = 400
+			}
 		}
 
 		complete_effect = {
@@ -206,10 +198,7 @@ ERI_rivalry = {
 				has_country_flag = had_war_with_rival
 			}
 		}
-		
 		visible = {
-			has_idea = E_E_rivalry
-			AVI = { NOT = { has_completed_focus = ending_the_rivalry } }
 			is_subject = no
 			NOT = {
 				has_wargoal_against = FROM

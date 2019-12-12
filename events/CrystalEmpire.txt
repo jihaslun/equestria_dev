@@ -3239,10 +3239,6 @@ country_event = { ## Coronation of Flurry heart
 		has_government = democratic
 		date > 1020.1.1
 		NOT = { has_country_leader = { ruling_only = yes name = "Princess Flurry Heart" } }
-		NOT = {
-			has_idea = flurryheart_imprisioned
-			has_idea = flurryheart_imprisioned1
-		}
 	}
 	mean_time_to_happen = { days = 1 }
 	fire_only_once = yes
@@ -4942,10 +4938,8 @@ country_event = { ## Fate of the royal family
 		name = crynlr.1.a
 		add_political_power = 50
 		add_stability = -0.1
-		hidden_effect = {
-			event_target:CRY_Shining_Armor = {
-				set_nationality = SOL
-			}
+		event_target:CRY_Shining_Armor = {
+			set_nationality = SOL
 		}
 	}
 	option = { #Use as figureheads
@@ -5005,7 +4999,7 @@ country_event = { ## Convincing the royal family
 				}
 			}
 			event_target:CRY_Shining_Armor = {
-				set_nationality = ROOT
+				set_nationality = SOL
 			}
 		}
 	}
