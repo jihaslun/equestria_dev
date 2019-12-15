@@ -1,5 +1,42 @@
 technologies = {
 
+	pre_gw_aircraft = {
+			
+		dependencies = {
+			melee_weapons1 = 1
+		}
+		
+		enable_equipments = { 
+			pre_gw_aircraft 
+		}
+		
+		path = { 
+			leads_to_tech = early_fighter 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1000
+		
+		folder = {
+			name = air_techs_folder 
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			light_air 
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2 
+			modifier = { 
+				factor = 2 
+				is_major = 2 
+			}
+		}
+	}
+
 	early_fighter = {
 
 		dependencies = {
@@ -27,7 +64,7 @@ technologies = {
 		start_year = 1004
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 3 }
 		}
 
 		categories = {
@@ -107,7 +144,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 5 }
 		}
 
 		categories = {
@@ -209,7 +246,7 @@ technologies = {
 		start_year = 1011
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 7 }
 		}
 		#folder = {
 		#	name = secret_weapons_folder
@@ -319,7 +356,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 9 }
 		}
 
 		categories = {
@@ -426,7 +463,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 13 }
 		}
 
 		categories = {
@@ -464,7 +501,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = 15 }
 		}
 
 		categories = {
@@ -504,7 +541,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 4 }
+			position = { x = -4 y = 5 }
 		}
 
 		sub_technologies = {
@@ -587,7 +624,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 6 }
+			position = { x = -4 y = 7 }
 		}
 
 		sub_technologies = {
@@ -669,7 +706,7 @@ technologies = {
 		start_year = 1015
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 8 }
+			position = { x = -4 y = 9 }
 		}
 
 		sub_technologies = {
@@ -747,7 +784,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 4 }
+			position = { x = 4 y = 5 }
 		}
 
 		sub_technologies = {
@@ -833,7 +870,7 @@ technologies = {
 		start_year = 1011
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 7 }
 		}
 
 		sub_technologies = {
@@ -919,7 +956,7 @@ technologies = {
 		start_year = 1015
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 8 }
+			position = { x = 4 y = 9 }
 		}
 
 		sub_technologies = {
