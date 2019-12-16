@@ -96,27 +96,7 @@ ideas = {
 	}
 
 	# Special ones that can be applied on other countries through focus system.
-	country = {
-		YAN_angery = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			#picture = 
-			removal_cost = -1
-			modifier = {
-				political_power_gain = -0.50
-				fascism_drift = 0.01
-				neutrality_drift = -0.01
-				democratic_drift = 0.01
-				communism_drift = 0.01
-				stability_factor = -0.20
-				war_support_modifier = -0.10
-			}
-		}
-	}
+	
 
 	country = {
 		YAN_dutchoverlord = {
@@ -153,6 +133,70 @@ ideas = {
 			}
 		}
 	}
+
+	country = {
+		YAN_noidentity2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.05
+				political_power_gain = -0.10
+			}
+		}
+	}
+
+	country = {
+		YAN_angery = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.20
+				fascism_drift = 0.02
+				neutrality_drift = -0.02
+				democratic_drift = 0.02
+				communism_drift = 0.02
+				stability_factor = -0.10
+				war_support_modifier = -0.10
+			}
+		}
+	}
+
+	country = {
+		YAN_angery2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				fascism_drift = 0.01
+				neutrality_drift = -0.01
+				democratic_drift = 0.01
+				communism_drift = 0.01
+				stability_factor = -0.05
+				war_support_modifier = -0.05
+			}
+		}
+	}
+
+
 
 
 }

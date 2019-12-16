@@ -1,16 +1,114 @@
 focus_tree = {
-	id = TSV_tree
+	id = YAN_tree
 
 	country = {
 		factor = 0
 
 		modifier = {
 			add = 10
-			tag = TSV
+			tag = YAN
 		}
 	}
 	default = no
 	continuous_focus_position = { x = 250 y = 1650 }
 
-	shared_focus = GFS_army_debate
+
+	###inndustrial Stuff
+
+
+
+
+
+	###Politic
+
+
+	focus = {
+		id = YAN_solid_chaos
+		icon = GFX_focus_generic_support_the_left_right
+		x = 15
+		y = 0
+		cost = 5
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_solid_chaos"
+			add_stability = 5
+			add_political_power = 50
+		}
+
+	}
+
+	focus = {
+		id = YAN_calm_revoltists
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 13
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		prerequisite = {
+			focus = YAN_solid_chaos
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_calm_revoltists"
+			swap_ideas = {
+				remove_idea = YAN_angery
+				add_idea = YAN_angery2
+			}
+		}
+	}
+
+	focus = {
+		id = YAN_gather_forces
+		icon = GFX_goal_generic_military_sphere
+		x = 15
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_gather_forces"
+			add_manpower = 50000
+			#add_equipment
+		}
+
+	}
+
+	focus = {
+		id = YAN_chaos_in_home
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		x = 17
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log "[GetDateText]: [Root.GetName]: Focus YAN_chaos_in_home"
+			country_event = Indozeeb.1
+		}
+
+	}
+
+	focus = {
+		id = YAN_fucked
+		icon = GFX_goal_constitutional_guarantees
+		x = 15
+		y = 2
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log "[GetDateText]: [Root.GetName]: Focus YAN_fucked"
+			#country_event = 
+		}
+	}
+
+
 }

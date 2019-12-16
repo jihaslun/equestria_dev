@@ -31,25 +31,44 @@
  YAN_fascism_party_long:0 "Partai Demokrasi Yaneo"
 
  ### FOCUS ###
- YAN_chaos:0 "Omgaan Met Opstand"
- YAN_chaos_desc:0 ""
+ YAN_solid_chaos:0 "Omgaan Met Opstand"
+ YAN_solid_chaos_desc:0 ""
+ YAN_calm_revoltists:0 "Calm the Revoltists"
+ YAN_calm_revoltists_desc:0 ""
+ YAN_gather_forces:0 "Gather our forces"
+ YAN_gather_forces_desc:0 ""
+ YAN_chaos_in_home:0 "Chaos back home!"
+ YAN_chaos_in_home_desc:0 ""
+
 
  ### IDEAS ###
- YAN_angery:0 "Kebangkitan Nasional"
+ YAN_angery:0 "Kebangkitan Nasional - Moderate"
  YAN_angery_desc:0 "Something, something, Colonial Revolt!"
+ YAN_angery2:0 "Kebangkitan Nasional - Mild"
+ YAN_angery2_desc:0 ""
  YAN_dutchoverlord:0 "Feathisian Overlord"
  YAN_dutchoverlord_desc:0 "Feathisia is like the Dutch, fuck you VOC"
  YAN_noidentity:0 "No National Identity"
  YAN_noidentity_desc:0 "Things"
+ YAN_noidentity2:0 "Gatherings of a National Identity"
+ YAN_noidentity2_desc:0 ""
+
+
 
  ### DECISIONS ###
  
  ### EVENTS ###
+ Indozeeb.1.t:0 "The Chaos Back Home"
+ Indozeeb.1.d:0 " "
+ Indozeeb.1.c:0 "We must support the Duke!"
+ Indozeeb.1.e:0 "Then again... what about Loterijen?"
 
  ### ADVISORS ###
 
  ###Flags###
- deal_with_revolts:0 "Dealing With Revolts"
+ DukeChad:0 "We have kept loyal to our Homeland!"
+ Loterijenfag:0 "We have decided to back our Gouverneur-Generaal! LOTERIJEN!"
+
  ### EQUIPMENT LAND #####
  YAN_EQUIPMENT_VERSION_1:1 "No. 1"
  YAN_EQUIPMENT_VERSION_2:1 "No. 2"
