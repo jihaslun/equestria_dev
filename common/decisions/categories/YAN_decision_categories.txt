@@ -1,0 +1,7 @@
+YAN_insurgency_category = {
+		icon = generic_formable_nations
+		allowed = {
+			original_tag = YAN
+			has_country_flag = deal_with_revolt
+		}
+}
