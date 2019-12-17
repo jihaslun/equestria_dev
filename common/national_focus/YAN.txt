@@ -34,7 +34,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YAN_solid_chaos"
-			add_stability = 5
+			add_stability = 0.05
 			add_political_power = 50
 		}
 
@@ -71,6 +71,10 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		prerequisite = {
+			focus = YAN_solid_chaos
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YAN_gather_forces"
 			add_manpower = 50000
@@ -81,15 +85,19 @@ focus_tree = {
 
 	focus = {
 		id = YAN_chaos_in_home
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 17
 		y = 1
 		cost = 5
 
 		available_if_capitulated = yes
 
+		prerequisite = {
+			focus = YAN_solid_chaos
+		}
+
 		completion_reward = {
-			log "[GetDateText]: [Root.GetName]: Focus YAN_chaos_in_home"
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_chaos_in_home"
 			country_event = Indozeeb.1
 		}
 
@@ -97,16 +105,28 @@ focus_tree = {
 
 	focus = {
 		id = YAN_fucked
-		icon = GFX_goal_constitutional_guarantees
+		icon = GFX_focus_renounce_the_treaty_of_triannon
 		x = 15
 		y = 2
 		cost = 1
 
 		available_if_capitulated = yes
 
+		prerequisite = {
+			focus = YAN_calm_revoltists
+		}
+		prerequisite = {
+			focus = YAN_gather_forces
+		}
+		prerequisite = {
+			focus = YAN_chaos_in_home
+		}
+
+		available = { GRI = { has_country_flag =  GRI_emperor_dead}}
+
 		completion_reward = {
-			log "[GetDateText]: [Root.GetName]: Focus YAN_fucked"
-			#country_event = 
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_fucked"
+			country_event = Indozeeb.2
 		}
 	}
 

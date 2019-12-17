@@ -31,6 +31,8 @@
  YAN_fascism_party_long:0 "Partai Demokrasi Yaneo"
 
  ### FOCUS ###
+
+ #Intro Focuses#
  YAN_solid_chaos:0 "Omgaan Met Opstand"
  YAN_solid_chaos_desc:0 ""
  YAN_calm_revoltists:0 "Calm the Revoltists"
@@ -39,6 +41,10 @@
  YAN_gather_forces_desc:0 ""
  YAN_chaos_in_home:0 "Chaos back home!"
  YAN_chaos_in_home_desc:0 ""
+ YAN_fucked:0 "Everything's on fire!"
+ YAN_fucked_desc:0 ""
+
+
 
 
  ### IDEAS ###
@@ -58,10 +64,14 @@
  ### DECISIONS ###
  
  ### EVENTS ###
- Indozeeb.1.t:0 "The Chaos Back Home"
+ Indozeeb.1.t:0 "The Chaos Back Home" #Support Loterijen or the Duke
  Indozeeb.1.d:0 " "
  Indozeeb.1.c:0 "We must support the Duke!"
  Indozeeb.1.e:0 "Then again... what about Loterijen?"
+ Indozeeb.2.t:0 "Freedom at Hand" #Griffonian Empire is in chaos, what to do?
+ Indozeeb.2.d:0 ""
+ Indozeeb.2.a:0 "Freedom is at Claw! We must take it!"
+ Indozeeb.2.b:0 "Freedom ain't needed."
 
  ### ADVISORS ###
 

@@ -43,3 +43,20 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = Indozeeb.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.2"}
+	title = Indozeeb.2.t
+	desc = Indozeeb.2.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.2.a
+		set_country_flag = YAN_freedom
+	}
+	option = {
+		name = Indozeeb.2.b
+		set_country_flag = YAN_colonial
+	}
+}
