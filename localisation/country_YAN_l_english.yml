@@ -48,6 +48,14 @@
  YAN_dire_news:0 "Dire News!"
  YAN_dire_news_desc:0 ""
 
+ #Industrial Focuses#
+ #YAN_industrial_incentives:0 "Industrial Incentives"
+ #YAN_industrial_incentives_desc:0 ""
+
+
+
+
+
 
 
 
@@ -303,7 +311,7 @@
  YAN_super_heavy_tank_equipment_1_short:0 "Simon X"
 
  ### MISC #####
- 
+ YAN_industry_bonus:0 ""
 
  ### TOOLTIPS ###
  

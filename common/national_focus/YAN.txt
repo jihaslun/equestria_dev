@@ -1,5 +1,5 @@
 focus_tree = {
-	id = YAN_tree
+	id = YAN__start_tree
 
 	country = {
 		factor = 0
@@ -216,10 +216,5 @@ focus_tree = {
 			}
 		}
 	}
-
-	
-
-	
-
-
 }
+
