@@ -1,5 +1,5 @@
 focus_tree = {
-	id = YAN__start_tree
+	id = YAN_start_tree
 
 	country = {
 		factor = 0
@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 250 y = 1650 }
+	continuous_focus_position = { x = 0 y = 1650 }
 
 
 	###inndustrial Stuff
@@ -97,7 +97,7 @@ focus_tree = {
 		} 
 
 		completion_reward = {
-			log "[GetDateText]: [Root.GetName]: Focus YAN_powers_of_governor"
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_powers_of_governor"
 			country_event = Indozeeb.3
 		}
 	}
@@ -120,7 +120,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log "[GetDateText]: [Root.GetName]: Focus YAN_industrial_spending"
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_industrial_spending"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -175,7 +175,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log "[GetDateText]: [Root.GetName]: Focus YAN_gathersupport"
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_gathersupport"
 			add_stability = 0.10
 			add_political_power = 75
 			add_popularity = { ideology = neutrality popularity = 0.15 }
@@ -208,7 +208,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log "[GetDateText]: [Root.GetName]: Focus YAN_dire_news"
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_dire_news"
 			country_event = Indozeeb.2
 			swap_ideas = {
 				remove_idea = YAN_angery
@@ -218,3 +218,18 @@ focus_tree = {
 	}
 }
 
+####LOTERIJEN TREE####
+focus_tree = {
+	id = loterijen_paradise
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = YAN
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1650 }
+}

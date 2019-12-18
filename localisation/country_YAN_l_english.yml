@@ -94,6 +94,15 @@
  YAN_independence_campaign_desc:0 ""
  YAN_loterijen_diplomacy:0 "Negotiate with the natives"
  YAN_loterijen_diplomacy_desc:0 "" 
+ YAN_secure_beakavia:0 "Securing Beakavia"
+ YAN_secure_zava:0 "Securing Zava"
+ YAN_secure_the_factories:0 "Securing the Factories!"
+ YAN_the_showdown:0 "The Final Showdown!"
+ YAN_secure_cemar:0 "Securing Cemar"
+ YAN_secure_maredia:0 "Securing Maredia"
+ YAN_secure_darkisland:0 "Securing Dark Island"
+ YAN_securing_power:0 "Securing Power"
+
  ### EVENTS ###
  Indozeeb.1.t:0 "The Chaos Back Home" #Support Loterijen or the Duke
  Indozeeb.1.d:0 " "
@@ -114,11 +123,19 @@
  Indozeeb.4.d:0 ""
  Indozeeb.4.a:0 "Oh lord!"
 
+ Indozeeb.5.t:0 "The Final Showdown"
+ Indozeeb.5.d:0 ""
+ Indozeeb.5.a:0 ""
+
+ Indozeeb.6.t:0 "Afterthing's Done"
+ Indozeeb.6.d:0 ""
+ Indozeeb.6.a:0 ""
+
+
  ### ADVISORS ###
 
  ###Flags###
- DukeChad:0 "We have kept loyal to our Homeland!"
- Loterijenfag:0 "We have decided to back our Gouverneur-Generaal! LOTERIJEN!"
+ YAN_going_battle:0 "There's an ongoing battle"
 
  ### EQUIPMENT LAND #####
  YAN_EQUIPMENT_VERSION_1:1 "No. 1"

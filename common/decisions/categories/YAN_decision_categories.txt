@@ -1,7 +1,7 @@
 ##CRACKDOWN##
 
 YAN_insurgency_category = {
-	icon = 
+	icon = border_war
 	allowed = {
  		original_tag = YAN
 	}
@@ -14,12 +14,16 @@ YAN_insurgency_category = {
 			has_country_flag = YAN_powerful
 		}
 	}
+
+	priority = {
+		base = 110
+	}
 }
 
 
 ##ORANG TUA'S CAMPAIGN##
 YAN_independence_campaign = {
-	icon = 
+	icon = generic_deal_with_the_devil
 	allowed = {
 		original_tag = YAN
 	}
@@ -29,11 +33,15 @@ YAN_independence_campaign = {
 	visible = {
 		has_country_flag = YAN_freedom
 	}
+
+	priority = {
+		base = 110
+	}
 }
 
 ##LOTERIJEN DIPLOMACY##
 YAN_loterijen_diplomacy = {
-	icon = 
+	icon = generic_deal_with_the_devil
 	allowed = {
 		original_tag = YAN
 	}	
@@ -46,6 +54,10 @@ YAN_loterijen_diplomacy = {
 			has_country_flag = YAN_powerlessi
 		}
 
+	}
+
+	priority = {
+		base = 110
 	}
 }
 
