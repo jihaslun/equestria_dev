@@ -89,7 +89,7 @@ add_ideas = {
 	outdated_industry
 	lack_of_scientists2
 	better_science_base
-	YAN_angery
+	YAN_angery3
 	YAN_dutchoverlord
 	YAN_noidentity
 }

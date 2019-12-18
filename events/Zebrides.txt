@@ -58,5 +58,23 @@ country_event = {
 	option = {
 		name = Indozeeb.2.b
 		set_country_flag = YAN_colonial
+
+	}
+}
+
+country_event = {
+	id = Indozeeb.3
+	immediate = {log= '[GetDateText]: [Root.GetName]: event Indozeeb.3'}
+	title = Indozeeb.3.t
+	desc = Indozeeb.3.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.3.a
+		set_country_flag = YAN_powerful
+	}
+	option = {
+		name = Indozeeb.3.b
+		set_country_flag = YAN_powerless
 	}
 }

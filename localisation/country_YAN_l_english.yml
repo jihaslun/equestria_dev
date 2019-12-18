@@ -41,7 +41,13 @@
  YAN_gather_forces_desc:0 ""
  YAN_power_of_governor:0 "Powers of the Governor"
  YAN_power_of_governor_desc:0 ""
- 
+ YAN_industrial_spending:0 "Industrial Investment"
+ YAN_industrial_spending_desc:0 ""
+ YAN_gathersupport:0 "Gather Support"
+ YAN_gathersupport_desc:0 ""
+ YAN_dire_news:0 "Dire News!"
+ YAN_dire_news_desc:0 ""
+
 
 
 
@@ -80,10 +86,16 @@
  Indozeeb.1.d:0 " "
  Indozeeb.1.c:0 "We must support the Duke!"
  Indozeeb.1.e:0 "Then again... what about Loterijen?"
+
  Indozeeb.2.t:0 "Freedom at Hand" #Griffonian Empire is in chaos, what to do?
  Indozeeb.2.d:0 ""
  Indozeeb.2.a:0 "Freedom is at Claw! We must take it!"
  Indozeeb.2.b:0 "Freedom ain't needed."
+
+ Indozeeb.3.t:0 "Powers of the Governor"
+ Indozeeb.3.d:0 ""
+ Indozeeb.3.a:0 "The Governor must be powerful!"
+ Indozeeb.3.b:0 "The Governor must be restricted!"
 
  ### ADVISORS ###
 
