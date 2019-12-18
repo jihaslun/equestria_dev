@@ -9,10 +9,9 @@ YAN_insurgency_category = {
 	visible_when_empty = yes
 
 	visible = {
-		AND = {
-			has_country_flag = YAN_colonial
-			has_country_flag = YAN_powerful
-		}
+		has_country_flag = YAN_colonial
+		has_country_flag = YAN_powerful
+		
 	}
 
 	priority = {
@@ -49,11 +48,8 @@ YAN_loterijen_diplomacy = {
 	visible_when_empty = yes
 
 	visible = {
-		AND = {
-			has_country_flag = YAN_colonial
-			has_country_flag = YAN_powerlessi
-		}
-
+		has_country_flag = YAN_colonial
+		has_country_flag = YAN_powerless
 	}
 
 	priority = {

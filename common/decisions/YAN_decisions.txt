@@ -289,6 +289,9 @@ YAN_insurgency_category = {
 			NOT = {
 				has_country_flag = YAN_going_battle
 			}
+			has_equipment = {
+				infantry_equipment > 700
+			}
 		}
 		highlight_states = {
 			state = 1160
@@ -349,10 +352,17 @@ YAN_insurgency_category = {
 			political_power_gain = -0.40
 		}
 
+		available = {
+			has_equipment = {
+				infantry_equipment > 800
+				support_equipment > 50
+			}
+		}
+
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision YAN_securing_power"
 			country_event = Indozeeb.6
-			
+
 			hidden_effect = {
 				set_country_flag = YAN_going_battle
 			}
