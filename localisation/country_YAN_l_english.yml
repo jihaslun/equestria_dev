@@ -39,25 +39,37 @@
  YAN_calm_revoltists_desc:0 ""
  YAN_gather_forces:0 "Gather our forces"
  YAN_gather_forces_desc:0 ""
- YAN_chaos_in_home:0 "Chaos back home!"
- YAN_chaos_in_home_desc:0 ""
- YAN_fucked:0 "Everything's on fire!"
- YAN_fucked_desc:0 ""
+ YAN_power_of_governor:0 "Powers of the Governor"
+ YAN_power_of_governor_desc:0 ""
+ 
 
 
 
 
  ### IDEAS ###
- YAN_angery:0 "Kebangkitan Nasional - Moderate"
- YAN_angery_desc:0 "Something, something, Colonial Revolt!"
- YAN_angery2:0 "Kebangkitan Nasional - Mild"
- YAN_angery2_desc:0 ""
  YAN_dutchoverlord:0 "Feathisian Overlord"
  YAN_dutchoverlord_desc:0 "Feathisia is like the Dutch, fuck you VOC"
+
+
  YAN_noidentity:0 "No National Identity"
  YAN_noidentity_desc:0 "Things"
  YAN_noidentity2:0 "Gatherings of a National Identity"
  YAN_noidentity2_desc:0 ""
+
+
+ YAN_angery:0 "Kebangkitan Nasional - Calm"
+ YAN_angery_desc:0 ""
+ YAN_angery2:0 "Kebangkitan Nasional - Mild"
+ YAN_angery2_desc:0 ""
+ YAN_angery3:0 "Kebangkitan Nasional - Moderate"
+ YAN_angery3_desc:0 ""
+ YAN_angery4:0 "Kebangkitan Nasional - Strong"
+ YAN_angery4_desc:0 ""
+ YAN_angery5:0 "Kebangkitan Nasional - Extreme"
+ YAN_angery5_desc:0
+
+ 
+ 
 
 
 

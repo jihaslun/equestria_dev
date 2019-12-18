@@ -84,8 +84,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAN_chaos_in_home
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		id = YAN_powers_of_governor
+		icon = GFX_goal_tripartite_pact
 		x = 17
 		y = 1
 		cost = 5
@@ -94,41 +94,17 @@ focus_tree = {
 
 		prerequisite = {
 			focus = YAN_solid_chaos
-		}
+		} 
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus YAN_chaos_in_home"
-			country_event = Indozeeb.1
-		}
-
-	}
-
-	focus = {
-		id = YAN_fucked
-		icon = GFX_focus_renounce_the_treaty_of_triannon
-		x = 15
-		y = 2
-		cost = 1
-
-		available_if_capitulated = yes
-
-		prerequisite = {
-			focus = YAN_calm_revoltists
-		}
-		prerequisite = {
-			focus = YAN_gather_forces
-		}
-		prerequisite = {
-			focus = YAN_chaos_in_home
-		}
-
-		available = { GRI = { has_country_flag =  GRI_emperor_dead}}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus YAN_fucked"
-			country_event = Indozeeb.2
+			log '[GetDateText]: [Root.GetName]: Focus YAN_powers_of_governor'
+			country_event = Indozeeb.3s
 		}
 	}
+
+	
+
+	
 
 
 }

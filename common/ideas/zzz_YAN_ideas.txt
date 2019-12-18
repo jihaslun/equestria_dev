@@ -106,7 +106,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = equestrian_influence
+			picture = SOV_scientist_defect
 			removal_cost = -1
 			modifier = {
 				local_resources_factor = -0.10
@@ -114,6 +114,8 @@ ideas = {
 			}
 		}
 	}
+
+	#####National Identity Crisis#####
 
 	country = {
 		YAN_noidentity = {
@@ -123,7 +125,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			#picture =
+			picture = saf_history_of_segregation
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.25
@@ -142,7 +144,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			#picture = 
+			picture = saf_history_of_segregation
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.20
@@ -152,6 +154,12 @@ ideas = {
 		}
 	}
 
+	#####Kebangkitan Nasional Spirits#####
+
+	
+
+	
+
 	country = {
 		YAN_angery = {
 			allowed = {
@@ -160,16 +168,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			#picture = 
+			picture = generic_morale_bonus
 			removal_cost = -1
 			modifier = {
-				political_power_gain = -0.20
-				fascism_drift = 0.02
-				neutrality_drift = -0.02
-				democratic_drift = 0.02
-				communism_drift = 0.02
-				stability_factor = -0.10
-				war_support_modifier = -0.10
+				political_power_gain = -0.05
 			}
 		}
 	}
@@ -182,7 +184,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			#picture = 
+			picture = generic_morale_bonus
 			removal_cost = -1
 			modifier = {
 				political_power_gain = -0.10
@@ -192,9 +194,88 @@ ideas = {
 				communism_drift = 0.01
 				stability_factor = -0.05
 				war_support_modifier = -0.05
+				autonomy_gain = 1
 			}
 		}
 	}
+
+
+	country = {
+		YAN_angery3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.20
+				fascism_drift = 0.02
+				neutrality_drift = -0.02
+				democratic_drift = 0.02
+				communism_drift = 0.02
+				stability_factor = -0.10
+				war_support_modifier = -0.10
+				autonomy_gain = 2
+				conscription_faactor = -0.05
+			}
+		}
+	}
+
+	country = {
+		YAN_angery4 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.30
+				fascism_drift = 0.05
+				neutrality_drift = -0.05
+				democratic_drift = 0.05
+				communism_drift = 0.05
+				stablity_factor = -0.15
+				war_support_modifier = -0.15
+				autonomy_gain = 5
+				conscription_factor = -0.15
+
+			}
+		}
+	}
+
+	country = {
+		YAN_angery5 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.50
+				fascism_drift = 0.10
+				neutrality_drift = -0.10
+				democratic_drift = 0.10
+				communism_drfit = 0.10
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				autonomy_gain = 10
+				conscription_factor = -0.20
+
+			}
+			
+		}
+	}
+
+
 
 
 
