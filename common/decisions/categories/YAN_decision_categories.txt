@@ -1,7 +1,51 @@
+##CRACKDOWN##
+
 YAN_insurgency_category = {
-		icon = generic_formable_nations
-		allowed = {
-			original_tag = YAN
-			has_country_flag = deal_with_revolt
+	icon = 
+	allowed = {
+ 		original_tag = YAN
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		AND = {
+			has_country_flag = YAN_colonial
+			has_country_flag = YAN_powerful
 		}
+	}
 }
+
+
+##ORANG TUA'S CAMPAIGN##
+YAN_independence_campaign = {
+	icon = 
+	allowed = {
+		original_tag = YAN
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		has_country_flag = YAN_freedom
+	}
+}
+
+##LOTERIJEN DIPLOMACY##
+YAN_loterijen_diplomacy = {
+	icon = 
+	allowed = {
+		original_tag = YAN
+	}	
+
+	visible_when_empty = yes
+
+	visible = {
+		AND = {
+			has_country_flag = YAN_colonial
+			has_country_flag = YAN_powerlessi
+		}
+
+	}
+}
+

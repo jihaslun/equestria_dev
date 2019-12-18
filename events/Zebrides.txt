@@ -54,11 +54,16 @@ country_event = {
 	option = {
 		name = Indozeeb.2.a
 		set_country_flag = YAN_freedom
+		hidden_effect = {
+			country_event = { id = Indozeeb.4 days = 5}
+		}
 	}
 	option = {
 		name = Indozeeb.2.b
 		set_country_flag = YAN_colonial
-
+		hidden_effect = {
+			country_event = { id = Indozeeb.4 days = 5}
+		}
 	}
 }
 
@@ -77,4 +82,21 @@ country_event = {
 		name = Indozeeb.3.b
 		set_country_flag = YAN_powerless
 	}
+}
+
+country_event = {
+	id = Indozeeb.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.4"}
+	title = Indozeeb.4.t
+	desc = Indozeeb.4.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.4.a
+		swap_ideas = {
+			remove_idea = YAN_angery2
+			add_idea = YAN_angery3
+		}
+	}
+
 }

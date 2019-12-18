@@ -88,7 +88,12 @@
 
 
  ### DECISIONS ###
- 
+ YAN_insurgency_category:0 "Colonial Crackdown"
+ YAN_insurgency_category-desc:0 ""
+ YAN_independence_campaign:0 "Indepdence Campaign"
+ YAN_independence_campaign_desc:0 ""
+ YAN_loterijen_diplomacy:0 "Negotiate with the natives"
+ YAN_loterijen_diplomacy_desc:0 "" 
  ### EVENTS ###
  Indozeeb.1.t:0 "The Chaos Back Home" #Support Loterijen or the Duke
  Indozeeb.1.d:0 " "
@@ -104,6 +109,10 @@
  Indozeeb.3.d:0 ""
  Indozeeb.3.a:0 "The Governor must be powerful!"
  Indozeeb.3.b:0 "The Governor must be restricted!"
+
+ Indozeeb.4.t:0 "Everything's on fire!"
+ Indozeeb.4.d:0 ""
+ Indozeeb.4.a:0 "Oh lord!"
 
  ### ADVISORS ###
 
