@@ -313,6 +313,7 @@ YAN_insurgency_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_secure_darkisland"
 			hidden_effect = {
 				clr_country_flag = YAN_going_battle
+				set_country_flag = YAN_all_island_secured
 			}
 		}
 		ai_will_do = {
@@ -357,6 +358,8 @@ YAN_insurgency_category = {
 				infantry_equipment > 800
 				support_equipment > 50
 			}
+			has_country_flag = YAN_all_island_secured
+
 		}
 
 		complete_effect = {

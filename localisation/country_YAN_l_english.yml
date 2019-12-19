@@ -48,9 +48,12 @@
  YAN_dire_news:0 "Dire News!"
  YAN_dire_news_desc:0 ""
 
- #Industrial Focuses#
- #YAN_industrial_incentives:0 "Industrial Incentives"
- #YAN_industrial_incentives_desc:0 ""
+ ##LOTERIJEN FOCUS##
+ YAN_loterijen_power:0 "Loterijen's Zebrides"
+ YAN_loterijen_power_desc:0 ""
+ YAN_industrial_start:0 "Fixing the Economy"
+ YAN_industrial_start_desc:0 ""
+ 
 
 
 
@@ -125,17 +128,18 @@
 
  Indozeeb.5.t:0 "The Final Showdown"
  Indozeeb.5.d:0 ""
- Indozeeb.5.a:0 ""
+ Indozeeb.5.a:0 "Victory!"
 
  Indozeeb.6.t:0 "Afterthing's Done"
  Indozeeb.6.d:0 ""
- Indozeeb.6.a:0 ""
+ Indozeeb.6.a:0 "At last, we have power!"
 
 
  ### ADVISORS ###
 
  ###Flags###
  YAN_going_battle:0 "There's an ongoing battle"
+ YAN_all_island_secured:0 "All the islands are secured"
 
  ### EQUIPMENT LAND #####
  YAN_EQUIPMENT_VERSION_1:1 "No. 1"

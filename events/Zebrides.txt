@@ -103,7 +103,7 @@ country_event = {
 			1160 = { set_demilitarized_zone = yes }
 			swap_ideas = {
 				remove_idea = YAN_angery2
-				add__idea = YAN_angery3
+				add_idea = YAN_angery3
 			}
 			add_stability = -0.20
 		}
@@ -131,6 +131,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Indozeeb.6.a
+		swap_ideas = {
+			remove_idea = YAN_angery3
+			add_idea = YAN_angery2
+		}
 		load_focus_tree = loterijen_paradise
 	}
 }

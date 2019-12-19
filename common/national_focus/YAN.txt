@@ -232,4 +232,48 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position = { x = 0 y = 1650 }
+
+	focus = {
+		id = YAN_loterijen_power
+		icon = GFX_goal_generic_neutrality_focus
+		x = 15
+		y = 4
+		cost = 0
+
+		available_if_capitulated = yes
+
+		prerequisite = {
+			focus = YAN_dire_news
+		}
+
+		ai_will_do = {
+			factor = 150
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = YAN_industrial_start
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 5
+		cost = 5
+
+		available_if_capitulated = yes
+
+		prerequisite = {
+			focus = YAN_loterijen_power
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
 }
