@@ -53,7 +53,7 @@
  YAN_loterijen_power_desc:0 ""
  YAN_industrial_start:0 "Fixing the Economy"
  YAN_industrial_start_desc:0 ""
- 
+
 
 
 
@@ -92,7 +92,7 @@
 
  ### DECISIONS ###
  YAN_insurgency_category:0 "Colonial Crackdown"
- YAN_insurgency_category-desc:0 ""
+ YAN_insurgency_category_desc:0 ""
  YAN_independence_campaign:0 "Indepdence Campaign"
  YAN_independence_campaign_desc:0 ""
  YAN_loterijen_diplomacy:0 "Negotiate with the natives"

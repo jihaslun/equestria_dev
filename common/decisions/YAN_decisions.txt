@@ -203,7 +203,7 @@ YAN_insurgency_category = {
 				has_country_flag = YAN_going_battle
 			}
 			has_equipment = {
-				infantry_equipment = 400
+				infantry_equipment > 400
 			}
 		}
 		highlight_states = {
