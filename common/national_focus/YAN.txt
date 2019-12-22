@@ -13,7 +13,7 @@ focus_tree = {
 	continuous_focus_position = { x = 0 y = 1650 }
 
 
-	###inndustrial Stuff
+	
 
 
 
@@ -237,13 +237,13 @@ focus_tree = {
 		id = YAN_loterijen_power
 		icon = GFX_goal_generic_neutrality_focus
 		x = 15
-		y = 4
+		y = 0
 		cost = 0
 
 		available_if_capitulated = yes
 
-		prerequisite = {
-			focus = YAN_dire_news
+		available = {
+			has_country_flag = loterijen_paradise
 		}
 
 		ai_will_do = {
@@ -259,7 +259,7 @@ focus_tree = {
 		id = YAN_industrial_start
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 7
-		y = 5
+		y = 1
 		cost = 5
 
 		available_if_capitulated = yes
@@ -273,7 +273,85 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_idea = YAN_industrial1
 		}
 	}
+
+	focus = {
+		id = YAN_work_in_Zava
+		#icon =
+		x = 5
+		y = 2
+		cost = 7
+
+		prerequisite = {
+			focus = YAN_industrial_start
+		} 
+
+		ai_will_do = {
+			factor = 150
+		}
+
+		completion_reward = {
+			1157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAN_supress_the_workers
+		icon = GFX_goal_generic_attack_allies
+		x = 3
+		y = 3
+		cost = 5
+
+		prerequisite = {
+			focus = YAN_work_in_Zava
+		}
+
+		ai_will_do = {
+			factor = 140
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = -0.10 }
+			add_stability = -0.05
+			add_manpower = -1000
+		}
+	}
+
+	focus = {
+		id = build_roads_Zava
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 5 
+		y = 3
+		cost = 8
+
+		prerequisite = {
+			focus = YAN_work_in_Zava
+		}
+
+		ai_will_do = {
+			factor = 141
+		}
+
+		completion_reward = {
+			1157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	
 }

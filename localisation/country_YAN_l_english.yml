@@ -50,9 +50,14 @@
 
  ##LOTERIJEN FOCUS##
  YAN_loterijen_power:0 "Loterijen's Zebrides"
- YAN_loterijen_power_desc:0 ""
+ YAN_loterijen_power_desc:0 "" 
  YAN_industrial_start:0 "Fixing the Economy"
  YAN_industrial_start_desc:0 ""
+ YAN_work_in_Zava:0 "Zavan Industry"
+ YAN_work_in_Zava_desc:0 ""
+ YAN_supress_the_workers:0 "Supress the Workers"
+ YAN_supress_the_workers_desc:0 ""
+
 
 
 
@@ -83,7 +88,9 @@
  YAN_angery4:0 "Kebangkitan Nasional - Strong"
  YAN_angery4_desc:0 ""
  YAN_angery5:0 "Kebangkitan Nasional - Extreme"
- YAN_angery5_desc:0
+ YAN_angery5_desc:0 ""
+
+ YAN_industrial1:0 "Rise of Industry"
 
  
  
@@ -107,31 +114,31 @@
  YAN_securing_power:0 "Securing Power"
 
  ### EVENTS ###
- Indozeeb.1.t:0 "The Chaos Back Home" #Support Loterijen or the Duke
- Indozeeb.1.d:0 " "
- Indozeeb.1.c:0 "We must support the Duke!"
- Indozeeb.1.e:0 "Then again... what about Loterijen?"
+ #Indozeeb.1.t:0 "The Chaos Back Home" #Support Loterijen or the Duke
+ #Indozeeb.1.d:0 " " #
+ #Indozeeb.1.c:0 "We must support the Duke!"
+ #Indozeeb.1.e:0 "Then again... what about Loterijen?"
 
  Indozeeb.2.t:0 "Freedom at Hand" #Griffonian Empire is in chaos, what to do?
- Indozeeb.2.d:0 ""
+ Indozeeb.2.d:0 "" #Because Griffonian Empire is on fire due to the things in Griffenheim. Zebrides explode as the independence movement takes the moment. 
  Indozeeb.2.a:0 "Freedom is at Claw! We must take it!"
  Indozeeb.2.b:0 "Freedom ain't needed."
 
  Indozeeb.3.t:0 "Powers of the Governor"
- Indozeeb.3.d:0 ""
+ Indozeeb.3.d:0 "" #Deciding what to do about Governor's powers. The more power he has the more he can put down rebellions without permission from the Feathisians. Without power, it'll take too long for the Governor to have permission to take down the rebellion.
  Indozeeb.3.a:0 "The Governor must be powerful!"
  Indozeeb.3.b:0 "The Governor must be restricted!"
 
  Indozeeb.4.t:0 "Everything's on fire!"
- Indozeeb.4.d:0 ""
+ Indozeeb.4.d:0 "" #Basically, Loterijen dosen't want to negotiate. BAM! Independence Movements goes jihadist and ready to fight for freedam! At this point only the militarists may win because in this path Loterijen always wins because he has the powers from earlier events to put down rebelliosn without permission from De Vluegels.
  Indozeeb.4.a:0 "Oh lord!"
 
  Indozeeb.5.t:0 "The Final Showdown"
- Indozeeb.5.d:0 ""
+ Indozeeb.5.d:0 "" #Loterijen fights Semuakawan, semi professional garrison that is small vs. big freedam militas. Fight fight fight! 
  Indozeeb.5.a:0 "Victory!"
 
  Indozeeb.6.t:0 "Afterthing's Done"
- Indozeeb.6.d:0 ""
+ Indozeeb.6.d:0 "" #The independence movements been beaten, Loterijen has won. May the capitalism begin.
  Indozeeb.6.a:0 "At last, we have power!"
 
 
@@ -140,6 +147,7 @@
  ###Flags###
  YAN_going_battle:0 "There's an ongoing battle"
  YAN_all_island_secured:0 "All the islands are secured"
+ YAN_loterijen_paradise:0 "Loterijen has secured the islands!"
 
  ### EQUIPMENT LAND #####
  YAN_EQUIPMENT_VERSION_1:1 "No. 1"

@@ -276,7 +276,7 @@ ideas = {
 	}
 
 	country = {
-		YAN_industrial = {
+		YAN_industrial1 = {
 			allowed = {
 				always = no
 			}
