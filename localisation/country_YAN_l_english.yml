@@ -57,6 +57,12 @@
  YAN_work_in_Zava_desc:0 ""
  YAN_supress_the_workers:0 "Supress the Workers"
  YAN_supress_the_workers_desc:0 ""
+ YAN_build_railroads_Zava:0 "Railroads through Zava"
+ YAN_build_railroads_Zava_desc:0 ""
+ YAN_military_factory:0 "Zavanese Arms Manfacturing"
+ YAN_military_factory_desc:0 ""
+ YAN_textile_factory:0 "Textile Factories"
+ YAN_textile_factory_desc:0 ""
 
 
 
@@ -91,7 +97,7 @@
  YAN_angery5_desc:0 ""
 
  YAN_industrial1:0 "Rise of Industry"
-
+ YAN_industrial1_desc:0 ""
  
  
 
