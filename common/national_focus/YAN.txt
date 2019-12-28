@@ -242,7 +242,8 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		available = {
+
+		bypass = {
 			has_country_flag = loterijen_paradise
 		}
 
@@ -251,6 +252,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_loterijen_power"
 			add_political_power = 50
 		}
 	}
@@ -275,6 +277,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_industrial_start"
 			add_idea = YAN_industrial1
 		}
 	}
@@ -295,6 +298,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_work_in_Zava"
 			1157 = {
 				add_extra_state_shared_building_slots = 2
 			}
@@ -317,6 +321,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_supress_the_workers"
 			add_popularity = { ideology = communism popularity = -0.10 }
 			add_stability = -0.05
 			add_manpower = -1000
@@ -339,6 +344,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_build_railroads_Zava"
 			1157 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -366,6 +372,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_zava_military_factory"
 			1157 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -389,6 +396,8 @@ focus_tree = {
 
 		prerequisite = {
 			focus = YAN_supress_the_workers
+		}
+		prerequisite = {
 			focus = YAN_build_railroads_Zava
 		}
 
@@ -397,6 +406,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_textile_factory"
 			1157 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -409,7 +419,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = Zava_dockyard
+		id = YAN_Zava_dockyard
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 6
 		y = 4
@@ -418,7 +428,10 @@ focus_tree = {
 
 		prerequisite = {
 			focus = YAN_build_railroads_Zava
-			focus = YAN_military_factory:0
+		}
+
+		prerequisite = {
+			focus = YAN_zava_military_factory
 		}
 
 		ai_will_do = {
@@ -426,7 +439,66 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_Zava_dockyard"
+			1157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAN_transmigrate_Zava
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 5
+		y = 5
+
+		cost = 10
+
+		prerequisite = {
+			focus = YAN_textile_factory
+		}
+
+		prerequisite = {
+			focus = YAN_Zava_dockyard
+		}
+
+		ai_will_do = {
+			factor = 140
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_transmigrate_Zava"
+			1157 = {
+				add_manpower = 70000
+				add_extra_state_shared_building_slots = 6
+			}
+			1159 = {
+				add_manpower = -5000
+				add_extra_state_shared_building_slots = -1
+			}
+			1158 = {
+				add_manpower = 5000
+				add_extra_state_shared_building_slots = 1
+			}
+			1156 = {
+				add_manpower = -10000
+				add_extra_state_shared_building_slots = -1
+			}
+			1155 = {
+				add_manpower = -10000
+				add_extra_state_shared_building_slots = -1
+			}
+			1160 = {
+				add_manpower = -50000
+				add_extra_state_shared_building_slots = -5
+			}
+
+
 		}
 	}
 }

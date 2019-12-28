@@ -59,10 +59,14 @@
  YAN_supress_the_workers_desc:0 ""
  YAN_build_railroads_Zava:0 "Railroads through Zava"
  YAN_build_railroads_Zava_desc:0 ""
- YAN_military_factory:0 "Zavanese Arms Manfacturing"
- YAN_military_factory_desc:0 ""
+ YAN_zava_military_factory:0 "Zavanese Arms Manfacturing"
+ YAN_zava_military_factory_desc:0 ""
  YAN_textile_factory:0 "Textile Factories"
  YAN_textile_factory_desc:0 ""
+ YAN_Zava_dockyard:0 "Placeholder Name"
+ YAN_Zava_dockyard_desc:0 ""
+ YAN_transmigrate_Zava:0 "The Zava Migration Program"
+ YAN_transmigrate_Zava_desc:0 ""
 
 
 
