@@ -129,15 +129,15 @@
  #Indozeeb.1.c:0 "We must support the Duke!"
  #Indozeeb.1.e:0 "Then again... what about Loterijen?"
 
- Indozeeb.2.t:0 "Freedom at Hand" #Griffonian Empire is in chaos, what to do?
- Indozeeb.2.d:0 "" #Because Griffonian Empire is on fire due to the things in Griffenheim. Zebrides explode as the independence movement takes the moment. 
- Indozeeb.2.a:0 "Freedom is at Claw! We must take it!"
- Indozeeb.2.b:0 "Freedom ain't needed."
-
+ Indozeeb.2.t:0 "The Zebridies Tremble" #Griffonian Empire is in chaos, what to do?
+ Indozeeb.2.d:0 "As the 87th annual meeting of the Feathisian Colonial Administration of the South Zebridies is going ahead, there is one question that has risen above all others: the Griffonian Crisis. With recent events back in the old homeland - a collapsed economy, a dead emperor and political upheaval - there is simply no way that the balance carefully struck by Governor-General Loterijen can be maintained in the future. The natives have become unruly, and there's no telling what they might to if they wrest control of the region from the administration. A new balance must be struck if Feathisian authority is to remain intact, whether it is through violence or through diplomacy.\n\nAs the meeting is going ahead, other powers are watching and waiting. The Grand Tuan of the isles, Ortu Yamar, has gathered his own congress of native Zebras, Kirin and even the Burungbang, those griffons who have come to embrace the local customs and become not colonialists, but neighbors. The Feathisian dominance over the isles have gone on for long enough, and with all the troubles back in their homeland, the colonialists are weak.\n\nPrincess Kudakelasi - the closest thing to a voice for all Kirin in the region - has maintained that if the Feathisians are given no reason in their eyes to deploy violence then they will not: for all their hunger their distant Adipati - the one they call "Grand Duke" will not tolerate unprovoked violence. General Semuakawan - once an auxiliary officer serving under the Feathisians - dismisses these notions and calls them naive. Even his family, the descendants of Feathisian settlers, were branded simple natives not worthy of recognition for having adopted the Zebridean culture. There is only one language they understand, and that is violence.\n\nThe question will be which side seizes the initiative and manages to push to achieve its goals." 
+ Indozeeb.2.a:0 "The Zebridies are stirring, and freedom is the goal!"
+ Indozeeb.2.b:0 "Feathisian authority united the isles, and it shall remain in place!"
+  
  Indozeeb.3.t:0 "Powers of the Governor"
- Indozeeb.3.d:0 "" #Deciding what to do about Governor's powers. The more power he has the more he can put down rebellions without permission from the Feathisians. Without power, it'll take too long for the Governor to have permission to take down the rebellion.
- Indozeeb.3.a:0 "The Governor must be powerful!"
- Indozeeb.3.b:0 "The Governor must be restricted!"
+ Indozeeb.3.d:0 "With all the recent troubles facing Feathisia, the question of the South Zebridean Isles has fallen to the wayside for too long. For decades it has been a profitable colony and a good way to remove overly troublesome politicians. The Governor-General, Dirk Loterijen, was "promoted" to the position after his ambitious plans to have Feathisia seize a more central role in the empire clashed with the Grand Duke's longstanding friendship with Emperor.\n\nLoterijen has done a fine job maintaining the integrity of the colony, but things has changed and, the already fragile stability in the region has all but collapsed. Loterijen has requested reinforcements and emergency powers to hopefully nip the oncoming crisis in the bud. The matter has been hotly debated in the parliament, with one side saying that if anygriff can make sure that the isles remain such a potent resource for Feathisia, it is him, while others say this would exacerbate the situation and that the Governor should be ordered to negotiate with the locals instead. 
+ Indozeeb.3.a:0 "Loterijen shall have what he needs to restore order."
+ Indozeeb.3.b:0 "We will not risk a bloodbath, order him to negotiate."
 
  Indozeeb.4.t:0 "Everything's on fire!"
  Indozeeb.4.d:0 "" #Basically, Loterijen dosen't want to negotiate. BAM! Independence Movements goes jihadist and ready to fight for freedam! At this point only the militarists may win because in this path Loterijen always wins because he has the powers from earlier events to put down rebelliosn without permission from De Vluegels.
