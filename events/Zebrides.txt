@@ -76,11 +76,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Indozeeb.3.a
-		set_country_flag = YAN_powerful
+		hidden_effect = {
+			country_event = {
+				id = Indozeeb.7 days = 10
+			}
+		}
 	}
 	option = {
 		name = Indozeeb.3.b
-		set_country_flag = YAN_powerless
+		hidden_effect = {
+			country_event = {
+				id = Indozeeb.8 days = 10
+			}
+		}
+		
 	}
 }
 
@@ -137,5 +146,31 @@ country_event = {
 		}
 		load_focus_tree = loterijen_paradise
 		set_country_flag = loterijen_paradise
+	}
+}
+
+country_event = {
+	id = Indozeeb.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.7"}
+	title = Indozeeb.7.t
+	desc = Indozeeb.7.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.7.a
+		set_country_flag = YAN_powerful
+	}
+}
+
+country_event = {
+	id = Indozeeb.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.8"}
+	title = Indozeeb.8.t
+	desc = Indozeeb.8.d
+	#picture = 
+	is_triggered_only
+	option = {
+		name = Indozeeb.8.a
+		set_country_flag = YAN_powerless
 	}
 }

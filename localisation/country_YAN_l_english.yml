@@ -67,6 +67,8 @@
  YAN_Zava_dockyard_desc:0 ""
  YAN_transmigrate_Zava:0 "The Zava Migration Program"
  YAN_transmigrate_Zava_desc:0 ""
+ YAN_outer_works:0 "The Outer Islands"
+ YAN_outer_works_desc:0 ""
 
 
 
@@ -135,7 +137,7 @@
  Indozeeb.2.b:0 "Feathisian authority united the isles, and it shall remain in place!"
   
  Indozeeb.3.t:0 "Powers of the Governor"
- Indozeeb.3.d:0 "With all the recent troubles facing Feathisia, the question of the South Zebridean Isles has fallen to the wayside for too long. For decades it has been a profitable colony and a good way to remove overly troublesome politicians. The Governor-General, Dirk Loterijen, was "promoted" to the position after his ambitious plans to have Feathisia seize a more central role in the empire clashed with the Grand Duke's longstanding friendship with Emperor.\n\nLoterijen has done a fine job maintaining the integrity of the colony, but things has changed and, the already fragile stability in the region has all but collapsed. Loterijen has requested reinforcements and emergency powers to hopefully nip the oncoming crisis in the bud. The matter has been hotly debated in the parliament, with one side saying that if anygriff can make sure that the isles remain such a potent resource for Feathisia, it is him, while others say this would exacerbate the situation and that the Governor should be ordered to negotiate with the locals instead. 
+ Indozeeb.3.d:0 "With all the recent troubles facing Feathisia, the question of the South Zebridean Isles has fallen to the wayside for too long. For decades it has been a profitable colony and a good way to remove overly troublesome politicians. The Governor-General, Dirk Loterijen, was "promoted" to the position after his ambitious plans to have Feathisia seize a more central role in the empire clashed with the Grand Duke's longstanding friendship with Emperor.\n\nLoterijen has done a fine job maintaining the integrity of the colony, but things has changed and, the already fragile stability in the region has all but collapsed. Loterijen has requested reinforcements and emergency powers to hopefully nip the oncoming crisis in the bud. The matter has been hotly debated in the parliament, with one side saying that if anygriff can make sure that the isles remain such a potent resource for Feathisia, it is him, while others say this would exacerbate the situation and that the Governor should be ordered to negotiate with the locals instead."
  Indozeeb.3.a:0 "Loterijen shall have what he needs to restore order."
  Indozeeb.3.b:0 "We will not risk a bloodbath, order him to negotiate."
 
@@ -150,6 +152,14 @@
  Indozeeb.6.t:0 "Afterthing's Done"
  Indozeeb.6.d:0 "" #The independence movements been beaten, Loterijen has won. May the capitalism begin.
  Indozeeb.6.a:0 "At last, we have power!"
+
+ Indozeeb.7.t:0 "Power, at last"
+ Indozeeb.7.d:0 "" #Loterijen has clearance
+ Indozeeb.7.a:0 ""
+
+ Indozeeb.8.t:0 "Power, not here"
+ Indozeeb.8.d:0 "" #Loterijen has no clearnace
+ Indozeeb.8.a:0 ""
 
 
  ### ADVISORS ###
