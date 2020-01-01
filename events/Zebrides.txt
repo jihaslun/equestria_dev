@@ -57,12 +57,26 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = Indozeeb.4 days = 5}
 		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				has_country_flag = YAN_powerless
+				factor = 30
+			}
+		}
 	}
 	option = {
 		name = Indozeeb.2.b
 		set_country_flag = YAN_colonial
 		hidden_effect = {
 			country_event = { id = Indozeeb.4 days = 5}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				has_country_flag = YAN_powerful
+				factor = 30
+			}
 		}
 	}
 }
@@ -81,12 +95,26 @@ country_event = {
 				id = Indozeeb.7 days = 10
 			}
 		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				date < 1007.3.1.12
+				factor = 10
+			}
+		}
 	}
 	option = {
 		name = Indozeeb.3.b
 		hidden_effect = {
 			country_event = {
 				id = Indozeeb.8 days = 10
+			}
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				date > 1007.3.1.12
+				factor = 10
 			}
 		}
 		
@@ -168,9 +196,21 @@ country_event = {
 	title = Indozeeb.8.t
 	desc = Indozeeb.8.d
 	#picture = 
-	is_triggered_only
+	is_triggered_only = yes
 	option = {
 		name = Indozeeb.8.a
 		set_country_flag = YAN_powerless
+	}
+}
+
+country_event = {
+	id = Indozeeb.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.9"}
+	title = Indozeeb.9.t
+	desc = Indozeeb.9.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.9.a
 	}
 }
