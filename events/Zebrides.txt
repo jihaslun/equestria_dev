@@ -214,3 +214,30 @@ country_event = {
 		name = Indozeeb.9.a
 	}
 }
+
+country_event = {
+	id = Indozeeb.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.10"}
+	title = Indozeeb.10.t
+	desc = Indozeeb.10.d
+	#picture = 
+	is_triggered_only = yes 
+	option = {
+		name = Indozeeb.10.a
+		add_manpower = -500
+		add_popularity = { ideology = communism popularity = -0.10 }	
+	}
+}
+
+country_event = {
+	id = Indozeeb.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.11"}
+	title = Indozeeb.11.t
+	desc = Indozeeb.11.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.11.a
+		add_idea = YAN_Zavanese_Families2
+	}
+}

@@ -1,4 +1,14 @@
 ﻿l_english:
+
+
+
+  ####Notes#####
+  #1157 = Zava
+  #1158 = Zulawesi
+  #1159 = Cemar?
+  #1156 = 
+  #1155 = 
+  #1160 = Dark Island
  ### COUNTRYNAME ###
  YAN_fascism:0 "State of the Zebrides"
  YAN_fascism_DEF:0 "The State of the Zebrides"
@@ -53,24 +63,22 @@
  YAN_loterijen_power_desc:0 "" 
  YAN_industrial_start:0 "Fixing the Economy"
  YAN_industrial_start_desc:0 ""
- YAN_work_in_Zava:0 "Zavan Industry"
- YAN_work_in_Zava_desc:0 ""
- YAN_supress_the_workers:0 "Supress the Workers"
- YAN_supress_the_workers_desc:0 ""
- YAN_build_railroads_Zava:0 "Railroads through Zava"
- YAN_build_railroads_Zava_desc:0 ""
- YAN_zava_military_factory:0 "Zavanese Arms Manfacturing"
- YAN_zava_military_factory_desc:0 ""
- YAN_textile_factory:0 "Textile Factories"
- YAN_textile_factory_desc:0 ""
- YAN_Zava_dockyard:0 "Placeholder Name"
- YAN_Zava_dockyard_desc:0 ""
- YAN_transmigrate_Zava:0 "The Zava Migration Program"
- YAN_transmigrate_Zava_desc:0 ""
- YAN_outer_works:0 "The Outer Islands"
- YAN_outer_works_desc:0 ""
-
-
+ YAN_Zavanese_Families:0 "The Zavanese Families"
+ YAN_Zavanese_Families_desc:0 ""
+ YAN_subdue_workers:0 "Subdue the Workers"
+ YAN_subdue_workers_desc:0 ""
+ YAN_befriend_the_workers:0 "Befriend the workers"
+ YAN_befriend_the_workers_desc:0 ""
+ YAN_develop_Zava:0 "Developing Zava"
+ YAN_develop_Zava_desc:0 ""
+ YAN_industrialization_of_Zava:0 "Industralizing Zava"
+ YAN_industrialization_of_Zava_desc:0 ""
+ YAN_illicit_business:0 "Illicit Business of the Families"
+ YAN_illicit_business_desc:0 ""
+ YAN_gun_investment:0 "The Arms Factories"
+ YAN_gun_investment_desc:0 ""
+ YAN_exporting_business:0 "Exporting Business"
+ YAN_exporting_business_desc:0 ""
 
 
 
@@ -104,6 +112,13 @@
 
  YAN_industrial1:0 "Rise of Industry"
  YAN_industrial1_desc:0 ""
+
+ YAN_Zavanese_Families1:0 "The Zavanese Families"
+ YAN_Zavanese_Families1_desc:0 ""
+
+ YAN_Zavanese_Families2:0 "The Zavanese Families"
+ YAN_Zavanese_Families2_desc:0 ""
+
  
  
 
@@ -164,6 +179,16 @@
  Indozeeb.9.t:0 "Placeholder"
  Indozeeb.9.d:0 "" #Something about how most industrial progress was focused On Zava and the outer islands weren't pay attentiont to.
  Indozeeb.9.a:0 ""
+
+ Indozeeb.10.t:0 "Crackdown on Commies"
+ Indozeeb.10.d:0 "" #Commie Extremists bad! This text was brought to you by Zavanese Family Gang
+ Indozeeb.10.a:0 ""
+
+ Indozeeb.11.t:0
+ Indozeeb.11.d:0
+ Indozeeb.11.a:0 
+
+
 
 
  ### ADVISORS ###

@@ -285,8 +285,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAN_work_in_Zava
-		#icon =
+		id = YAN_Zavanese_Families
+		icon = GFX_goal_generic_major_alliance
 		x = 5
 		y = 2
 		cost = 7
@@ -301,80 +301,138 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YAN_work_in_Zava"
-			1157 = {
-				add_extra_state_shared_building_slots = 2
+			add_idea = {
+				YAN_Zavanese_Families1
 			}
 		}
 	}
 
 	focus = {
-		id = YAN_supress_the_workers
+		id = YAN_subdue_workers
 		icon = GFX_goal_generic_attack_allies
+		x = 1
+		y = 3
+		cost = 5
+
+		prerequisite = {
+			focus = YAN_Zavanese_Families
+		}
+
+		ai_will_do = {
+			factor = 149
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus YAN_subdue_workers"
+			country_event = {
+				Indozeeb.10 days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = YAN_befriend_the_workers
+		icon = GFX_goal_generic_military_deal
+		x = 1
+		y = 4
+		cost = 5
+
+		prerequisite = {
+			focus = YAN_Zavanese_Families
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_befriend_the_workers"
+			country_event = {
+				Indozeeb.10
+			}
+		}
+	}
+
+	focus = {
+		id = YAN_develop_Zava
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 3
 		y = 3
 		cost = 5
 
 		prerequisite = {
-			focus = YAN_work_in_Zava
-		}
-
-		ai_will_do = {
-			factor = 140
+			focus = YAN_Zavanese_Families
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus YAN_supress_the_workers"
-			add_popularity = { ideology = communism popularity = -0.10 }
-			add_stability = -0.05
-			add_manpower = -1000
+			log = "[GetDateText]: [Root.GetName]: focus YAN_develop_Zava"
+			1157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				
+			}
 		}
 	}
 
 	focus = {
-		id = YAN_build_railroads_Zava
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 5 
-		y = 3
-		cost = 8
+		id = YAN_industrialization_of_Zava
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 4
+		cost = 5
 
 		prerequisite = {
-			focus = YAN_work_in_Zava
-		}
-
-		ai_will_do = {
-			factor = 141
+			focus = YAN_develop_Zava
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus YAN_build_railroads_Zava"
+			log = "[GetDateText]: [Root.GetName]: focus YAN_industrialization_of_Zava"
 			1157 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = infrastructure
-					level = 3
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
+				
 			}			
 		}
 	}
 
 	focus = {
-		id = YAN_zava_military_factory
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 7
+		id = YAN_illicit_business
+		icon = GFX_goal_demand_sudetenland
+		x = 5
 		y = 3
-		cost = 6
+		cost = 5
 
 		prerequisite = {
-			focus = YAN_work_in_Zava
-		}
-
-		ai_will_do = {
-			factor = 139
+			focus = YAN_Zavanese_Families
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus YAN_zava_military_factory"
+			log = "[GetDateText]: [Root.GetName]: focus YAN_illicit_business"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+					producer = YAN
+				}
+		}
+	}
+
+	focus = {
+		id = YAN_gun_investment
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 5
+		y = 4
+		cost = 5
+
+		prerequisite = {
+			focus = YAN_illicit_business
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_gun_investment"
 			1157 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -382,148 +440,40 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}
-		}
-
-
-	}
-
-	focus = {
-		id = YAN_textile_factory
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 4
-		y = 4
-
-		cost = 5
-
-		prerequisite = {
-			focus = YAN_supress_the_workers
-		}
-		prerequisite = {
-			focus = YAN_build_railroads_Zava
-		}
-
-		ai_will_do = {
-			factor = 138
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus YAN_textile_factory"
-			1157 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
+				
+			}						
 		}
 	}
 
 	focus = {
-		id = YAN_Zava_dockyard
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 6
-		y = 4
-
-		cost = 5
-
-		prerequisite = {
-			focus = YAN_build_railroads_Zava
-		}
-
-		prerequisite = {
-			focus = YAN_zava_military_factory
-		}
-
-		ai_will_do = {
-			factor = 137
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus YAN_Zava_dockyard"
-			1157 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = YAN_transmigrate_Zava
-		icon = GFX_focus_generic_the_giant_wakes
-		x = 5
+		id = YAN_exporting_business
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 3
 		y = 5
-
 		cost = 10
 
 		prerequisite = {
-			focus = YAN_textile_factory
+			YAN_befriend_the_workers
 		}
 
 		prerequisite = {
-			focus = YAN_Zava_dockyard
+			YAN_industrialization_of_Zava
 		}
-
-		ai_will_do = {
-			factor = 140
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus YAN_transmigrate_Zava"
-			1157 = {
-				add_manpower = 70000
-				add_extra_state_shared_building_slots = 6
-			}
-			1159 = {
-				add_manpower = -5000
-				add_extra_state_shared_building_slots = -1
-			}
-			1158 = {
-				add_manpower = 5000
-				add_extra_state_shared_building_slots = 1
-			}
-			1156 = {
-				add_manpower = -10000
-				add_extra_state_shared_building_slots = -1
-			}
-			1155 = {
-				add_manpower = -10000
-				add_extra_state_shared_building_slots = -1
-			}
-			1160 = {
-				add_manpower = -50000
-				add_extra_state_shared_building_slots = -5
-			}
-
-
-		}
-	}
-
-	focus = {
-		id = YAN_outer_works
-		#icon = 
-		x = 13
-		y = 2
-
-		cost = 5
 
 		prerequisite = {
-			focus = YAN_industrial_start
-		}
-
-		ai_will_do = {
-			factor = 100
+			YAN_gun_investment
 		}
 
 		completion_reward = {
 			country_event = {
-				Indozeeb.9
+				Indozeeb.11 days = 5 
 			}
 		}
 	}
+
+
+
+
+
+
 }

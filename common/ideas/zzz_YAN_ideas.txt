@@ -292,6 +292,40 @@ ideas = {
 		}
 	}
 
+	country = {
+		YAN_Zavanese_Families1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				yes
+			}
+			picture = generic_disjointed_gov
+			removal_cost = -1
+			modifier = {
+				construction_speed = 0.15
+				stability_factor = 0.05
+				political_power_gain = -0.05a
+			}
+		}
+	}
+
+	country = {
+		YAN_Zavanese_Families2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				yes
+			}
+			picture = generic_disjointed_gov
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+	}
+
 
 
 
