@@ -264,7 +264,7 @@ focus_tree = {
 	focus = {
 		id = YAN_industrial_start
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 9
+		x = 7
 		y = 1
 		cost = 5
 
@@ -287,7 +287,7 @@ focus_tree = {
 	focus = {
 		id = YAN_Zavanese_Families
 		icon = GFX_goal_generic_major_alliance
-		x = 5
+		x = 3
 		y = 2
 		cost = 7
 
@@ -301,9 +301,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YAN_work_in_Zava"
-			add_idea = {
-				YAN_Zavanese_Families1
-			}
+			add_idea = YAN_Zavanese_Families1
 		}
 	}
 
@@ -324,9 +322,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YAN_subdue_workers"
-			country_event = {
-				Indozeeb.10 days = 5
-			}
+			country_event = Indozeeb.10
 		}
 	}
 
@@ -343,9 +339,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_befriend_the_workers"
-			country_event = {
-				Indozeeb.10
-			}
+			country_event = Indozeeb.12
 		}
 	}
 
@@ -412,11 +406,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_illicit_business"
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 1000
-					producer = YAN
-				}
+			add_equipment = {
+				type = infantry_equipment_1
+				amount = 1000
+				producer = YAN
+			}
 		}
 	}
 
@@ -453,21 +447,19 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = {
-			YAN_befriend_the_workers
+			focus = YAN_befriend_the_workers
 		}
 
 		prerequisite = {
-			YAN_industrialization_of_Zava
+			focus = YAN_industrialization_of_Zava
 		}
 
 		prerequisite = {
-			YAN_gun_investment
+			focus = YAN_gun_investment
 		}
 
 		completion_reward = {
-			country_event = {
-				Indozeeb.11 days = 5 
-			}
+			country_event = Indozeeb.11
 		}
 	}
 

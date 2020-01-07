@@ -241,3 +241,16 @@ country_event = {
 		add_idea = YAN_Zavanese_Families2
 	}
 }
+
+country_event = {
+	id = Indozeeb.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.12"}
+	title = Indozeeb.12.t
+	desc = Indozeeb.12.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.12.a
+		stability_factor = 0.05
+	}
+}
