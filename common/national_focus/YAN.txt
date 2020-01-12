@@ -301,7 +301,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YAN_work_in_Zava"
-			add_idea = YAN_Zavanese_Families1
+			country_event = { Indozeeb.13 days = 10}
 		}
 	}
 
