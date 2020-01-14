@@ -79,6 +79,16 @@
  YAN_gun_investment_desc:0 ""
  YAN_exporting_business:0 "Exporting Business"
  YAN_exporting_business_desc:0 ""
+ YAN_liberalize_banks:0 "Liberalising the Banks"
+ YAN_liberalize_banks_desc:0 ""
+ YAN_lessons_of_Flowena:0 "Lessons of Flowena"
+ YAN_lessons_of_Flowena_desc:0 ""
+ YAN_classified_clients:0 "Classified Clients"
+ YAN_classified_clients_desc:0 ""
+ YAN_Feathisa_investment:0 "Feathisan Investments"
+ YAN_Feathisa_investment_desc:0 ""
+ YAN_House_Feathisa_Money:0 "House Feathisan Money?"
+ YAN_House_Feathisa_Money_desc:0 ""
 
 
 
@@ -118,6 +128,15 @@
 
  YAN_Zavanese_Families2:0 "The Zavanese Families"
  YAN_Zavanese_Families2_desc:0 ""
+
+ YAN_lessons_flowena:0 "Lessons from Flowena"
+ YAN_lessons_flowena_desc:0 ""
+
+ YAN_lessons_flowena_2:0 "Lessons from Flowena"
+ YAN_lessons_flowena_2_desc:0 ""
+
+
+
 
  
  
@@ -195,6 +214,12 @@
  Indozeeb.13.t:0 "The Trirads"
  Indozeeb.13.d:0 ""
  Indozeeb.13.a:0 ""
+
+ Indozeeb.14.t:0 "Housing Feathisian Money?"
+ Indozeeb.14.d:0 "" #Let's House the Feathisians!
+ Indozeeb.14.a:0 ""
+
+
 
 
 

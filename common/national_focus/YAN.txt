@@ -259,7 +259,7 @@ focus_tree = {
 		}
 	}
 
-	##Industry##
+	##Industry## - Kirin Triad stuff
 
 	focus = {
 		id = YAN_industrial_start
@@ -336,7 +336,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YAN_Zavanese_Families
 		}
-
+		ai_will_do = {
+			factor = 148
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_befriend_the_workers"
 			country_event = Indozeeb.12
@@ -354,6 +356,9 @@ focus_tree = {
 			focus = YAN_Zavanese_Families
 		}
 
+		ai_will_do = {
+			factor = 147
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_develop_Zava"
 			1157 = {
@@ -378,7 +383,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YAN_develop_Zava
 		}
-
+		ai_will_do = {
+			factor = 146
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_industrialization_of_Zava"
 			1157 = {
@@ -404,6 +411,9 @@ focus_tree = {
 			focus = YAN_Zavanese_Families
 		}
 
+		ai_will_do = {
+			factor = 145
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_illicit_business"
 			add_equipment = {
@@ -423,6 +433,10 @@ focus_tree = {
 
 		prerequisite = {
 			focus = YAN_illicit_business
+		}
+
+		ai_will_do = {
+			factor = 144
 		}
 
 		completion_reward = {
@@ -458,10 +472,157 @@ focus_tree = {
 			focus = YAN_gun_investment
 		}
 
+		ai_will_do = {
+			factor = 143
+		}
+
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_exporting_business"
 			country_event = Indozeeb.11
 		}
 	}
+
+
+	##Industrial## - Investors
+
+	focus = {
+		id = YAN_liberalize_banks
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 11
+		y = 2
+		prerequisite = {
+			focus = YAN_loterijen_power
+		}
+
+		ai_will_do = {
+			factor = 142
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_liberalize_banks"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = YAN_lessons_of_Flowena
+		icon = GFX_focus_generic_self_management
+		x = 11
+		y = 3
+
+		prerequisite = {
+			focus = YAN_liberalize_banks
+		}
+
+		ai_will_do = {
+			factor = 141
+		}
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_lessons_of_Flowena"
+			add_idea = YAN_lessons_flowena
+		}
+	}
+
+	focus = {
+		id = YAN_classified_clients
+		icon = GFX_goal_HOL_progressive_tax
+		x = 11
+		y = 4
+
+
+		ai_will_do = {
+			factor = 140
+		}
+		prerequisite = {
+			focus = YAN_lessons_of_Flowena
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_classified_clients"
+			swap_ideas = {
+				remove_idea = YAN_lessons_flowena
+				add_idea = YAN_lessons_flowena_2
+			}
+		}
+	}
+
+	focus = {
+		id = YAN_Feathisa_investment
+		icon = GFX_goal_HOL_progressive_tax
+		x = 9 
+		y = 3
+
+		prerequisite = {
+			focus = YAN_liberalize_banks
+		}
+
+		ai_will_do = {
+			factor = 139
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_Feathisa_investment"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+
+	}
+
+	focus = {
+		id = YAN_House_Feathisa_Money
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 4
+
+		prerequisite = {
+			focus = YAN_Feathisa_investment
+		}
+
+		ai_will_do = {
+			factor = 138
+		}
+
+		completion_reward = {
+			FEA = {
+				country_event = {
+					Indozeeb.14
+				}
+			}
+		}
+	}
+
 
 
 
