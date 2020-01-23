@@ -280,7 +280,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YAN_industrial_start"
-			add_idea = YAN_industrial1
+			add_ideas = YAN_industrial1
 		}
 	}
 
@@ -301,8 +301,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YAN_work_in_Zava"
-			country_event = { Indozeeb.13 days = 10}
+			country_event = Indozeeb.13
 		}
+
 	}
 
 	focus = {
@@ -416,10 +417,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_illicit_business"
-			add_equipment = {
+			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 1000
-				producer = YAN
 			}
 		}
 	}
@@ -490,8 +490,9 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 11
 		y = 2
+		cost = 5
 		prerequisite = {
-			focus = YAN_loterijen_power
+			focus = YAN_industrial_start
 		}
 
 		ai_will_do = {
@@ -509,6 +510,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		x = 11
 		y = 3
+		cost = 5
 
 		prerequisite = {
 			focus = YAN_liberalize_banks
@@ -521,7 +523,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_lessons_of_Flowena"
-			add_idea = YAN_lessons_flowena
+			add_ideas = YAN_lessons_flowena
 		}
 	}
 
@@ -530,7 +532,7 @@ focus_tree = {
 		icon = GFX_goal_HOL_progressive_tax
 		x = 11
 		y = 4
-
+		cost = 5
 
 		ai_will_do = {
 			factor = 140
@@ -553,6 +555,7 @@ focus_tree = {
 		icon = GFX_goal_HOL_progressive_tax
 		x = 9 
 		y = 3
+		cost = 5
 
 		prerequisite = {
 			focus = YAN_liberalize_banks
@@ -564,20 +567,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_Feathisa_investment"
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}			
+			
+		
 		}
 
 	}
@@ -587,6 +578,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		x = 9
 		y = 4
+		cost = 5
 
 		prerequisite = {
 			focus = YAN_Feathisa_investment
@@ -599,9 +591,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_House_Feathisa_Money"
 			FEA = {
-				country_event = {
-					Indozeeb.14
-				}
+				country_event = Indozeeb.14
 			}
 		}
 	}
@@ -611,6 +601,7 @@ focus_tree = {
 		#icon = 
 		x = 13
 		y = 3
+		cost = 5
 
 		prerequisite = {
 			focus = YAN_liberalize_banks
@@ -622,20 +613,81 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus YAN_working_outer"
-			random_owned_controlled_state = {
+			1160 = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
+			1157 = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = YAN_fixing_islands
+		#icon =
+		x = 13
+		y = 4
+		cost = 5
+
+		prerequisite = {
+			focus = YAN_working_outer
+		}
+
+		ai_will_do = {
+			factor = 136
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_fixing_islands"
+			1155 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			1159 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	focus = {
+		id = YAN_island_fixing
+		#icon = 
+		x = 11
+		y = 5
+		cost = 5
+
+		prerequisite = {
+			focus = YAN_fixing_islands
+		}
+		prerequisite = {
+			focus = YAN_House_Feathisia_Money
+		}
+		prerequisite = {
+			focus = YAN_classified_clients
+		}
+
+		ai_will_do = {
+			factor = 135
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus YAN_island_fixing"
 		}
 	}
 

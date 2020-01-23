@@ -297,9 +297,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			allowed_civil_war = {
-				yes
-			}
 			picture = generic_disjointed_gov
 			removal_cost = -1
 			modifier = {
@@ -328,8 +325,6 @@ ideas = {
 			}
 		}
 	}
-
-	##Bank Ideas##
 
 	country = {
 		YAN_lessons_flowena = {

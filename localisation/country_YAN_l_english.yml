@@ -89,6 +89,12 @@
  YAN_Feathisa_investment_desc:0 ""
  YAN_House_Feathisa_Money:0 "House Feathisan Money?"
  YAN_House_Feathisa_Money_desc:0 ""
+ YAN_working_outer:0 "Working on the outer islands"
+ YAN_working_outer_desc:0 ""
+ YAN_fixing_islands:0 "Fixing the even more outer islands"
+ YAN_fixing_islands_desc:0 ""
+ YAN_island_fixing:0 "Fixing the Islands"
+ YAN_island_fixing_desc:0 ""
 
 
 
