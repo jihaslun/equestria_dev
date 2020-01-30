@@ -1453,6 +1453,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_the_extreme_revolutionary"
 			add_popularity = { ideology = communism popularity = 0.10 }
+			custom_effect_tooltip = BAN_TT_civil_war_commie
+			country_event = { id = bandit.28 }
+			add_political_power = 100
 
 			hidden_effect = {
 				set_country_flag = commie_desc_for_civil_war
@@ -1478,7 +1481,6 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_murkbeak_rebellion"
 			add_manpower = 10000
 			add_political_power = -100
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = BAN }
 		}
 	}
 
@@ -1498,9 +1500,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_hollow_rebels"
+			hidden_effect = {
+				load_oob = "BAN_partisans"
+			}
 			add_manpower = 20000
 			add_political_power = -100
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = BAN }
+			custom_effect_tooltip = BAN_TT_partisans_oob
 		}
 	}
 
@@ -1522,6 +1527,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_communist_clubs"
 			add_popularity = { ideology = communism popularity = 0.10 }
 			add_stability = 0.05
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = BAN }
 		}
 	}
 
@@ -1541,41 +1547,44 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_organized_militias"
+			hidden_effect = {
+				load_oob = "BAN_commune_militias"
+			}
 			add_popularity = { ideology = communism popularity = 0.10 }
 			add_war_support = 0.05
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = BAN }
+			custom_effect_tooltip = BAN_TT_commune_militia_oob
 		}
 	}
 
-	focus = {
-		id = BAN_southern_commune
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = BAN_organized_militias }
-		prerequisite = { focus = BAN_hollow_rebels }
-		bypass = {
-			has_government = communism
-		}
-		relative_position_id = BAN_the_extreme_revolutionary
-		cost = 5.00
-		x = 0
-		y = 3
-		available = {
-			has_war = no
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_southern_commune"
-			custom_effect_tooltip = BAN_TT_civil_war_commie
-			country_event = { id = bandit.28 }
-			add_political_power = 100
-		}
-	}
+	#focus = {
+	#	id = BAN_southern_commune
+	#	icon = GFX_goal_generic_political_pressure
+	#	prerequisite = { focus = BAN_organized_militias }
+	#	prerequisite = { focus = BAN_hollow_rebels }
+	#	bypass = {
+	#		has_government = communism
+	#	}
+	#	relative_position_id = BAN_the_extreme_revolutionary
+	#	cost = 5.00
+	#	x = 0
+	#	y = 3
+	#	available = {
+	#		has_war = no
+	#	}
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_southern_commune"
+	#	}
+	#}
 
 	focus = {
 		id = BAN_control_restored
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = BAN_southern_commune }
+		prerequisite = { focus = BAN_hollow_rebels }
+		prerequisite = { focus = BAN_organized_militias }
 		bypass = {
 			has_government = communism
 		}
@@ -1590,7 +1599,7 @@ focus_tree = {
 		}
 		cost = 10.00
 		x = 0
-		y = 4
+		y = 3
 		ai_will_do = {
 			factor = 100
 		}
@@ -1882,10 +1891,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_minds"
-			swap_ideas = {
-				remove_idea = BAN_badder_education
-				add_idea = BAN_itss_kinda_good_now
-			}
+			increase_society_development = yes
 		}
 	}
 
@@ -1905,7 +1911,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_mandatory_conscription"
-			add_ideas = all_adults_serve
+			swap_ideas = {
+				add_idea = BAN_reeve_army
+				remove_idea = BAN_partisan_army
+			}
 		}
 	}
 
@@ -1926,9 +1935,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_true_equality"
-			add_political_power = 100
-			add_ideas = BAN_spread_equality
-
+			create_wargoal = {
+				target = BOI
+				type = annex_everything
+			}
 		}
 	}
 
@@ -1936,15 +1946,192 @@ focus_tree = {
 		id = BAN_our_comrades_in_griffonstone
 		icon = GFX_focus_strike_griffonstone
 		prerequisite = { focus = BAN_true_equality }
+		available = {
+			owns_state = 389
+		}
 		relative_position_id = BAN_true_equality
 		x = 0
 		y = 1
 		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_our_comrades_in_griffonstone"
+			every_state = {
+				limit = {
+					is_core_of = BOI
+				}
+				add_core_of = ROOT
+			}
 		}
 	}
 
+	focus = {
+		id = BAN_rebuild_griffonstone
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BAN_our_comrades_in_griffonstone }
+		available = {
+			owns_state = 389
+			controls_state = 389
+		}
+		bypass = {
+			389 = {
+				free_building_slots = {
+					building = infrastructure
+					size < 2
+					include_locked = yes
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size < 2
+					include_locked = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_our_comrades_in_griffonstone
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_rebuild_griffonstone"
+			389 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_connect_griffonstone
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BAN_our_comrades_in_griffonstone }
+		available = {
+			OR = {
+				controls_state = 531
+				controls_state = 488
+				controls_state = 389
+				controls_state = 471
+				controls_state = 679
+				controls_state = 384
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_our_comrades_in_griffonstone
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_connect_griffonstone"
+			if = {
+				limit = {
+					controls_state = 531
+					531 = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				531 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 488
+					488 = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				488 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 389
+					389 = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				389 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 679
+					679 = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				679 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 384
+					384 = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				384 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 
 	### Industry
 	focus = {
