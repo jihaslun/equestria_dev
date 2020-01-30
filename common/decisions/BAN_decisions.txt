@@ -1143,3 +1143,14 @@ BAN_bandit_caches = {
 		}
 	}
 }
+
+BAN_communes_shit = {
+	BAN_wow_cool = {
+		icon = griffon
+		cost = 0
+		visible = {
+			original_tag = BAN
+		}
+		available = { always = no }
+	}
+}

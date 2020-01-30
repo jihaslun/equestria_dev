@@ -1398,6 +1398,12 @@ country_event = { ## civil war end
 		    remove_idea = outlaw_economy
 			add_idea = low_economic_mobilisation
 		}
+		hidden_effect = {
+			set_variable = {
+				var = BAN_commune_support_var
+				value = 2
+			}
+		}
 	}
 }
 
@@ -1412,6 +1418,256 @@ country_event = { ## Queen Cyrille
 	option = {
 		name = bandit.36.a
 		add_political_power = 200
+	}
+}
+
+country_event = { # Justice At Last event. Kills Blackrock.
+	id = bandit.37
+	immediate = { log = "[Root.GetName]: event bandit.37" }
+	title = bandit.37.t
+	desc = bandit.37.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # she ded
+		name = bandit.37.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		add_political_power = 50
+		swap_ideas = {
+			add_idea = BAN_lawless_land2
+			remove_idea = BAN_lawless_land
+		}
+		create_country_leader = {
+			name = "Kajetan Bronsfeather"
+			desc = ""
+			picture = "GriffonPirate.tga"
+			expire = "1965.1.1"
+			ideology = bandit
+			traits = {
+
+			}
+		}
+	}
+}
+
+country_event = { # Distribute the Noble Lands Event
+	id = bandit.38
+	immediate = { log = "[Root.GetName]: event bandit.38" }
+	title = bandit.38.t
+	desc = bandit.38.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # REEEEEEEEEEEVE
+		name = bandit.38.a
+		custom_effect_tooltip = BAN_TT_commune_support_decrease
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = -1
+		}
+		two_random_arms_factory = yes
+	}
+	option = { # Compromise
+		name = bandit.38.b
+		one_random_arms_factory = yes
+		one_random_industrial_complex = yes
+	}
+	option = { # Appease Communes
+		name = bandit.38.c
+		custom_effect_tooltip = BAN_TT_commune_support_increase
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = 1
+		}
+		two_random_industrial_complex = yes
+	}
+}
+
+country_event = { # Punish the Bandits Event
+	id = bandit.39
+	immediate = { log = "[Root.GetName]: event bandit.39" }
+	title = bandit.39.t
+	desc = bandit.39.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # Service Guarantees Amnesty!
+		name = bandit.39.a
+		custom_effect_tooltip = BAN_TT_commune_support_decrease
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = -1
+		}
+		add_ideas = { BAN_service_amnesty }
+	}
+	option = { # Let the most horrendous work for the communes, and the rest to the army.
+		name = bandit.39.b
+		add_ideas = { BAN_amnesty_and_labor }
+	}
+	option = { # Penal Laborers for the Communes!
+		name = bandit.39.c
+		custom_effect_tooltip = BAN_TT_commune_support_increase
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = 1
+		}
+		add_ideas = { BAN_penal_labor }
+	}
+}
+
+country_event = { # Establishing Order Event
+	id = bandit.40
+	immediate = { log = "[Root.GetName]: event bandit.40" }
+	title = bandit.40.t
+	desc = bandit.40.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # Establish the secret police and undercut the authority of the communes.
+		name = bandit.40.a
+		custom_effect_tooltip = BAN_TT_commune_support_decrease
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = -1
+		}
+		add_ideas = { BAN_secret_police }
+		swap_ideas = {
+			add_idea = BAN_lawless_land3
+			remove_idea = BAN_lawless_land2
+		}
+	}
+	option = { # Establish the secret police and cooperate with the communalist police forces.
+		name = bandit.40.b
+		add_ideas = { BAN_secret_police_cooperate }
+		swap_ideas = {
+			add_idea = BAN_lawless_land3
+			remove_idea = BAN_lawless_land2
+		}
+	}
+	option = { # Let the communalist police forces operate as state police as well.
+		name = bandit.40.c
+		custom_effect_tooltip = BAN_TT_commune_support_increase
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = 1
+		}
+		add_ideas = { BAN_commune_police }
+		swap_ideas = {
+			add_idea = BAN_lawless_land3
+			remove_idea = BAN_lawless_land2
+		}
+	}
+}
+
+country_event = { # Slander the Bluecrests event
+	id = bandit.41
+	immediate = { log = "[Root.GetName]: event bandit.41" }
+	title = bandit.41.t
+	desc = bandit.41.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.41.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+	}
+}
+
+country_event = { # Slander the Republicans event
+	id = bandit.42
+	immediate = { log = "[Root.GetName]: event bandit.42" }
+	title = bandit.42.t
+	desc = bandit.42.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.42.a
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+	}
+}
+
+country_event = { # The New Government Event
+	id = bandit.43
+	immediate = { log = "[Root.GetName]: event bandit.43" }
+	title = bandit.43.t
+	desc = bandit.43.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # Stack the government with Reeve's supporters.
+		name = bandit.43.a
+		custom_effect_tooltip = BAN_TT_commune_support_decrease
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = -1
+		}
+		remove_ideas = BAN_lawless_land3
+		#
+		# Shit for new advisors
+		#
+	}
+	option = { # Ensure that the government is evenly spread between Reeve and the Communes.
+		name = bandit.43.b
+		custom_effect_tooltip = BAN_TT_commune_support_increase
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = 1
+		}
+		remove_ideas = BAN_lawless_land3
+		#
+		# Shit for new advisors
+		#
+	}
+	option = { # Stack the government with communalists.
+		name = bandit.43.c
+		custom_effect_tooltip = BAN_TT_commune_support_increase_2
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = 2
+		}
+		remove_ideas = BAN_lawless_land3
+		#
+		# Shit for new advisors
+		#
+	}
+}
+
+country_event = { # The New Generals Event
+	id = bandit.44
+	immediate = { log = "[Root.GetName]: event bandit.44" }
+	title = bandit.44.t
+	desc = bandit.44.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # Appoint only the finest generals.
+		name = bandit.44.a
+		custom_effect_tooltip = BAN_TT_commune_support_decrease
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = -1
+		}
+		#
+		# Shit for new commanders
+		#
+	}
+	option = { # Allow the communes to pick some generals. (will have some worse generals)
+		name = bandit.44.b
+		# (no support increase is intentional)
+		# Shit for new commanders
+		#
 	}
 }
 

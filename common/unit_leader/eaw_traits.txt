@@ -969,4 +969,18 @@ leader_traits = {
 			experience_gain_factor = -0.5
 		}
 	}
+	trait_bandit = {
+		type = corps_commander
+		trait_type = personality_trait
+		allowed = {
+			always = no
+		}
+		planning_skill = -1
+		modifier = {
+			wounded_chance_factor = 0.5
+			army_org_factor = -0.2
+			army_morale_factor = 0.05
+			army_speed_factor = 0.1
+		}
+	}
 }

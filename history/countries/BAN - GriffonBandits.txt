@@ -32,10 +32,10 @@ if = {
 
 set_convoys = 70
 set_popularities = {
-	democratic = 10
-	fascism = 70
-	communism = 10
-	neutrality = 10
+	democratic = 0
+	fascism = 45
+	communism = 23
+	neutrality = 32
 }
 set_politics = {
 
@@ -136,14 +136,26 @@ create_country_leader = {
 }
 
 create_field_marshal = {
+	name = "Blackrock"
+	portrait_path = "gfx/leaders/BAN/Blackrock.tga"
+	traits = {
+		trait_mountaineer trait_bandit
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
 	name = "Kajetan Bronsfeather"
 	portrait_path = "gfx/leaders/BAN/GriffonPirate.tga"
 	traits = {
-		aggressive_assaulter
+		trait_reckless trait_bandit
 	}
 	skill = 2
-	attack_skill = 1
-	defense_skill = 2
+	attack_skill = 2
+	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 3
 }
@@ -152,7 +164,7 @@ create_corps_commander = {
 	name = "Dominik Pinfeather"
 	portrait_path = "gfx/leaders/BAN/BANGen.tga"
 	traits = {
-		trait_mountaineer
+		trait_mountaineer trait_bandit
 	}
 	skill = 1
 	attack_skill = 1
@@ -164,7 +176,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ulrich Hiperion"
 	portrait_path = "gfx/leaders/BAN/BANgen2.tga"
-	traits = { }
+	traits = { 
+		trait_bandit
+	}
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1

@@ -50,3 +50,16 @@ BAN_bandit_caches = {
 		base = 120
 	}
 }
+
+BAN_communes_shit = {
+	icon = decision_cat_bunker
+	allowed = {
+		original_tag = BAN
+	}
+	visible = {
+		has_government = communism
+	}
+	priority = {
+		base = 120
+	}
+}
