@@ -736,7 +736,6 @@ BAN_society_development_cat = {
 			NOT = { has_idea = modern_society }
 			OR = {
 				has_completed_focus = BAN_lawless_no_more
-				has_completed_focus = BAN_control_restored
 				has_completed_focus = BAN_back_in_power
 			}
 		}
@@ -1148,9 +1147,27 @@ BAN_communes_shit = {
 	BAN_wow_cool = {
 		icon = griffon
 		cost = 0
+		allowed = {
+			original_tag = BAN
+		}
 		visible = {
 			original_tag = BAN
 		}
 		available = { always = no }
+	}
+	BAN_commune_coup_timer = {
+		icon = griffon
+		activation = {
+			check_variable = { BAN_commune_support_var < 0 }
+		}
+		available = {
+			check_variable = { BAN_commune_support_var > -1 }
+		}
+		days_mission_timeout = 100
+		is_good = no
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout BAN_coup_timer"
+			country_event = { id = bandit.48 }
+		}
 	}
 }

@@ -58,6 +58,10 @@ BAN_communes_shit = {
 	}
 	visible = {
 		has_government = communism
+		has_country_leader = {
+			name = "Reeve Blyeddin"
+			ruling_only = yes
+		}
 	}
 	priority = {
 		base = 120

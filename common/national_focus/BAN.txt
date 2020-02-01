@@ -1464,7 +1464,19 @@ focus_tree = {
 			custom_effect_tooltip = BAN_TT_civil_war_commie
 			country_event = { id = bandit.28 }
 			add_political_power = 100
-
+			create_field_marshal = {
+				name = "Reeve Blyeddin"
+				portrait_path = "gfx/leaders/BAN/Reeve.tga"
+				traits = {
+					trait_mountaineer commissar_general
+				}
+				id = 69104
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
 			hidden_effect = {
 				set_country_flag = commie_desc_for_civil_war
 			}
@@ -1613,7 +1625,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_control_restored"
-			custom_effect_tooltip = BAN_TT_fix_economy
 			set_politics = { ruling_party = communism elections_allowed = no }
 			swap_ideas = {
 				add_idea = BAN_partisan_army
@@ -1925,9 +1936,29 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_mandatory_conscription"
-			swap_ideas = {
-				add_idea = BAN_reeve_army
-				remove_idea = BAN_partisan_army
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Reeve Blyeddin"
+						ruling_only = yes
+					}
+				}
+				swap_ideas = {
+					add_idea = BAN_reeve_army
+					remove_idea = BAN_partisan_army
+				}
+				else_if = {
+					limit = {
+						has_country_leader = {
+							name = "Council of the Communes"
+							ruling_only = yes
+						}
+					}
+					swap_ideas = {
+						add_idea = BAN_commune_army
+						remove_idea = BAN_partisan_army
+					}
+				}
 			}
 			set_division_template_lock = {
 				division_template = "Socialist Partisans"
@@ -1946,6 +1977,10 @@ focus_tree = {
 		prerequisite = { focus = BAN_mandatory_conscription }
 		prerequisite = { focus = BAN_equal_minds }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			has_government = communism
 			is_subject = no
 		}
@@ -2167,6 +2202,10 @@ focus_tree = {
 		mutually_exclusive = { focus = BAN_befriend_gla }
 		available = {
 			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			is_subject = no
 			country_exists = BRF
 			NOT = {
@@ -2196,6 +2235,10 @@ focus_tree = {
 		icon = GFX_goal_support_from_lushi
 		prerequisite = { focus = BAN_avenge_gla }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			LUS = {
 				exists = yes
 				is_subject = no
@@ -2243,6 +2286,10 @@ focus_tree = {
 		icon = GFX_focus_indy_swing_the_sword
 		prerequisite = { focus = BAN_avenge_gla }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			CYA = {
 				exists = yes
 				is_subject = no
@@ -2290,6 +2337,10 @@ focus_tree = {
 		icon = GFX_goal_support_from_GRY
 		prerequisite = { focus = BAN_conquer_lushi focus = BAN_conquer_cyanolisia }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			GRY = {
 				exists = yes
 				is_subject = no
@@ -2337,6 +2388,10 @@ focus_tree = {
 		icon = GFX_goal_support_from_GRU
 		prerequisite = { focus = BAN_conquer_lushi focus = BAN_conquer_cyanolisia }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			GRU = {
 				exists = yes
 				is_subject = no
@@ -2385,6 +2440,10 @@ focus_tree = {
 		prerequisite = { focus = BAN_conquer_the_host }
 		prerequisite = { focus = BAN_conquer_gryphus }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			BRF = {
 				OR = {
 					exists = no
@@ -2450,6 +2509,10 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = BAN_avenge_gla }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			has_government = communism
 			is_subject = no
 			is_in_faction = no
@@ -2521,6 +2584,10 @@ focus_tree = {
 		icon = GFX_goal_MIT_Red_Bull_Rising
 		prerequisite = { focus = BAN_befriend_gla }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			CYA = {
 				exists = yes
 				is_subject = no
@@ -2597,6 +2664,10 @@ focus_tree = {
 		icon = GFX_focus_indy_swing_the_sword
 		prerequisite = { focus = BAN_befriend_gla }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			LAK = {
 				exists = yes
 				is_subject = no
@@ -2672,6 +2743,10 @@ focus_tree = {
 		icon = GFX_focus_generic_eagle
 		prerequisite = { focus = BAN_conquer_rumare focus = BAN_liberate_auropallieta }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			FAL = {
 				exists = yes
 				is_subject = no
@@ -2747,6 +2822,10 @@ focus_tree = {
 		icon = GFX_focus_sic_flag
 		prerequisite = { focus = BAN_conquer_rumare focus = BAN_liberate_auropallieta }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			SIC = {
 				exists = yes
 				is_subject = no
@@ -2822,6 +2901,10 @@ focus_tree = {
 		icon = GFX_focus_wng_flag
 		prerequisite = { focus = BAN_conquer_falcor focus = BAN_conquer_sicameon }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			WNG = {
 				exists = yes
 				is_subject = no
@@ -2897,6 +2980,10 @@ focus_tree = {
 		icon = GFX_goal_MIT_The_Brutes_of_Old
 		prerequisite = { focus = BAN_conquer_falcor focus = BAN_conquer_sicameon }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			MIT = {
 				exists = yes
 				is_subject = no
@@ -2972,6 +3059,10 @@ focus_tree = {
 		icon = GFX_goal_red_star
 		prerequisite = { focus = BAN_conquer_wingbardy focus = BAN_conquer_asterion }
 		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 			CYA = {
 				OR = {
 					exists = no
@@ -3411,11 +3502,11 @@ focus_tree = {
 		mutually_exclusive = { focus = BAN_energize_the_economy }
 		available = {
 			AND = {
-				has_completed_focus = BAN_equal_minds
+				has_completed_focus = BAN_control_restored
 				has_government = communism
 			}
 		}
-		cost = 10.00
+		cost = 5.00
 		x = 42
 		y = 0
 		ai_will_do = {
@@ -3423,7 +3514,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeves_plan"
-			add_political_power = 100
+			add_ideas = { BAN_reconstruction_comittee }
 		}
 	}
 
@@ -3433,7 +3524,9 @@ focus_tree = {
 		prerequisite = { focus = BAN_reeves_plan }
 		available = {
 			has_government = communism
+			controls_state = 490
 		}
+		cancel_if_invalid = yes
 		relative_position_id = BAN_reeves_plan
 		cost = 10.00
 		x = -1
@@ -3443,11 +3536,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_peoples_industry"
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+			490 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3459,7 +3552,9 @@ focus_tree = {
 		prerequisite = { focus = BAN_peoples_industry }
 		available = {
 			has_government = communism
+			controls_state = 532
 		}
+		cancel_if_invalid = yes
 		relative_position_id = BAN_reeves_plan
 		cost = 10.00
 		x = -1
@@ -3469,8 +3564,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_peoples_arms"
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+			custom_effect_tooltip = BAN_TT_commune_support_decrease
+			add_to_variable = {
+				var = BAN_commune_support_var
+				value = -1
+			}
+			532 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -3481,11 +3581,15 @@ focus_tree = {
 	}
 	focus = {
 		id = BAN_equal_infrastructure
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = BAN_reeves_plan }
 		available = {
 			has_government = communism
+			controls_state = 489
+			controls_state = 606
+			controls_state = 446
 		}
+		cancel_if_invalid = yes
 		relative_position_id = BAN_reeves_plan
 		cost = 10.00
 		x = 1
@@ -3495,7 +3599,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_infrastructure"
+			custom_effect_tooltip = BAN_TT_commune_support_increase
+			add_to_variable = {
+				var = BAN_commune_support_var
+				value = 1
+			}
 			606 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -3503,13 +3613,7 @@ focus_tree = {
 				}
 			}
 			489 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			490 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -3517,13 +3621,7 @@ focus_tree = {
 				}
 			}
 			446 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			532 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -3534,13 +3632,18 @@ focus_tree = {
 	}
 	focus = {
 		id = BAN_state_industrial_community
-		icon = GFX_goal_generic_national_unity_claws
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = BAN_equal_infrastructure }
 		available = {
 			has_government = communism
+			has_completed_focus = BAN_no_universities
+			controls_state = 489
+			controls_state = 606
+			controls_state = 446
 		}
+		cancel_if_invalid = yes
 		relative_position_id = BAN_reeves_plan
-		cost = 10.00
+		cost = 15.00
 		x = 1
 		y = 2
 		ai_will_do = {
@@ -3548,7 +3651,99 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_state_industrial_community"
-			add_ideas = BAN_industrial_committee
+			if = {
+				limit = {
+					has_country_flag = BAN_noble_lands_state
+				}
+				custom_effect_tooltip = BAN_TT_commune_support_decrease
+				add_to_variable = {
+					var = BAN_commune_support_var
+					value = -1
+				}
+				489 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				606 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				446 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = BAN_noble_lands_compromise
+					}
+					489 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+					606 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+					446 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = BAN_noble_lands_communes
+						}
+						custom_effect_tooltip = BAN_TT_commune_support_increase
+						add_to_variable = {
+							var = BAN_commune_support_var
+							value = 1
+						}
+						489 = {
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+						606 = {
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						446 = {
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -3557,7 +3752,10 @@ focus_tree = {
 		prerequisite = { focus = BAN_peoples_arms }
 		prerequisite = { focus = BAN_state_industrial_community }
 		available = {
-			has_government = communism
+			AND = {
+				has_completed_focus = BAN_equal_minds
+				has_government = communism
+			}
 		}
 		relative_position_id = BAN_reeves_plan
 		cost = 10.00
@@ -3568,7 +3766,354 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_economy"
-			add_ideas = BAN_economic_equality
+			add_ideas = BAN_reeve_war_machine
+		}
+	}
+
+	focus = {
+		id = BAN_industrialization_comittee
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = BAN_equal_economy }
+		available = {
+			has_government = communism
+		}
+		relative_position_id = BAN_equal_economy
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_industrialization_comittee"
+			swap_ideas = {
+				add_idea = BAN_industry_comittee
+				remove_idea = BAN_reconstruction_comittee
+			}
+			swap_ideas = {
+				add_idea = BAN_economic_wasteland2
+				remove_idea = BAN_economic_wasteland
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_communes_on_comittee
+		icon = GFX_goal_commune_politics
+		prerequisite = { focus = BAN_industrialization_comittee }
+		mutually_exclusive = { focus = BAN_focus_comittee_on_war }
+		available = {
+			has_government = communism
+		}
+		relative_position_id = BAN_industrialization_comittee
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_communes_on_comittee"
+			custom_effect_tooltip = BAN_TT_commune_support_increase
+			add_to_variable = {
+				var = BAN_commune_support_var
+				value = 1
+			}
+			swap_ideas = {
+				add_idea = BAN_commune_industry_comittee
+				remove_idea = BAN_industry_comittee
+			}
+			swap_ideas = {
+				add_idea = BAN_economic_wasteland3
+				remove_idea = BAN_economic_wasteland2
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_focus_comittee_on_war
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BAN_industrialization_comittee }
+		mutually_exclusive = { focus = BAN_communes_on_comittee }
+		available = {
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_industrialization_comittee
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_focus_comittee_on_war"
+			custom_effect_tooltip = BAN_TT_commune_support_decrease
+			add_to_variable = {
+				var = BAN_commune_support_var
+				value = -1
+			}
+			swap_ideas = {
+				add_idea = BAN_war_industry_comittee
+				remove_idea = BAN_industry_comittee
+			}
+			swap_ideas = {
+				add_idea = BAN_economic_wasteland3
+				remove_idea = BAN_economic_wasteland2
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_commie_modern_society
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = BAN_communes_on_comittee focus = BAN_focus_comittee_on_war }
+		available = {
+			has_government = communism
+		}
+		relative_position_id = BAN_industrialization_comittee
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_commie_modern_society"
+			increase_society_development = yes
+			remove_ideas = BAN_economic_wasteland3
+		}
+	}
+
+	focus = {
+		id = BAN_reeve_militarization
+		icon = GFX_goal_chn_red_military_factories
+		prerequisite = { focus = BAN_equal_economy }
+		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_equal_economy
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_militarization"
+			if = {
+				limit = {
+					has_ideas = early_mobilisation
+				}
+				add_ideas = partial_mobilisation
+				else_if = {
+					limit = {
+						has_ideas = civilian_economy
+					}
+					add_ideas = early_mobilisation
+				}
+			}
+			swap_ideas = {
+				add_idea = BAN_reeve_war_machine2
+				remove_idea = BAN_reeve_war_machine
+			}
+			one_random_arms_factory = yes
+		}
+	}
+
+	focus = {
+		id = BAN_reeve_more_militarization
+		icon = GFX_goal_construction_engineering
+		prerequisite = { focus = BAN_reeve_militarization }
+		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_equal_economy
+		x = 3
+		y = 2
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_more_militarization"
+			swap_ideas = {
+				add_idea = BAN_reeve_war_machine3
+				remove_idea = BAN_reeve_war_machine2
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_reeve_even_more_militarization
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = BAN_reeve_more_militarization }
+		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_equal_economy
+		x = 2
+		y = 3
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_even_more_militarization"
+			swap_ideas = {
+				add_idea = BAN_reeve_war_machine4
+				remove_idea = BAN_reeve_war_machine3
+			}
+			add_tech_bonus = {
+				name = race_tech_bonus
+				bonus = 1.0
+				uses = 2
+				category = race_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_reeve_finish_militarization
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = BAN_reeve_even_more_militarization }
+		available = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_equal_economy
+		x = 1
+		y = 4
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_finish_militarization"
+			add_ideas = war_economy
+			swap_ideas = {
+				add_idea = BAN_reeve_war_machine5
+				remove_idea = BAN_reeve_war_machine4
+			}
+			one_random_arms_factory = yes
+		}
+	}
+
+	focus = {
+		id = BAN_computer_research
+		icon = GFX_goal_goal_machine
+		prerequisite = { focus = BAN_equal_economy }
+		relative_position_id = BAN_equal_economy
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_computer_research"
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_military_intelligence
+		icon = GFX_goal_document
+		prerequisite = { focus = BAN_computer_research }
+		relative_position_id = BAN_equal_economy
+		x = -3
+		y = 2
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_military_intelligence"
+			add_tech_bonus = {
+				name = computer_bonus
+				bonus = 1.0
+				uses = 4
+				category = encryption_tech
+				category = decryption_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_bandit_labor
+		icon = GFX_goal_forced_inf
+		prerequisite = { focus = BAN_military_intelligence }
+		available = {
+			has_idea = BAN_penal_labor
+		}
+		relative_position_id = BAN_equal_economy
+		x = -2
+		y = 3
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_bandit_labor"
+			two_random_infrastructure_and_slot = yes
+			two_random_infrastructure_and_slot = yes
+			two_random_infrastructure_and_slot = yes
+		}
+	}
+
+	focus = {
+		id = BAN_tap_mountains
+		icon = GFX_goal_forced_res
+		prerequisite = { focus = BAN_bandit_labor }
+		available = {
+			has_idea = BAN_penal_labor
+			controls_state = 489
+			controls_state = 606
+			controls_state = 490
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_equal_economy
+		x = -1
+		y = 4
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_tap_mountains"
+			add_resource = {
+				type = crystals
+				amount = 8
+				state = 606
+			}
+			add_resource = {
+				type = crystals
+				amount = 4
+				state = 489
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 490
+			}
+			add_resource = {
+				type = rubber
+				amount = 15
+				state = 490
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_military_research_dept
+		icon = GFX_goal_socialist_science
+		prerequisite = { focus = BAN_commie_modern_society }
+		prerequisite = { focus = BAN_tap_mountains focus = BAN_reeve_finish_militarization }
+		available = {
+			has_government = communism
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_equal_economy
+		x = 0
+		y = 5
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_military_research_dept"
+			add_research_slot = 1
 		}
 	}
 

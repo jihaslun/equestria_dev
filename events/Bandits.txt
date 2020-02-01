@@ -1403,6 +1403,10 @@ country_event = { ## civil war end
 				var = BAN_commune_support_var
 				value = 2
 			}
+			remove_unit_leader = 69100
+			remove_unit_leader = 69101
+			remove_unit_leader = 69102
+			remove_unit_leader = 69103
 		}
 	}
 }
@@ -1461,17 +1465,31 @@ country_event = { # Distribute the Noble Lands Event
 	is_triggered_only = yes
 	option = { # REEEEEEEEEEEVE
 		name = bandit.38.a
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		custom_effect_tooltip = BAN_TT_commune_support_decrease
 		add_to_variable = {
 			var = BAN_commune_support_var
 			value = -1
 		}
 		two_random_arms_factory = yes
+		set_country_flag = BAN_noble_lands_state
 	}
 	option = { # Compromise
 		name = bandit.38.b
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		one_random_arms_factory = yes
 		one_random_industrial_complex = yes
+		set_country_flag = BAN_noble_lands_compromise
 	}
 	option = { # Appease Communes
 		name = bandit.38.c
@@ -1481,6 +1499,7 @@ country_event = { # Distribute the Noble Lands Event
 			value = 1
 		}
 		two_random_industrial_complex = yes
+		set_country_flag = BAN_noble_lands_communes
 	}
 }
 
@@ -1493,6 +1512,12 @@ country_event = { # Punish the Bandits Event
 	is_triggered_only = yes
 	option = { # Service Guarantees Amnesty!
 		name = bandit.39.a
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		custom_effect_tooltip = BAN_TT_commune_support_decrease
 		add_to_variable = {
 			var = BAN_commune_support_var
@@ -1502,6 +1527,12 @@ country_event = { # Punish the Bandits Event
 	}
 	option = { # Let the most horrendous work for the communes, and the rest to the army.
 		name = bandit.39.b
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		add_ideas = { BAN_amnesty_and_labor }
 	}
 	option = { # Penal Laborers for the Communes!
@@ -1524,6 +1555,12 @@ country_event = { # Establishing Order Event
 	is_triggered_only = yes
 	option = { # Establish the secret police and undercut the authority of the communes.
 		name = bandit.40.a
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		custom_effect_tooltip = BAN_TT_commune_support_decrease
 		add_to_variable = {
 			var = BAN_commune_support_var
@@ -1537,6 +1574,12 @@ country_event = { # Establishing Order Event
 	}
 	option = { # Establish the secret police and cooperate with the communalist police forces.
 		name = bandit.40.b
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		add_ideas = { BAN_secret_police_cooperate }
 		swap_ideas = {
 			add_idea = BAN_lawless_land3
@@ -1609,6 +1652,12 @@ country_event = { # The New Government Event
 	is_triggered_only = yes
 	option = { # Stack the government with Reeve's supporters.
 		name = bandit.43.a
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		custom_effect_tooltip = BAN_TT_commune_support_decrease
 		add_to_variable = {
 			var = BAN_commune_support_var
@@ -1621,6 +1670,12 @@ country_event = { # The New Government Event
 	}
 	option = { # Ensure that the government is evenly spread between Reeve and the Communes.
 		name = bandit.43.b
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		custom_effect_tooltip = BAN_TT_commune_support_increase
 		add_to_variable = {
 			var = BAN_commune_support_var
@@ -1654,6 +1709,12 @@ country_event = { # The New Generals Event
 	is_triggered_only = yes
 	option = { # Appoint only the finest generals.
 		name = bandit.44.a
+		trigger = {
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
 		custom_effect_tooltip = BAN_TT_commune_support_decrease
 		add_to_variable = {
 			var = BAN_commune_support_var
@@ -1750,6 +1811,68 @@ country_event = { # salmarkt event
 	}
 	option = { # nah
 		name = bandit.47.b
+	}
+}
+
+country_event = { # Commune Coup
+	id = bandit.48
+	immediate = { log = "[Root.GetName]: event bandit.48" }
+	title = bandit.48.t
+	desc = bandit.48.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.48.a
+		kill_country_leader = yes
+		remove_unit_leader = 69104
+		create_country_leader = {
+			name = "Council of the Communes"
+			desc = BAN_communes_leader
+			picture = "PanGriffonianAssembly.tga"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = { provisional }
+		}
+		if = {
+			limit = {
+				has_idea = BAN_amnesty_and_labor
+			}
+			swap_ideas = {
+				add_idea = BAN_penal_labor
+				remove_idea = BAN_amnesty_and_labor
+			}
+			else_if = {
+				limit = {
+					has_idea = BAN_service_amnesty
+				}
+				swap_ideas = {
+					add_idea = BAN_penal_labor
+					remove_idea = BAN_service_amnesty
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_idea = BAN_secret_police
+			}
+			swap_ideas = {
+				add_idea = BAN_commune_police
+				remove_idea = BAN_secret_police
+			}
+			else_if = {
+				limit = {
+					has_idea = BAN_secret_police_cooperate
+				}
+				swap_ideas = {
+					add_idea = BAN_commune_police
+					remove_idea = BAN_secret_police_cooperate
+				}
+			}
+		}
+		add_to_variable = {
+			var = BAN_commune_support_var
+			value = 20
+		}
 	}
 }
 

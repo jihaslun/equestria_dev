@@ -141,6 +141,7 @@ create_field_marshal = {
 	traits = {
 		trait_mountaineer trait_bandit
 	}
+	id = 69100
 	skill = 3
 	attack_skill = 4
 	defense_skill = 1
@@ -153,6 +154,7 @@ create_corps_commander = {
 	traits = {
 		trait_reckless trait_bandit
 	}
+	id = 69101
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -166,6 +168,7 @@ create_corps_commander = {
 	traits = {
 		trait_mountaineer trait_bandit
 	}
+	id = 69102
 	skill = 1
 	attack_skill = 1
 	defense_skill = 2
@@ -179,6 +182,7 @@ create_corps_commander = {
 	traits = { 
 		trait_bandit
 	}
+	id = 69103
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
