@@ -167,6 +167,21 @@ BAN_new_generals:0 "The New Generals"
 BAN_our_comrades_in_griffonstone:0 "Comrades in Griffonstone"
 BAN_rebuild_griffonstone:0 "Rebuild Griffonstone"
 BAN_connect_griffonstone:0 "Roads Throughout Griffonstone"
+BAN_avenge_gla:0 "Avenge the GLA"
+BAN_befriend_gla:0 "Comrades in Prywhen"
+BAN_conquer_lushi:0 "Liberate the Lushian Peasants"
+BAN_conquer_cyanolisia:0 "End the Oppression in Auropallieta"
+BAN_conquer_the_host:0 "Free the Cossacks"
+BAN_conquer_gryphus:0 "Destroy the Capitalist Scum"
+BAN_evi_triumph:0 "Triumph in Evi"
+BAN_liberate_auropallieta:0 "Free the Minotaurs of Auropallieta"
+BAN_conquer_rumare:0 "Jewel of the Lake"
+BAN_conquer_falcor:0 "Liberate the People of Falcor"
+BAN_conquer_sicameon:0 "Spread Socialism to Sicameon"
+BAN_conquer_wingbardy:0 "End the Dictatorship of Wingbardy"
+BAN_conquer_asterion:0 "Introduce Asterion to True Freedom"
+BAN_commie_south:0 "Triumph in Southern Griffonia"
+
 ## Industry ##
 BAN_bandit_rifles:0 "New Rifles"
 BAN_bandit_rifles_desc:0 "Guns, guns, we need more guns! But more importantly, we need better guns. Success of our way of living is based solely on the fact how well armed we are compared to our victims."
@@ -382,12 +397,15 @@ BAN_march_to_victory_idea:0 "The March to Victory"
 BAN_march_to_victory_idea_desc:0 "Equality in our army has been perfected, and now we all march together, ready to fight."
 
 BAN_partisan_army:0 "Reeve's Partisan Army"
-BAN_service_guarantees_amnesty:0 "Service Guarantees Amnesty"
+BAN_service_amnesty:0 "Service Guarantees Amnesty"
 BAN_amnesty_and_labor:0 "Bandit Laborers & Soldiers"
-BAN_penal_laborers:0 "Penal Laborers"
+BAN_penal_labor:0 "Penal Laborers"
 BAN_secret_police:0 "Blackhollow Department of Subversive Movements"
 BAN_secret_police_cooperate:0 "B.D.S.M. and Communalist Police"
 BAN_commune_police:0 "Communalist Police"
+BAN_reeve_army:0 "Reeve's Army"
+BAN_triumph_in_evi:0 "Liberation of Evi"
+BAN_southern_triumph:0 "Liberation of Southern Griffonia"
 
 ### Events ###
 bandit.1.t:0 "The Prywhen Civil War"
@@ -607,6 +625,20 @@ bandit.44.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF 
 bandit.44.a:0 "Reeve's army will be led by claw-picked creatures."
 bandit.44.b:0 "Reeve will allow the Communalists to have a say in the military staff."
 
+bandit.45.t:0 "Reeve wants to invite [reeve_prywhen_invite.GetName] to [Root.GetFactionName]"
+bandit.45.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.45.a:0 "Send the invitation."
+bandit.45.b:0 "They cannot be allowed into our alliance."
+
+bandit.46.t:0 "[From.GetLeader] refuses to allow [reeve_prywhen_invite.GetName] into [Root.GetFactionName]"
+bandit.46.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.46.a:0 "That's a shame."
+
+bandit.47.t:0 "Cede Salmarkt to Prywhen?"
+bandit.47.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.47.a:0 "They are our trusted allies, and we will give them Salmarkt."
+bandit.47.b:0 "They may be our allies, but we bled for Salmarkt."
+
 ### Custom Tooltips ###
 BAN_TT_mercs:0 "Allows you to hire mercenary companies from the §YBlack Market§!.\n"
 BAN_TT_black_market:0 "Allows you to purchase illicit goods from the §YBlack Market§!.\n"
@@ -723,6 +755,9 @@ gommie_boi_desc:0 "Reeve Blyeddin was born in a family that was always a brink a
 
 ### Opinion Loc ###
 BAN_imperial:0 "Whitecrest-Bluecrest Friendship"
+
+### Faction Loc ###
+BAN_Reeve_Faction:0 "Socialist Alliance of Evi"
 
 ### Cosmetic Tag ###
 BAN_QUEEN_fascism:0 "Blackrock's Bandit Queendom"

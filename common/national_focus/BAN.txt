@@ -31,6 +31,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_gather_tribute"
+			
 			custom_effect_tooltip = BAN_TT_4_loot
 
 			add_political_power = 100
@@ -38,7 +39,14 @@ focus_tree = {
 				var = loot
 				value = 4
 			}
-
+			set_division_template_lock = {
+				division_template = "Bandit Warband"
+				is_locked = no
+			}
+			set_division_template_lock = {
+				division_template = "Bandit Mountain Warband"
+				is_locked = no
+			}
 			hidden_effect = {
 				country_event = { id = bandit.12 days = 4 }
 			}
@@ -1614,6 +1622,12 @@ focus_tree = {
 			country_event = {
 				id = bandit.35
 			}
+			delete_unit_template_and_units = {
+				division_template = "Bandit Warband"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Bandit Mountain Warband"
+			}
 		}
 	}
 
@@ -1915,6 +1929,14 @@ focus_tree = {
 				add_idea = BAN_reeve_army
 				remove_idea = BAN_partisan_army
 			}
+			set_division_template_lock = {
+				division_template = "Socialist Partisans"
+				is_locked = no
+			}
+			set_division_template_lock = {
+				division_template = "Communalist Militia"
+				is_locked = no
+			}
 		}
 	}
 
@@ -1925,6 +1947,7 @@ focus_tree = {
 		prerequisite = { focus = BAN_equal_minds }
 		available = {
 			has_government = communism
+			is_subject = no
 		}
 		relative_position_id = BAN_control_restored
 		cost = 10.00
@@ -1933,6 +1956,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		will_lead_to_war_with = BOI
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_true_equality"
 			create_wargoal = {
@@ -2133,6 +2157,877 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = BAN_avenge_gla
+		icon = GFX_goal_prywhen_civilwar_yellow
+		prerequisite = {
+			focus = BAN_rebuild_griffonstone
+			focus = BAN_connect_griffonstone
+		}
+		mutually_exclusive = { focus = BAN_befriend_gla }
+		available = {
+			has_government = communism
+			is_subject = no
+			country_exists = BRF
+			NOT = {
+				country_exists = GRW
+			}
+		}
+		bypass = {
+			has_war_with = BRF
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_our_comrades_in_griffonstone
+		x = -2
+		y = 2
+		cost = 10
+		will_lead_to_war_with = BRF
+		completion_reward = {
+			create_faction = BAN_Reeve_Faction
+			create_wargoal = {
+				target = BRF
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_lushi
+		icon = GFX_goal_support_from_lushi
+		prerequisite = { focus = BAN_avenge_gla }
+		available = {
+			LUS = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			LUS = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_avenge_gla
+		x = -1
+		y = 1
+		cost = 10
+		will_lead_to_war_with = LUS
+		completion_reward = {
+			if = {
+				limit = {
+					LUS = {
+						has_government = communism
+					}
+				}
+				LUS = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else = {
+					create_wargoal = {
+						target = LUS
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_cyanolisia
+		icon = GFX_focus_indy_swing_the_sword
+		prerequisite = { focus = BAN_avenge_gla }
+		available = {
+			CYA = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			CYA = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_avenge_gla
+		x = 1
+		y = 1
+		cost = 10
+		will_lead_to_war_with = CYA
+		completion_reward = {
+			if = {
+				limit = {
+					CYA = {
+						has_government = communism
+					}
+				}
+				CYA = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else = {
+					create_wargoal = {
+						target = CYA
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_the_host
+		icon = GFX_goal_support_from_GRY
+		prerequisite = { focus = BAN_conquer_lushi focus = BAN_conquer_cyanolisia }
+		available = {
+			GRY = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			GRY = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_avenge_gla
+		x = 1
+		y = 2
+		cost = 10
+		will_lead_to_war_with = GRY
+		completion_reward = {
+			if = {
+				limit = {
+					GRY = {
+						has_government = communism
+					}
+				}
+				GRY = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else = {
+					create_wargoal = {
+						target = GRY
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_gryphus
+		icon = GFX_goal_support_from_GRU
+		prerequisite = { focus = BAN_conquer_lushi focus = BAN_conquer_cyanolisia }
+		available = {
+			GRU = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			GRU = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_avenge_gla
+		x = -1
+		y = 2
+		cost = 10
+		will_lead_to_war_with = GRU
+		completion_reward = {
+			if = {
+				limit = {
+					GRU = {
+						has_government = communism
+					}
+				}
+				GRU = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else = {
+					create_wargoal = {
+						target = GRU
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_evi_triumph
+		icon = GFX_goal_red_star_green_wreath
+		prerequisite = { focus = BAN_conquer_the_host }
+		prerequisite = { focus = BAN_conquer_gryphus }
+		available = {
+			BRF = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			GRW = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			LUS = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			CYA = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			GRU = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			GRY = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_avenge_gla
+		x = 0
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_ideas = { BAN_triumph_in_evi }
+		}
+	}
+
+	focus = {
+		id = BAN_befriend_gla
+		icon = GFX_goal_holding_hands_over_a_red_star
+		prerequisite = {
+			focus = BAN_rebuild_griffonstone
+			focus = BAN_connect_griffonstone
+		}
+		mutually_exclusive = { focus = BAN_avenge_gla }
+		available = {
+			has_government = communism
+			is_subject = no
+			is_in_faction = no
+			country_exists = GRW
+			NOT = {
+				has_war_with = GRW
+			}
+			GRW = {
+				OR = {
+					has_completed_focus = GRW_protectionism
+					has_completed_focus = GRW_exansionism
+					has_completed_focus = GRW_global_revolution
+				}
+			}
+		}
+		bypass = {
+			is_in_faction_with = GRW
+		}
+		relative_position_id = BAN_our_comrades_in_griffonstone
+		x = 2
+		y = 2
+		cost = 10
+		will_lead_to_war_with = BRF
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = BRF
+				}
+				create_wargoal = {
+					target = BRF
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GRW = {
+						is_faction_leader = yes
+					}
+				}
+				GRW = {
+					country_event = {
+						id = generic.2
+						days = 2
+					}
+				}
+				else_if = {
+					limit = {
+						GRW = {
+							OR = {
+								has_completed_focus = GRW_protectionism
+								has_completed_focus = GRW_exansionism
+							}
+						}
+					}
+					create_faction = BAN_Reeve_Faction
+					GRW = {
+						country_event = {
+							id = generic.5
+							days = 2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_liberate_auropallieta
+		icon = GFX_goal_MIT_Red_Bull_Rising
+		prerequisite = { focus = BAN_befriend_gla }
+		available = {
+			CYA = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			CYA = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_befriend_gla
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = {
+					CYA = {
+						has_government = communism
+					}
+					is_faction_leader = yes
+				}
+				CYA = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else_if = {
+					limit = {
+						CYA = {
+							has_government = communism
+						}
+						is_in_faction_with = GRW
+						GRW = {
+							is_faction_leader = yes
+						}
+					}
+					CYA = { save_global_event_target_as = reeve_prywhen_invite }
+					GRW = {
+						country_event = {
+							id = bandit.45
+							days = 2
+						}
+					}
+					else_if = {
+						limit = {
+							CYA = {
+								NOT = {
+									has_government = communism
+								}
+							}
+						}
+						create_wargoal = {
+							target = CYA
+							type = annex_everything
+						}
+						set_country_flag = BAN_salmarkt_stuff
+						else = {
+							#
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_rumare
+		icon = GFX_focus_indy_swing_the_sword
+		prerequisite = { focus = BAN_befriend_gla }
+		available = {
+			LAK = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			LAK = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_befriend_gla
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = {
+					LAK = {
+						has_government = communism
+					}
+					is_faction_leader = yes
+				}
+				LAK = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else_if = {
+					limit = {
+						LAK = {
+							has_government = communism
+						}
+						is_in_faction_with = GRW
+						GRW = {
+							is_faction_leader = yes
+						}
+					}
+					LAK = { save_global_event_target_as = reeve_prywhen_invite }
+					GRW = {
+						country_event = {
+							id = bandit.45
+							days = 2
+						}
+					}
+					else_if = {
+						limit = {
+							LAK = {
+								NOT = {
+									has_government = communism
+								}
+							}
+						}
+						create_wargoal = {
+							target = LAK
+							type = annex_everything
+						}
+						else = {
+							#
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_falcor
+		icon = GFX_focus_generic_eagle
+		prerequisite = { focus = BAN_conquer_rumare focus = BAN_liberate_auropallieta }
+		available = {
+			FAL = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			FAL = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_befriend_gla
+		x = -1
+		y = 2
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = {
+					FAL = {
+						has_government = communism
+					}
+					is_faction_leader = yes
+				}
+				FAL = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else_if = {
+					limit = {
+						FAL = {
+							has_government = communism
+						}
+						is_in_faction_with = GRW
+						GRW = {
+							is_faction_leader = yes
+						}
+					}
+					FAL = { save_global_event_target_as = reeve_prywhen_invite }
+					GRW = {
+						country_event = {
+							id = bandit.45
+							days = 2
+						}
+					}
+					else_if = {
+						limit = {
+							FAL = {
+								NOT = {
+									has_government = communism
+								}
+							}
+						}
+						create_wargoal = {
+							target = FAL
+							type = annex_everything
+						}
+						else = {
+							#
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_sicameon
+		icon = GFX_focus_sic_flag
+		prerequisite = { focus = BAN_conquer_rumare focus = BAN_liberate_auropallieta }
+		available = {
+			SIC = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			SIC = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_befriend_gla
+		x = 1
+		y = 2
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = {
+					SIC = {
+						has_government = communism
+					}
+					is_faction_leader = yes
+				}
+				SIC = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else_if = {
+					limit = {
+						SIC = {
+							has_government = communism
+						}
+						is_in_faction_with = GRW
+						GRW = {
+							is_faction_leader = yes
+						}
+					}
+					SIC = { save_global_event_target_as = reeve_prywhen_invite }
+					GRW = {
+						country_event = {
+							id = bandit.45
+							days = 2
+						}
+					}
+					else_if = {
+						limit = {
+							SIC = {
+								NOT = {
+									has_government = communism
+								}
+							}
+						}
+						create_wargoal = {
+							target = SIC
+							type = annex_everything
+						}
+						else = {
+							#
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_wingbardy
+		icon = GFX_focus_wng_flag
+		prerequisite = { focus = BAN_conquer_falcor focus = BAN_conquer_sicameon }
+		available = {
+			WNG = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			WNG = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_befriend_gla
+		x = -1
+		y = 3
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = {
+					WNG = {
+						has_government = communism
+					}
+					is_faction_leader = yes
+				}
+				WNG = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else_if = {
+					limit = {
+						WNG = {
+							has_government = communism
+						}
+						is_in_faction_with = GRW
+						GRW = {
+							is_faction_leader = yes
+						}
+					}
+					WNG = { save_global_event_target_as = reeve_prywhen_invite }
+					GRW = {
+						country_event = {
+							id = bandit.45
+							days = 2
+						}
+					}
+					else_if = {
+						limit = {
+							WNG = {
+								NOT = {
+									has_government = communism
+								}
+							}
+						}
+						create_wargoal = {
+							target = WNG
+							type = annex_everything
+						}
+						else = {
+							#
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_conquer_asterion
+		icon = GFX_goal_MIT_The_Brutes_of_Old
+		prerequisite = { focus = BAN_conquer_falcor focus = BAN_conquer_sicameon }
+		available = {
+			MIT = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		bypass = {
+			MIT = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_befriend_gla
+		x = 1
+		y = 3
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = {
+					MIT = {
+						has_government = communism
+					}
+					is_faction_leader = yes
+				}
+				MIT = {
+					country_event = {
+						id = generic.5
+						days = 2
+					}
+				}
+				else_if = {
+					limit = {
+						MIT = {
+							has_government = communism
+						}
+						is_in_faction_with = GRW
+						GRW = {
+							is_faction_leader = yes
+						}
+					}
+					MIT = { save_global_event_target_as = reeve_prywhen_invite }
+					GRW = {
+						country_event = {
+							id = bandit.45
+							days = 2
+						}
+					}
+					else_if = {
+						limit = {
+							MIT = {
+								NOT = {
+									has_government = communism
+								}
+							}
+						}
+						create_wargoal = {
+							target = MIT
+							type = annex_everything
+						}
+						else = {
+							#
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_commie_south
+		icon = GFX_goal_red_star
+		prerequisite = { focus = BAN_conquer_wingbardy focus = BAN_conquer_asterion }
+		available = {
+			CYA = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			LAK = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			FAL = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			SIC = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			WNG = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			MIT = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		relative_position_id = BAN_befriend_gla
+		x = 0
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_ideas = { BAN_southern_triumph }
+		}
+	}
+
 	### Industry
 	focus = {
 		id = BAN_bandit_rifles
@@ -2146,7 +3041,7 @@ focus_tree = {
 			}
 		}
 		cost = 10.00
-		x = 22
+		x = 26
 		y = 0
 		ai_will_do = {
 			factor = 100
@@ -2328,7 +3223,7 @@ focus_tree = {
 			}
 		}
 		cost = 10.00
-		x = 26
+		x = 34
 		y = 0
 		ai_will_do = {
 			factor = 100
@@ -2516,12 +3411,12 @@ focus_tree = {
 		mutually_exclusive = { focus = BAN_energize_the_economy }
 		available = {
 			AND = {
-				has_completed_focus = BAN_equal_factories
+				has_completed_focus = BAN_equal_minds
 				has_government = communism
 			}
 		}
 		cost = 10.00
-		x = 30
+		x = 42
 		y = 0
 		ai_will_do = {
 			factor = 100
@@ -2692,7 +3587,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 10
-		x = 34
+		x = 48
 		y = 0
 		ai_will_do = {
 			factor = 80
@@ -2867,7 +3762,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 38
+		x = 52
 		y = 0
 		ai_will_do = {
 			factor = 60
@@ -3053,13 +3948,13 @@ focus_tree = {
 		}
 		available = {
 			AND = {
-				has_completed_focus = BAN_control_restored
+				has_completed_focus = BAN_mandatory_conscription
 				has_government = communism
 			}
 		}
 		icon = GFX_goal_support_communism
 		cost = 10
-		x = 42
+		x = 56
 		y = 0
 		ai_will_do = {
 			factor = 60
@@ -3209,7 +4104,7 @@ focus_tree = {
 		id = BAN_naniwich_airbase
 		icon = GFX_goal_generic_air_doctrine
 		cost = 10
-		x = 47
+		x = 61
 		y = 0
 		ai_will_do = {
 			factor = 20
@@ -3399,7 +4294,7 @@ focus_tree = {
 		id = BAN_sailing_the_high_seas
 		icon = GFX_goal_generic_build_navy
 		cost = 10
-		x = 52
+		x = 66
 		y = 0
 		ai_will_do = {
 			factor = 20

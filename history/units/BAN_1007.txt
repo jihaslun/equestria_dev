@@ -1,5 +1,6 @@
 ﻿division_template = {
-	name = "Griffon Infantry Division"
+	name = "Bandit Warband"
+	is_locked = yes
 	division_names_group = BAN_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -15,7 +16,8 @@
 	}
 }
 division_template = {
-	name = "Mountaineer Division"
+	name = "Bandit Mountain Warband"
+	is_locked = yes
 	division_names_group = BAN_MNT_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -33,7 +35,7 @@ units = {
 			name_order = 1
 		}
 		location = 10025
-		division_template = "Griffon Infantry Division"
+		division_template = "Bandit Warband"
 		start_experience_factor = 1.0 
 	}
 	division = {
@@ -42,7 +44,7 @@ units = {
 			name_order = 2
 		}
 		location = 10025
-		division_template = "Griffon Infantry Division"
+		division_template = "Bandit Warband"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 	}
@@ -52,7 +54,7 @@ units = {
 			name_order = 3
 		}
 		location = 10025
-		division_template = "Griffon Infantry Division"
+		division_template = "Bandit Warband"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 	}
@@ -62,7 +64,7 @@ units = {
 			name_order = 4
 		}
 		location = 10025
-		division_template = "Griffon Infantry Division"
+		division_template = "Bandit Warband"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
@@ -72,7 +74,7 @@ units = {
 			name_order = 5
 		}
 		location = 10025
-		division_template = "Griffon Infantry Division"
+		division_template = "Bandit Warband"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
@@ -80,14 +82,14 @@ units = {
 	division = {
 		name = "Mountain Warband"
 		location = 10025
-		division_template = "Mountaineer Division"
+		division_template = "Bandit Mountain Warband"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 	}
 	division = {
 		name = "Mountain Warband"
 		location = 10025
-		division_template = "Mountaineer Division"
+		division_template = "Bandit Mountain Warband"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 	}

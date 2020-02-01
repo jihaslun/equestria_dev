@@ -569,6 +569,39 @@ ideas = {
 				stability_factor = 0.1
 			}
 		}
+
+		BAN_triumph_in_evi = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = griffon_army1
+			modifier = {
+				non_core_manpower = 0.03
+				war_support_factor = 0.15
+				conscription_factor = 0.05
+				army_morale_factor = 0.05
+				communism_drift = 0.01
+			}
+		}
+
+		BAN_southern_triumph = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = griffon_army1
+			modifier = {
+				MONTHLY_POPULATION = 0.35
+				non_core_manpower = 0.05
+				war_support_factor = 0.25
+				conscription_factor = 0.1
+				army_morale_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				communism_drift = 0.02
+			}
+		}
 		
 		BAN_banditry = {
 			allowed = {

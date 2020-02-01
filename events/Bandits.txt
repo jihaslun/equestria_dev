@@ -1671,6 +1671,88 @@ country_event = { # The New Generals Event
 	}
 }
 
+country_event = { # Reeve wants a nation in the faction (Prywhen event)
+	id = bandit.45
+	immediate = { log = "[Root.GetName]: event bandit.45" }
+	title = bandit.45.t
+	desc = bandit.45.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # sure
+		name = bandit.45.a
+		ai_chance = {
+			base = 100
+		}
+		event_target:reeve_prywhen_invite = {
+			country_event = {
+				id = generic.5
+				days = 2
+			}
+		}
+	}
+	option = { # no
+		name = bandit.45.b
+		ai_chance = {
+			base = 0
+		}
+		FROM = {
+			country_event = {
+				id = bandit.46
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { # Prywhen doesn't want them in
+	id = bandit.46
+	immediate = { log = "[Root.GetName]: event bandit.46" }
+	title = bandit.46.t
+	desc = bandit.46.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # dang
+		name = bandit.46.a
+		add_political_power = -10
+	}
+}
+
+country_event = { # salmarkt event
+	id = bandit.47
+	immediate = { log = "[Root.GetName]: event bandit.47" }
+	title = bandit.47.t
+	desc = bandit.47.desc
+	picture = GFX_event_griffon_soldier
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = BAN_salmarkt_stuff
+		OR = {
+			AND = {
+				owns_state = 507
+				controls_state = 507
+			}
+			CYA = {
+				is_subject_of = ROOT
+				owns_state = 507
+				controls_state = 507
+			}
+		}
+		is_in_faction_with = GRW
+	}
+	mean_time_to_happen = {
+		days = 4
+	}
+	option = { # sure i will give prywhen it
+		name = bandit.47.a
+		GRW = {
+			transfer_state = 507
+		}
+	}
+	option = { # nah
+		name = bandit.47.b
+	}
+}
+
 country_event = { ## Decision workaround
 	id = bandit.1000
 	immediate = {log = "[Root.GetName]: event bandit.1000"}#Auto-logging
