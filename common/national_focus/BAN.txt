@@ -4132,8 +4132,8 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 10
-		x = 48
-		y = 0
+		x = 28
+		y = 9
 		ai_will_do = {
 			factor = 80
 		}
@@ -4307,8 +4307,8 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 52
-		y = 0
+		x = 36
+		y = 9
 		ai_will_do = {
 			factor = 60
 		}
@@ -4485,37 +4485,49 @@ focus_tree = {
 
 
 	### Commie
-	focus = {
+	focus = { # Weapons for the Army
 		id = BAN_peoples_army
 		mutually_exclusive  = {
 			focus = BAN_blackrocks_better_army
 			focus = BAN_cyrils_retinue
 		}
 		available = {
-			AND = {
-				has_completed_focus = BAN_mandatory_conscription
-				has_government = communism
+			has_completed_focus = BAN_mandatory_conscription
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
 			}
 		}
 		icon = GFX_goal_support_communism
 		cost = 10
-		x = 56
-		y = 0
+		x = 44
+		y = 9
 		ai_will_do = {
 			factor = 60
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_peoples_army"
-			add_ideas = BAN_peoples_army_idea
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = BAN }
 		}
 	}
 
 	focus = {
 		id = BAN_everyone_serves
-		icon = GFX_goal_skull_treaty
+		icon = GFX_goal_griffon_special_force
 		prerequisite = { focus = BAN_peoples_army }
 		available = {
 			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 		}
 		relative_position_id = BAN_peoples_army
 		cost = 10
@@ -4526,16 +4538,29 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_everyone_serves"
-			add_ideas = BAN_everyone_serves_idea
+			add_tech_bonus = {
+				name = mass_assault
+				bonus = 1.0
+				uses = 1
+				category = cat_mass_assault
+			}
+			swap_ideas = {
+				add_idea = BAN_reeve_army2
+				remove_idea = BAN_reeve_army
+			}
 		}
 	}
 
 	focus = {
 		id = BAN_guns_for_everyone
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_goal_revolution
 		prerequisite = { focus = BAN_everyone_serves }
 		available = {
 			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 		}
 		relative_position_id = BAN_peoples_army
 		cost = 10
@@ -4547,15 +4572,15 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_guns_for_everyone"
 			swap_ideas = {
-				remove_idea = BAN_everyone_serves_idea
-				add_idea = BAN_everyone_serves_idea2
+				remove_idea = BAN_reeve_army2
+				add_idea = BAN_reeve_army3
 			}
 		}
 	}
 
 	focus = {
 		id = BAN_equal_command
-		icon = GFX_goal_officers
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = BAN_peoples_army }
 		available = {
 			has_government = communism
@@ -4569,16 +4594,25 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_command"
-			add_ideas = BAN_equal_command_idea
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = support_tech
+			}
 		}
 	}
 
 	focus = {
 		id = BAN_reserve_forces
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_focus_healthcare_program
 		prerequisite = { focus = BAN_equal_command }
 		available = {
 			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 		}
 		relative_position_id = BAN_peoples_army
 		cost = 10
@@ -4589,9 +4623,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_reserve_forces"
-			swap_ideas = {
-				remove_idea = BAN_equal_command_idea
-				add_idea = BAN_equal_command_idea2
+			add_tech_bonus = {
+				name = hospital_research
+				bonus = 1.0
+				uses = 2
+				category = hospital_tech
 			}
 		}
 	}
@@ -4603,6 +4639,10 @@ focus_tree = {
 		prerequisite = { focus = BAN_guns_for_everyone }
 		available = {
 			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 		}
 		relative_position_id = BAN_peoples_army
 		cost = 10
@@ -4613,9 +4653,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_march_to_victory"
-			remove_ideas = BAN_equal_command_idea2
-			remove_ideas = BAN_everyone_serves_idea2
-			add_ideas = BAN_march_to_victory_idea
+			swap_ideas = {
+				add_idea = BAN_reeve_army4
+				remove_idea = BAN_reeve_army3
+			}
 		}
 	}
 
@@ -4625,6 +4666,10 @@ focus_tree = {
 		prerequisite = { focus = BAN_march_to_victory }
 		available = {
 			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
 		}
 		relative_position_id = BAN_peoples_army
 		cost = 10
@@ -4644,12 +4689,189 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = BAN_command_staff
+		icon = GFX_goal_officers
+		prerequisite = { focus = BAN_guns_for_everyone }
+		available = {
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		relative_position_id = BAN_peoples_army
+		x = -2
+		y = 3
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_command_staff"
+			add_ideas = { BAN_reeve_general_staff }
+		}
+	}
+
+	focus = {
+		id = BAN_precise_offensives
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BAN_command_staff }
+		available = {
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		relative_position_id = BAN_peoples_army
+		x = -2
+		y = 4
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_precise_offensives"
+			swap_ideas = {
+				add_idea = BAN_reeve_general_staff2
+				remove_idea = BAN_reeve_general_staff
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_modern_rifles
+		icon = GFX_goal_military_academy
+		prerequisite = { focus = BAN_reserve_forces }
+		available = {
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		relative_position_id = BAN_peoples_army
+		x = 2
+		y = 3
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_modern_rifles"
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_magic_guns
+		icon = GFX_goal_magical_weapon_focus
+		prerequisite = { focus = BAN_modern_rifles }
+		available = {
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		relative_position_id = BAN_peoples_army
+		x = 2
+		y = 4
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_magic_guns"
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				technology = magical_weapons
+				technology = magical_weapons1
+				technology = magical_weapons2
+				technology = magical_weapons3
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_supply_optimization
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = BAN_precise_offensives }
+		prerequisite = { focus = BAN_griffon_wave_tactics}
+		available = {
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		relative_position_id = BAN_peoples_army
+		x = -1
+		y = 5
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_supply_optimization"
+			swap_ideas = {
+				add_idea = BAN_reeve_general_staff3
+				remove_idea = BAN_reeve_general_staff2
+			}
+			every_unit_leader = {
+				add_logistics = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_efficient_designs
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = BAN_magic_guns }
+		prerequisite = { focus = BAN_griffon_wave_tactics}
+		available = {
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		relative_position_id = BAN_peoples_army
+		x = 1
+		y = 5
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_efficient_designs"
+			swap_ideas = {
+				add_idea = BAN_reeve_army5
+				remove_idea = BAN_reeve_army4
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_rally_people_army
+		icon = GFX_goal_conscription
+		prerequisite = { focus = BAN_supply_optimization }
+		prerequisite = { focus = BAN_efficient_designs }
+		available = {
+			has_government = communism
+			has_country_leader = {
+				name = "Reeve Blyeddin"
+				ruling_only = yes
+			}
+		}
+		relative_position_id = BAN_peoples_army
+		x = 0
+		y = 6
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAN_rally_people_army"
+			add_manpower = 50000
+			add_war_support = 0.1
+			army_experience = 10
+		}
+	}
+
 	### Air
 	focus = {
 		id = BAN_naniwich_airbase
 		icon = GFX_goal_generic_air_doctrine
 		cost = 10
-		x = 61
+		x = 48
 		y = 0
 		ai_will_do = {
 			factor = 20
@@ -4839,7 +5061,7 @@ focus_tree = {
 		id = BAN_sailing_the_high_seas
 		icon = GFX_goal_generic_build_navy
 		cost = 10
-		x = 66
+		x = 54
 		y = 0
 		ai_will_do = {
 			factor = 20
