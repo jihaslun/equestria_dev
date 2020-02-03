@@ -887,6 +887,32 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = neutral_desc_for_civil_war
 			}
+			create_field_marshal = {
+				name = "Cyrille Bluecrest"
+				portrait_path = "gfx/leaders/BAN/Bluecrest.tga"
+				traits = {
+					hill_fighter infantry_leader
+				}
+				id = 69110
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Silas Blackbeak"
+				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_navy_1.dds"
+				traits = {
+					trait_mountaineer brilliant_strategist
+				}
+				id = 69111
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
 		}
 	}
 
@@ -1477,6 +1503,32 @@ focus_tree = {
 				planning_skill = 2
 				logistics_skill = 3
 			}
+			create_corps_commander = {
+				name = "Giannis Horndrogiannis"
+				portrait_path = "gfx/leaders/MIT/MIT_generic_general_4.tga"
+				traits = {
+					commando
+				}
+				id = 69105
+				skill = 1
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Gavrila Tercel"
+				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_7.dds"
+				traits = {
+					trait_engineer
+				}
+				id = 69106
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
 			hidden_effect = {
 				set_country_flag = commie_desc_for_civil_war
 			}
@@ -1787,7 +1839,7 @@ focus_tree = {
 		x = -3
 		y = 3
 		ai_will_do = {
-			factor = 100
+			factor = 90
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_state_education"
@@ -1806,6 +1858,9 @@ focus_tree = {
 		prerequisite = { focus = BAN_equal_labor }
 		available = {
 			has_government = communism
+		}
+		ai_will_do = {
+			factor = 100
 		}
 		relative_position_id = BAN_control_restored
 		x = -1
@@ -1833,6 +1888,9 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
+		ai_will_do = {
+			factor = 100
+		}
 		relative_position_id = BAN_control_restored
 		x = 1
 		y = 3
@@ -1857,13 +1915,13 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
+		ai_will_do = {
+			factor = 90
+		}
 		relative_position_id = BAN_control_restored
 		cost = 10.00
 		x = 3
 		y = 3
-		ai_will_do = {
-			factor = 100
-		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_mandatory_work"
 			country_event = {
@@ -1998,6 +2056,12 @@ focus_tree = {
 				target = BOI
 				type = annex_everything
 			}
+			add_state_claim = 488
+			add_state_claim = 531
+			add_state_claim = 389
+			add_state_claim = 471
+			add_state_claim = 384
+			add_state_claim = 679
 		}
 	}
 
@@ -2007,6 +2071,9 @@ focus_tree = {
 		prerequisite = { focus = BAN_true_equality }
 		available = {
 			owns_state = 389
+		}
+		ai_will_do = {
+			factor = 200
 		}
 		relative_position_id = BAN_true_equality
 		x = 0
@@ -2030,6 +2097,9 @@ focus_tree = {
 		available = {
 			owns_state = 389
 			controls_state = 389
+		}
+		ai_will_do = {
+			factor = 101
 		}
 		bypass = {
 			389 = {
@@ -2081,6 +2151,9 @@ focus_tree = {
 				controls_state = 679
 				controls_state = 384
 			}
+		}
+		ai_will_do = {
+			factor = 101
 		}
 		cancel_if_invalid = yes
 		relative_position_id = BAN_our_comrades_in_griffonstone
@@ -2214,6 +2287,9 @@ focus_tree = {
 		}
 		bypass = {
 			has_war_with = BRF
+		}
+		ai_will_do = {
+			factor = 100
 		}
 		cancel_if_invalid = yes
 		relative_position_id = BAN_our_comrades_in_griffonstone
@@ -2487,6 +2563,9 @@ focus_tree = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 200
+		}
 		cancel_if_invalid = yes
 		relative_position_id = BAN_avenge_gla
 		x = 0
@@ -2530,6 +2609,9 @@ focus_tree = {
 		}
 		bypass = {
 			is_in_faction_with = GRW
+		}
+		ai_will_do = {
+			factor = 200
 		}
 		relative_position_id = BAN_our_comrades_in_griffonstone
 		x = 2
@@ -3105,6 +3187,9 @@ focus_tree = {
 					is_in_faction_with = ROOT
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 200
 		}
 		cancel_if_invalid = yes
 		relative_position_id = BAN_befriend_gla
@@ -3896,14 +3981,14 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_militarization"
 			if = {
 				limit = {
-					has_ideas = early_mobilisation
+					has_idea = low_economic_mobilisation
 				}
-				add_ideas = partial_mobilisation
+				add_ideas = partial_economic_mobilisation
 				else_if = {
 					limit = {
-						has_ideas = civilian_economy
+						has_idea = civilian_economy
 					}
-					add_ideas = early_mobilisation
+					add_ideas = low_economic_mobilisation
 				}
 			}
 			swap_ideas = {
@@ -4874,7 +4959,7 @@ focus_tree = {
 		x = 48
 		y = 0
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_naniwich_airbase"
@@ -4898,7 +4983,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_buy_fighters"
@@ -4921,7 +5006,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_buy_bombers"
@@ -4944,7 +5029,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_aviation_innovation"
@@ -4966,7 +5051,7 @@ focus_tree = {
 		x = -2
 		y = 3
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_secure_skies"
@@ -4991,7 +5076,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_death_from_above"
@@ -5015,7 +5100,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_bombs_from_above"
@@ -5042,7 +5127,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_advanced_doctrine"
@@ -5064,7 +5149,7 @@ focus_tree = {
 		x = 54
 		y = 0
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 
 		available = {
@@ -5087,7 +5172,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_battleships"
@@ -5110,7 +5195,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_plunderin"
@@ -5132,7 +5217,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_submarines"
@@ -5154,7 +5239,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_destroyers"
@@ -5176,7 +5261,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_battlecruiser_operational"

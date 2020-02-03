@@ -1524,6 +1524,19 @@ country_event = { # Punish the Bandits Event
 			value = -1
 		}
 		add_ideas = { BAN_service_amnesty }
+		create_corps_commander = {
+			name = "Dominik Pinfeather"
+			portrait_path = "gfx/leaders/BAN/BANGen.tga"
+			traits = {
+				trait_mountaineer trait_bandit
+			}
+			id = 69102
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
 	}
 	option = { # Let the most horrendous work for the communes, and the rest to the army.
 		name = bandit.39.b
@@ -1664,6 +1677,7 @@ country_event = { # The New Government Event
 			value = -1
 		}
 		remove_ideas = BAN_lawless_land3
+		set_country_flag = BAN_reeve_supporter_govt
 		#
 		# Shit for new advisors
 		#
@@ -1682,6 +1696,7 @@ country_event = { # The New Government Event
 			value = 1
 		}
 		remove_ideas = BAN_lawless_land3
+		set_country_flag = BAN_reeve_compromise_govt
 		#
 		# Shit for new advisors
 		#
@@ -1694,6 +1709,7 @@ country_event = { # The New Government Event
 			value = 2
 		}
 		remove_ideas = BAN_lawless_land3
+		set_country_flag = BAN_reeve_commune_govt
 		#
 		# Shit for new advisors
 		#
@@ -1720,12 +1736,14 @@ country_event = { # The New Generals Event
 			var = BAN_commune_support_var
 			value = -1
 		}
+		set_country_flag = BAN_reeve_quality_command
 		#
 		# Shit for new commanders
 		#
 	}
 	option = { # Allow the communes to pick some generals. (will have some worse generals)
 		name = bandit.44.b
+		set_country_flag = BAN_reeve_not_quality_command
 		# (no support increase is intentional)
 		# Shit for new commanders
 		#
@@ -1868,6 +1886,27 @@ country_event = { # Commune Coup
 					remove_idea = BAN_secret_police_cooperate
 				}
 			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = BAN_new_government
+				NOT = {
+					has_country_flag = BAN_reeve_commune_govt
+				}
+			}
+			clr_country_flag = BAN_reeve_supporter_govt
+			clr_country_flag = BAN_reeve_compromise_govt
+			set_country_flag = BAN_reeve_commune_govt
+		}
+		if = {
+			limit = {
+				has_completed_focus = BAN_new_generals
+				NOT = {
+					has_country_flag = BAN_reeve_not_quality_command
+				}
+			}
+			clr_country_flag = BAN_reeve_quality_command
+			set_country_flag = BAN_reeve_not_quality_command
 		}
 		add_to_variable = {
 			var = BAN_commune_support_var

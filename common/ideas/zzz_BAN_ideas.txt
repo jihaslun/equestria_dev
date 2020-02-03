@@ -586,7 +586,7 @@ ideas = {
 			picture = griffon_army1
 			modifier = {
 				army_leader_start_logistics_level = 1
-				supply_consumption = -0.1
+				supply_consumption_factor = -0.1
 				army_attack_factor = 0.05
 				army_org_factor = 0.05
 				planning_speed = 0.25
@@ -806,7 +806,7 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				consumer_goods_factor = 0.01
-				war_support = 0.025
+				war_support_factor = 0.025
 				production_factory_max_efficiency_factor = 0.025
 				industrial_capacity_factory = 0.025
 			}
@@ -826,7 +826,7 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				consumer_goods_factor = 0.02
-				war_support = 0.05
+				war_support_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				industrial_capacity_factory = 0.05
 			}
@@ -846,7 +846,7 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				consumer_goods_factor = 0.03
-				war_support = 0.075
+				war_support_factor = 0.075
 				production_factory_max_efficiency_factor = 0.075
 				industrial_capacity_factory = 0.075
 			}
@@ -866,7 +866,7 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				consumer_goods_factor = 0.04
-				war_support = 0.1
+				war_support_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				industrial_capacity_factory = 0.1
 			}
@@ -886,7 +886,7 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				consumer_goods_factor = 0.05
-				war_support = 0.15
+				war_support_factor = 0.15
 				production_factory_max_efficiency_factor = 0.15
 				industrial_capacity_factory = 0.15
 			}
@@ -1107,7 +1107,9 @@ ideas = {
 			allowed = {
 				original_tag = BAN
 			}
-
+			visible = {
+				has_government = fascism
+			}
 			traits = {
 				army_chief_defensive_1
 			}
@@ -1117,12 +1119,43 @@ ideas = {
 				factor = 1
 			}
 		}
+
+		BAN_gavrila = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_quality_command
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+		}
+		BAN_commune_army_chief = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_not_quality_command
+			}
+			traits = {
+				army_chief_drill_2
+			}
+		}
 	}
 
 	air_chief = {
 
 		BAN_huen_bendel = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
 			}
@@ -1136,7 +1169,7 @@ ideas = {
 		}
 
 		BAN_jochen = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
 			}
@@ -1152,7 +1185,7 @@ ideas = {
 
 	navy_chief = {
 		BAN_bluein = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
 			}
@@ -1163,7 +1196,7 @@ ideas = {
 		}
 
 		BAN_elmar = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
 			}
@@ -1173,7 +1206,7 @@ ideas = {
 			}
 		}
 		BAN_don_adv = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
 			}
@@ -1205,6 +1238,9 @@ ideas = {
 			allowed = {
 				original_tag = BAN
 			}
+			visible = {
+				has_government = fascism
+			}
 			traits = { army_artillery_2 }
 			ai_will_do = {
 				factor = 1
@@ -1215,15 +1251,21 @@ ideas = {
 			allowed = {
 				original_tag = BAN
 			}
+			visible = {
+				has_government = fascism
+			}
 			traits = { army_infantry_2 }
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		BAN_adlar_behrendt = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
+			}
+			visible = {
+				has_government = fascism
 			}
 			traits = { army_armored_1 }
 			ai_will_do = {
@@ -1232,13 +1274,92 @@ ideas = {
 		}
 
 		BAN_chronus_roth = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
+			}
+			visible = {
+				has_government = fascism
 			}
 			traits = { army_regrouping_2 }
 			ai_will_do = {
 				factor = 1
+			}
+		}
+
+		BAN_giannis = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_quality_command
+			}
+			traits = {
+				army_commando_2
+			}
+		}
+		BAN_reeve_high_command_2 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_quality_command
+			}
+			traits = {
+				army_infantry_3
+			}
+		}
+		BAN_reeve_high_command_3 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_quality_command
+			}
+			traits = {
+				army_regrouping_2
+			}
+		}
+		BAN_commune_high_command = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_not_quality_command
+			}
+			traits = {
+				army_infantry_1
+			}
+		}
+		BAN_commune_high_command_2 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_not_quality_command
+			}
+			traits = {
+				army_concealment_1
 			}
 		}
 	}
@@ -1248,6 +1369,9 @@ ideas = {
 			allowed = {
 				original_tag = BAN
 			}
+			visible = {
+				has_government = fascism
+			}
 			research_bonus = {
 				land_doctrine = 0.10
 			}
@@ -1256,12 +1380,50 @@ ideas = {
 		}
 
 		BAN_vellare_hoenbrig = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
 			}
+			visible = {
+				has_government = fascism
+			}
 			research_bonus = {
 				air_doctrine = 0.10
+			}
+			traits = { air_warfare_theorist }
+		}
+
+		BAN_reeve_theorist_land = {
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_supporter_govt
+			}
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			traits = { military_theorist }
+		}
+
+		BAN_reeve_theorist_air = {
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				OR = {
+					has_country_flag = BAN_reeve_supporter_govt
+					has_country_flag = BAN_reeve_compromise_govt
+				}
+			}
+			research_bonus = {
+				air_doctrine = 0.07
 			}
 			traits = { air_warfare_theorist }
 		}
@@ -1275,6 +1437,9 @@ ideas = {
 			allowed = {
 				original_tag = BAN
 			}
+			visible = {
+				has_government = fascism
+			}
 			traits = { silent_workgriffon }
 		}
 
@@ -1283,15 +1448,117 @@ ideas = {
 			allowed = {
 				original_tag = BAN
 			}
+			visible = {
+				has_government = fascism
+			}
 			traits = { backroom_backstabber }
 		}
 
 		BAN_flatfeathers_suber = {
-			picture = unknown_advisor
+			picture = unknown_advisor_griffon
 			allowed = {
 				original_tag = BAN
 			}
+			visible = {
+				has_government = fascism
+			}
 			traits = { captain_of_industry }
+		}
+
+		BAN_reeve_supporter_advisor_1 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_supporter_govt
+			}
+			traits = { war_industrialist }
+		}
+
+		BAN_reeve_supporter_advisor_2 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				OR = {
+					has_country_flag = BAN_reeve_supporter_govt
+					has_country_flag = BAN_reeve_compromise_govt
+				}
+			}
+			traits = { ideological_crusader }
+		}
+
+		BAN_reeve_supporter_advisor_3 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				OR = {
+					has_country_flag = BAN_reeve_supporter_govt
+					has_country_flag = BAN_reeve_compromise_govt
+				}
+			}
+			traits = { backroom_backstabber }
+		}
+
+		BAN_reeve_commune_advisor_1 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				has_country_flag = BAN_reeve_commune_govt
+			}
+			traits = { silent_workgriffon }
+		}
+
+		BAN_reeve_commune_advisor_2 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				OR = {
+					has_country_flag = BAN_reeve_commune_govt
+					has_country_flag = BAN_reeve_compromise_govt
+				}
+			}
+			traits = { captain_of_industry }
+		}
+
+		BAN_reeve_commune_advisor_3 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_government = communism
+			}
+			available = {
+				OR = {
+					has_country_flag = BAN_reeve_commune_govt
+					has_country_flag = BAN_reeve_compromise_govt
+				}
+			}
+			traits = { fortification_engineer }
 		}
 
 	}
