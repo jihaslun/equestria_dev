@@ -95,6 +95,10 @@
  YAN_fixing_islands_desc:0 ""
  YAN_island_fixing:0 "Fixing the Islands"
  YAN_island_fixing_desc:0 ""
+ YAN_politic_1:0 "Securing the Homefront"
+ YAN_politic_1_desc:0 ""
+ 
+
 
 
 
@@ -140,6 +144,8 @@
 
  YAN_lessons_flowena_2:0 "Lessons from Flowena"
  YAN_lessons_flowena_2_desc:0 ""
+
+
 
 
 
@@ -224,6 +230,10 @@
  Indozeeb.14.t:0 "Housing Feathisian Money?"
  Indozeeb.14.d:0 "" #Let's House the Feathisians Money! Throw arguments about how unstable Griffonia is, and how Flowena is most likely going to be destroyed by it's surronding countries, and therefore putting money in Zebrides is a good idea.
  Indozeeb.14.a:0 ""
+
+ Indozeeb.15.t:0 "Fixing the Islands"
+ Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans.
+ Indozeeb.15.a:0 ""
 
 
 
