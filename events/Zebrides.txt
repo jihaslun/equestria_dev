@@ -280,3 +280,16 @@ country_event = {
 		set_global_flag = YAN_secret_duke_check
 	}
 }
+
+country_event = {
+	id = Indozeeb.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.15"}
+	title = Indozeeb.15.t
+	desc = Indozeeb.15.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.15.a
+		add_political_power = 50
+	}
+}
