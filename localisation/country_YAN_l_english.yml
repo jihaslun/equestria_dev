@@ -114,21 +114,21 @@
 
 
  YAN_noidentity:0 "No National Identity"
- YAN_noidentity_desc:0 "Things"
+ YAN_noidentity_desc:0 "Before Feathisia established itself on the isles, the idea of a united zebrides was preposterous to most of the locals. Even today, unity in the region is maintained by active Feathisias effort, and the locals are divided between local tribes, clans or lineages."
  YAN_noidentity2:0 "Gatherings of a National Identity"
  YAN_noidentity2_desc:0 ""
 
 
  YAN_angery:0 "Kebangkitan Nasional - Calm"
- YAN_angery_desc:0 ""
+ YAN_angery_desc:0 "The locals are largely content with things, and Feathisian authority stands unchallenged."
  YAN_angery2:0 "Kebangkitan Nasional - Mild"
- YAN_angery2_desc:0 ""
+ YAN_angery2_desc:0 "The locals have begun chafing under Feathisian rule, and some of them speak of throwing the griffonians out."
  YAN_angery3:0 "Kebangkitan Nasional - Moderate"
- YAN_angery3_desc:0 ""
+ YAN_angery3_desc:0 "More and more, the locals are talking of rebellion. Some have gone further, and Feathisian security forces are on heightened alert."
  YAN_angery4:0 "Kebangkitan Nasional - Strong"
- YAN_angery4_desc:0 ""
+ YAN_angery4_desc:0 "Unrest is rife, and the administration is facing a genuine risk of widespread rebellion unless something is done to address the situation."
  YAN_angery5:0 "Kebangkitan Nasional - Extreme"
- YAN_angery5_desc:0 ""
+ YAN_angery5_desc:0 "The situation has reached a full-blown crisis. The islands are boiling with unrest, and the locals marshal themselves for war."
 
  YAN_industrial1:0 "Rise of Industry"
  YAN_industrial1_desc:0 ""
