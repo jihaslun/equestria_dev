@@ -2,6 +2,8 @@
 
 oob = "TAI_1007"
 
+set_research_slots = 2
+
 # Starting tech
 set_technology = {
     melee_weapons = 1
@@ -11,8 +13,6 @@ set_technology = {
 }
 actually_fix_weapon_techs = yes
 
-set_research_slots = 2
-
 add_ideas = {
 	agrarian_society
 	poor_science_base
@@ -20,30 +20,60 @@ add_ideas = {
 }
 
 set_popularities = {
-
-	democratic = 0
-
-	fascism = 0
-
+	democratic = 15
+	fascism = 10
 	communism = 0
-
-	neutrality = 100
-
+	neutrality = 75
 }
-	
 	
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
+	last_election = "1000.10.10"
+	election_frequency = 36
 	elections_allowed = no
 }
+
+set_stability = 0.5
+set_war_support = 0.25
 
 create_country_leader = {
 	name = "The Council of Chiefs"
 	desc = ""
 	#picture = ""
 	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kisempia Sungilanga "
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Moïse Katumbi"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Cyrille Adoula" 
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = religious_socialism
 	traits = {
 		#
 	}

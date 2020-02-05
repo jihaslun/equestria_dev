@@ -20,30 +20,60 @@ add_ideas = {
 }
 
 set_popularities = {
-
-	democratic = 0
-
-	fascism = 0
-
+	democratic = 5
+	fascism = 5
 	communism = 0
-
-	neutrality = 100
-
+	neutrality = 90
 }
-	
 	
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
+	last_election = "1000.10.10"
+	election_frequency = 36
 	elections_allowed = no
 }
+
+set_stability = 0.4
+set_war_support = 0.25
 
 create_country_leader = {
 	name = "Akida Bomboko"
 	desc = ""
 	#picture = ""
 	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Djimon Amisi Kumba"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahadi Bomboko"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Asani Ngudjolo Chui" 
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = religious_socialism
 	traits = {
 		#
 	}
