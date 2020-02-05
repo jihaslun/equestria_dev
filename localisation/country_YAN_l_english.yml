@@ -43,20 +43,20 @@
  ### FOCUS ###
 
  #Intro Focuses#
- YAN_solid_chaos:0 "Omgaan Met Opstand"
- YAN_solid_chaos_desc:0 ""
- YAN_calm_revoltists:0 "Calm the Revoltists"
- YAN_calm_revoltists_desc:0 ""
+ YAN_solid_chaos:0 "The Zebridean Situation"
+ YAN_solid_chaos_desc:0 "Ever since the Feathisian economy went into a recession, the Zebrides have been left adrift. The economy, which always was focused on providing for Feathisia's needs, has been sent into a tailspin, and the locals have become more and more unruly. Governor-General Dirk Loterijen has his work cut out for him if he hopes to restore order."
+ YAN_calm_revoltists:0 "Targeted Arrests" #lower stability
+ YAN_calm_revoltists_desc:0 "The independence movement, the "Kebangtian" in the local language, is a many-headed beast, but there are loopholes in the justice system that would permit a more proactive approach to dealing with their leaders. Maybe it is to read the code of laws like Maar reads the sacred texts, but it is necessary for the sake of stability." 
  YAN_gather_forces:0 "Gather our forces"
- YAN_gather_forces_desc:0 ""
- YAN_power_of_governor:0 "Powers of the Governor"
- YAN_power_of_governor_desc:0 ""
- YAN_industrial_spending:0 "Industrial Investment"
- YAN_industrial_spending_desc:0 ""
+ YAN_gather_forces_desc:0 "If this situation explodes, there will be blood in the streets. Hopefully it can be avoided, but Loterijen has no interest in dealing with maybes. Thankfully, the administration can still count upon the loyalty of some of the locals. If the situation detonates, this will come in handy."
+ YAN_powers_of_governor:0 "Powers of the Governor"
+ YAN_powers_of_governor_desc:0 "This situation can not be dealt with under the normal legal framework, and Loterijen has written to the Feathisian Parliament to request emergency powers in order to deal with his crisis. The question is just whether the parliament will have the stomach to do what is necessary."
+ YAN_industrial_spending:0 "Industrial Investment" #pp loss, maybe some political influence, he's making concessions to the lineages
+ YAN_industrial_spending_desc:0 "The Kirin have been on these islands for centuries, and their "lineages" - extended families stretching dozens of generations back - are the single most economically influential in the region. They are also as deceitful as they are canny, and yet Loterijen needs whatever backing he can get. He simply has to hope that the snakes will be too fat and happy to strike."
  YAN_gathersupport:0 "Gather Support"
- YAN_gathersupport_desc:0 ""
- YAN_dire_news:0 "Dire News!"
- YAN_dire_news_desc:0 ""
+ YAN_gathersupport_desc:0 "If the isles would fall to the revolutionaries it would simply mean one elite being replaced with another, and the Loterijen administration is working hard to ensure that this fact is not lost on those who might end up disadvantaged if the Feathisian authority collapses."
+ YAN_dire_news:0 "The Griffonian Crisis"
+ YAN_dire_news_desc:0 "When it rains, it pours, and this holds doubly true for these accursed islands. With the news out of Griffonia, everything is coming to a head faster than anygriff hoped for. The Administration is bracing itself, hoping for the best and fearing the worst."
 
  ##LOTERIJEN FOCUS##
  YAN_loterijen_power:0 "Loterijen's Zebrides"
@@ -177,9 +177,9 @@
  #Indozeeb.1.c:0 "We must support the Duke!"
  #Indozeeb.1.e:0 "Then again... what about Loterijen?"
 
- Indozeeb.2.t:0 "The Zebridies Tremble" #Griffonian Empire is in chaos, what to do?
- Indozeeb.2.d:0 "As the 87th annual meeting of the Feathisian Colonial Administration of the South Zebridies begins there is one question that has risen above all others: the Griffonian Crisis. With recent events back in the old homeland - a collapsed economy, a dead emperor and political upheaval - there is simply no way that the balance carefully struck by Governor-General Loterijen can be maintained in the future. The natives have become unruly, and there's no telling what they might to if they wrest control of the region from the administration. A new balance must be struck if Feathisian authority is to remain intact, whether it is through violence or through diplomacy.\n\nAs the meeting is going ahead, other powers are watching and waiting. The Grand Tuan of the isles, Ortu Yamar, has gathered his own congress of native Zebras, Kirin and even the Burungbang, those griffons who have come to embrace the local customs and become not colonialists, but neighbors. The Feathisian dominance over the isles have gone on for long enough, and with all the troubles back in their homeland, the colonialists are weak.\n\nPrincess Kudakelasi - the closest thing to a voice for all Kirin in the region - has maintained that if the Feathisians are given no reason in their eyes to deploy violence then they will not: for all their hunger their distant Adipati - the one they call "Grand Duke" will not tolerate unprovoked violence. General Semuakawan - once an auxiliary officer serving under the Feathisians - dismisses these notions and calls them naive. Even his family, the descendants of Feathisian settlers, were branded simple natives not worthy of recognition for having adopted the Zebridean culture. There is only one language they understand, and that is violence.\n\nThe question will be which side seizes the initiative and manages to push to achieve its goals." 
- Indozeeb.2.a:0 "The Zebridies are stirring, and freedom is the goal!"
+ Indozeeb.2.t:0 "The Zebrides Tremble" #Griffonian Empire is in chaos, what to do?
+ Indozeeb.2.d:0 "With the news of the Emperor's death, the Zebridean crisis is escalating swiftly. Between a collapsed Feathisian economy, a dead emperor and political upheaval there is simply no way that the balance carefully struck by Governor-General Loterijen can be maintained in the future. The natives are only becoming more and more unruly, and there's no telling what they might to if they wrest control of the region from the administration. A new balance must be struck if Feathisian authority is to remain intact, whether it is through violence or through diplomacy.\n\nAs the meeting is going ahead, other powers are watching and waiting. The Grand Tuan of the isles, Oran Yamar, has gathered his own congress of native Zebras, Kirin and even the Burungbang, those griffons who have come to embrace the local customs and become not colonialists, but neighbors. The Feathisian dominance over the isles have gone on for long enough, and with all the troubles back in their homeland the colonialists are weak.\n\nPrincess Kudakelasi - the closest thing to a voice for all Kirin on the isles - has maintained that if the Feathisians are given no reason to deploy violence then they will not: for all their hunger their distant Adipati - the one they call "Grand Duke" - will not tolerate unprovoked violence. General Semuakawan - once an auxiliary officer serving under the Feathisians - dismisses these notions and calls them naive. Even his family, the descendants of Feathisian settlers, were branded simple natives not worthy of recognition for having adopted the Zebridean culture. There is only one language they understand, and that is violence.\n\nThe question will be which side seizes the initiative and manages to push to achieve its goals." 
+ Indozeeb.2.a:0 "Rise, Zebrides. Rise and claim your freedom!"
  Indozeeb.2.b:0 "Feathisian authority united the isles, and it shall remain in place!"
   
  Indozeeb.3.t:0 "Powers of the Governor"
@@ -208,7 +208,7 @@
  Indozeeb.8.a:0 "Contact the Representative of the Lineages. Tell her we need to talk."
 
  Indozeeb.9.t:0 "The Zebridean Industrial Question"
- Indozeeb.9.d:0 "The Zebridies were never much more than a geographic term before the islands were united under Feathisian authority. Adding to this the mutual mistrust or sometimes even hostilities between local groups and you have a recipe for wildly diverging levels of development in the region. In one end stands Zava, which was quite developed even before the Feathisians established themselves in the region. In the other end lies islands like Mareida and Zimor, which has seen only very modest development even to this day, and where colonial authority is near nonexistent and tribal such is absolute.\n\nThis disparity has only grown more and more with the industrialization of Feathisia and subsequently the Zebridies, and the issue has gone from noticeable to pressing. If the Zebridies are to prosper then it must use all resources available, yet the cost of developing these nigh untouched isles  will be immense."
+ Indozeeb.9.d:0 "The Zebrides were never much more than a geographic term before the islands were united under Feathisian authority. Adding to this the mutual mistrust or sometimes even hostilities between local groups and you have a recipe for wildly diverging levels of development in the region. In one end stands Zava, which was quite developed even before the Feathisians established themselves in the region. In the other end lies islands like Mareida and Zimor, which has seen only very modest development even to this day, and where colonial authority is near nonexistent and tribal such is absolute.\n\nThis disparity has only grown more and more with the industrialization of Feathisia and subsequently the Zebrides, and the issue has gone from noticeable to pressing. If the Zebrides are to prosper then it must use all resources available, yet the cost of developing these nigh untouched isles  will be immense."
  Indozeeb.9.a:0 "Sooner or later, this question must be addressed."
 
  Indozeeb.10.t:0 "Crackdown on Commies"
