@@ -18,10 +18,10 @@
  YAN_neutrality_DEF:0 "The Principlity of Zebrides"
  YAN_communism:0 "Zebrides Socialist Republic"
  YAN_communism_DEF:0 "The Zebrides Socialist Republic"
- YAN_communism_ADJ:0 "Zebridian"
- YAN_democratic_ADJ:0 "Zebridian"
- YAN_neutrality_ADJ:0 "Zebridian"
- YAN_fascism_ADJ:0 "Zebridian"
+ YAN_communism_ADJ:0 "Zebridean"
+ YAN_democratic_ADJ:0 "Zebridean"
+ YAN_neutrality_ADJ:0 "Zebridean"
+ YAN_fascism_ADJ:0 "Zebridean"
 
  YAN_subject:0 "$OVERLORDADJ$ South Zebrides"
  YAN_subject_DEF:0 "the $OVERLORDADJ$ South Zebrides"
@@ -49,13 +49,13 @@
  YAN_calm_revoltists_desc:0 "The independence movement, the "Kebangtian" in the local language, is a many-headed beast, but there are loopholes in the justice system that would permit a more proactive approach to dealing with their leaders. Maybe it is to read the code of laws like Maar reads the sacred texts, but it is necessary for the sake of stability." 
  YAN_gather_forces:0 "Gather our forces"
  YAN_gather_forces_desc:0 "If this situation explodes, there will be blood in the streets. Hopefully it can be avoided, but Loterijen has no interest in dealing with maybes. Thankfully, the administration can still count upon the loyalty of some of the locals. If the situation detonates, this will come in handy."
- YAN_powers_of_governor:0 "Powers of the Governor"
+ YAN_powers_of_governor:0 "Powers of the Governor" 
  YAN_powers_of_governor_desc:0 "This situation can not be dealt with under the normal legal framework, and Loterijen has written to the Feathisian Parliament to request emergency powers in order to deal with his crisis. The question is just whether the parliament will have the stomach to do what is necessary."
  YAN_industrial_spending:0 "Industrial Investment" #pp loss, maybe some political influence, he's making concessions to the lineages
  YAN_industrial_spending_desc:0 "The Kirin have been on these islands for centuries, and their "lineages" - extended families stretching dozens of generations back - are the single most economically influential in the region. They are also as deceitful as they are canny, and yet Loterijen needs whatever backing he can get. He simply has to hope that the snakes will be too fat and happy to strike."
- YAN_gathersupport:0 "Gather Support"
+ YAN_gathersupport:0 "Gather Support" #bit hefty bonuses
  YAN_gathersupport_desc:0 "If the isles would fall to the revolutionaries it would simply mean one elite being replaced with another, and the Loterijen administration is working hard to ensure that this fact is not lost on those who might end up disadvantaged if the Feathisian authority collapses."
- YAN_dire_news:0 "The Griffonian Crisis"
+ YAN_dire_news:0 "The Griffonian Crisis" #ram it all the way up to "strong" independence movement, the idea is that everything is falling apart. 
  YAN_dire_news_desc:0 "When it rains, it pours, and this holds doubly true for these accursed islands. With the news out of Griffonia, everything is coming to a head faster than anygriff hoped for. The Administration is bracing itself, hoping for the best and fearing the worst."
 
  ##LOTERIJEN FOCUS##
@@ -110,7 +110,7 @@
 
  ### IDEAS ###
  YAN_dutchoverlord:0 "Feathisian Overlord"
- YAN_dutchoverlord_desc:0 "Feathisia is like the Dutch, fuck you VOC"
+ YAN_dutchoverlord_desc:0 "The Zebridies have been under Feathisian dominance for nearly a hundred years, and its entire economy has been structured around providing resources for its overlord."
 
 
  YAN_noidentity:0 "No National Identity"
