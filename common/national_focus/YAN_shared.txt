@@ -662,7 +662,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = YAN_politic_1
+	id = YAN_securing_power
 	#icon = 
 	x = 19
 	y = 1
@@ -677,15 +677,15 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus YAN_politic_1"
+		log = "[GetDateText]: [Root.GetName]: focus YAN_securing_power"
 		add_political_power = -40
 		add_stability = 5
 	}
 }
 
 shared_focus = {
-	id = YAN_politic_2
-	#icon = 
+	id = YAN_convince_landlords
+	icon = GFX_goal_generic_major_alliance
 	x = 18
 	y = 2
 	cost = 5
@@ -699,17 +699,16 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus YAN_politic_2"
+		log = "[GetDateText]: [Root.GetName]: focus YAN_convince_landlords"
+		country_event = { Indozeeb.16  days = 10}
 		
 	}
 }
 
-
-
-
-
-
-
+shared_focus = {
+	id = YAN_
+	#icon = 
+	x = 
 }
 
 

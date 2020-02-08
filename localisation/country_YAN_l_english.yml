@@ -8,7 +8,7 @@
   #1159 = Cemar?
   #1156 = 
   #1155 = 
-  #1160 = Dark Island
+  #1160 = Pulalp
  ### COUNTRYNAME ###
  YAN_fascism:0 "State of the Zebrides"
  YAN_fascism_DEF:0 "The State of the Zebrides"
@@ -130,7 +130,7 @@
  YAN_angery5:0 "Kebangkitan Nasional - Extreme"
  YAN_angery5_desc:0 "The situation has reached a full-blown crisis. The islands are boiling with unrest, and the locals marshal themselves for war."
 
- YAN_industrial1:0 "Rise of Industry"
+ YAN_industrial1:0 "Industrial Restructing"
  YAN_industrial1_desc:0 ""
 
  YAN_Zavanese_Families1:0 "The Zavanese Families"
@@ -141,13 +141,13 @@
 
  YAN_lessons_flowena:0 "Lessons from Flowena"
  YAN_lessons_flowena_desc:0 ""
-
  YAN_lessons_flowena_2:0 "Lessons from Flowena"
  YAN_lessons_flowena_2_desc:0 ""
 
 
 
-
+ YAN_horse_lord1:0 "The Zebrican Landlords"
+ YAN_horse_lord1_desc:0 ""
 
 
  
@@ -234,6 +234,10 @@
  Indozeeb.15.t:0 "Fixing the Islands"
  Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans.
  Indozeeb.15.a:0 ""
+
+ Indozeeb.16.t:0 "Meeting the Landlords"
+ Indozeeb.16.d:0 "" #The Landlords and Loterijen meet, Landlords disagreee with Loterijen, Loterijen gives them a deal and they agree.
+ Indozeeb.16.a:0 ""
 
 
 
