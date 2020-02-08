@@ -78,31 +78,38 @@ BAN_lawless_no_more_desc:0 "It was tough convincing the griffons not to go on im
 BAN_bandit_kingdom_of_the_south:0 "Bandit Queendom of the South"
 BAN_bandit_kingdom_of_the_south_desc:0 "To those "civilised" nations in the north, we seem like an anomaly, something that isn't supposed to exist. We scoff at their prejudice! In these lands, a griffon can live and die free, never shackled under the yoke of some poncy noble! Blackrock stands firm against the tyrants of the world. Ignore the part where we terrorise our citizens, it's for their own good."
 
-## Neutrality Path ##
 BAN_plot_against_blackrock:0 "Plot Against Blackrock"
 BAN_plot_against_blackrock_desc:0 "Blackrock has had her time playing the rebel, but it is time for the rightful ruler of this land to return.\n\nOn the other claw, the maniacal revolutionary Reeve Blyeddin has been plotting his own rebellion for some time, as well. He has a very... different idea of communism in mind."
+BAN_the_nobility:0 "The Nobility"
+BAN_the_clergy:0 "The Clergy"
+BAN_the_people:0 "The People"
+BAN_the_minotaurs:0 "The Minotaurs"
+BAN_the_communes:0 "The Communes"
+BAN_the_duel:0 "The Duel"
+
+## Neutrality Path ##
 BAN_young_countess:0 "Young Countess"
 BAN_young_countess_desc:0 "In their secluded mountain holds, the remaining nobility that once ruled these lands has chosen Cyrille Bluecrest, the daughter of the last Count of Blackhollow, as their leader. May she lead us to victory."
 BAN_speak_with_the_empire:0 "Speak with the Prince of Lushi"
 BAN_speak_with_the_empire_desc:0 "The Whitecrests of Lushi have always had warm relations with the Bluecrests, and share much common blood. Now in our time of need, we should ask them for help. Together, we can end Blackrock's rule once and for all!"
 BAN_imperial_military_aid:0 "Lushian Military Aid"
 BAN_imperial_military_aid_desc:0 "Our initial attempts in contacting the Prince of Lushi for aid has been successful. He is going to send us a military attaché to help train our loyal griffons. This will be invaluable in the conflict to come."
-BAN_imperial_rifles:0 "Lushian Rifles"
+BAN_imperial_rifles:0 "Rally the Peasants"
 BAN_imperial_rifles_desc:0 "To assist us in our ongoing struggle, Lushi has seen fit to send us a shipment of their finest firearms. They are not the most modern weapons, but we have received a great number of them. If we train our griffons to use them properly, they'll be as good as proper rifles."
 BAN_empire_strikes_back:0 "United Against Bandits"
 BAN_empire_strikes_back_desc:0 "The time is right. We've gathered support from Lushi and recruited many loyalists. Now it is time to strike hard and cast down the cruel tyranny of the bandits!"
 
 BAN_fight_our_own_battles:0 "Fight Our Own Battles"
 BAN_fight_our_own_battles_desc:0 "We cannot rely on anyone but ourselves to liberate Blackhollow from the tyranny of Blackrock and her goons. We shall not surrender our independence to foreign powers. We know that the people of Blackhollow are tired of being oppressed and robbed, and this will be the key to victory."
-BAN_steal_from_armories:0 "Steal from the Armouries"
+BAN_steal_from_armories:0 "Knights of Blackhollow"
 BAN_steal_from_armories_desc:0 "If there's one thing that exists in a plenty in this despoiled land, it's firearms. The paranoid Blackrock stashes them everywhere! It won't be an issue for us to locate one of these caches and help ourselves with the weapons. Boreas knows we'll need them."
-BAN_rally_peasents:0 "Rally the Peasants"
+BAN_rally_peasents:0 "Support of the Clergy"
 BAN_rally_peasents_desc:0 "The good people of Blackhollow are tired of being used as punching bags for Blackrock's thugs! Spread the word that freedom is waiting for them, if they were to join our cause!"
 BAN_cyrils_return:0 "Cyrille's Return"
 BAN_cyrils_return_desc:0 "The pieces are in place, and we are now prepared to strike. Blackrock's days are numbered. To freedom!"
 
-BAN_back_in_power:0 "Back in Power"
-BAN_back_in_power_desc:0 "With the surrender of the final bandit stronghold, and Blackrock herself gone missing, we now have full control of this land. It is time to restore proper law and order, and undo the years of strife the people have endured."
+#BAN_back_in_power:0 "Back in Power"
+#BAN_back_in_power_desc:0 "With the surrender of the final bandit stronghold, and Blackrock herself gone missing, we now have full control of this land. It is time to restore proper law and order, and undo the years of strife the people have endured."
 
 BAN_loyalty_to_empire:0 "Bluecrest-Whitecrest Alliance"
 BAN_loyalty_to_empire_desc:0 "With our victory, we are forever grateful to [LUS.GetLeader] for coming to our aid. To further cement our eternal friendship, we should sign a formal alliance that shall stand the test of time! Together we will secure the rule of our houses and bring prosperity to our people."
@@ -114,7 +121,7 @@ BAN_kingdom_with_no_king:0 "Kingdom With No King"
 BAN_kingdom_with_no_king_desc:0 "For years now the Kingdom of Griffonstone has been ruled by a regency council, lacking a rightful monarch to rule over them. The rulers of the Bluecrest dynasty were once loyal subjects of their Kings, so clearly the family has earned the crown as a reward for their service. Long live Queen Cyrille!"
 BAN_integrate_griffonstone:0 "Integrate Griffonstone"
 BAN_integrate_griffonstone_desc:0 "With the former lands of Griffonstone under our control, we can now integrate them properly. The most loyal of nobles who supported Countess Bluecrest will be rewarded with new titles and holdings. There is a certain prestige in owning the birthplace of Griffonkind, as well."
-BAN_reconstruction:0 "Reconstruction"
+BAN_reconstruction:0 "Reclaim Stolen Wealth"
 BAN_reconstruction_desc:0 "Years of abuse from those bandit goons, not to mention the recent strife, has left this land in a ruined state. We must place our efforts in rebuilding, give the weary people a glimmer of hope. New roads, homes, factories and more, everything to make Blackhollow a respectable country once more."
 BAN_blackhollow_home:0 "Mountain Home"
 BAN_blackhollow_home_desc:0 "These mountains we call home - we wouldn't trade it for any other! It is a beautiful land, with much diversity. It must be protected and nurtured."
@@ -125,7 +132,23 @@ BAN_mountain_holds_desc:0 "The mountains don't hold just mineral riches, but sup
 BAN_never_another_bandit:0 "Never Another Blackrock"
 BAN_never_another_bandit_desc:0 "The blight of the bandits has been wiped out, and we stand strong once more. We shall now focus on keeping to ourselves and seek no quarrel with anyone, but we shall not bend our knee to those who expect us to submit."
 
-## Oh god it's the terrible Communist Path ##
+BAN_lushian_arms:0 "Lushian Arms"
+BAN_noble_clergy_alliance:0 "Temporary Alliance"
+BAN_formalize_lushi_alliance:0 "Formalise Alliance"
+BAN_handle_the_communes:0 "Reach Out to the Communes"
+BAN_griffonstone_generals:0 "Integrate the Generals"
+BAN_griffonstone_government:0 "Integrate the Government"
+BAN_hunt_bandit_remnants:0 "Hunt Down Blackrock"
+BAN_reassure_people:0 "Reassure the Populace"
+BAN_return_noble_lands:0 "Return Noble Lands"
+BAN_restore_knightly_order:0 "Restore the Knights of Blackhollow"
+BAN_make_religion_important:0 "Emphasise the Gods"
+BAN_reconcile_nobles_and_clergy:0 "Reconcile Noble and Prelate"
+BAN_naniwich_trials:0 "The Naniwich Trials"
+BAN_make_university:0 "An Educated Blackhollow"
+BAN_strike_at_rumare:0 "The Jewel of the Lake"
+
+## Oh god it's the terrible Communist Path ## FUCK YOU, PREVIOUS DEV, IT'S NOT TERRIBLE ANYMORE ##
 BAN_the_extreme_revolutionary:0 "The Extreme Revolutionary"
 BAN_the_extreme_revolutionary_desc:0 ""My friends, for too long has this land languished in inequality. Bandits stealing from the people, nobles oppressing the people as well, has nobody ever considered the common griffon? In my time outside of Blackhollow, I've learned of a wonderful way of life... If you wish to see an utopia become a reality, then join me.""
 BAN_murkbeak_rebellion:0 "Rally the Downtrodden"
@@ -445,6 +468,11 @@ BAN_reeve_general_staff:0 "Socialist General Staff"
 BAN_reeve_general_staff2:0 "Socialist General Staff"
 BAN_reeve_general_staff3:0 "Socialist General Staff"
 
+BAN_blackhollow_knights:0 "Knightly Army"
+BAN_blackhollow_knights2:0 "Knightly Army"
+BAN_blackhollow_knights3:0 "Knightly Army"
+BAN_noble_religious_fights:0 "Disputes Between the Nobility and Clergy"
+
 ### Events ###
 bandit.1.t:0 "The Prywhen Civil War"
 bandit.1.d:0 ""Gentlegriffs.", Blackrock adressed the crowd in what she liked to call the war room, which was merely a barren spacious room that had a large map of the region nailed to the wall. "As you may know, civil war has been going on for years now in Prywhen, and both sides are using drastic measures to achieve total victory. This means, however, that they are weak, and won't be able to resist if we were to invite ourselves to their lands and do some... shopping. What say you louts, shall we invade or not?"\n\nAs she expected, her griffons promptly started loudly arguing with one another over the course of action, some even engaging in improptu brawls, while others were screaming that the lands of Prywhen were a "Maar-blasted hellhole" that should be avoided at all costs. By the Gods, she hated when they started bickering like chicks. Taking out her pistol, she fired a shot to the ceiling, an another hole joining the others. Wasn't her first time.\n\n"Quit screeching like immature children and present your opinion in an orderly, nonviolent fashion. Do we raid Prywhen, or not?""
@@ -575,10 +603,10 @@ bandit.26.t:0 "Disobedient Whelps"
 bandit.26.d:0 "In a display of defiance, or what the boss thinks is more likely, imbecility, our tributary has refused to follow up on our agreement and deliver the payment. This will not stand and we shall show them in due time what happens to those who doublecross Blackrock."
 bandit.26.a:0 "Is that so? Time to prepare a raid."
 
-bandit.27.t:0 "The Fate of Blackhollow"
-bandit.27.d:0 "Blackrock's rule over the former County of Blackhollow has always been tenuous. Her claws are full with cracking down on peasant uprisings, agitated by the communist elements present in the country, and remainders of the old nobility, who hide in their mountain holds.\n\nThe following days will decide which rebellious faction in Blackhollow will emerge at the forefront. Life in these mountain shadowed lands will change, for better or for worse."
-bandit.27.a:0 "Countess Cyrille gathers enough support!"
-bandit.27.b:0 "Comrade Reeve rallies the peasants!"
+bandit.27.t:0 "Placeholder Name"
+bandit.27.d:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.27.a:0 "Cyrille cuts his claw off."
+bandit.27.b:0 "Reeve knocks her out with a pistol-whip."
 
 bandit.28.t:0 "The Blackhollow Civil War!"
 bandit.28.d_neutral:0 "Enough preparations have been made. We have received much aid from the Empire and they are hesitant to give us any more. The time to strike is now! Countess Cyrille will lead us to victory over the wicked scum and claim her rightful throne!"
@@ -681,6 +709,26 @@ bandit.48.t:0 "The Communalist Coup"
 bandit.48.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
 bandit.48.a:0 "Oh. That's not good."
 
+bandit.49.t:0 "Placeholder Name"
+bandit.49.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.49.a:0 "Placeholder Option"
+
+bandit.50.t:0 "Placeholder Name"
+bandit.50.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.50.a:0 "Placeholder Option"
+
+bandit.51.t:0 "Placeholder Name"
+bandit.51.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.51.a:0 "Placeholder Option"
+
+bandit.52.t:0 "Placeholder Name"
+bandit.52.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.52.a:0 "Placeholder Option"
+
+bandit.53.t:0 "Placeholder Name"
+bandit.53.desc:0 "!!!NO DESCRIPTION!!! IF YOU SEE THIS IN A RELEASED VERSION OF THE MOD, REPORT IT IMMEDIATELY"
+bandit.53.a:0 "Placeholder Option"
+
 ### Custom Tooltips ###
 BAN_TT_mercs:0 "Allows you to hire mercenary companies from the §YBlack Market§!.\n"
 BAN_TT_black_market:0 "Allows you to purchase illicit goods from the §YBlack Market§!.\n"
@@ -703,8 +751,12 @@ BAN_TT_griffonstone:0 "§YThe County of Blackhollow§! will be known as §YThe Q
 BAN_ongoing_search:0 "Ongoing Search\n"
 BAN_choosing_what_to_take:0 "Choosing What To Take\n"
 
-BAN_TT_partisans_oob:0 "§YSix Partisan Divisions§! will be formed."
-BAN_TT_commune_militia_oob:0 "§YTwo Communalist Militias§! will be formed."
+BAN_TT_partisans_oob:0 "§YSix Partisan Divisions§! will be formed.\n"
+BAN_TT_commune_militia_oob:0 "§YTwo Communalist Militias§! will be formed.\n"
+BAN_lushi_knights_tt:0 "§YOne Lushian Knight Division§! will be formed.\n"
+BAN_peasant_rebels_tt:0 "§YFour Peasant Rebel Divisions§! will be formed.\n"
+BAN_knight_rebels_tt:0 "§YTwo Blackhollow Knight Divisions§! will be formed.\n"
+
 BAN_TT_commune_support_increase:0 "This will increase Communalist Support by §Y1§!.\n"
 BAN_TT_commune_support_increase_2:0 "This will increase Communalist Support by §Y2§!.\n"
 BAN_TT_commune_support_decrease:0 "This will decrease Communalist Support by §Y1§!.\n"
@@ -824,6 +876,7 @@ BAN_imperial:0 "Whitecrest-Bluecrest Friendship"
 
 ### Faction Loc ###
 BAN_Reeve_Faction:0 "Socialist Alliance of Evi"
+BAN_cyrille_faction:0 "Bluecrest-Whitecrest Alliance"
 
 ### Cosmetic Tag ###
 BAN_QUEEN_fascism:0 "Blackrock's Bandit Queendom"
@@ -837,3 +890,5 @@ BAN_BOI_communism:0 "Our Griffonstone"
 BAN_BOI_ADJ:0 "Griffonstone"
 BAN_BOI_DEF:0 "Griffonstone"
 
+### Traits ###
+trait_bandit:0 "Bandit Leader"

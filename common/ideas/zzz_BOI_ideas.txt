@@ -46,20 +46,38 @@ ideas = {
 		gallus = {
 			picture = gallus
 			allowed = {
-				original_tag = BOI
+				OR = {
+					original_tag = BOI
+					original_tag = BAN
+				}
 			}
 			available = {
-
+			
+			}
+			visible = {
+				OR = {
+					original_tag = BOI
+					has_completed_focus = BAN_griffonstone_government
+				}
 			}
 			traits = { compassionate_gentleman }
 		}
 		greta = {
 			picture = greta
 			allowed = {
-				original_tag = BOI
+				OR = {
+					original_tag = BOI
+					original_tag = BAN
+				}
 			}
 			available = {
 
+			}
+			visible = {
+				OR = {
+					original_tag = BOI
+					has_completed_focus = BAN_griffonstone_government
+				}
 			}
 			traits = { silent_workgriffon }
 		}

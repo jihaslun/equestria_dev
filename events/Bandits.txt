@@ -1113,7 +1113,7 @@ country_event = { ## They refused to pay tribute
 }
 
 
-country_event = { ## BIg event for Blackrock deciding whether or not to go with Cyril or Reeve
+country_event = { # Duel between Cyrille and Reeve, decides ideology. Reeve loses his eye here.
 	id = bandit.27
 	immediate = {log = "[Root.GetName]: event bandit.27"}#Auto-logging
 	title = bandit.27.t
@@ -1149,6 +1149,12 @@ country_event = { ## BIg event for Blackrock deciding whether or not to go with 
 
 		set_country_flag = chose_cyril
 
+		hidden_effect = {
+			country_event = {
+				id = bandit.54
+				hours = 6
+			}
+		}
 	}
 
 	option = {
@@ -1178,6 +1184,13 @@ country_event = { ## BIg event for Blackrock deciding whether or not to go with 
 		}
 
 		set_country_flag = chose_reeve
+
+		hidden_effect = {
+			country_event = {
+				id = bandit.55
+				hours = 6
+			}
+		}
 	}
 }
 
@@ -1399,9 +1412,14 @@ country_event = { ## civil war end
 			add_idea = low_economic_mobilisation
 		}
 		hidden_effect = {
-			set_variable = {
-				var = BAN_commune_support_var
-				value = 2
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_variable = {
+					var = BAN_commune_support_var
+					value = 2
+				}
 			}
 			remove_unit_leader = 69100
 			remove_unit_leader = 69101
@@ -1911,6 +1929,291 @@ country_event = { # Commune Coup
 		add_to_variable = {
 			var = BAN_commune_support_var
 			value = 20
+		}
+	}
+}
+
+country_event = { # The Nobility Event
+	id = bandit.49
+	immediate = { log = "[Root.GetName]: event bandit.49" }
+	title = bandit.49.t
+	desc = bandit.49.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.49.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+		}
+		hidden_effect = {
+			country_event = {
+				id = bandit.50
+				hours = 2
+			}
+		}
+	}
+}
+
+country_event = { # The Clergy Event
+	id = bandit.50
+	immediate = { log = "[Root.GetName]: event bandit.50" }
+	title = bandit.50.t
+	desc = bandit.50.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.50.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.01
+		}
+		hidden_effect = {
+			country_event = {
+				id = bandit.51
+				hours = 2
+			}
+		}
+	}
+}
+
+country_event = { # The People Event
+	id = bandit.51
+	immediate = { log = "[Root.GetName]: event bandit.51" }
+	title = bandit.51.t
+	desc = bandit.51.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.51.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		hidden_effect = {
+			country_event = {
+				id = bandit.52
+				hours = 2
+			}
+		}
+	}
+}
+
+country_event = { # The Minotaurs Event
+	id = bandit.52
+	immediate = { log = "[Root.GetName]: event bandit.52" }
+	title = bandit.52.t
+	desc = bandit.52.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.52.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+		hidden_effect = {
+			country_event = {
+				id = bandit.53
+				hours = 2
+			}
+		}
+	}
+}
+
+country_event = { # The Communes Event
+	id = bandit.53
+	immediate = { log = "[Root.GetName]: event bandit.53" }
+	title = bandit.53.t
+	desc = bandit.53.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.53.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+		set_country_flag = BAN_can_do_duel
+	}
+}
+
+country_event = { # Post-Duel Event (Cyrille Wins)
+	id = bandit.54
+	immediate = { log = "[Root.GetName]: event bandit.54" }
+	title = bandit.54.t
+	desc = bandit.54.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.54.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+	}
+}
+
+country_event = { # Post-Duel Event (Reeve Wins)
+	id = bandit.55
+	immediate = { log = "[Root.GetName]: event bandit.55" }
+	title = bandit.55.t
+	desc = bandit.55.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.55.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+	}
+}
+
+country_event = { # Reach Out to the Communes Event
+	id = bandit.56
+	immediate = { log = "[Root.GetName]: event bandit.56" }
+	title = bandit.56.t
+	desc = bandit.56.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.56.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		set_country_flag = BAN_mario_bros
+	}
+	option = {
+		name = bandit.56.b
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { # Hunt Down Blackrock Event
+	id = bandit.57
+	immediate = { log = "[Root.GetName]: event bandit.57" }
+	title = bandit.57
+	desc = bandit.57.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = bandit.57
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		swap_ideas = {
+			add_idea = BAN_lawless_land2
+			remove_idea = BAN_lawless_land
+		}
+	}
+}
+
+country_event = { # The Naniwich Trials Event Chain Start (Ulrich Hiperion)
+	id = bandit.58
+	immediate = { log = "[Root.GetName]: event bandit.58" }
+	title = bandit.58
+	desc = bandit.58.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # he is kill
+		name = bandit.58
+		add_stability = 0.01
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.01
+		}
+		country_event = {
+			id = bandit.59
+			hours = 2
+		}
+	}
+}
+
+country_event = { # The Naniwich Trials Event Chain Start (Dominik Pinfeather)
+	id = bandit.59
+	immediate = { log = "[Root.GetName]: event bandit.59" }
+	title = bandit.59
+	desc = bandit.59.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # he is kill
+		name = bandit.59
+		add_stability = 0.01
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.01
+		}
+		country_event = {
+			id = bandit.60
+			hours = 2
+		}
+	}
+}
+
+country_event = { # The Naniwich Trials Event Chain Start (Kajetan Bronsfeather)
+	id = bandit.60
+	immediate = { log = "[Root.GetName]: event bandit.60" }
+	title = bandit.60
+	desc = bandit.60.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # he is kill
+		name = bandit.60
+		add_stability = 0.01
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.01
+		}
+		country_event = {
+			id = bandit.61
+			hours = 2
+		}
+	}
+}
+
+country_event = { # The Naniwich Trials Event Chain Start (Blackrock Herself)
+	id = bandit.61
+	immediate = { log = "[Root.GetName]: event bandit.61" }
+	title = bandit.61
+	desc = bandit.61.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # he is kill
+		name = bandit.61
+		add_stability = 0.02
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		remove_ideas = BAN_lawless_land3
+		kill_country_leader = {
+			ideology = fascism
 		}
 	}
 }
