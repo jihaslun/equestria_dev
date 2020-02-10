@@ -2122,7 +2122,7 @@ country_event = { # Hunt Down Blackrock Event
 	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	option = {
-		name = bandit.57
+		name = bandit.57.a
 		add_popularity = {
 			ideology = fascism
 			popularity = -0.1
@@ -2142,7 +2142,7 @@ country_event = { # The Naniwich Trials Event Chain Start (Ulrich Hiperion)
 	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	option = { # he is kill
-		name = bandit.58
+		name = bandit.58.a
 		add_stability = 0.01
 		add_popularity = {
 			ideology = fascism
@@ -2163,7 +2163,7 @@ country_event = { # The Naniwich Trials Event Chain Start (Dominik Pinfeather)
 	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	option = { # he is kill
-		name = bandit.59
+		name = bandit.59.a
 		add_stability = 0.01
 		add_popularity = {
 			ideology = fascism
@@ -2184,7 +2184,7 @@ country_event = { # The Naniwich Trials Event Chain Start (Kajetan Bronsfeather)
 	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	option = { # he is kill
-		name = bandit.60
+		name = bandit.60.a
 		add_stability = 0.01
 		add_popularity = {
 			ideology = fascism
@@ -2205,15 +2205,256 @@ country_event = { # The Naniwich Trials Event Chain Start (Blackrock Herself)
 	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	option = { # he is kill
-		name = bandit.61
+		name = bandit.61.a
 		add_stability = 0.02
 		add_popularity = {
 			ideology = fascism
 			popularity = -0.05
 		}
 		remove_ideas = BAN_lawless_land3
-		kill_country_leader = {
-			ideology = fascism
+		create_country_leader = {
+			name = "Chronus Roth"
+			desc = ""
+			expire = "1965.1.1"
+			ideology = bandit
+			traits = {
+
+			}
+		}
+	}
+}
+
+country_event = { # Court Prince Elias Event
+	id = bandit.62
+	immediate = { log = "[Root.GetName]: event bandit.62" }
+	title = bandit.62
+	desc = bandit.62.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # degeneracy
+		name = bandit.62.a
+	}
+}
+
+country_event = { # Blackhollow-Lushi Economic Pact Event
+	id = bandit.63
+	immediate = { log = "[Root.GetName]: event bandit.63" }
+	title = bandit.63
+	desc = bandit.63.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # degeneracy
+		name = bandit.63.a
+		two_random_industrial_complex = yes
+		LUS = {
+			two_random_industrial_complex = yes
+		}
+	}
+}
+
+country_event = { # Marriage Proposal
+	id = bandit.64
+	immediate = { log = "[Root.GetName]: event bandit.64" }
+	title = bandit.64
+	desc = bandit.64.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # degeneracy
+		name = bandit.64.a
+		LUS = {
+			country_event = {
+				id = bandit.65
+				hours = 2
+			}
+		}
+	}
+}
+
+country_event = { # Marriage Proposal (Lushian Event)
+	id = bandit.65
+	immediate = { log = "[Root.GetName]: event bandit.65" }
+	title = bandit.65
+	desc = bandit.65.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # degeneracy
+		name = bandit.65.a
+		BAN = {
+			country_event = {
+				id = bandit.66
+				hours = 2
+			}
+		}
+	}
+	option = { # not degeneracy
+		name = bandit.65.b
+		BAN = {
+			country_event = {
+				id = bandit.67
+				hours = 2
+			}
+		}
+	}
+}
+
+country_event = { # they fuckin now
+	id = bandit.66
+	immediate = { log = "[Root.GetName]: event bandit.66" }
+	title = bandit.66
+	desc = bandit.66.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # degeneracy
+		name = bandit.66.a
+		every_state = {
+			limit = {
+				is_core_of = LUS
+			}
+			add_core_of = BAN
+		}
+		annex_country = {
+			target = LUS
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = { # you have been denied, cyrille. cry
+	id = bandit.67
+	immediate = { log = "[Root.GetName]: event bandit.67" }
+	title = bandit.67
+	desc = bandit.67.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # degeneracy
+		name = bandit.67.a
+		# sad hours
+	}
+}
+
+country_event = { # Blackhollow offers deal regarding Cyanolisia
+	id = bandit.68
+	immediate = { log = "[Root.GetName]: event bandit.68" }
+	title = bandit.68
+	desc = bandit.68.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # sure sounds good
+		name = bandit.68.a
+		BAN = {
+			country_event = {
+				id = bandit.69
+			}
+		}
+	}
+	option = { # nah they own some minotaur land
+		name = bandit.68.b
+		BAN = {
+			country_event = {
+				id = bandit.70
+			}
+		}
+	}
+}
+
+country_event = { # minotaurs accept deal for cyanolisia
+	id = bandit.69
+	immediate = { log = "[Root.GetName]: event bandit.69" }
+	title = bandit.69
+	desc = bandit.69.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # nice
+		name = bandit.69.a
+		diplomatic_relation = {
+			country = MIT
+			relation = non_aggression_pact
+			active = yes
+		}
+		FROM = {
+			diplomatic_relation = {
+				country = BAN
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		create_wargoal = {
+			target = CYA
+			type = annex_everything
+		}
+		set_country_flag = BAN_flag_give_minotaurs_CYA
+	}
+}
+
+country_event = { # minotaurs refuse deal for cyanolisia
+	id = bandit.70
+	immediate = { log = "[Root.GetName]: event bandit.70" }
+	title = bandit.70
+	desc = bandit.70.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = { # dang
+		name = bandit.70.a
+	}
+}
+
+country_event = { # give land to minotaurs, you agreed to it
+	id = bandit.71
+	immediate = { log = "[Root.GetName]: event bandit.71" }
+	title = bandit.71
+	desc = bandit.71.desc
+	picture = GFX_event_griffon_soldier
+	fire_only_once = yes
+	trigger = {
+		BAN = {
+			has_country_flag = BAN_flag_give_minotaurs_CYA
+			OR = {
+				owns_state = 671
+				owns_state = 511
+				owns_state = 510
+				owns_state = 507
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = { # okay
+		name = bandit.71.a
+		MIT = {
+			remove_state_claim = 446
+		}
+		if = {
+			limit = {
+				owns_state = 671
+			}
+			MIT = {
+				transfer_state = 671
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 510
+			}
+			MIT = {
+				transfer_state = 510
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 511
+			}
+			MIT = {
+				transfer_state = 511
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 507
+			}
+			MIT = {
+				transfer_state = 507
+			}
 		}
 	}
 }

@@ -351,10 +351,40 @@ ideas = {
 			picture = ast_naval_auxiliary_patrol
 			modifier = {
 				enemy_justify_war_goal_time = 0.25
-				political_power_gain =  0.4
+				political_power_gain =  0.1
 				enemy_partisan_effect = -0.10
 				drift_defence_factor = 0.10
-				army_defence_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+
+		BAN_entrenchment = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = griffon_army1
+			modifier = {
+				max_dig_in = 5
+				dig_in_speed_factor = 0.1
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+
+		BAN_entrenchment2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = griffon_army1
+			modifier = {
+				surrender_limit = 0.1
+				army_core_defence_factor = 0.1
+				max_dig_in = 5
+				dig_in_speed_factor = 0.33
+				production_speed_bunker_factor = 0.4
+				production_speed_coastal_bunker_factor = 0.4
 			}
 		}
 
@@ -406,6 +436,74 @@ ideas = {
 				special_forces_defence_factor = 0.05
 				army_org_factor = 0.15
 				special_forces_cap = 0.1
+			}
+		}
+
+		BAN_blackhollow_knights_p = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = griffon_army1
+			modifier = {
+				conscription = 0.025
+				army_attack_factor = 0.05
+				army_defence_factor = 0.1
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.1
+				army_org_factor = 0.05
+				special_forces_cap = 0.1
+			}
+		}
+
+		BAN_blackhollow_knights_p2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = griffon_army1
+			modifier = {
+				conscription = 0.035
+				army_attack_factor = 0.05
+				army_defence_factor = 0.15
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.15
+				army_org_factor = 0.05
+				special_forces_cap = 0.15
+			}
+		}
+
+		BAN_blackhollow_knights_n = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = griffon_army1
+			modifier = {
+				conscription = 0.01
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.15
+				army_org_factor = 0.15
+				special_forces_cap = 0.2
+			}
+		}
+
+		BAN_blackhollow_knights_n2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = griffon_army1
+			modifier = {
+				conscription = 0.015
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				special_forces_attack_factor = 0.2
+				special_forces_defence_factor = 0.2
+				army_org_factor = 0.15
+				special_forces_cap = 0.25
 			}
 		}
 
@@ -983,9 +1081,9 @@ ideas = {
 			removal_cost = -1
 			picture = triumphant_will
 			modifier = {
-				consumer_goods_factor = -0.1
-				stability_factor = 0.05
-				political_power_gain = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.15
+				political_power_gain = 0.1
 			}
 		}
 		
@@ -996,8 +1094,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_agrarian_society
 			modifier = {
-				MONTHLY_POPULATION = 0.15
-				production_speed_buildings_factor = 0.15
+				stability_factor = 0.05
+				MONTHLY_POPULATION = 0.25
 			}
 		}
 		
@@ -1012,6 +1110,100 @@ ideas = {
 			}
 		}
 		
+		BAN_trade_committee = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_exploit_mines
+			modifier = {
+				min_export = 0.1
+				consumer_goods_factor = -0.025
+				trade_opinion_factor = 0.25
+			}
+		}
+
+		BAN_trade_committee2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_exploit_mines
+			modifier = {
+				min_export = 0.15
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.5
+			}
+		}
+
+		BAN_industry_research_dept = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+		}
+
+		BAN_industry_research_dept2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.05
+				electronics = 0.05
+			}
+		}
+
+		BAN_good_factories = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		BAN_good_factories2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		BAN_good_factories3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
 		BAN_industrial_committee = {
 			allowed = {
 				always = no
@@ -1056,7 +1248,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_wall_line
 			modifier = {
-				army_core_defence_factor = 0.10
+				army_leader_start_defense_level = 1
+				army_core_defence_factor = 0.05
 			}
 		}
 		
@@ -1214,6 +1407,37 @@ ideas = {
 			}
 			traits = {
 				army_chief_drill_2
+			}
+		}
+		BAN_cyrille_chief = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+		}
+		BAN_sir_chief = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+				has_completed_focus = BAN_speak_with_the_empire
+			}
+			traits = {
+				army_chief_drill_3
 			}
 		}
 	}
@@ -1428,6 +1652,58 @@ ideas = {
 				army_concealment_1
 			}
 		}
+		BAN_silas = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+			}
+			traits = {
+				army_commando_2
+			}
+		}
+		BAN_noble_chief = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+			}
+			available = {
+				owns_state = 489
+			}
+			traits = {
+				army_infantry_1
+			}
+		}
+		BAN_prelate_chief = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+				has_completed_focus = BAN_make_religion_important
+			}
+			available = {
+				owns_state = 446
+			}
+			traits = {
+				army_regrouping_2
+			}
+		}
 	}
 
 	theorist = {
@@ -1492,6 +1768,22 @@ ideas = {
 				air_doctrine = 0.07
 			}
 			traits = { air_warfare_theorist }
+		}
+
+		BAN_noble_theorist = {
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+			}
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			traits = { military_theorist }
 		}
 
 	}
@@ -1635,5 +1927,74 @@ ideas = {
 			traits = { fortification_engineer }
 		}
 
+		BAN_noble_advisor1 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+			}
+			available = {
+				owns_state = 446
+			}
+			traits = { silent_workgriffon }
+		}
+
+		BAN_noble_advisor2 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+			}
+			available = {
+				owns_state = 532
+			}
+			traits = { prince_of_terror }
+		}
+
+		BAN_prelate_advisor1 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+				has_completed_focus = BAN_make_religion_important
+			}
+			available = {
+				owns_state = 532
+			}
+			traits = { popular_figurehead }
+		}
+
+		BAN_prelate_advisor2 = {
+			picture = unknown_advisor_griffon
+			allowed = {
+				original_tag = BAN
+			}
+			visible = {
+				has_country_leader = {
+					name = "Cyrille Bluecrest"
+					ruling_only = yes
+				}
+				has_completed_focus = BAN_make_religion_important
+			}
+			available = {
+				owns_state = 489
+			}
+			traits = { war_industrialist }
+		}
 	}
 }
