@@ -684,7 +684,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = YAN_convince_landlords
+	id = YAN_shame_landlords
 	icon = GFX_goal_generic_major_alliance
 	x = 18
 	y = 2
@@ -699,16 +699,43 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus YAN_convince_landlords"
+		log = "[GetDateText]: [Root.GetName]: focus YAN_shame_landlords"
 		country_event = { Indozeeb.16  days = 10}
 		
 	}
 }
 
 shared_focus = {
-	id = YAN_
-	#icon = 
-	x = 
+	id = YAN_raise_taxes
+	icon = GFX_focus_generic_treaty
+	x = 17
+	y = 3
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_shame_landlords
+	}
+
+	ai_will_do = {
+		factor = 138
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName}: focus YAN_raise_taxes"
+		country_event = { Indozeeb.17 days = 10}
+	}
+}
+
+shared_focus = {
+	id = YAN_forced_plantation
+	icon = GFX_goal_generic_positive_trade_relations
+	x = 19
+	y = 3
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_shame_landlords
+	}
 }
 
 

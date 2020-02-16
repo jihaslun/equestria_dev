@@ -311,10 +311,33 @@ country_event = {
 		name = Indozeeb.16.a
 		add_idea = YAN_horse_lord1
 		1155 = {
-			add_building_slot = 2
+			add_building_slot = 1
 		}
 		1156 = {
-			add_building_slot = 2
+			add_building_slot = 1
 		}
 	}
 }
+
+country_event = {
+	id = Indozeeb.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.17"}
+	title = Indozeeb.17.t
+	desc = Indozeeb.17.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.17.a
+		1155 = {
+			add_building_slot = 1
+		}
+		1156 = {
+			add_building_slot = 1
+		}
+		swap_ideas = {
+			remove_idea = YAN_horse_lord1
+			add_idea = YAN_horse_lord2
+		}
+	}
+}
+
