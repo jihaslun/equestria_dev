@@ -691,7 +691,7 @@ shared_focus = {
 	cost = 5
 
 	prerequisite = {
-		focus = YAN_politic_1
+		focus = YAN_securing_power
 	}
 
 	ai_will_do = {
@@ -705,10 +705,33 @@ shared_focus = {
 	}
 }
 
+#Saved focus for dealing with rebellion
+
 shared_focus = {
-	id = YAN_raise_taxes
+	id = YAN_calming_a_storm
 	icon = GFX_focus_generic_treaty
-	x = 17
+	x = 20
+	y = 2
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_securing_power
+	}
+
+	ai_will_do = {
+		factor = 138
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus YAN_calming_a_storm"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = YAN_raise_landtax
+	icon = GFX_goal_reichsautobahn
+	x = 18
 	y = 3
 	cost = 5
 
@@ -717,25 +740,21 @@ shared_focus = {
 	}
 
 	ai_will_do = {
-		factor = 138
+		factor = 137
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName}: focus YAN_raise_taxes"
-		country_event = { Indozeeb.17 days = 10}
+		log = "[GetDateText]: [Root.GetName]: focus YAN_raise_landtax"
+		swap_ideas = {
+			remove_idea = YAN_horse_lord1
+			add_idea = YAN_horse_lord2
+		}
 	}
 }
 
 shared_focus = {
-	id = YAN_forced_plantation
-	icon = GFX_goal_generic_positive_trade_relations
-	x = 19
-	y = 3
-	cost = 5
-
-	prerequisite = {
-		focus = YAN_shame_landlords
-	}
+	id = YAN_propaganda
 }
+
 
 

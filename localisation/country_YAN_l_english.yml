@@ -99,8 +99,13 @@
  YAN_securing_power_desc:0 ""
  YAN_shame_landlords:0 "Shame the Landlords"
  YAN_shame_landlords_desc:0 ""
- YAN_raise_taxes:0 "Raise the Land Tax"
- YAN_raise_taxes_desc:0 "" 
+ YAN_calming_a_storm:0 "Calming a Strom"
+ YAN_calming_a_storm_Desc:0 ""
+ YAN_raise_landtax:0 "Raising the Land Tax"
+ YAN_raise_landtax_desc:0 ""
+ 
+
+
 
 
 
@@ -238,12 +243,12 @@
  Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans.
  Indozeeb.15.a:0 ""
 
- Indozeeb.16.t:0 "Meeting the Landlords"
- Indozeeb.16.d:0 "" #The Landlords and Loterijen meet, Landlords disagreee with Loterijen, Loterijen gives them a deal and they agree.
+ Indozeeb.16.t:0 "Taking the Smaller Landlords"
+ Indozeeb.16.d:0 "" ##Basically, this event should be from the perspective of a small landlord, recalling all the events - blackmail, vandalism, threats - that lead up to him being thrown out by the people who lived in his land and used to support him.
  Indozeeb.16.a:0 ""
 
  Indozeeb.17.t:0 "Raising the Taxes"
- Indozeeb.17.d:0 ""
+ Indozeeb.17.d:0 "" #
  Indozeeb.17.a:0 ""
 
  

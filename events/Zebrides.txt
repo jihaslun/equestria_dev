@@ -328,15 +328,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Indozeeb.17.a
-		1155 = {
-			add_building_slot = 1
-		}
-		1156 = {
-			add_building_slot = 1
-		}
 		swap_ideas = {
-			remove_idea = YAN_horse_lord1
-			add_idea = YAN_horse_lord2
+			remove_idea = YAN_horse_lord2
+			add_idea = YAN_horse_lord3
 		}
 	}
 }
