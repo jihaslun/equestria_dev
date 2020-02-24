@@ -19,7 +19,7 @@ units = {
 	}
 	division = {
 		name = "Warrior Group"
-		location = 4509
+		location = 4552
 		division_template = "Warriors"
 		start_equipment_factor = 0.5
 		start_experience_factor = 0.2

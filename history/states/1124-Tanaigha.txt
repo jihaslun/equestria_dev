@@ -1,7 +1,7 @@
 state={
 	id=1124
 	name="STATE_1124"
-	state_category = town
+	state_category = large_city
 	history={
 		owner = TAI
 		add_core_of = TAI
@@ -9,13 +9,13 @@ state={
 			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
-			dockyard = 1
+			dockyard = 2
 			16248 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
 		victory_points = {
-			16248 10
+			16248 25
 		}
 		victory_points = {
 			16323 3
