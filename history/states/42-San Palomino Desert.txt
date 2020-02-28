@@ -2,7 +2,6 @@ state={
 	id=42
 	name="STATE_42"
 	state_category = wasteland
-	impassable = yes
 	resources = {
 		oil = 12
 	}

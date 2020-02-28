@@ -1,6 +1,7 @@
 on_actions = {
 	# country
 	on_new_term_election = {
+
 	}
 
 	# Ace pilots
