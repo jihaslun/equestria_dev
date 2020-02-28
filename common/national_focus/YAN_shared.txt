@@ -632,7 +632,7 @@ shared_focus = {
 	icon = GFX_goal_generic_territory_or_war 
 	x = 11
 	y = 5
-	cost = 5
+	cost = 10
 
 	prerequisite = {
 		focus = YAN_fixing_islands
@@ -666,7 +666,7 @@ shared_focus = {
 	#icon = 
 	x = 19
 	y = 1
-	cost = 5
+	cost = 10
 
 	prerequisite = {
 		focus = YAN_loterijen_power
@@ -688,7 +688,7 @@ shared_focus = {
 	icon = GFX_goal_generic_major_alliance
 	x = 18
 	y = 2
-	cost = 5
+	cost = 7
 
 	prerequisite = {
 		focus = YAN_securing_power
@@ -712,7 +712,7 @@ shared_focus = {
 	icon = GFX_focus_generic_treaty
 	x = 20
 	y = 2
-	cost = 5
+	cost = 10
 
 	prerequisite = {
 		focus = YAN_securing_power
@@ -733,7 +733,7 @@ shared_focus = {
 	icon = GFX_goal_reichsautobahn
 	x = 18
 	y = 3
-	cost = 5
+	cost = 10
 
 	prerequisite = {
 		focus = YAN_shame_landlords
@@ -745,15 +745,30 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus YAN_raise_landtax"
-		swap_ideas = {
-			remove_idea = YAN_horse_lord1
-			add_idea = YAN_horse_lord2
-		}
+		country_event = { Indozeeb.17 days = 10}
 	}
 }
 
 shared_focus = {
-	id = YAN_propaganda
+	id = YAN_propaganda_landlord
+	icon = GFX_focus_generic_anti_fascist_diplomacy
+	x = 18 
+	y = 4
+	cost = 7
+
+	prerequisite = {
+		focus = YAN_raise_landtax
+	}
+
+	ai_will_do = {
+		factor = 136
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus YAN_propaganda_landlord"
+		country_event = { Indozeeb.18 days = 10 }
+		add_political_power = -20
+	}
 }
 
 

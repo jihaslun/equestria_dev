@@ -103,6 +103,8 @@
  YAN_calming_a_storm_Desc:0 ""
  YAN_raise_landtax:0 "Raising the Land Tax"
  YAN_raise_landtax_desc:0 ""
+ YAN_propaganda_landlord:0 "Tar and Feather them!"
+ YAN_propaganda_landlord_desc:0 ""
  
 
 
@@ -151,11 +153,6 @@
  YAN_lessons_flowena_desc:0 ""
  YAN_lessons_flowena_2:0 "Lessons from Flowena"
  YAN_lessons_flowena_2_desc:0 ""
-
-
-
- YAN_horse_lord1:0 "The Slander Campaign"
- YAN_horse_lord1_desc:0 ""
 
 
  
@@ -248,8 +245,15 @@
  Indozeeb.16.a:0 ""
 
  Indozeeb.17.t:0 "Raising the Taxes"
- Indozeeb.17.d:0 "" #
+ Indozeeb.17.d:0 "" #Something about raising the land tax, some of the landlords can't pay for it and Loterijen seizes the land. 
  Indozeeb.17.a:0 ""
+
+ Indozeeb.18.t:0 "Tar & Feather them!"
+ Indozeeb.18.d:0 "" #Loterijen prepares to demonize/delegitmatize some of the middle class Landlords, he has to choose between two of them, either Lord Martabak or Lord Kepleon. Lord Martabak is overtly rich and his defeat will result in his fortunes ending up with Loterijen as Martabak tries to cling onto power by giving Loterijen Money. Keplon's downfall will result in more resources for Loterijen.
+ Indozeeb.18.a:0 ""
+ Indozeeb.18.b:0 ""
+
+ 
 
  
 

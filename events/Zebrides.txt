@@ -335,3 +335,38 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = Indozeeb.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.18"}
+	title = Indozeeb.18.t
+	desc = Indozeeb.18.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.18.a
+		swap_ideas = {
+			remove_idea = YAN_horse_lord3
+			add_idea = YAN_horse_lord3_1
+		}
+	}
+	option = {
+		name = Indozeeb.18.b
+		swap_ideas = {
+			remove_idea = YAN_horse_lord3
+			add_idea = YAN_horse_lord3_2
+		}
+	}
+}
+
+country_event = {
+	id = Indozeeb.181
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.181"}
+	title = Indozeeb.181.t
+	desc = Indozeeb.181.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		
+	}
+}
+
