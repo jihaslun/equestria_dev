@@ -1242,7 +1242,10 @@ jungle_warfare = {
 		}
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	CNT_centaurs = {
 
 		research_cost = 1
@@ -1262,8 +1265,14 @@ jungle_warfare = {
 			always = no
 		}
 		category_all_infantry = {
+<<<<<<< HEAD
 		    maximum_speed = 0.15		
 		}
 	}
 >>>>>>> Zebrica-General-Dev
+=======
+		    maximum_speed = 0.50			
+		}
+	}
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 }

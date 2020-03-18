@@ -1,0 +1,385 @@
+YAN_insurgency_category = {
+	YAN_secure_beakavia = {
+		icon = rifles
+		visible = {
+			owns_state = 1158 
+			1158 = {
+				is_demilitarized_zone = yes
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag= YAN_going_battle
+			}
+			has_equipment = {
+  				infantry_equipment > 100
+			}
+		}
+		highlight_states = {
+			state = 1158
+		}
+		days_remove = 20
+		fire_only_once = yes
+
+		modifier = {
+			political_power_gain = -0.30
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAN_secure_beakvia"
+			1158 = { set_demilitarized_zone = no}
+			hidden_effect = {
+				set_country_flag = YAN_going_battle
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_secure_beakvia"
+			hidden_effect = {
+				clr_country_flag = YAN_going_battle
+			}
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+
+	YAN_secure_zava = {
+		icon = rifles
+		visible = {
+			owns_state = 1157
+			1157 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = YAN_going_battle
+			}
+			has_equipment = {
+  				infantry_equipment > 150
+			}			
+		}
+		highlight_states = {
+			state = 1157
+		}
+		days_remove = 20
+		fire_only_once = yes
+
+		modifier = {
+			political_power_gain = -0.30
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAN_secure_zava"
+			1157 = { set_demilitarized_zone = no}
+			hidden_effect = {
+				set_country_flag = YAN_going_battle
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_secure_zava"
+			hidden_effect = {
+				clr_country_flag = YAN_going_battle
+			}
+		}
+		ai_will_do = {
+			factor = 390
+		}
+	}
+
+	YAN_secure_the_factories = {
+		icon = rifles
+		visible = {
+			owns_state = 1157
+
+		}
+		available = {
+			NOT = {
+				has_country_flag = YAN_going_battle
+			}
+			NOT = {
+				1157 = {
+					is_demilitarized_zone = no
+				}
+			}
+			has_equipment = {
+  				infantry_equipment > 200
+			}
+			has_equipment = {
+				support_equipment > 20
+			}
+		}
+		highlight_states = {
+			state = 1157
+		}
+		days_remove = 20
+		fire_only_once = yes
+
+		modifier = {
+			political_power_gain = -0.30
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.10
+			industrial_capacity_dockyard = -0.10
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAN_secure_the_factories"
+			add_popularity = { ideology = communism popularity = -0.05 }
+			hidden_effect = {
+				set_country_flag = YAN_going_battle
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_secure_the_factories"
+			hidden_effect = {
+				clr_country_flag = YAN_going_battle
+			}
+		}
+		ai_will_do = {
+			factor = 380
+		}
+	}
+
+	YAN_the_showdown = {
+		icon = chi_army_corruption3
+		visible = {
+			owns_state = 1159
+			1159 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = YAN_going_battle
+			}
+			has_equipment = {
+				infantry_equipment > 300
+			}
+			has_equipment = {
+				support_equipment > 30
+			}
+		}
+		highlight_states = {
+			state = 1159
+		}
+		days_remove = 20
+		fire_only_once = yes
+
+		modifier = {
+			political_power_gain = -0.30
+			stability_weekly = -0.01
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAN_the_showdown"
+			country_event = Indozeeb.5
+			1159 = { set_demilitarized_zone = no}
+			hidden_effect = {
+				set_country_flag = YAN_going_battle
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_the_showdown"
+			hidden_effect = {
+				clr_country_flag = YAN_going_battle
+			}
+		}
+		ai_will_do = {
+			factor = 370
+		}
+	}
+
+	YAN_secure_cemar = {
+		icon = rifles
+		visible = {
+			owns_state = 1156
+			1156 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = YAN_going_battle
+			}
+			has_equipment = {
+				infantry_equipment > 400
+			}
+		}
+		highlight_states = {
+			state = 1156
+		}
+		days_remove = 20
+		fire_only_once = yes
+
+		modifier = {
+			political_power_gain = -0.30
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAN_secure_cemar"
+			1156 = { set_demilitarized_zone = no}
+			hidden_effect = {
+				set_country_flag = YAN_going_battle
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_secure_cemar"
+			hidden_effect = {
+				clr_country_flag = YAN_going_battle
+			}
+		}
+		ai_will_do = {
+			factor = 360
+		}
+	}
+
+	YAN_secure_maredia = {
+		icon = rifles
+		visible = {
+			owns_state = 1155
+			1155 = {
+				is_demilitarized_zone = yes
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = YAN_going_battle
+			}
+			has_equipment = {
+				infantry_equipment > 500
+			}
+		}
+		highlight_states = {
+			state = 1155
+		}
+		days_remove = 20
+		fire_only_once = yes
+
+		modifier = {
+			political_power_gain = -0.30
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAN_secure_maredia"
+			1155 = { set_demilitarized_zone = no}
+			hidden_effect = {
+				set_country_flag = YAN_going_battle
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_secure_maredia"
+			hidden_effect = {
+				clr_country_flag = YAN_going_battle
+			}
+		}
+		ai_will_do = {
+			factor = 350
+		}
+	}
+
+	YAN_secure_darkisland = {
+		icon = rifles
+		visible = {
+			owns_state = 1160
+			1160 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = YAN_going_battle
+			}
+			has_equipment = {
+				infantry_equipment > 700
+			}
+		}
+		highlight_states = {
+			state = 1160
+		}
+		days_remove = 20
+		fire_only_once = yes
+
+		modifier = {
+			political_power_gain = -0.30
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAN_secure_darkisland"
+			1160 = { set_demilitarized_zone = no}
+			hidden_effect = {
+				set_country_flag = YAN_going_battle
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_secure_darkisland"
+			hidden_effect = {
+				clr_country_flag = YAN_going_battle
+				set_country_flag = YAN_all_island_secured
+			}
+		}
+		ai_will_do = {
+			factor = 340
+		}
+
+	}
+
+	YAN_securing_power = {
+		icon = chi_wargaming_division
+		available = {
+			1158 = {
+				is_demilitarized_zone = no
+			}
+			1157 = {
+				is_demilitarized_zone = no
+			}
+			1159 = {
+				is_demilitarized_zone = no
+			}
+			1156 = {
+				is_demilitarized_zone = no
+			}
+			1155 = {
+				is_demilitarized_zone = no
+			}
+			1160 = {
+				is_demilitarized_zone = no
+			}
+
+		}
+
+		days_remove = 30
+		fire_only_once = yes
+
+		modifier = {
+			political_power_gain = -0.40
+		}
+
+		available = {
+			has_equipment = {
+				infantry_equipment > 800
+				support_equipment > 50
+			}
+			has_country_flag = YAN_all_island_secured
+
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAN_securing_power"
+			country_event = Indozeeb.6
+
+			hidden_effect = {
+				set_country_flag = YAN_going_battle
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove YAN_securing_power"
+			hidden_effect = {
+				clr_country_flag = YAN_going_battle
+			}
+		}
+		ai_will_do = {
+			factor = 340
+		}
+
+	}
+
+}
