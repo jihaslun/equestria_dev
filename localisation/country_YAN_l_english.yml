@@ -1,0 +1,475 @@
+﻿l_english:
+
+
+
+  ####Notes#####
+  #1157 = Zava
+  #1158 = Zulawesi
+  #1159 = Cemar?
+  #1156 = 
+  #1155 = 
+  #1160 = Pulalp
+ ### COUNTRYNAME ###
+ YAN_fascism:0 "State of the Zebrides"
+ YAN_fascism_DEF:0 "The State of the Zebrides"
+ YAN_democratic:0 "Untied Zebrides"
+ YAN_democratic_DEF:0 "United Federation of Zebrides"
+ YAN_neutrality:0 "Principlity of Zebrides"
+ YAN_neutrality_DEF:0 "The Principlity of Zebrides"
+ YAN_communism:0 "Zebrides Socialist Republic"
+ YAN_communism_DEF:0 "The Zebrides Socialist Republic"
+ YAN_communism_ADJ:0 "Zebridean"
+ YAN_democratic_ADJ:0 "Zebridean"
+ YAN_neutrality_ADJ:0 "Zebridean"
+ YAN_fascism_ADJ:0 "Zebridean"
+
+ YAN_subject:0 "$OVERLORDADJ$ South Zebrides"
+ YAN_subject_DEF:0 "the $OVERLORDADJ$ South Zebrides"
+
+ ### LEADER DESCRIPTIONS ###
+ 
+ ### PARTIES ###
+ YAN_neutrality_party:0 "Kantoor van de Gouverneur-Generaal"
+ YAN_neutrality_party_long:0 "Kantoor van de Gouverneur-Generaal"
+ YAN_neutrality_party_inderpendent:0 "PNY"
+ YAN_neutrality_party_inderpendent_long:0 "Partai Nasional Yaneo"
+ YAN_communism_party:0 "PRS"
+ YAN_communism_party_long:0 "Partai Rakjat Sosialis"
+ YAN_democratic_party:0 "PHN"
+ YAN_democratic_party_long:0 "Partai Harmoni Nasional"
+ YAN_fascism_party:0 "PDY"
+ YAN_fascism_party_long:0 "Partai Demokrasi Yaneo"
+
+ ### FOCUS ###
+
+ #Intro Focuses#
+ YAN_solid_chaos:0 "The Zebridean Situation"
+ YAN_solid_chaos_desc:0 "Ever since the Feathisian economy went into a recession, the Zebrides have been left adrift. The economy, which always was focused on providing for Feathisia's needs, has been sent into a tailspin, and the locals have become more and more unruly. Governor-General Dirk Loterijen has his work cut out for him if he hopes to restore order."
+ YAN_calm_revoltists:0 "Targeted Arrests" #lower stability
+ YAN_calm_revoltists_desc:0 "The independence movement, the "Kebangtian" in the local language, is a many-headed beast, but there are loopholes in the justice system that would permit a more proactive approach to dealing with their leaders. Maybe it is to read the code of laws like Maar reads the sacred texts, but it is necessary for the sake of stability." 
+ YAN_gather_forces:0 "Gather our forces"
+ YAN_gather_forces_desc:0 "If this situation explodes, there will be blood in the streets. Hopefully it can be avoided, but Loterijen has no interest in dealing with maybes. Thankfully, the administration can still count upon the loyalty of some of the locals. If the situation detonates, this will come in handy."
+ YAN_powers_of_governor:0 "Powers of the Governor" 
+ YAN_powers_of_governor_desc:0 "This situation can not be dealt with under the normal legal framework, and Loterijen has written to the Feathisian Parliament to request emergency powers in order to deal with his crisis. The question is just whether the parliament will have the stomach to do what is necessary."
+ YAN_industrial_spending:0 "Industrial Investment" #pp loss, maybe some political influence, he's making concessions to the lineages
+ YAN_industrial_spending_desc:0 "The Kirin have been on these islands for centuries, and their "lineages" - extended families stretching dozens of generations back - are the single most economically influential in the region. They are also as deceitful as they are canny, and yet Loterijen needs whatever backing he can get. He simply has to hope that the snakes will be too fat and happy to strike."
+ YAN_gathersupport:0 "Gather Support" #bit hefty bonuses
+ YAN_gathersupport_desc:0 "If the isles would fall to the revolutionaries it would simply mean one elite being replaced with another, and the Loterijen administration is working hard to ensure that this fact is not lost on those who might end up disadvantaged if the Feathisian authority collapses."
+ YAN_dire_news:0 "The Griffonian Crisis" #ram it all the way up to "strong" independence movement, the idea is that everything is falling apart. 
+ YAN_dire_news_desc:0 "When it rains, it pours, and this holds doubly true for these accursed islands. With the news out of Griffonia, everything is coming to a head faster than anygriff hoped for. The Administration is bracing itself, hoping for the best and fearing the worst."
+
+ ##LOTERIJEN FOCUS##
+ YAN_loterijen_power:0 "Loterijen's Zebrides"
+ YAN_loterijen_power_desc:0 "" 
+ YAN_industrial_start:0 "Fixing the Economy"
+ YAN_industrial_start_desc:0 ""
+ YAN_Zavanese_Families:0 "The Zavanese Families"
+ YAN_Zavanese_Families_desc:0 ""
+ YAN_subdue_workers:0 "Subdue the Workers"
+ YAN_subdue_workers_desc:0 ""
+ YAN_befriend_the_workers:0 "Befriend the workers"
+ YAN_befriend_the_workers_desc:0 ""
+ YAN_develop_Zava:0 "Developing Zava"
+ YAN_develop_Zava_desc:0 ""
+ YAN_industrialization_of_Zava:0 "Industralizing Zava"
+ YAN_industrialization_of_Zava_desc:0 ""
+ YAN_illicit_business:0 "Illicit Business of the Families"
+ YAN_illicit_business_desc:0 ""
+ YAN_gun_investment:0 "The Arms Factories"
+ YAN_gun_investment_desc:0 ""
+ YAN_exporting_business:0 "Exporting Business"
+ YAN_exporting_business_desc:0 ""
+ YAN_liberalize_banks:0 "Liberalising the Banks"
+ YAN_liberalize_banks_desc:0 ""
+ YAN_lessons_of_Flowena:0 "Lessons of Flowena"
+ YAN_lessons_of_Flowena_desc:0 ""
+ YAN_classified_clients:0 "Classified Clients"
+ YAN_classified_clients_desc:0 ""
+ YAN_Feathisa_investment:0 "Feathisan Investments"
+ YAN_Feathisa_investment_desc:0 ""
+ YAN_House_Feathisa_Money:0 "House Feathisan Money?"
+ YAN_House_Feathisa_Money_desc:0 ""
+ YAN_working_outer:0 "Working on the outer islands"
+ YAN_working_outer_desc:0 ""
+ YAN_fixing_islands:0 "Fixing the even more outer islands"
+ YAN_fixing_islands_desc:0 ""
+ YAN_island_fixing:0 "Fixing the Islands"
+ YAN_island_fixing_desc:0 ""
+ YAN_securing_power:0 "Securing the Homeland"
+ YAN_securing_power_desc:0 ""
+ YAN_shame_landlords:0 "Shame the Landlords"
+ YAN_shame_landlords_desc:0 ""
+ YAN_calming_a_storm:0 "Calming a Strom"
+ YAN_calming_a_storm_Desc:0 ""
+ YAN_raise_landtax:0 "Raising the Land Tax"
+ YAN_raise_landtax_desc:0 ""
+ YAN_propaganda_landlord:0 "Tar and Feather them!"
+ YAN_propaganda_landlord_desc:0 ""
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ ### IDEAS ###
+ YAN_dutchoverlord:0 "Feathisian Overlord"
+ YAN_dutchoverlord_desc:0 "The Zebridies have been under Feathisian dominance for nearly a hundred years, and its entire economy has been structured around providing resources for its overlord."
+
+
+ YAN_noidentity:0 "No National Identity"
+ YAN_noidentity_desc:0 "Before Feathisia established itself on the isles, the idea of a united zebrides was preposterous to most of the locals. Even today, unity in the region is maintained by active Feathisias effort, and the locals are divided between local tribes, clans or lineages."
+ YAN_noidentity2:0 "Gatherings of a National Identity"
+ YAN_noidentity2_desc:0 ""
+
+
+ YAN_angery:0 "Kebangkitan Nasional - Calm"
+ YAN_angery_desc:0 "The locals are largely content with things, and Feathisian authority stands unchallenged."
+ YAN_angery2:0 "Kebangkitan Nasional - Mild"
+ YAN_angery2_desc:0 "The locals have begun chafing under Feathisian rule, and some of them speak of throwing the griffonians out."
+ YAN_angery3:0 "Kebangkitan Nasional - Moderate"
+ YAN_angery3_desc:0 "More and more, the locals are talking of rebellion. Some have gone further, and Feathisian security forces are on heightened alert."
+ YAN_angery4:0 "Kebangkitan Nasional - Strong"
+ YAN_angery4_desc:0 "Unrest is rife, and the administration is facing a genuine risk of widespread rebellion unless something is done to address the situation."
+ YAN_angery5:0 "Kebangkitan Nasional - Extreme"
+ YAN_angery5_desc:0 "The situation has reached a full-blown crisis. The islands are boiling with unrest, and the locals marshal themselves for war."
+
+ YAN_industrial1:0 "Industrial Restructing"
+ YAN_industrial1_desc:0 ""
+
+ YAN_Zavanese_Families1:0 "The Zavanese Families"
+ YAN_Zavanese_Families1_desc:0 ""
+
+ YAN_Zavanese_Families2:0 "The Zavanese Families"
+ YAN_Zavanese_Families2_desc:0 ""
+
+ YAN_lessons_flowena:0 "Lessons from Flowena"
+ YAN_lessons_flowena_desc:0 ""
+ YAN_lessons_flowena_2:0 "Lessons from Flowena"
+ YAN_lessons_flowena_2_desc:0 ""
+
+
+ 
+ 
+
+
+
+ ### DECISIONS ###
+ YAN_insurgency_category:0 "Colonial Crackdown"
+ YAN_insurgency_category_desc:0 ""
+ YAN_independence_campaign:0 "Indepdence Campaign"
+ YAN_independence_campaign_desc:0 ""
+ YAN_loterijen_diplomacy:0 "Negotiate with the natives"
+ YAN_loterijen_diplomacy_desc:0 "" 
+ YAN_secure_beakavia:0 "Securing Beakavia"
+ YAN_secure_zava:0 "Securing Zava"
+ YAN_secure_the_factories:0 "Securing the Factories!"
+ YAN_the_showdown:0 "The Final Showdown!"
+ YAN_secure_cemar:0 "Securing Cemar"
+ YAN_secure_maredia:0 "Securing Maredia"
+ YAN_secure_darkisland:0 "Securing Dark Island"
+ YAN_securing_power:0 "Securing Power"
+
+ ### EVENTS ###
+ #Indozeeb.1.t:0 "The Chaos Back Home" #Support Loterijen or the Duke
+ #Indozeeb.1.d:0 " " #
+ #Indozeeb.1.c:0 "We must support the Duke!"
+ #Indozeeb.1.e:0 "Then again... what about Loterijen?"
+
+ Indozeeb.2.t:0 "The Zebrides Tremble" #Griffonian Empire is in chaos, what to do?
+ Indozeeb.2.d:0 "With the news of the Emperor's death, the Zebridean crisis is escalating swiftly. Between a collapsed Feathisian economy, a dead emperor and political upheaval there is simply no way that the balance carefully struck by Governor-General Loterijen can be maintained in the future. The natives are only becoming more and more unruly, and there's no telling what they might to if they wrest control of the region from the administration. A new balance must be struck if Feathisian authority is to remain intact, whether it is through violence or through diplomacy.\n\nAs the meeting is going ahead, other powers are watching and waiting. The Grand Tuan of the isles, Oran Yamar, has gathered his own congress of native Zebras, Kirin and even the Burungbang, those griffons who have come to embrace the local customs and become not colonialists, but neighbors. The Feathisian dominance over the isles have gone on for long enough, and with all the troubles back in their homeland the colonialists are weak.\n\nPrincess Kudakelasi - the closest thing to a voice for all Kirin on the isles - has maintained that if the Feathisians are given no reason to deploy violence then they will not: for all their hunger their distant Adipati - the one they call "Grand Duke" - will not tolerate unprovoked violence. General Semuakawan - once an auxiliary officer serving under the Feathisians - dismisses these notions and calls them naive. Even his family, the descendants of Feathisian settlers, were branded simple natives not worthy of recognition for having adopted the Zebridean culture. There is only one language they understand, and that is violence.\n\nThe question will be which side seizes the initiative and manages to push to achieve its goals." 
+ Indozeeb.2.a:0 "Rise, Zebrides. Rise and claim your freedom!"
+ Indozeeb.2.b:0 "Feathisian authority united the isles, and it shall remain in place!"
+  
+ Indozeeb.3.t:0 "Powers of the Governor"
+ Indozeeb.3.d:0 "With all the recent troubles facing Feathisia, the question of the South Zebridean Isles has fallen to the wayside for too long. For decades it has been a profitable colony and a good way to remove overly troublesome politicians. The Governor-General, Dirk Loterijen, was "promoted" to the position after his ambitious plans to have Feathisia seize a more central role in the empire clashed with the Grand Duke's longstanding friendship with Emperor.\n\nLoterijen has done a fine job maintaining the integrity of the colony, but things has changed and, the already fragile stability in the region has all but collapsed. Loterijen has requested reinforcements and emergency powers to hopefully nip the oncoming crisis in the bud. The matter has been hotly debated in the parliament, with one side saying that if anygriff can make sure that the isles remain such a potent resource for Feathisia, it is him, while others say this would exacerbate the situation and that the Governor should be ordered to negotiate with the locals instead."
+ Indozeeb.3.a:0 "Loterijen shall have what he needs to restore order."
+ Indozeeb.3.b:0 "We will not risk a bloodbath, order him to negotiate."
+
+ Indozeeb.4.t:0 "The Beakavia Crackdown"
+ Indozeeb.4.d:0 "" #Basically, Loterijen dosen't want to negotiate. BAM! Independence Movements goes jihadist and ready to fight for freedam! At this point only the militarists may win because in this path Loterijen always wins because he has the powers from earlier events to put down rebelliosn without permission from De Vluegels.
+ Indozeeb.4.a:0 "Oh lord!"
+
+ Indozeeb.5.t:0 "The Final Showdown"
+ Indozeeb.5.d:0 "" #Loterijen fights Semuakawan, semi professional garrison that is small vs. big freedam militas. Make it look like it has many things at stake. If Loterijen fails, he's doomed and the Radical Independence Bois will win. If not, the Indepence movement will properlu be destroyed/
+ Indozeeb.5.a:0 "Victory!"
+
+ Indozeeb.6.t:0 "Afterthing's Done"
+ Indozeeb.6.d:0 "" #The independence movements been beaten, Loterijen has won. May the capitalism begin. Most of the Zebrides is still in shock after Zebrides brutal crackdown, but there is going to be change in the future.
+ Indozeeb.6.a:0 "At last, we have power!"
+
+ Indozeeb.7.t:0 "Emergency Powers Granted"
+ Indozeeb.7.d:0 "The Feathisian response had arrived that morning, and Governor-General Loterijen could sigh in relief. De Vleugels was committed to supporting his authority on the islands, and was transferring soldiers and equipment to ensure that the local unrest could be dealt with. \n\nSomewhat more annoying was the letter from the Grand Duke that currently rested on his desk. The Grand Duke had not silently sat this one out, but had instead written to him personally to tell him to "exercise the utmost restraint" and to "maintain not merely order, but as good a relation with the local populace as the situation will allow". "Needless bloodshed will not merely destroy what goodwill still exists among the locals, but disgrace our nation in the eyes of all those who value justice and the rule of law" the letter ended, Loterijen almost able to hear the Grand Duke's severe voice through the letter.\n\nWith the letter read, Loterijen calmly tore it up and tossed it in the waste basket, calling for the maid to empty it. Idly, he wondered if the emperor's death had made Gerlach forget why he banished Loterijen to the far end of the world. Feathisia had one chance to hold onto these isles, and Loterijen was not going to waste that by playing nice." 
+ Indozeeb.7.a:0 "The Governor-General will do whatever it takes to maintain order."
+
+ Indozeeb.8.t:0 "Emergency Powers Denied"
+ Indozeeb.8.d:0 "Governor-General Dirk Loterijen sat quietly fuming behind his desk, reading the message once again. It seemed that the Feathisian parliament was insistent on tripping him up, no matter whether he was in De Vleugels or on the other side of the world. Not only had his request for emergency powers been denied, the Grand Duke had taken time out of his day to send him a message to lecture him on how to do his job.\n\nGerlach's message told him that "the current situation is indeed one that will require the utmost effort safely navigate" but stated that "an armed response would only provoke further unrest at a time where this can ill be afforded". As if to rub it in, the Grand Duke finished the message with "we are confident that You, as the representative of Feathisia, have the ability to address this crisis with a resolution that will benefit all involved parties, and will give our full support to whatever peaceful solution is reached."\n\nTearing the letter apart, Loterijen stood up and began to pace around the office. De Vleugels had spoken, and his claws were tied. With a sinking feeling in his gut, he realized what this meant. Feathisia had already lost the isles, they just didn't know it yet. He slowly grimaced before calling for his secretary to write a letter."
+ Indozeeb.8.a:0 "Contact the Representative of the Lineages. Tell her we need to talk."
+
+ Indozeeb.9.t:0 "The Zebridean Industrial Question"
+ Indozeeb.9.d:0 "The Zebrides were never much more than a geographic term before the islands were united under Feathisian authority. Adding to this the mutual mistrust or sometimes even hostilities between local groups and you have a recipe for wildly diverging levels of development in the region. In one end stands Zava, which was quite developed even before the Feathisians established themselves in the region. In the other end lies islands like Mareida and Zimor, which has seen only very modest development even to this day, and where colonial authority is near nonexistent and tribal such is absolute.\n\nThis disparity has only grown more and more with the industrialization of Feathisia and subsequently the Zebrides, and the issue has gone from noticeable to pressing. If the Zebrides are to prosper then it must use all resources available, yet the cost of developing these nigh untouched isles  will be immense."
+ Indozeeb.9.a:0 "Sooner or later, this question must be addressed."
+
+ Indozeeb.10.t:0 "Crackdown on Commies"
+ Indozeeb.10.d:0 "" #Commie Extremists bad! This text was brought to you by Zavanese Family Gang. Basically, Loterijen's hires the Families to deal with the more communist workers, by hiring people like the Pinkertons and go full Tiammen Sqaure (Brutal Crackdown) against them.
+ Indozeeb.10.a:0 ""
+
+ Indozeeb.11.t:0 "The Families are Rich!"
+ Indozeeb.11.d:0 "" #Thanks to cooperation, Zebriedes is better. THe Kirinese Families are more richer and the nation is more stable because both of them working together. But please focus more on Kudakelasi and Loterijen like having another meeting between both of them. Kudakelasi is in a better posistion finacially and can still help her people, and Loterijen borught about his economic reforms and stuff to the Zebrides.
+ Indozeeb.11.a:0 ""
+
+ Indozeeb.12.t:0 "Appeasing the Workers"
+ Indozeeb.12.d:0 "" #Just like Machiavelli, after dealing with opponents you must then appease the rest to not look blood thristy. This act mostly sees the Families crackdowning on the people they just hired and began giving out bread and circuses to the workers. I request this part is from a Zebrican Worker Persepctive's
+ Indozeeb.12.a:0 ""
+
+ Indozeeb.13.t:0 "The Trirads"
+ Indozeeb.13.d:0 "" #I forgot what this is about. I'll come back to you in some days. 
+ Indozeeb.13.a:0 ""
+
+ Indozeeb.14.t:0 "Housing Feathisian Money?"
+ Indozeeb.14.d:0 "" #Let's House the Feathisians Money! Throw arguments about how unstable Griffonia is, and how Flowena is most likely going to be destroyed by it's surronding countries, and therefore putting money in Zebrides is a good idea.
+ Indozeeb.14.a:0 ""
+
+ Indozeeb.15.t:0 "Fixing the Islands"
+ Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans.
+ Indozeeb.15.a:0 ""
+
+ Indozeeb.16.t:0 "Taking the Smaller Landlords"
+ Indozeeb.16.d:0 "" ##Basically, this event should be from the perspective of a small landlord, recalling all the events - blackmail, vandalism, threats - that lead up to him being thrown out by the people who lived in his land and used to support him.
+ Indozeeb.16.a:0 ""
+
+ Indozeeb.17.t:0 "Raising the Taxes"
+ Indozeeb.17.d:0 "" #Something about raising the land tax, some of the landlords can't pay for it and Loterijen seizes the land. 
+ Indozeeb.17.a:0 ""
+
+ Indozeeb.18.t:0 "Tar & Feather them!"
+ Indozeeb.18.d:0 "" #Loterijen prepares to demonize/delegitmatize some of the middle class Landlords, he has to choose between two of them, either Lord Martabak or Lord Kepleon. Lord Martabak is overtly rich and his defeat will result in his fortunes ending up with Loterijen as Martabak tries to cling onto power by giving Loterijen Money. Keplon's downfall will result in more resources for Loterijen.
+ Indozeeb.18.a:0 ""
+ Indozeeb.18.b:0 ""
+
+ 
+
+ 
+
+
+
+
+
+
+ ### ADVISORS ###
+
+ ###Flags###
+ YAN_going_battle:0 "There's an ongoing battle"
+ YAN_all_island_secured:0 "All the islands are secured"
+ YAN_loterijen_paradise:0 "Loterijen has secured the islands!"
+
+ ### EQUIPMENT LAND #####
+ YAN_EQUIPMENT_VERSION_1:1 "No. 1"
+ YAN_EQUIPMENT_VERSION_2:1 "No. 2"
+ YAN_EQUIPMENT_VERSION_3:1 "No. 3"
+ YAN_EQUIPMENT_VERSION_4:1 "No. 4"
+ YAN_EQUIPMENT_VERSION_5:1 "No. 5"
+ YAN_EQUIPMENT_VERSION_6:1 "No. 6"
+ YAN_EQUIPMENT_VERSION_7:1 "No. 7"
+ YAN_EQUIPMENT_VERSION_8:1 "No. 8"
+ YAN_EQUIPMENT_VERSION_9:1 "No. 9"
+ YAN_EQUIPMENT_VERSION_10:1 "No. 10"
+ YAN_EQUIPMENT_VERSION_11:1 "No. 11"
+ YAN_EQUIPMENT_VERSION_12:1 "No. 12"
+ YAN_EQUIPMENT_VERSION_13:1 "No. 13"
+ YAN_EQUIPMENT_VERSION_14:1 "No. 14"
+ YAN_EQUIPMENT_VERSION_15:1 "No. 15"
+ YAN_EQUIPMENT_VERSION_16:1 "No. 16"
+
+ YAN_gw_tank_equipment:0 "Airbender"
+ YAN_gw_tank_equipment_desc:0 ""
+ YAN_gw_tank_equipment_short:0 "Airbender"
+ YAN_heavy_tank_equipment_1:0 "Beak"
+ YAN_heavy_tank_equipment_1_desc:0 ""
+ YAN_heavy_tank_equipment_1_short:0 "Beak"
+ YAN_heavy_tank_equipment_2:0 "Gryta"
+ YAN_heavy_tank_equipment_2_desc:0 ""
+ YAN_heavy_tank_equipment_2_short:0 "Gryta"
+ YAN_heavy_tank_equipment_3:0 "Simon"
+ YAN_heavy_tank_equipment_3_desc:0 ""
+ YAN_heavy_tank_equipment_3_short:0 "Simon"
+  ###############
+ YAN_melee_equipment_0:0 "Griffon Master Swords"
+ YAN_melee_equipment_1:0 "Vorderlader Model 70"
+ YAN_melee_equipment_0_desc:0 "Finest Swords from griffon smiths."
+ YAN_melee_equipment_1_desc:0 "Muskets of the old griffon mastery."
+ YAN_infantry_equipment_0:0 "Hinterladerbüchse Model 98"
+ YAN_infantry_equipment_0_short:0 "Hinterladerbüchse Model"
+ YAN_infantry_equipment_1:0 "Karabiner 'Kralle' 06"
+ YAN_infantry_equipment_1_short:0 "Karabiner 'Kralle'"
+ YAN_infantry_equipment_2:0 "Maschinenpistole 'Specht' 14"
+ YAN_infantry_equipment_2_short:0 "Adlerbüchse Model"
+ YAN_infantry_equipment_3:0 "Adlerbüchse Model"
+ YAN_infantry_equipment_3_short:0 "Adlerbüchse Model 10"
+ YAN_infantry_equipment_x:0 "Sturmlader 'Gloria' 18"
+ YAN_infantry_equipment_x_short:0 "Sturmlader 'Gloria'"
+ YAN_infantry_equipment_x_2:0 "Sturmlader 'Kaiser' 25"
+ YAN_infantry_equipment_x_2_short:0 "Sturmlader 'Kaiser'"
+ YAN_magical_equipment_1_short:0 "Knallbüchse Model 11"
+ YAN_magical_equipment_1:0 "Knallbüchse Model 11 Expertimental"
+ YAN_magical_equipment_2:0 "Ladungsgewehr Model 15"
+ YAN_magical_equipment_2_short:0 "Ladungsgewehr"
+ YAN_magical_equipment_3:0 "Ladungsgewehr 'Krone' 19"
+ YAN_magical_equipment_4:0 "Schnellfeuer Ladungswerfer Model 24"
+ ##############
+  YAN_fighter_equipment_0:0 "Fluggerät Heureka Model 98"
+ YAN_fighter_equipment_0_short:0 "Fluggerät Heureka"
+ YAN_fighter_equipment_1:0 "Adler"
+ YAN_fighter_equipment_1_short:0 "Adler"
+ YAN_fighter_equipment_2:0 "Habicht"
+ YAN_fighter_equipment_2_short:0 "Habicht"
+ YAN_fighter_equipment_3:0 "Greif IV"
+ YAN_fighter_equipment_3_short:0 "Greif IV"
+ YAN_heavy_fighter_equipment_1:0 "Sperber"
+ YAN_heavy_fighter_equipment_1_short:0 "Sperber"
+ YAN_heavy_fighter_equipment_2:0 "Wanderfalke"
+ YAN_heavy_fighter_equipment_2_short:0 "Wanderfalke"
+ YAN_heavy_fighter_equipment_3:0 "Merlin"
+ YAN_heavy_fighter_equipment_3_short:0 "Merlin"
+ YAN_strat_bomber_equipment_1:0 "Rozen RS"
+ YAN_strat_bomber_equipment_1_short:0 "Rozen"
+ YAN_strat_bomber_equipment_2:0 "Grief "Friedenstruppe""
+ YAN_strat_bomber_equipment_2_short:0 "Friedenstruppe"
+ YAN_strat_bomber_equipment_3:0 "Grief "Friedenstruppe" Model 5"
+ YAN_strat_bomber_equipment_3_short:0 "Friedenstruppe M.5"
+ YAN_jet_fighter_equipment_1:0 "Kometa"
+ YAN_jet_fighter_equipment_1_short:0 "Kometa"
+ YAN_jet_fighter_equipment_2:0 "Hund"
+ YAN_jet_fighter_equipment_2_short:0 "Hund"
+ #YAN_jet_strat_bomber_equipment_1:0 "Vickers Valiant"
+ #YAN_jet_strat_bomber_equipment_1_short:0 "Valiant"
+ YAN_early_bomber:0 "Fluggestell Modell 99"
+ YAN_early_bomber_short:0 "Fluggestell Modell"
+ YAN_tac_bomber_equipment_1:0 "Großer Falke"
+ YAN_tac_bomber_equipment_1_short:0 "Großer Falke"
+ YAN_tac_bomber_equipment_2:0 "Raubvogel"
+ YAN_tac_bomber_equipment_2_short:0 "Raubvogel"
+ YAN_tac_bomber_equipment_3:0 "Griffenheim"
+ YAN_tac_bomber_equipment_3_short:0 "Griffenheim"
+ YAN_jet_strat_bomber_equipment_1:0 "Tulpe"
+ YAN_jet_strat_bomber_equipment_1_short:0 "Tulpe"
+ YAN_jet_strat_bomber_equipment_x:0 "Weltzerstörer"
+ YAN_jet_strat_bomber_equipment_x_short:0 "Weltzerstörer"
+ YAN_jet_tac_bomber_equipment_1:0 "Faul B-3"
+ YAN_jet_tac_bomber_equipment_1_short:0 "Faul B-3"
+ YAN_jet_tac_bomber_equipment_2:0 "Tapfer M.15"
+ YAN_jet_tac_bomber_equipment_2_short:0 "Tapfer M.15"
+ YAN_jet_tac_bomber_equipment_x:0 "Herrlich"
+ YAN_jet_tac_bomber_equipment_x_short:0 "Herrlich"
+ YAN_nav_bomber_equipment_1:0 "Gans"
+ YAN_nav_bomber_equipment_1_short:0 "Gans"
+ YAN_nav_bomber_equipment_2:0 "Fischadler"
+ YAN_nav_bomber_equipment_2_short:0 "Fischadler"
+ YAN_nav_bomber_equipment_3:0 "Seeadler"
+ YAN_nav_bomber_equipment_3_short:0 "Seeadler"
+ YAN_CAS_equipment_1:0 "Greifvogel"
+ YAN_CAS_equipment_1_short:0 "Greifvogel"
+ YAN_CAS_equipment_2:0 "Bussard"
+ YAN_CAS_equipment_2_short:0 "Bussard"
+ YAN_CAS_equipment_3:0 "Falke"
+ YAN_CAS_equipment_3_short:0 "Falke"
+ YAN_light_tank_aa_equipment_1:0 "LI-1 Firestorm"
+ YAN_light_tank_aa_equipment_1_short:0 "LI-1 Firestorm"
+ YAN_light_tank_aa_equipment_2:0 "Calico Typhoon"
+ YAN_light_tank_aa_equipment_2_short:0 "Calico Typhoon"
+ YAN_light_tank_aa_equipment_3:0 "Dart Cyclone"
+ YAN_light_tank_aa_equipment_3_short:0 "Dart Cyclone"
+ YAN_light_tank_artillery_equipment_1:0 "LI-1 Oak"
+ YAN_light_tank_artillery_equipment_1_short:0 "LI-1 Oak"
+ YAN_light_tank_artillery_equipment_2:0 "Calico Beech"
+ YAN_light_tank_artillery_equipment_2_short:0 "Calico Beech"
+ YAN_light_tank_artillery_equipment_3:0 "Dart Willow"
+ YAN_light_tank_artillery_equipment_3_short:0 "Dart Willow"
+ YAN_light_tank_destroyer_equipment_1:0 "LI-1 Stalker"
+ YAN_light_tank_destroyer_equipment_1_short:0 "LI-1 Stalker"
+ YAN_light_tank_destroyer_equipment_2:0 "Calico Predator"
+ YAN_light_tank_destroyer_equipment_2_short:0 "Calico Predator"
+ YAN_light_tank_destroyer_equipment_3:0 "Dart Hunter"
+ YAN_light_tank_destroyer_equipment_3_short:0 "Dart Hunter"
+ YAN_light_tank_equipment_1:0 "LI-1"
+ YAN_light_tank_equipment_1_desc:0 "The LI-1 was a simple light tank, more designed as an experiment with welding techniques than an actual combat vehicle. It was mass-produced and pressed into service anyway."
+ YAN_light_tank_equipment_1_short:0 "LI-1"
+ YAN_light_tank_equipment_2:0 "Rico"
+ YAN_light_tank_equipment_2_desc:0 ""
+ YAN_light_tank_equipment_2_short:0 "Rico"
+ YAN_light_tank_equipment_3:0 "Harvester"
+ YAN_light_tank_equipment_3_desc:0 ""
+ YAN_light_tank_equipment_3_short:0 "Harvester"
+ YAN_medium_tank_aa_equipment_1:0 "Mikov"
+ YAN_medium_tank_aa_equipment_1_short:0 "Mikov"
+ YAN_medium_tank_aa_equipment_2:0 "Shoo"
+ YAN_medium_tank_aa_equipment_2_short:0 "Shoo"
+ YAN_medium_tank_aa_equipment_3:0 "Project 4242"
+ YAN_medium_tank_aa_equipment_3_short:0 "Project 4242"
+ YAN_medium_tank_artillery_equipment_1:0 "Triton"
+ YAN_medium_tank_artillery_equipment_1_short:0 "Triton"
+ YAN_medium_tank_artillery_equipment_2:0 "Archon Anger"
+ YAN_medium_tank_artillery_equipment_2_short:0 "Archon Anger"
+ YAN_medium_tank_artillery_equipment_3:0 "Polt"
+ YAN_medium_tank_artillery_equipment_3_short:0 "Polt"
+ YAN_medium_tank_destroyer_equipment_1:0 "Tab"
+ YAN_medium_tank_destroyer_equipment_1_short:0 "Tab"
+ YAN_medium_tank_destroyer_equipment_2:0 "Appleboom"
+ YAN_medium_tank_destroyer_equipment_2_short:0 "Appleboom"
+ YAN_medium_tank_destroyer_equipment_3:0 "Eraser"
+ YAN_medium_tank_destroyer_equipment_3_short:0 "Eraser"
+ YAN_medium_tank_equipment_1:0 "Almeric"
+ YAN_medium_tank_equipment_1_desc:0 ""
+ YAN_medium_tank_equipment_1_short:0 "Almeric"
+ YAN_medium_tank_equipment_2:0 "Manard"
+ YAN_medium_tank_equipment_2_desc:0 "The Manard was a significant improvement over its predecessor, and boasted a strong all-round performance. Its success resulted in a long combat career and large production figures."
+ YAN_medium_tank_equipment_2_short:0 "Manard"
+ YAN_medium_tank_equipment_3:0 "Green Hubard"
+ YAN_medium_tank_equipment_3_desc:0 ""
+ YAN_medium_tank_equipment_3_short:0 "Green Hubard"
+ YAN_modern_tank_aa_equipment_1:0 "Mian"
+ YAN_modern_tank_aa_equipment_1_short:0 "Mian"
+ YAN_modern_tank_artillery_equipment_1:0 "Odo"
+ YAN_modern_tank_artillery_equipment_1_short:0 "Odo"
+ YAN_modern_tank_destroyer_equipment_1:0 "Garnotin"
+ YAN_modern_tank_destroyer_equipment_1_short:0 "Garnotin"
+ YAN_modern_tank_equipment_1:0 "Butcher"
+ YAN_modern_tank_equipment_1_desc:0 ""
+ YAN_modern_tank_equipment_1_short:0 "Butcher"
+ YAN_modern_tank_equipment_x:0 "Liza"
+ YAN_modern_tank_equipment_x_desc:0 ""
+ YAN_modern_tank_equipment_x_short:0 "Liza"
+ YAN_modern_tank_equipment_x_2:0 "Liza M.1"
+ YAN_modern_tank_equipment_x_2_desc:0 ""
+ YAN_modern_tank_equipment_x_2_short:0 "Liza M.1"
+ YAN_modern_tank_equipment_x_3:0 "Liza M.2"
+ YAN_modern_tank_equipment_x_3_desc:0 ""
+ YAN_modern_tank_equipment_x_3_short:0 "Liza M.2"
+ YAN_modern_tank_equipment_x_4:0 "Liza M.3"
+ YAN_modern_tank_equipment_x_4_desc:0 ""
+ YAN_modern_tank_equipment_x_4_short:0 "Liza M.3"
+ YAN_modern_tank_equipment_x_5:0 "Liza M.4"
+ YAN_modern_tank_equipment_x_5_desc:0 ""
+ YAN_modern_tank_equipment_x_5_short:0 "Liza M.4"
+ YAN_motorized_equipment_1:1 "Grifftruck"
+ YAN_super_heavy_tank_aa_equipment_1:0 "Project 100"
+ YAN_super_heavy_tank_aa_equipment_1_short:0 "Project 100"
+ YAN_super_heavy_tank_artillery_equipment_1:0 "Project 43"
+ YAN_super_heavy_tank_artillery_equipment_1_short:0 "Project 43"
+ YAN_super_heavy_tank_destroyer_equipment_1:0 "Project 60"
+ YAN_super_heavy_tank_destroyer_equipment_1_short:0 "Project 60"
+ YAN_super_heavy_tank_equipment_1:0 "Simon X"
+ YAN_super_heavy_tank_equipment_1_desc:0 "Simon X was the result of a design concept for breaking through extremely heavily-defended areas as well as providing powerful infantry support and defence of strategic points. The sheer expense of the project ensured no more than ten were ever constructed."
+ YAN_super_heavy_tank_equipment_1_short:0 "Simon X"
+
+ ### MISC #####
+ YAN_industry_bonus:0 ""
+
+ ### TOOLTIPS ###
+ 

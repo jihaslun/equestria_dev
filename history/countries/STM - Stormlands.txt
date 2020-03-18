@@ -41,7 +41,11 @@ if = {
 }
 
 add_ideas = {
+<<<<<<< HEAD
 	slavery_economy
+=======
+	CTH_slave_based_economy
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	outdated_industry
 	better_science_base
 	lack_of_scientists2

@@ -17,7 +17,11 @@ state={
 	}
 	
 	victory_points = {
+<<<<<<< HEAD
 			2615 20
+=======
+			2615 3
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 		}
 
 	}
@@ -27,5 +31,9 @@ state={
 	}
 	manpower=712852
 	buildings_max_level_factor=1.000
+<<<<<<< HEAD
 	state_category = large_city
+=======
+	state_category = town
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 }

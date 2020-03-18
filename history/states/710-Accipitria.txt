@@ -4,6 +4,10 @@ state={
 	name="STATE_710"
 	resources={
 		tungsten=10.000
+<<<<<<< HEAD
+=======
+		oil=12.000
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	}
 
 	history={

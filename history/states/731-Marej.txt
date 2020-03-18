@@ -14,6 +14,13 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
+<<<<<<< HEAD
+=======
+			19273 = {
+				naval_base = 1
+
+			}
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 
 		}
 

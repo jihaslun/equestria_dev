@@ -10,9 +10,13 @@ state={
 			infrastructure = 0
 
 		}
+<<<<<<< HEAD
 		victory_points = {
 			20033 1
 		}
+=======
+
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	}
 
 	provinces={
