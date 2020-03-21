@@ -745,7 +745,10 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus YAN_raise_landtax"
-		country_event = { Indozeeb.17 days = 10}
+		swap_ideas = {
+			remove_idea = YAN_horse_lord2
+			add_idea = YAN_horse_lord3
+		}
 	}
 }
 
@@ -772,4 +775,28 @@ shared_focus = {
 }
 
 
+shared_focus = {
+	id = YAN_final_blow_landlord
+	icon = GFX_focus_generic_strike_at_democracy
+	x = 18
+	y = 5
+	cost = 10
+	prerequisite = {
+		focus = YAN_propaganda_landlord
+	}
+
+	ai_will_do = {
+		factor = 135
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus YAN_final_blow_landlord"
+		country_event = { Indozeeb.19 days = 10}
+	}
+}
+
+shared_focus = {
+	id = YAN_
+	id = YAN_calming_a_storm
+}
 

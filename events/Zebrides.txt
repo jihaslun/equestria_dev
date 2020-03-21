@@ -1,4 +1,4 @@
-﻿add_namespace = Indozeeb
+add_namespace = Indozeeb
 
 
 ##PLEASE REMEMBER THIS YOU FUCK
@@ -348,6 +348,9 @@ country_event = {
 			remove_idea = YAN_horse_lord3
 			add_idea = YAN_horse_lord3_1
 		}
+		hidden_effect ={
+			country_event = Indozeeb.181 #Fucking over Matarbak
+		}
 	}
 	option = {
 		name = Indozeeb.18.b
@@ -355,18 +358,114 @@ country_event = {
 			remove_idea = YAN_horse_lord3
 			add_idea = YAN_horse_lord3_2
 		}
+		hidden_effect = {
+			country_event = Indozeeb.182 #fucking over Kepelon
+		}
 	}
 }
 
 country_event = {
 	id = Indozeeb.181
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.181"}
-	title = Indozeeb.181.t
-	desc = Indozeeb.181.d
+	title = Indozeeb.181.a
+	desc = Indozeeb.181.b
 	#picture = 
 	is_triggered_only = yes
 	option = {
-		
+		name = Indozeeb.181.a
+		add_political_power = 10
+		add_stability = -1
+		hidden_effect = {
+			set_country_flag = YAN_mad_kuda_check_1
+		}
+	}
+	option = {
+		name = Indozeeb.181.b
+		add_political_effect = -50
+		swap_ideas = {
+			remove_idea = YAN_horse_lord3_1
+			add_idea = YAN_horse_lord3
+		}		
 	}
 }
+
+country_event = {
+	id = Indozeeb.182
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.182"}
+	title = Indozeeb.182.t
+	desc = Indozeeb.12.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.182.a
+		add_political_power = -10
+		add_stability = -1
+		1159 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			set_country_flag = YAN_mad_kuda_check_1
+		}
+	}
+	option = {
+		name = Indozeeb.182.b
+		add_political_effect = -50
+		swap_deas = {
+			remove_idea = YAN_horse_lord3_2
+			add_idea = YAN_horse_lord3
+		}
+	}
+}
+
+country_event = {
+	id = Indozeeb.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.19"}
+	title = Indozeeb.19.t
+	desc = Indozeeb.19.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.19.a
+		add_political_power = -30
+		add_stability = -5
+		1157 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		1518 ={
+			add_extra_state_shared_building_slots = 2
+		} 
+		1159 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		1156 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		1155 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		1160 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = YAN_horse_lord3
+				add_idea = YAN_horse_lord4
+			}
+			swap_ideas = {
+				remove_idea = YAN_horse_lord3_1
+				add_idea = YAN_horse_lord4
+			}
+			swap_ideas = {
+				remove_idea = YAN_horse_lord3_2
+				add_idea = YAN_horse_lord4
+			}
+		}
+	}
+}
+
+
 

@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 
 
@@ -105,7 +105,8 @@
  YAN_raise_landtax_desc:0 ""
  YAN_propaganda_landlord:0 "Tar and Feather them!"
  YAN_propaganda_landlord_desc:0 ""
- 
+ YAN_final_blow_landlord:0 "The Final Blow"
+ YAN_final_blow_landlord_desc:0 ""
 
 
 
@@ -154,7 +155,18 @@
  YAN_lessons_flowena_2:0 "Lessons from Flowena"
  YAN_lessons_flowena_2_desc:0 ""
 
-
+ YAN_horse_lord1:0 "The landowners"
+ YAN_horse_lord1_desc:0 ""
+ YAN_horse_lord2:0 "The landowners"
+ YAN_horse_lord2_desc:0 ""
+ YAN_horse_lord3:0 "The Landowners"
+ YAN_horse_lord3_desc:0 ""
+ YAN_horse_lord3_1:0 "The Landowners"
+ YAN_horse_lord3_1_desc:0 ""
+ YAN_horse_lord3_2:0 "The Landowners"
+ YAN_horse_lord3_2_desc:0 ""
+ YAN_horse_lord4:0 "The Landowners"
+ YAN_horse_lord4_desc:0 ""
  
  
 
@@ -229,7 +241,7 @@
  Indozeeb.12.a:0 ""
 
  Indozeeb.13.t:0 "The Trirads"
- Indozeeb.13.d:0 "" #I forgot what this is about. I'll come back to you in some days. 
+ Indozeeb.13.d:0 "" #Loterijen meets up with the Kirin Families to strike a deal for improving the islands
  Indozeeb.13.a:0 ""
 
  Indozeeb.14.t:0 "Housing Feathisian Money?"
@@ -237,7 +249,7 @@
  Indozeeb.14.a:0 ""
 
  Indozeeb.15.t:0 "Fixing the Islands"
- Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans.
+ Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans. Dosen't need to be over the top.
  Indozeeb.15.a:0 ""
 
  Indozeeb.16.t:0 "Taking the Smaller Landlords"
@@ -245,7 +257,7 @@
  Indozeeb.16.a:0 ""
 
  Indozeeb.17.t:0 "Raising the Taxes"
- Indozeeb.17.d:0 "" #Something about raising the land tax, some of the landlords can't pay for it and Loterijen seizes the land. 
+ Indozeeb.17.d:0 "" #Ignore this, we don't actually need it anymomre
  Indozeeb.17.a:0 ""
 
  Indozeeb.18.t:0 "Tar & Feather them!"
@@ -253,10 +265,19 @@
  Indozeeb.18.a:0 ""
  Indozeeb.18.b:0 ""
 
- 
+ Indozeeb.181.t:0 "" #A Problem arises while mocking Martabak
+ Indozeeb.181.d:0 ""
+ Indozeeb.181.a:0 "" #option A, continue with the propaganda, with higher tensions
+ Indozeeb.181.b:0 "" #option B, backoff, losing the bonsues gain
 
- 
+ Indozeeb.182.t:0 "" #Workers are not convinced the Lord Kepleon whose land they are working on is bad. 
+ Indozeeb.182.d:0 ""
+ Indozeeb.182.a:0 "" # Option A, Continue with the propaganda run with the risk of rising tensions 
+ Indozeeb.182.b:0 "" #Option B, backoff losing the bonuses gained
 
+ Indozeeb.19.t:0 ""
+ Indozeeb.19.d:0 "" #In what is essentially a finally blow, he strongarms all of the remaining landlords to either handover their land, or pleidge total alliagence to him
+ Indozeeb.19.a:0 ""
 
 
 
