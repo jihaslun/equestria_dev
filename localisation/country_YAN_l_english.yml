@@ -77,8 +77,8 @@ l_english:
  YAN_illicit_business_desc:0 ""
  YAN_gun_investment:0 "The Arms Factories"
  YAN_gun_investment_desc:0 ""
- YAN_exporting_business:0 "Exporting Business"
- YAN_exporting_business_desc:0 ""
+ YAN_depose_Kudakelasi:0 "Deposing Kudakelasi"
+ YAN_depose_Kudakelasi_desc:0 ""
  YAN_liberalize_banks:0 "Liberalising the Banks"
  YAN_liberalize_banks_desc:0 ""
  YAN_lessons_of_Flowena:0 "Lessons of Flowena"
@@ -233,7 +233,7 @@ l_english:
  Indozeeb.10.a:0 ""
 
  Indozeeb.11.t:0 "The Families are Rich!"
- Indozeeb.11.d:0 "" #Thanks to cooperation, Zebriedes is better. THe Kirinese Families are more richer and the nation is more stable because both of them working together. But please focus more on Kudakelasi and Loterijen like having another meeting between both of them. Kudakelasi is in a better posistion finacially and can still help her people, and Loterijen borught about his economic reforms and stuff to the Zebrides.
+ Indozeeb.11.d:0 "" #Thanks to cooperation, Zebriedes is better. But to ensure continued Cooperation, Loterijen contacts a member of Kudakelasi extended family to help overthrow her.
  Indozeeb.11.a:0 ""
 
  Indozeeb.12.t:0 "Appeasing the Workers"

@@ -416,8 +416,8 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = YAN_exporting_business
-	icon = GFX_goal_generic_positive_trade_relations
+	id = YAN_despose_Kudakelasi
+	#icon = 
 	x = 3
 	y = 5
 	cost = 10

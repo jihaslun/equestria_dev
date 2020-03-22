@@ -245,6 +245,7 @@ country_event = {
 			remove_idea = YAN_Zavanese_Families1
 			add_idea = YAN_Zavanese_Families2
 		}
+		set_country_flag = YAN_stop_check_mad_kudakelasi
 	}
 }
 
