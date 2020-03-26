@@ -107,9 +107,14 @@ l_english:
  YAN_propaganda_landlord_desc:0 ""
  YAN_final_blow_landlord:0 "The Final Blow"
  YAN_final_blow_landlord_desc:0 ""
-
-
-
+ YAN_matters_of_the_populace:0 "Matters of the Populace"
+ YAN_matters_of_the_populace_desc:0 ""
+ YAN_breads_and_circuses:0 "Breads and Cirsuses"
+ YAN_breads_and_circuses_desc:0 ""
+ YAN_cancel_enemies:0 "Taking the Enemy Out"
+ YAN_cancel_enemies_desc:0 ""
+ YAN_greatest_crackdown:0 "The Greatest Crackdown"
+ YAN_greatest_crackdown_desc:0 ""
 
 
 
@@ -248,9 +253,9 @@ l_english:
  Indozeeb.14.d:0 "" #Let's House the Feathisians Money! Throw arguments about how unstable Griffonia is, and how Flowena is most likely going to be destroyed by it's surronding countries, and therefore putting money in Zebrides is a good idea.
  Indozeeb.14.a:0 ""
 
- Indozeeb.15.t:0 "Fixing the Islands"
- Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans. Dosen't need to be over the top.
- Indozeeb.15.a:0 ""
+ #Indozeeb.15.t:0 "Fixing the Islands"
+ #Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans. Dosen't need to be over the top.
+# Indozeeb.15.a:0 ""
 
  Indozeeb.16.t:0 "Taking the Smaller Landlords"
  Indozeeb.16.d:0 "" ##Basically, this event should be from the perspective of a small landlord, recalling all the events - blackmail, vandalism, threats - that lead up to him being thrown out by the people who lived in his land and used to support him.
@@ -279,8 +284,10 @@ l_english:
  Indozeeb.19.d:0 "" #In what is essentially a finally blow, he strongarms all of the remaining landlords to either handover their land, or pleidge total alliagence to him
  Indozeeb.19.a:0 ""
 
-
-
+ Indozeeb.20.t:0 ""
+ Indozeeb.20.d:0 "" #Attack some people, like some [InsertName] and [InsertName], this is just to prevent them from disrupting Loterijen's rule.
+ Indozeeb.20.a:0 "" #Kill all of them
+ Indozeeb.20.b:0 "" #Eh... shame some of them
 
 
  ### ADVISORS ###
