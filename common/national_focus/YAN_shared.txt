@@ -893,6 +893,32 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = YAN_educational_reform
+	icon = GFX_goal_generic_construct_infrastructure
+	x = 22
+	y = 4
+
+	prerequisite = {
+		focus = YAN_calming_a_storm
+	}
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 144
+	}
+
+	available = {
+		has_stability >50
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus YAN_educational_reform"
+		country_event = { Indozeeb.21   days = 10}
+	}
+}
+
+shared_focus = {
 	id = YAN_greatest_crackdown
 	icon = GFX_goal_generic_attack_allies
 	x = 20 

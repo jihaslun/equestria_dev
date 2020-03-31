@@ -491,18 +491,4 @@ country_event = {
 
 }
 
-country_event = {
-	id = Indozeeb.21 
-	log = "[GetDateText]: [Root.GetName]: event Indozeeb.21"
-	title = Indozeeb.21.t
-	desc = Indozeeb.21.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = Indozeeb.22.a
-		swap_ideas = {
-			remove_idea = YAN_angery3
-			add_idea = YAN_angery4
-		}
-	}
-}
+#Add Indozeeb.21 for about the Education Problem
