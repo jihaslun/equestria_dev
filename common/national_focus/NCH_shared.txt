@@ -56,7 +56,7 @@
 					type = naval_base
 					level = 2
 					instant_build = yes
-					province = 8211
+					province = 5188
 				}
 			}
 			country_event = { id = greneclyf.1 days = 1 }

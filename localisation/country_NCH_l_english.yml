@@ -1250,17 +1250,18 @@
  NCH_infantry_equipment_x_2:0 "Raidhfil Ionsaithe Patrún Caighdeán C.26"
  NCH_infantry_equipment_x_2_short:0 "RI-P26"
 
- NCH_magical_equipment_1:0 "#TO BE ADDED"
- NCH_magical_equipment_1_short:0 "#TO BE ADDED"
 
- NCH_magical_equipment_2:0 "#TO BE ADDED"
- NCH_magical_equipment_2_short:0 "#TO BE ADDED"
+ NCH_magical_equipment_1:0 "Raidhfil leath-uathoibríoch 'Druilire' Dubhloaich C.11"
+ NCH_magical_equipment_1_short:0 "RLU-D11 'Druilire'"
 
- NCH_magical_equipment_3:0 "#TO BE ADDED"
- NCH_magical_equipment_3_short:0 "#TO BE ADDED"
+ NCH_magical_equipment_2:0 "Fo-mheaisínghunna Loadaid C.13"
+ NCH_magical_equipment_2_short:0 "FM-L13"
 
- NCH_magical_equipment_4:0 "#TO BE ADDED"
- NCH_magical_equipment_4_short:0 "#TO BE ADDED"
+ NCH_magical_equipment_3:0 "Raidhfil Ionsaithe Loadaid C.17"
+ NCH_magical_equipment_3_short:0 "RI-L17"
+
+ NCH_magical_equipment_4:0 "Raidhfil Ionsaithe Patrún Caighdeán C.27"
+ NCH_magical_equipment_4_short:0 "RI-P27"
 
 
  NCH_motorized_equipment_1:0 "#TO BE ADDED"
