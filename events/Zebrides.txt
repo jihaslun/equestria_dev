@@ -13,6 +13,7 @@ add_namespace = Indozeeb
 		
 #}
 
+#Please ignore
 country_event = {
 	id = Indozeeb.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.1 "}
@@ -44,6 +45,7 @@ country_event = {
 	}
 }
 
+#Choosing Pro-Independence or Pro-Colonial
 country_event = {
 	id = Indozeeb.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.2"}
@@ -81,6 +83,7 @@ country_event = {
 	}
 }
 
+#Loterijen Stronk or not?
 country_event = {
 	id = Indozeeb.3
 	immediate = {log= "[GetDateText]: [Root.GetName]: event Indozeeb.3"}
@@ -121,6 +124,7 @@ country_event = {
 	}
 }
 
+#Break down Beakvia -> Beginning of crackdown
 country_event = {
 	id = Indozeeb.4
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.4"}
@@ -147,6 +151,7 @@ country_event = {
 	}
 }
 
+#Final Showdown 
 country_event = {
 	id = Indozeeb.5
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.5"}
@@ -159,6 +164,7 @@ country_event = {
 	}
 }
 
+#Aftermazth Event
 country_event = {
 	id = Indozeeb.6
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.6"}
@@ -346,6 +352,10 @@ country_event = {
 		hidden_effect ={
 			country_event = Indozeeb.181 #Fucking over Matarbak
 		}
+		ai_chance = {
+			factor = 5
+			
+		}
 	}
 	option = {
 		name = Indozeeb.18.b
@@ -355,6 +365,9 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = Indozeeb.182 #fucking over Kepelon
+		}
+		ai_chance = {
+			factor = 6
 		}
 	}
 }
@@ -373,6 +386,9 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = YAN_mad_kuda_check_1
 		}
+		ai_chance = {
+			factor = 10
+		}
 	}
 	option = {
 		name = Indozeeb.181.b
@@ -380,6 +396,9 @@ country_event = {
 		swap_ideas = {
 			remove_idea = YAN_horse_lord3_1
 			add_idea = YAN_horse_lord3
+		}
+		ai_chance = {
+			factor = 9
 		}		
 	}
 }
@@ -405,6 +424,9 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = YAN_mad_kuda_check_1
 		}
+		ai_chance = {
+			factor = 10
+		}
 	}
 	option = {
 		name = Indozeeb.182.b
@@ -416,6 +438,9 @@ country_event = {
 		swap_ideas = {
 			remove_idea = YAN_angery3
 			add_idea = YAN_angery4
+		}
+		ai_chance = {
+			factor = 11
 		}
 	}
 }
@@ -476,7 +501,9 @@ country_event = {
 	option = {
 		name = Indozeeb.20.a
 		add_political_power = -10
-		hidden_effect
+		hidden_effect = {
+			set_country_flag = YAN_mad_kuda_check_2
+		}
 	}
 	option = {
 		name = Indozeeb.20.b
@@ -491,4 +518,27 @@ country_event = {
 
 }
 
-#Add Indozeeb.21 for about the Education Problem
+#Include religious stuff in Education or not?
+country_event = {
+	id = Indozeeb.21
+	log = "[GetDateText]: [Root.GetName]: event Indozeeb.21"
+	title = Indozeeb.21.t
+	desc = Indozeeb.21.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.21.a
+		hidden_effect = {
+			add_idea = YAN_education_shitshow
+			set_country_flag = YAN_mad_kuda_check_3
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = Indozeeb.21.b
+		hidden_effect = {
+			add_idea = YAN_education_not_shitshow
+		}
+		add_political_power = -50
+	}
+}

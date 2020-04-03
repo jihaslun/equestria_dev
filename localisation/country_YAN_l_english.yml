@@ -113,8 +113,13 @@ l_english:
  YAN_breads_and_circuses_desc:0 ""
  YAN_cancel_enemies:0 "Taking the Enemy Out"
  YAN_cancel_enemies_desc:0 ""
+ YAN_educational_reform:0 "Reforming the Education System"
+ YAN_educational_reform_desc:0 ""
+
  YAN_greatest_crackdown:0 "The Greatest Crackdown"
  YAN_greatest_crackdown_desc:0 ""
+
+ 
 
 
 
@@ -172,6 +177,11 @@ l_english:
  YAN_horse_lord3_2_desc:0 ""
  YAN_horse_lord4:0 "The Landowners"
  YAN_horse_lord4_desc:0 ""
+
+ YAN_educational_shitshow:0 "Education System - Secular Dominant"
+ YAN_educational_shitshow_desc:0 ""
+ YAN_educational_not_shitshow:0 "Educational System - Religious Dominant"
+ YAN_educational_not_shitshow_desc:0 ""
  
  
 
@@ -289,6 +299,11 @@ l_english:
  Indozeeb.20.a:0 "" #Kill all of them
  Indozeeb.20.b:0 "" #Eh... shame some of them
 
+ Indozeeb.21.t:0 ""
+ Indozeeb.21.d:0 "" #Basically, Loterijen's fixing the education system, and some of his advisors go 'Hey, sonce we're doing thos, should we keep the religious in it?',And he considers the two things, which is basicclly, keep the religoius in, people are like 'Hey I like this! GO Loterijen!'', but if he dosen't and put all the secular stuff, the people go "BOOOO!" (Think of it like attacking traditions)
+ Indozeeb.21.a:0 "" #Keep no religion
+ Indozeeb.21.b:0 "" #Keep all religion
+
 
  ### ADVISORS ###
 
@@ -296,6 +311,9 @@ l_english:
  YAN_going_battle:0 "There's an ongoing battle"
  YAN_all_island_secured:0 "All the islands are secured"
  YAN_loterijen_paradise:0 "Loterijen has secured the islands!"
+ YAN_mad_kuda_check_1:0 ""
+ YAN_mad_kuda_check_2:0 ""
+ YAN_mad_kuda_check_3:0 ""
 
  ### EQUIPMENT LAND #####
  YAN_EQUIPMENT_VERSION_1:1 "No. 1"

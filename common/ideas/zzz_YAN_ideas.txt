@@ -359,6 +359,8 @@ ideas = {
 		}
 	}
 
+
+	#HORSE LORD STUFF
  
 	country = {
 		YAN_horse_lord1 = {
@@ -462,6 +464,41 @@ ideas = {
 				political_power_gain = -0.12
 				local_resources_factor = 0.15
 				consumer_goods_factor = -0.05
+			}
+	}
+
+ 	#EDUCATION THING#
+	country = {
+		YAN_education_not_shitshow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				yes
+			}
+			picture = raj_marginalized_muslim_community_happy
+			modifier = {
+				political_power_gain = -0.05
+				add_stability = 5
+				add_war_support = 5
+				research_speed_factor = -0.05
+			}
+	}
+
+	country = {
+		YAN_education_shitshow
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				yes
+			}
+			picture = raj_marginalized_muslim_community
+			modifier = {
+				political_power_gain = -0.05
+				add_stability = -5
+				add_war_support = -5
+				research_speed_factor = 0.05
 			}
 	}
 	
