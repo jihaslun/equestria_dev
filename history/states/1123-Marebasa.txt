@@ -1,7 +1,11 @@
 state={
 	id=1123
 	name="STATE_1123"
+<<<<<<< HEAD
+	state_category = large_city
+=======
 	state_category = town
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	history={
 		owner = TAI
 		add_core_of = TAI
@@ -16,7 +20,11 @@ state={
 			}
 		}
 		victory_points = {
+<<<<<<< HEAD
+			16301 10
+=======
 			16301 3
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 		}
 	}
 	provinces={

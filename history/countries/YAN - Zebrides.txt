@@ -89,10 +89,13 @@ add_ideas = {
 	outdated_industry
 	lack_of_scientists2
 	better_science_base
+	YAN_angery3
+	YAN_dutchoverlord
+	YAN_noidentity
 }
 
 create_country_leader = {
-	name = "Andries Pijnacker van der Wijck"
+	name = "Loterijen"
 	desc = ""
 	picture = "gfx/leaders/Asia/portrait_griffon_generic_land_12.dds"
 	expire = "1965.1.1"
@@ -103,20 +106,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sokka"
+	name = "Orantua"
 	desc = ""
 	#picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = democratic_socialism
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Isnaeni"
+	name = "Cakarkeluli Semuakawan"
 	desc = ""
-	#picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	picture = "Semuakawan.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -125,7 +128,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Wongsonegoro"
+	name = "Kudakelasi"
 	desc = ""
 	#picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"

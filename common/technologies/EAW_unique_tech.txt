@@ -1249,6 +1249,11 @@ jungle_warfare = {
 			}
 		}
 	}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	CNT_centaurs = {
 
 		research_cost = 1

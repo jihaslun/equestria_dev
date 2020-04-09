@@ -179,9 +179,7 @@ country_event = { ################ Ole surrenderrs ############
 				message = OLE_agree_peace_annex
 			}
 		}
-		FROM = {
-			set_variable = { specific_annex_compliance = 20 }
-		}
+		set_country_flag = { flag = bypass_annex_compliance days = 1 value = 1 }
 		annex_country = { target = FROM }
 		set_country_flag = CHN_annexed_olenia_by_event
 		hidden_effect = { news_event = { days = 2 id = news.15 } }

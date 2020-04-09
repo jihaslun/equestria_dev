@@ -178,7 +178,6 @@ country_event = { #Pony Migrants
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 1
-			id = 4601
 		}
 		custom_effect_tooltip = HAU_onyx_stats_tp
 		custom_effect_tooltip = HAU_pony_unit_tp
@@ -283,7 +282,6 @@ country_event = { #Pony Migrants
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
-			id = 4602
 		}
 		custom_effect_tooltip = HAU_erhard_stats_tp
 		add_manpower = 10000
@@ -611,7 +609,7 @@ country_event = { ##The Exiles Arrive
 		add_war_support = -0.05
 		658 = { add_manpower = 5000 }
 		659 = { add_manpower = 5000 }
-		hidden_effect = { country_event = { id = haukland.28 days = 20 } }
+		country_event = { id = haukland.28 days = 20 }
 	}
 }
 country_event = { ##The Generals' Dilemma
@@ -631,7 +629,6 @@ country_event = { ##The Generals' Dilemma
 		popularity = 0.05
 		}
 		country_event = { id = haukland.29 days = 5}
-		hidden_effect = { country_event = { id = haukland.29 days = 5 } }
 	}
 	option = {
 		name = haukland.28.b
@@ -684,19 +681,8 @@ country_event = { ##Coup
 			expire = "1965.1.1"
 			ideology = democratic_socialism
 		}
-		load_focus_tree = haukland_republican_focus
-		if = {
-				limit = {
-					has_unit_leader = 4600
-				}
-				remove_unit_leader = 4600
-			}
-		if = {
-				limit = {
-					has_unit_leader = 4601
-				}
-				remove_unit_leader = 4601
-			}
+		#load_focus_tree = HAU_republican_focus
+		#make sure you remove meyer too
 		swap_ideas = {
 		remove_idea = HAU_airforce_with_a_state
 		add_idea = HAU_the_dream_is_not_dead
@@ -712,7 +698,6 @@ country_event = { ##Coup
 			name = HAU_nrp_party
 		}
 		set_cosmetic_tag = HAU_republic_tag
-		hidden_effect = { country_event = { id = haukland.39 days = 5 } }
 	}
 	option = {
 		name = haukland.29.a
@@ -721,13 +706,7 @@ country_event = { ##Coup
 		ideology = democratic
 		popularity = -0.10
 		}
-		if = {
-				limit = {
-					has_unit_leader = 4602
-				}
-				remove_unit_leader = 4602
-			}
-		hidden_effect = { country_event = { id = haukland.40 days = 5 } }
+		#remove the haukland general
 	}
 }
 country_event = { 

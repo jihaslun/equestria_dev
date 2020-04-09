@@ -28,6 +28,7 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+<<<<<<< HEAD
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
@@ -40,6 +41,13 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 
+=======
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	priority = 2
 }
 
@@ -49,6 +57,7 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+<<<<<<< HEAD
 		infantry = { x = 0 y = 2 }
 	}
 	support = {
@@ -79,6 +88,15 @@ division_template = {
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
 	}
+=======
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+
+	}
+	priority = 0
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 }
 
 units = {

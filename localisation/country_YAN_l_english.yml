@@ -1,17 +1,27 @@
-﻿l_english:
+l_english:
+
+
+
+  ####Notes#####
+  #1157 = Zava
+  #1158 = Zulawesi
+  #1159 = Cemar?
+  #1156 = 
+  #1155 = 
+  #1160 = Pulalp
  ### COUNTRYNAME ###
- YAN_fascism:0 "Republic of Yaneo"
- YAN_fascism_DEF:0 "The Republic of Yaneo"
- YAN_democratic:0 "Yaneo"
- YAN_democratic_DEF:0 "Yaneo"
- YAN_neutrality:0 "United States of Yaneo"
- YAN_neutrality_DEF:0 "The United States of Yaneo"
- YAN_communism:0 "Yaneo Socialist Republic"
- YAN_communism_DEF:0 "The Yaneo Socialist Republic"
- YAN_communism_ADJ:0 "Yaneo"
- YAN_democratic_ADJ:0 "Yaneo"
- YAN_neutrality_ADJ:0 "Yaneo"
- YAN_fascism_ADJ:0 "Yaneo"
+ YAN_fascism:0 "State of the Zebrides"
+ YAN_fascism_DEF:0 "The State of the Zebrides"
+ YAN_democratic:0 "Untied Zebrides"
+ YAN_democratic_DEF:0 "United Federation of Zebrides"
+ YAN_neutrality:0 "Principlity of Zebrides"
+ YAN_neutrality_DEF:0 "The Principlity of Zebrides"
+ YAN_communism:0 "Zebrides Socialist Republic"
+ YAN_communism_DEF:0 "The Zebrides Socialist Republic"
+ YAN_communism_ADJ:0 "Zebridean"
+ YAN_democratic_ADJ:0 "Zebridean"
+ YAN_neutrality_ADJ:0 "Zebridean"
+ YAN_fascism_ADJ:0 "Zebridean"
 
  YAN_subject:0 "$OVERLORDADJ$ South Zebrides"
  YAN_subject_DEF:0 "the $OVERLORDADJ$ South Zebrides"
@@ -31,16 +41,279 @@
  YAN_fascism_party_long:0 "Partai Demokrasi Yaneo"
 
  ### FOCUS ###
- #Go 
+
+ #Intro Focuses#
+ YAN_solid_chaos:0 "The Zebridean Situation"
+ YAN_solid_chaos_desc:0 "Ever since the Feathisian economy went into a recession, the Zebrides have been left adrift. The economy, which always was focused on providing for Feathisia's needs, has been sent into a tailspin, and the locals have become more and more unruly. Governor-General Dirk Loterijen has his work cut out for him if he hopes to restore order."
+ YAN_calm_revoltists:0 "Targeted Arrests" #lower stability
+ YAN_calm_revoltists_desc:0 "The independence movement, the "Kebangtian" in the local language, is a many-headed beast, but there are loopholes in the justice system that would permit a more proactive approach to dealing with their leaders. Maybe it is to read the code of laws like Maar reads the sacred texts, but it is necessary for the sake of stability." 
+ YAN_gather_forces:0 "Gather our forces"
+ YAN_gather_forces_desc:0 "If this situation explodes, there will be blood in the streets. Hopefully it can be avoided, but Loterijen has no interest in dealing with maybes. Thankfully, the administration can still count upon the loyalty of some of the locals. If the situation detonates, this will come in handy."
+ YAN_powers_of_governor:0 "Powers of the Governor" 
+ YAN_powers_of_governor_desc:0 "This situation can not be dealt with under the normal legal framework, and Loterijen has written to the Feathisian Parliament to request emergency powers in order to deal with his crisis. The question is just whether the parliament will have the stomach to do what is necessary."
+ YAN_industrial_spending:0 "Industrial Investment" #pp loss, maybe some political influence, he's making concessions to the lineages
+ YAN_industrial_spending_desc:0 "The Kirin have been on these islands for centuries, and their "lineages" - extended families stretching dozens of generations back - are the single most economically influential in the region. They are also as deceitful as they are canny, and yet Loterijen needs whatever backing he can get. He simply has to hope that the snakes will be too fat and happy to strike."
+ YAN_gathersupport:0 "Gather Support" #bit hefty bonuses
+ YAN_gathersupport_desc:0 "If the isles would fall to the revolutionaries it would simply mean one elite being replaced with another, and the Loterijen administration is working hard to ensure that this fact is not lost on those who might end up disadvantaged if the Feathisian authority collapses."
+ YAN_dire_news:0 "The Griffonian Crisis" #ram it all the way up to "strong" independence movement, the idea is that everything is falling apart. 
+ YAN_dire_news_desc:0 "When it rains, it pours, and this holds doubly true for these accursed islands. With the news out of Griffonia, everything is coming to a head faster than anygriff hoped for. The Administration is bracing itself, hoping for the best and fearing the worst."
+
+ ##LOTERIJEN FOCUS##
+ YAN_loterijen_power:0 "Loterijen's Zebrides"
+ YAN_loterijen_power_desc:0 "" 
+ YAN_industrial_start:0 "Fixing the Economy"
+ YAN_industrial_start_desc:0 ""
+ YAN_Zavanese_Families:0 "The Zavanese Families"
+ YAN_Zavanese_Families_desc:0 ""
+ YAN_subdue_workers:0 "Subdue the Workers"
+ YAN_subdue_workers_desc:0 ""
+ YAN_befriend_the_workers:0 "Befriend the workers"
+ YAN_befriend_the_workers_desc:0 ""
+ YAN_develop_Zava:0 "Developing Zava"
+ YAN_develop_Zava_desc:0 ""
+ YAN_industrialization_of_Zava:0 "Industralizing Zava"
+ YAN_industrialization_of_Zava_desc:0 ""
+ YAN_illicit_business:0 "Illicit Business of the Families"
+ YAN_illicit_business_desc:0 ""
+ YAN_gun_investment:0 "The Arms Factories"
+ YAN_gun_investment_desc:0 ""
+ YAN_depose_Kudakelasi:0 "Deposing Kudakelasi"
+ YAN_depose_Kudakelasi_desc:0 ""
+ YAN_liberalize_banks:0 "Liberalising the Banks"
+ YAN_liberalize_banks_desc:0 ""
+ YAN_lessons_of_Flowena:0 "Lessons of Flowena"
+ YAN_lessons_of_Flowena_desc:0 ""
+ YAN_classified_clients:0 "Classified Clients"
+ YAN_classified_clients_desc:0 ""
+ YAN_Feathisa_investment:0 "Feathisan Investments"
+ YAN_Feathisa_investment_desc:0 ""
+ YAN_House_Feathisa_Money:0 "House Feathisan Money?"
+ YAN_House_Feathisa_Money_desc:0 ""
+ YAN_working_outer:0 "Working on the outer islands"
+ YAN_working_outer_desc:0 ""
+ YAN_fixing_islands:0 "Fixing the even more outer islands"
+ YAN_fixing_islands_desc:0 ""
+ YAN_island_fixing:0 "Fixing the Islands"
+ YAN_island_fixing_desc:0 ""
+ YAN_securing_power:0 "Securing the Homeland"
+ YAN_securing_power_desc:0 ""
+ YAN_shame_landlords:0 "Shame the Landlords"
+ YAN_shame_landlords_desc:0 ""
+ YAN_calming_a_storm:0 "Calming a Strom"
+ YAN_calming_a_storm_Desc:0 ""
+ YAN_raise_landtax:0 "Raising the Land Tax"
+ YAN_raise_landtax_desc:0 ""
+ YAN_propaganda_landlord:0 "Tar and Feather them!"
+ YAN_propaganda_landlord_desc:0 ""
+ YAN_final_blow_landlord:0 "The Final Blow"
+ YAN_final_blow_landlord_desc:0 ""
+ YAN_matters_of_the_populace:0 "Matters of the Populace"
+ YAN_matters_of_the_populace_desc:0 ""
+ YAN_breads_and_circuses:0 "Breads and Cirsuses"
+ YAN_breads_and_circuses_desc:0 ""
+ YAN_cancel_enemies:0 "Taking the Enemy Out"
+ YAN_cancel_enemies_desc:0 ""
+ YAN_educational_reform:0 "Reforming the Education System"
+ YAN_educational_reform_desc:0 ""
+
+ YAN_greatest_crackdown:0 "The Greatest Crackdown"
+ YAN_greatest_crackdown_desc:0 ""
+
+ 
+
+
+
+
+
+
+
+
 
  ### IDEAS ###
+ YAN_dutchoverlord:0 "Feathisian Overlord"
+ YAN_dutchoverlord_desc:0 "The Zebridies have been under Feathisian dominance for nearly a hundred years, and its entire economy has been structured around providing resources for its overlord."
+
+
+ YAN_noidentity:0 "No National Identity"
+ YAN_noidentity_desc:0 "Before Feathisia established itself on the isles, the idea of a united zebrides was preposterous to most of the locals. Even today, unity in the region is maintained by active Feathisias effort, and the locals are divided between local tribes, clans or lineages."
+ YAN_noidentity2:0 "Gatherings of a National Identity"
+ YAN_noidentity2_desc:0 ""
+
+
+ YAN_angery:0 "Kebangkitan Nasional - Calm"
+ YAN_angery_desc:0 "The locals are largely content with things, and Feathisian authority stands unchallenged."
+ YAN_angery2:0 "Kebangkitan Nasional - Mild"
+ YAN_angery2_desc:0 "The locals have begun chafing under Feathisian rule, and some of them speak of throwing the griffonians out."
+ YAN_angery3:0 "Kebangkitan Nasional - Moderate"
+ YAN_angery3_desc:0 "More and more, the locals are talking of rebellion. Some have gone further, and Feathisian security forces are on heightened alert."
+ YAN_angery4:0 "Kebangkitan Nasional - Strong"
+ YAN_angery4_desc:0 "Unrest is rife, and the administration is facing a genuine risk of widespread rebellion unless something is done to address the situation."
+ YAN_angery5:0 "Kebangkitan Nasional - Extreme"
+ YAN_angery5_desc:0 "The situation has reached a full-blown crisis. The islands are boiling with unrest, and the locals marshal themselves for war."
+
+ YAN_industrial1:0 "Industrial Restructing"
+ YAN_industrial1_desc:0 ""
+
+ YAN_Zavanese_Families1:0 "The Zavanese Families"
+ YAN_Zavanese_Families1_desc:0 ""
+
+ YAN_Zavanese_Families2:0 "The Zavanese Families"
+ YAN_Zavanese_Families2_desc:0 ""
+
+ YAN_lessons_flowena:0 "Lessons from Flowena"
+ YAN_lessons_flowena_desc:0 ""
+ YAN_lessons_flowena_2:0 "Lessons from Flowena"
+ YAN_lessons_flowena_2_desc:0 ""
+
+ YAN_horse_lord1:0 "The landowners"
+ YAN_horse_lord1_desc:0 ""
+ YAN_horse_lord2:0 "The landowners"
+ YAN_horse_lord2_desc:0 ""
+ YAN_horse_lord3:0 "The Landowners"
+ YAN_horse_lord3_desc:0 ""
+ YAN_horse_lord3_1:0 "The Landowners"
+ YAN_horse_lord3_1_desc:0 ""
+ YAN_horse_lord3_2:0 "The Landowners"
+ YAN_horse_lord3_2_desc:0 ""
+ YAN_horse_lord4:0 "The Landowners"
+ YAN_horse_lord4_desc:0 ""
+
+ YAN_educational_shitshow:0 "Education System - Secular Dominant"
+ YAN_educational_shitshow_desc:0 ""
+ YAN_educational_not_shitshow:0 "Educational System - Religious Dominant"
+ YAN_educational_not_shitshow_desc:0 ""
  
+ 
+
+
 
  ### DECISIONS ###
- 
+ YAN_insurgency_category:0 "Colonial Crackdown"
+ YAN_insurgency_category_desc:0 ""
+ YAN_independence_campaign:0 "Indepdence Campaign"
+ YAN_independence_campaign_desc:0 ""
+ YAN_loterijen_diplomacy:0 "Negotiate with the natives"
+ YAN_loterijen_diplomacy_desc:0 "" 
+ YAN_secure_beakavia:0 "Securing Beakavia"
+ YAN_secure_zava:0 "Securing Zava"
+ YAN_secure_the_factories:0 "Securing the Factories!"
+ YAN_the_showdown:0 "The Final Showdown!"
+ YAN_secure_cemar:0 "Securing Cemar"
+ YAN_secure_maredia:0 "Securing Maredia"
+ YAN_secure_darkisland:0 "Securing Dark Island"
+ YAN_securing_power:0 "Securing Power"
+
  ### EVENTS ###
+ #Indozeeb.1.t:0 "The Chaos Back Home" #Support Loterijen or the Duke
+ #Indozeeb.1.d:0 " " #
+ #Indozeeb.1.c:0 "We must support the Duke!"
+ #Indozeeb.1.e:0 "Then again... what about Loterijen?"
+
+ Indozeeb.2.t:0 "The Zebrides Tremble" #Griffonian Empire is in chaos, what to do?
+ Indozeeb.2.d:0 "With the news of the Emperor's death, the Zebridean crisis is escalating swiftly. Between a collapsed Feathisian economy, a dead emperor and political upheaval there is simply no way that the balance carefully struck by Governor-General Loterijen can be maintained in the future. The natives are only becoming more and more unruly, and there's no telling what they might to if they wrest control of the region from the administration. A new balance must be struck if Feathisian authority is to remain intact, whether it is through violence or through diplomacy.\n\nAs the meeting is going ahead, other powers are watching and waiting. The Grand Tuan of the isles, Oran Yamar, has gathered his own congress of native Zebras, Kirin and even the Burungbang, those griffons who have come to embrace the local customs and become not colonialists, but neighbors. The Feathisian dominance over the isles have gone on for long enough, and with all the troubles back in their homeland the colonialists are weak.\n\nPrincess Kudakelasi - the closest thing to a voice for all Kirin on the isles - has maintained that if the Feathisians are given no reason to deploy violence then they will not: for all their hunger their distant Adipati - the one they call "Grand Duke" - will not tolerate unprovoked violence. General Semuakawan - once an auxiliary officer serving under the Feathisians - dismisses these notions and calls them naive. Even his family, the descendants of Feathisian settlers, were branded simple natives not worthy of recognition for having adopted the Zebridean culture. There is only one language they understand, and that is violence.\n\nThe question will be which side seizes the initiative and manages to push to achieve its goals." 
+ Indozeeb.2.a:0 "Rise, Zebrides. Rise and claim your freedom!"
+ Indozeeb.2.b:0 "Feathisian authority united the isles, and it shall remain in place!"
+  
+ Indozeeb.3.t:0 "Powers of the Governor"
+ Indozeeb.3.d:0 "With all the recent troubles facing Feathisia, the question of the South Zebridean Isles has fallen to the wayside for too long. For decades it has been a profitable colony and a good way to remove overly troublesome politicians. The Governor-General, Dirk Loterijen, was "promoted" to the position after his ambitious plans to have Feathisia seize a more central role in the empire clashed with the Grand Duke's longstanding friendship with Emperor.\n\nLoterijen has done a fine job maintaining the integrity of the colony, but things has changed and, the already fragile stability in the region has all but collapsed. Loterijen has requested reinforcements and emergency powers to hopefully nip the oncoming crisis in the bud. The matter has been hotly debated in the parliament, with one side saying that if anygriff can make sure that the isles remain such a potent resource for Feathisia, it is him, while others say this would exacerbate the situation and that the Governor should be ordered to negotiate with the locals instead."
+ Indozeeb.3.a:0 "Loterijen shall have what he needs to restore order."
+ Indozeeb.3.b:0 "We will not risk a bloodbath, order him to negotiate."
+
+ Indozeeb.4.t:0 "The Beakavia Crackdown"
+ Indozeeb.4.d:0 "" #Basically, Loterijen dosen't want to negotiate. BAM! Independence Movements goes jihadist and ready to fight for freedam! At this point only the militarists may win because in this path Loterijen always wins because he has the powers from earlier events to put down rebelliosn without permission from De Vluegels.
+ Indozeeb.4.a:0 "Oh lord!"
+
+ Indozeeb.5.t:0 "The Final Showdown"
+ Indozeeb.5.d:0 "" #Loterijen fights Semuakawan, semi professional garrison that is small vs. big freedam militas. Make it look like it has many things at stake. If Loterijen fails, he's doomed and the Radical Independence Bois will win. If not, the Indepence movement will properlu be destroyed/
+ Indozeeb.5.a:0 "Victory!"
+
+ Indozeeb.6.t:0 "Afterthing's Done"
+ Indozeeb.6.d:0 "" #The independence movements been beaten, Loterijen has won. May the capitalism begin. Most of the Zebrides is still in shock after Zebrides brutal crackdown, but there is going to be change in the future.
+ Indozeeb.6.a:0 "At last, we have power!"
+
+ Indozeeb.7.t:0 "Emergency Powers Granted"
+ Indozeeb.7.d:0 "The Feathisian response had arrived that morning, and Governor-General Loterijen could sigh in relief. De Vleugels was committed to supporting his authority on the islands, and was transferring soldiers and equipment to ensure that the local unrest could be dealt with. \n\nSomewhat more annoying was the letter from the Grand Duke that currently rested on his desk. The Grand Duke had not silently sat this one out, but had instead written to him personally to tell him to "exercise the utmost restraint" and to "maintain not merely order, but as good a relation with the local populace as the situation will allow". "Needless bloodshed will not merely destroy what goodwill still exists among the locals, but disgrace our nation in the eyes of all those who value justice and the rule of law" the letter ended, Loterijen almost able to hear the Grand Duke's severe voice through the letter.\n\nWith the letter read, Loterijen calmly tore it up and tossed it in the waste basket, calling for the maid to empty it. Idly, he wondered if the emperor's death had made Gerlach forget why he banished Loterijen to the far end of the world. Feathisia had one chance to hold onto these isles, and Loterijen was not going to waste that by playing nice." 
+ Indozeeb.7.a:0 "The Governor-General will do whatever it takes to maintain order."
+
+ Indozeeb.8.t:0 "Emergency Powers Denied"
+ Indozeeb.8.d:0 "Governor-General Dirk Loterijen sat quietly fuming behind his desk, reading the message once again. It seemed that the Feathisian parliament was insistent on tripping him up, no matter whether he was in De Vleugels or on the other side of the world. Not only had his request for emergency powers been denied, the Grand Duke had taken time out of his day to send him a message to lecture him on how to do his job.\n\nGerlach's message told him that "the current situation is indeed one that will require the utmost effort safely navigate" but stated that "an armed response would only provoke further unrest at a time where this can ill be afforded". As if to rub it in, the Grand Duke finished the message with "we are confident that You, as the representative of Feathisia, have the ability to address this crisis with a resolution that will benefit all involved parties, and will give our full support to whatever peaceful solution is reached."\n\nTearing the letter apart, Loterijen stood up and began to pace around the office. De Vleugels had spoken, and his claws were tied. With a sinking feeling in his gut, he realized what this meant. Feathisia had already lost the isles, they just didn't know it yet. He slowly grimaced before calling for his secretary to write a letter."
+ Indozeeb.8.a:0 "Contact the Representative of the Lineages. Tell her we need to talk."
+
+ Indozeeb.9.t:0 "The Zebridean Industrial Question"
+ Indozeeb.9.d:0 "The Zebrides were never much more than a geographic term before the islands were united under Feathisian authority. Adding to this the mutual mistrust or sometimes even hostilities between local groups and you have a recipe for wildly diverging levels of development in the region. In one end stands Zava, which was quite developed even before the Feathisians established themselves in the region. In the other end lies islands like Mareida and Zimor, which has seen only very modest development even to this day, and where colonial authority is near nonexistent and tribal such is absolute.\n\nThis disparity has only grown more and more with the industrialization of Feathisia and subsequently the Zebrides, and the issue has gone from noticeable to pressing. If the Zebrides are to prosper then it must use all resources available, yet the cost of developing these nigh untouched isles  will be immense."
+ Indozeeb.9.a:0 "Sooner or later, this question must be addressed."
+
+ Indozeeb.10.t:0 "Crackdown on Commies"
+ Indozeeb.10.d:0 "" #Commie Extremists bad! This text was brought to you by Zavanese Family Gang. Basically, Loterijen's hires the Families to deal with the more communist workers, by hiring people like the Pinkertons and go full Tiammen Sqaure (Brutal Crackdown) against them.
+ Indozeeb.10.a:0 ""
+
+ Indozeeb.11.t:0 "The Families are Rich!"
+ Indozeeb.11.d:0 "" #Thanks to cooperation, Zebriedes is better. But to ensure continued Cooperation, Loterijen contacts a member of Kudakelasi extended family to help overthrow her.
+ Indozeeb.11.a:0 ""
+
+ Indozeeb.12.t:0 "Appeasing the Workers"
+ Indozeeb.12.d:0 "" #Just like Machiavelli, after dealing with opponents you must then appease the rest to not look blood thristy. This act mostly sees the Families crackdowning on the people they just hired and began giving out bread and circuses to the workers. I request this part is from a Zebrican Worker Persepctive's
+ Indozeeb.12.a:0 ""
+
+ Indozeeb.13.t:0 "The Trirads"
+ Indozeeb.13.d:0 "" #Loterijen meets up with the Kirin Families to strike a deal for improving the islands
+ Indozeeb.13.a:0 ""
+
+ Indozeeb.14.t:0 "Housing Feathisian Money?"
+ Indozeeb.14.d:0 "" #Let's House the Feathisians Money! Throw arguments about how unstable Griffonia is, and how Flowena is most likely going to be destroyed by it's surronding countries, and therefore putting money in Zebrides is a good idea.
+ Indozeeb.14.a:0 ""
+
+ #Indozeeb.15.t:0 "Fixing the Islands"
+ #Indozeeb.15.d:0 "" #Loterijen builds shit in the outer islans. Dosen't need to be over the top.
+# Indozeeb.15.a:0 ""
+
+ Indozeeb.16.t:0 "Taking the Smaller Landlords"
+ Indozeeb.16.d:0 "" ##Basically, this event should be from the perspective of a small landlord, recalling all the events - blackmail, vandalism, threats - that lead up to him being thrown out by the people who lived in his land and used to support him.
+ Indozeeb.16.a:0 ""
+
+ Indozeeb.17.t:0 "Raising the Taxes"
+ Indozeeb.17.d:0 "" #Ignore this, we don't actually need it anymomre
+ Indozeeb.17.a:0 ""
+
+ Indozeeb.18.t:0 "Tar & Feather them!"
+ Indozeeb.18.d:0 "" #Loterijen prepares to demonize/delegitmatize some of the middle class Landlords, he has to choose between two of them, either Lord Martabak or Lord Kepleon. Lord Martabak is overtly rich and his defeat will result in his fortunes ending up with Loterijen as Martabak tries to cling onto power by giving Loterijen Money. Keplon's downfall will result in more resources for Loterijen.
+ Indozeeb.18.a:0 ""
+ Indozeeb.18.b:0 ""
+
+ Indozeeb.181.t:0 "" #A Problem arises while mocking Martabak
+ Indozeeb.181.d:0 ""
+ Indozeeb.181.a:0 "" #option A, continue with the propaganda, with higher tensions
+ Indozeeb.181.b:0 "" #option B, backoff, losing the bonsues gain
+
+ Indozeeb.182.t:0 "" #Workers are not convinced the Lord Kepleon whose land they are working on is bad. 
+ Indozeeb.182.d:0 ""
+ Indozeeb.182.a:0 "" # Option A, Continue with the propaganda run with the risk of rising tensions 
+ Indozeeb.182.b:0 "" #Option B, backoff losing the bonuses gained
+
+ Indozeeb.19.t:0 ""
+ Indozeeb.19.d:0 "" #In what is essentially a finally blow, he strongarms all of the remaining landlords to either handover their land, or pleidge total alliagence to him
+ Indozeeb.19.a:0 ""
+
+ Indozeeb.20.t:0 ""
+ Indozeeb.20.d:0 "" #Attack some people, like some [InsertName] and [InsertName], this is just to prevent them from disrupting Loterijen's rule.
+ Indozeeb.20.a:0 "" #Kill all of them
+ Indozeeb.20.b:0 "" #Eh... shame some of them
+
+ Indozeeb.21.t:0 ""
+ Indozeeb.21.d:0 "" #Basically, Loterijen's fixing the education system, and some of his advisors go 'Hey, sonce we're doing thos, should we keep the religious in it?',And he considers the two things, which is basicclly, keep the religoius in, people are like 'Hey I like this! GO Loterijen!'', but if he dosen't and put all the secular stuff, the people go "BOOOO!" (Think of it like attacking traditions)
+ Indozeeb.21.a:0 "" #Keep no religion
+ Indozeeb.21.b:0 "" #Keep all religion
+
 
  ### ADVISORS ###
+
+ ###Flags###
+ YAN_going_battle:0 "There's an ongoing battle"
+ YAN_all_island_secured:0 "All the islands are secured"
+ YAN_loterijen_paradise:0 "Loterijen has secured the islands!"
+ YAN_mad_kuda_check_1:0 ""
+ YAN_mad_kuda_check_2:0 ""
+ YAN_mad_kuda_check_3:0 ""
 
  ### EQUIPMENT LAND #####
  YAN_EQUIPMENT_VERSION_1:1 "No. 1"
@@ -242,7 +515,7 @@
  YAN_super_heavy_tank_equipment_1_short:0 "Simon X"
 
  ### MISC #####
- 
+ YAN_industry_bonus:0 ""
 
  ### TOOLTIPS ###
  

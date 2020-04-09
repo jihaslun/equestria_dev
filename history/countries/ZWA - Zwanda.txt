@@ -15,7 +15,11 @@ actually_fix_weapon_techs = yes
 set_convoys = 70
 
 add_ideas = {
+<<<<<<< HEAD
 	slavery_economy
+=======
+	CTH_slave_based_economy
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	agrarian_society
 	better_science_base
 	lack_of_scientists

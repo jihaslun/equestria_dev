@@ -53,7 +53,11 @@ set_country_flag = better_science_base_unlocked
 
 
 add_ideas = {
+<<<<<<< HEAD
 	slavery_economy
+=======
+	CTH_slave_based_economy
+>>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	pre_industrial_society
 	big_science_base
 	lack_of_scientists2

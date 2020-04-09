@@ -20,7 +20,7 @@ coring_decisions = {
 			}
         }
 
-        cost = 0
+        cost = freedec?0
 
         days_remove = 30
         
@@ -67,7 +67,7 @@ coring_decisions = {
 			}
         }
 
-        cost = 0
+        cost = freedec?0
 
         days_remove = 30
         

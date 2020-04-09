@@ -1,0 +1,544 @@
+add_namespace = Indozeeb
+
+
+##PLEASE REMEMBER THIS YOU FUCK
+#country_event = {
+	#id = Indozeeb
+	#immediate = {log = "[GetDateText]: [Root.GetName]: event id"}
+	#title
+	#desc
+	#picture
+	#is_triggered_only = yes
+	#option = 
+		
+#}
+
+#Please ignore
+country_event = {
+	id = Indozeeb.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.1 "}
+	title = Indozeeb.1.t
+	desc = Indonzeeb.1.d
+	#picture = 
+	is_triggered_only = yes
+	#option = {
+		#name = Indozeeb.1.a
+		#set_country_flag = Archonfag
+	#}
+	#option = {
+		#name = Indozeeb.1.b
+		#set_country_flag = Duchessfag
+	#}
+	option = {
+		name = Indozeeb.1.c
+		set_country_flag = DukeChad
+	}
+	option = {
+		name = Indozeeb.1.e
+		set_country_flag = Loterijenfag
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = YAN_angery2
+				add_idea = YAN_angery
+			}
+		}
+	}
+}
+
+#Choosing Pro-Independence or Pro-Colonial
+country_event = {
+	id = Indozeeb.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.2"}
+	title = Indozeeb.2.t
+	desc = Indozeeb.2.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.2.a
+		set_country_flag = YAN_freedom
+		hidden_effect = {
+			country_event = { id = Indozeeb.4 days = 5}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				has_country_flag = YAN_powerless
+				factor = 30
+			}
+		}
+	}
+	option = {
+		name = Indozeeb.2.b
+		set_country_flag = YAN_colonial
+		hidden_effect = {
+			country_event = { id = Indozeeb.4 days = 5}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				has_country_flag = YAN_powerful
+				factor = 30
+			}
+		}
+	}
+}
+
+#Loterijen Stronk or not?
+country_event = {
+	id = Indozeeb.3
+	immediate = {log= "[GetDateText]: [Root.GetName]: event Indozeeb.3"}
+	title = Indozeeb.3.t
+	desc = Indozeeb.3.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.3.a
+		hidden_effect = {
+			country_event = {
+				id = Indozeeb.7 days = 10
+			}
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				date < 1007.3.1.12
+				factor = 10
+			}
+		}
+	}
+	option = {
+		name = Indozeeb.3.b
+		hidden_effect = {
+			country_event = {
+				id = Indozeeb.8 days = 10
+			}
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				date > 1007.3.1.12
+				factor = 10
+			}
+		}
+		
+	}
+}
+
+#Break down Beakvia -> Beginning of crackdown
+country_event = {
+	id = Indozeeb.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.4"}
+	title = Indozeeb.4.t
+	desc = Indozeeb.4.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.4.a
+		
+		hidden_effect = {
+			1158 = { set_demilitarized_zone = yes }
+			1157 = { set_demilitarized_zone = yes }
+			1159 = { set_demilitarized_zone = yes }
+			1156 = { set_demilitarized_zone = yes }
+			1155 = { set_demilitarized_zone = yes }
+			1160 = { set_demilitarized_zone = yes }
+			swap_ideas = {
+				remove_idea = YAN_angery2
+				add_idea = YAN_angery3
+			}
+			add_stability = -0.20
+		}
+	}
+}
+
+#Final Showdown 
+country_event = {
+	id = Indozeeb.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.5"}
+	title = Indozeeb.5.t
+	desc = Indozeeb.5.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.5.a
+	}
+}
+
+#Aftermazth Event
+country_event = {
+	id = Indozeeb.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.6"}
+	title = Indozeeb.6.t
+	desc = Indozeeb.6.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.6.a
+
+		load_focus_tree = loterijen_paradise
+		set_country_flag = loterijen_paradise
+	}
+}
+
+country_event = {
+	id = Indozeeb.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.7"}
+	title = Indozeeb.7.t
+	desc = Indozeeb.7.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.7.a
+		set_country_flag = YAN_powerful
+	}
+}
+
+country_event = {
+	id = Indozeeb.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.8"}
+	title = Indozeeb.8.t
+	desc = Indozeeb.8.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.8.a
+		set_country_flag = YAN_powerless
+	}
+}
+
+country_event = {
+	id = Indozeeb.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.9"}
+	title = Indozeeb.9.t
+	desc = Indozeeb.9.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.9.a
+	}
+}
+
+country_event = {
+	id = Indozeeb.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.10"}
+	title = Indozeeb.10.t
+	desc = Indozeeb.10.d
+	#picture = 
+	is_triggered_only = yes 
+	option = {
+		name = Indozeeb.10.a
+		add_manpower = -500
+		add_popularity = { ideology = communism popularity = -0.10 }	
+	}
+}
+
+country_event = {
+	id = Indozeeb.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.11"}
+	title = Indozeeb.11.t
+	desc = Indozeeb.11.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.11.a
+		swap_ideas = {
+			remove_idea = YAN_Zavanese_Families1
+			add_idea = YAN_Zavanese_Families2
+		}
+		set_country_flag = YAN_stop_check_mad_kudakelasi
+	}
+}
+
+country_event = {
+	id = Indozeeb.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.12"}
+	title = Indozeeb.12.t
+	desc = Indozeeb.12.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.12.a
+		stability_factor = 0.05
+	}
+}
+
+country_event = {
+	id = Indozeeb.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.13"}
+	title = Indozeeb.13.t
+	desc = Indozeeb.13.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.13.a
+		add_idea = YAN_Zavanese_Families1
+	}
+}
+
+country_event = {
+	id = Indozeeb.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.14"}
+	title = Indozeeb.14.t
+	desc = Indozeeb.14.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.14.a
+		set_global_flag = YAN_secret_duke_check
+	}
+}
+
+country_event = {
+	id = Indozeeb.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.15"}
+	title = Indozeeb.15.t
+	desc = Indozeeb.15.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.15.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = Indozeeb.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.16"}
+	title = Indozeeb.16.t
+	desc = Indozeeb.16.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.16.a
+		add_idea = YAN_horse_lord1
+		1155 = {
+			add_building_slot = 1
+		}
+		1156 = {
+			add_building_slot = 1
+		}
+	}
+}
+
+country_event = {
+	id = Indozeeb.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.17"}
+	title = Indozeeb.17.t
+	desc = Indozeeb.17.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.17.a
+		swap_ideas = {
+			remove_idea = YAN_horse_lord2
+			add_idea = YAN_horse_lord3
+		}
+	}
+}
+
+country_event = {
+	id = Indozeeb.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.18"}
+	title = Indozeeb.18.t
+	desc = Indozeeb.18.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.18.a
+		swap_ideas = {
+			remove_idea = YAN_horse_lord3
+			add_idea = YAN_horse_lord3_1
+		}
+		hidden_effect ={
+			country_event = Indozeeb.181 #Fucking over Matarbak
+		}
+		ai_chance = {
+			factor = 5
+			
+		}
+	}
+	option = {
+		name = Indozeeb.18.b
+		swap_ideas = {
+			remove_idea = YAN_horse_lord3
+			add_idea = YAN_horse_lord3_2
+		}
+		hidden_effect = {
+			country_event = Indozeeb.182 #fucking over Kepelon
+		}
+		ai_chance = {
+			factor = 6
+		}
+	}
+}
+
+country_event = {
+	id = Indozeeb.181
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.181"}
+	title = Indozeeb.181.a
+	desc = Indozeeb.181.b
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.181.a
+		add_political_power = 10
+		add_stability = -1
+		hidden_effect = {
+			set_country_flag = YAN_mad_kuda_check_1
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = Indozeeb.181.b
+		add_political_effect = -50
+		swap_ideas = {
+			remove_idea = YAN_horse_lord3_1
+			add_idea = YAN_horse_lord3
+		}
+		ai_chance = {
+			factor = 9
+		}		
+	}
+}
+
+country_event = {
+	id = Indozeeb.182
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.182"}
+	title = Indozeeb.182.t
+	desc = Indozeeb.12.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.182.a
+		add_political_power = -10
+		add_stability = -1
+		1159 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			set_country_flag = YAN_mad_kuda_check_1
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = Indozeeb.182.b
+		add_political_effect = -50
+		swap_ideas = {
+			remove_idea = YAN_horse_lord3_2
+			add_idea = YAN_horse_lord3
+		}
+		swap_ideas = {
+			remove_idea = YAN_angery3
+			add_idea = YAN_angery4
+		}
+		ai_chance = {
+			factor = 11
+		}
+	}
+}
+
+country_event = {
+	id = Indozeeb.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Indozeeb.19"}
+	title = Indozeeb.19.t
+	desc = Indozeeb.19.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.19.a
+		add_political_power = -30
+		add_stability = -5
+		1157 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		1518 ={
+			add_extra_state_shared_building_slots = 2
+		} 
+		1159 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		1156 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		1155 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		1160 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = YAN_horse_lord3
+				add_idea = YAN_horse_lord4
+			}
+			swap_ideas = {
+				remove_idea = YAN_horse_lord3_1
+				add_idea = YAN_horse_lord4
+			}
+			swap_ideas = {
+				remove_idea = YAN_horse_lord3_2
+				add_idea = YAN_horse_lord4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Indozeeb.20
+	log = "[GetDateText]: [Root.GetName]: event Indozeeb.20"
+	title = Indozeeb.20.t
+	desc = Indozeeb.20.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.20.a
+		add_political_power = -10
+		hidden_effect = {
+			set_country_flag = YAN_mad_kuda_check_2
+		}
+	}
+	option = {
+		name = Indozeeb.20.b
+		add_political_power = -10
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = YAN_angery3
+				add_idea = YAN_angery2
+			}
+		}
+	}
+
+}
+
+#Include religious stuff in Education or not?
+country_event = {
+	id = Indozeeb.21
+	log = "[GetDateText]: [Root.GetName]: event Indozeeb.21"
+	title = Indozeeb.21.t
+	desc = Indozeeb.21.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.21.a
+		hidden_effect = {
+			add_idea = YAN_education_shitshow
+			set_country_flag = YAN_mad_kuda_check_3
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = Indozeeb.21.b
+		hidden_effect = {
+			add_idea = YAN_education_not_shitshow
+		}
+		add_political_power = -50
+	}
+}
