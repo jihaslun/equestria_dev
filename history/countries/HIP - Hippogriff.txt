@@ -7,7 +7,6 @@ set_research_slots = 3
 set_technology = {
 	melee_weapons = 1
 	melee_weapons1 = 1
-<<<<<<< HEAD
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -29,7 +28,6 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
-=======
 	pre_gw_artillery = 1
 	early_fighter = 1
 	cv_early_fighter = 1
@@ -46,7 +44,6 @@ set_technology = {
 	tech_engineers = 1
 	trench_warfare = 1
 	motorised_infantry = 1
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 }
 actually_fix_weapon_techs = yes
 if = {
@@ -121,16 +118,13 @@ set_politics = {
 	elections_allowed = no
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 create_import = {
 	resource = chromium
 	factories = 1
 	exporter = EQS
 }
 
->>>>>>> 3rd_damn_attempt
 set_variable = { var = HIP_underwater_civ value = 0 }
 set_variable = { var = HIP_underwater_mil value = 0 }
 set_variable = { var = HIP_underwater_dockyard value = 0 }
@@ -140,23 +134,14 @@ set_variable = { var = HIP_underwater_building_cost value = 75 }
 
 add_ideas = {
 	HIP_divided_society_5
-
 	undisturbed_isolation
-=======
-
-add_ideas = {
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	modern_society
 	proper_science_base
 }
 
-<<<<<<< HEAD
 set_stability = 0.7
 set_war_support = 0.15
-=======
-set_stability = 0.5
-set_war_support = 0.35
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
+
 
 create_country_leader = {
 	name = "Queen Novo"
@@ -165,11 +150,7 @@ create_country_leader = {
 	desc = "POLITICS_NOVO_DESC"
 	ideology = conservatism
 	traits = {
-<<<<<<< HEAD
 		queen_of_the_hippogriffs
-=======
-		
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	}
 }
 
@@ -178,13 +159,10 @@ create_country_leader = {
 	picture = "stratus_skyranger.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-<<<<<<< HEAD
 	desc = "HIP_SKYRANGER_DESC"
-=======
 	traits = {
 		
 	}
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 }
 
 create_country_leader = {
@@ -397,7 +375,6 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
 		name = "Stardust Class"
 		type = ship_hull_light_1
 		name_group = HIP_DD_HISTORICAL
@@ -413,15 +390,8 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-<<<<<<< HEAD
-=======
-	}
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	create_equipment_variant = {
-		name = "Endeavour Class"
-=======
 		name = "Stardust Class"			# represents Farragut, Porter, Mahan classes
->>>>>>> 3rd_damn_attempt
 		type = ship_hull_light_2
 		name_group = HIP_DD_HISTORICAL
 		parent_version = 0

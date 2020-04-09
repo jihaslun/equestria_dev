@@ -193,7 +193,7 @@
 					democratic_drift = 0.01
 					communism_drift = 0.01
 					stability_factor = -0.05
-					war_support_modifier = -0.05
+					war_support_factor = -0.05
 					autonomy_gain = 1
 				}
 			}
@@ -217,9 +217,9 @@
 					democratic_drift = 0.02
 					communism_drift = 0.02
 					stability_factor = -0.10
-					war_support_modifier = -0.10
+					war_support_factor = -0.10
 					autonomy_gain = 2
-					conscription_faactor = -0.05
+					conscription_factor = -0.05
 				}
 			}
 		}
@@ -241,7 +241,7 @@
 					democratic_drift = 0.05
 					communism_drift = 0.05
 					stablity_factor = -0.15
-					war_support_modifier = -0.15
+					war_support_factor = -0.15
 					autonomy_gain = 5
 					conscription_factor = -0.15
 
@@ -264,7 +264,7 @@
 					fascism_drift = 0.10
 					neutrality_drift = -0.10
 					democratic_drift = 0.10
-					communism_drfit = 0.10
+					communism_drift = 0.10
 					stability_factor = -0.20
 					war_support_factor = -0.20
 					autonomy_gain = 10
@@ -300,8 +300,9 @@
 				picture = generic_disjointed_gov
 				removal_cost = -1
 				modifier = {
-					construction_speed = 0.10
+					production_speed_buildings_factor = 0.10
 					stability_factor = 0.05
+					consumer_goods_factor = 0.03
 					political_power_gain = -0.05
 				}
 			}
@@ -318,9 +319,9 @@
 				picture = generic_disjointed_gov
 				removal_cost = -1
 				modifier = {
-					construction_speed = 0.15
+					production_speed_buildings_factor = 0.15 
 					stability_factor = 0.07
-					consumer_goods_factor = 0.02
+					consumer_goods_factor = 0.05
 					political_power_gain = -0.10
 				}
 			}
@@ -480,8 +481,8 @@
 				picture = raj_marginalized_muslim_community_happy
 				modifier = {
 					political_power_gain = -0.05
-					add_stability = 5
-					add_war_support = 5
+					stability_factor = 0.05
+					war_support_factor = 0.05
 					research_speed_factor = -0.05
 				}
 			}
@@ -498,8 +499,8 @@
 				picture = raj_marginalized_muslim_community
 				modifier = {
 					political_power_gain = -0.05
-					add_stability = -5
-					add_war_support = -5
+					stability_factor = -0.05
+					war_support_factor = -0.05
 					research_speed_factor = 0.05
 				}
 			}

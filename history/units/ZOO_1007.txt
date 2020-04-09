@@ -19,11 +19,7 @@ units = {
 	}
 	division = {
 		name = "Warrior Group"
-<<<<<<< HEAD
 		location = 4552
-=======
-		location = 4509
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 		division_template = "Warriors"
 		start_equipment_factor = 0.5
 		start_experience_factor = 0.2

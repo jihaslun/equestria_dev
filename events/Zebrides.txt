@@ -537,7 +537,7 @@ country_event = {
 	option = {
 		name = Indozeeb.21.b
 		hidden_effect = {
-			add_idea = YAN_education_not_shitshow
+			add_ideas = { YAN_education_not_shitshow }
 		}
 		add_political_power = -50
 	}
