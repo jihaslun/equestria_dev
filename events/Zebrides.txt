@@ -258,7 +258,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Indozeeb.12.a
-		stability_factor = 0.05
+		add_stability = 0.05
 	}
 }
 
@@ -271,7 +271,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Indozeeb.13.a
-		add_idea = YAN_Zavanese_Families1
+		add_ideas = { YAN_Zavanese_Families1 }
 	}
 }
 
@@ -310,12 +310,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Indozeeb.16.a
-		add_idea = YAN_horse_lord1
+		add_ideas = { YAN_horse_lord1 } #With an S, add_ideas = { idea }
 		1155 = {
-			add_building_slot = 1
+			add_extra_state_shared_building_slots = 1
 		}
 		1156 = {
-			add_building_slot = 1
+			add_extra_state_shared_building_slots = 1 #NOT ADD BUILDING SLOTS - Knife	
 		}
 	}
 }
@@ -331,7 +331,7 @@ country_event = {
 		name = Indozeeb.17.a
 		swap_ideas = {
 			remove_idea = YAN_horse_lord2
-			add_idea = YAN_horse_lord3
+			add_idea = YAN_horse_lord3 #You fucked your indentation in ideas
 		}
 	}
 }
@@ -392,7 +392,7 @@ country_event = {
 	}
 	option = {
 		name = Indozeeb.181.b
-		add_political_effect = -50
+		add_political_power = -50
 		swap_ideas = {
 			remove_idea = YAN_horse_lord3_1
 			add_idea = YAN_horse_lord3
@@ -430,7 +430,7 @@ country_event = {
 	}
 	option = {
 		name = Indozeeb.182.b
-		add_political_effect = -50
+		add_political_power = -50 #political_effect? If you want a seperate system you'll need to use variables.
 		swap_ideas = {
 			remove_idea = YAN_horse_lord3_2
 			add_idea = YAN_horse_lord3
@@ -529,7 +529,7 @@ country_event = {
 	option = {
 		name = Indozeeb.21.a
 		hidden_effect = {
-			add_idea = YAN_education_shitshow
+			add_ideas = { YAN_education_shitshow }
 			set_country_flag = YAN_mad_kuda_check_3
 		}
 		add_political_power = -50
@@ -542,3 +542,4 @@ country_event = {
 		add_political_power = -50
 	}
 }
+#I suggest coding in a scripted effect to lower the amount of times you'll need to swap ideas, but it's not necessary. - Knife

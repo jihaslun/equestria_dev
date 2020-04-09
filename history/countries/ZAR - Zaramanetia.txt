@@ -22,7 +22,7 @@ add_ideas = {
 
 set_popularities = {
 
-<<<<<<< HEAD
+
 	democratic = 9
 
 	fascism = 7
@@ -30,15 +30,6 @@ set_popularities = {
 	communism = 3
 
 	neutrality = 81
-=======
-	democratic = 0
-
-	fascism = 0
-
-	communism = 0
-
-	neutrality = 100
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 
 }
 	

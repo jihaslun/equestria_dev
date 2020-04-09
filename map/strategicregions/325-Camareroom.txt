@@ -8,7 +8,6 @@ strategic_region={
 	weather={
 		period={
 			between={ 0.0 30.0 }
-<<<<<<< HEAD
 			temperature={ 25.0 28.0 }
 			temperature_day_night={ 10.0 -10.0 }
 			no_phenomenon=0.500
@@ -52,7 +51,6 @@ strategic_region={
 		period={
 			between={ 0.3 29.3 }
 			temperature={ 18.0 21.0 }
-=======
 			temperature={ 16.0 20.0 }
 			temperature_day_night={ 10.0 -10.0 }
 			no_phenomenon=0.500
@@ -96,7 +94,6 @@ strategic_region={
 		period={
 			between={ 0.3 29.3 }
 			temperature={ 1.0 8.0 }
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 			temperature_day_night={ 10.0 -10.0 }
 			no_phenomenon=0.610
 			rain_light=0.100
@@ -104,7 +101,6 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-<<<<<<< HEAD
 			mud=1.000
 			sandstorm=0.000
 			min_snow_level=0.000
@@ -154,7 +150,6 @@ strategic_region={
 		period={
 			between={ 0.7 30.7 }
 			temperature={ 14.0 16.0 }
-=======
 			mud=0.800
 			sandstorm=0.000
 			min_snow_level=0.050
@@ -204,7 +199,6 @@ strategic_region={
 		period={
 			between={ 0.7 30.7 }
 			temperature={ -20.0 -4.0 }
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 			temperature_day_night={ 10.0 -10.0 }
 			no_phenomenon=0.400
 			rain_light=0.180
@@ -212,7 +206,6 @@ strategic_region={
 			snow=0.100
 			blizzard=0.100
 			arctic_water=0.000
-<<<<<<< HEAD
 			mud=1.000
 			sandstorm=0.000
 			min_snow_level=0.000
@@ -272,7 +265,6 @@ strategic_region={
 			mud=1.000
 			sandstorm=0.000
 			min_snow_level=0.000
-=======
 			mud=0.800
 			sandstorm=0.000
 			min_snow_level=0.050
@@ -332,7 +324,6 @@ strategic_region={
 			mud=0.800
 			sandstorm=0.000
 			min_snow_level=0.050
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 		}
 	}
 }

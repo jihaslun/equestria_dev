@@ -1,7 +1,6 @@
 ideas = {
 
 	country = {
-<<<<<<< HEAD
 		HIP_divided_society_1 = {
 			allowed = {
 				always = no
@@ -194,9 +193,6 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
-=======
-		
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	}
 
 	political_advisor = {
@@ -223,11 +219,8 @@ ideas = {
 				original_tag = HIP
 			}
 			
-<<<<<<< HEAD
 			traits = { silent_workgriffon }
-=======
 			traits = { silent_workhorse }
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 		}
 
 		HIP_afterlight_blaze = {
@@ -277,7 +270,6 @@ ideas = {
 
 
 	tank_manufacturer = {
-<<<<<<< HEAD
 		designer = yes
 
 		HIP_marbreeze_herring = {
@@ -615,7 +607,6 @@ ideas = {
 			modifier = {
 			}
 		}
-=======
 
 	}
 
@@ -633,6 +624,5 @@ ideas = {
 
 	naval_manufacturer = {
 
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	}
 }

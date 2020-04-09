@@ -19,11 +19,8 @@ add_ideas = {
 	agrarian_society
 	better_science_base
 	lack_of_scientists1
-<<<<<<< HEAD
 	slavery_economy
-=======
 	CTH_slave_based_economy
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 }
 
 set_popularities = {

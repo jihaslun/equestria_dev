@@ -681,11 +681,6 @@
  STATE_680:0 "Nyumbailands"
  STATE_681:0 "Iomall-Fairge"
  STATE_682:0 "Wild-Vodina"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_683:0 "Soaring Woods"
  STATE_684:0 "Central Aris"
  STATE_685:0 "East Aris"
@@ -733,11 +728,7 @@
  STATE_727:0 "Matadeera"
  STATE_728:0 "Tobuck"
  STATE_729:0 "Darnaigh"
-<<<<<<< HEAD
  STATE_730:0 "Menzaka"
-=======
- STATE_730:0 "Jabal al Pondar"
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_731:0 "Marej"
  STATE_732:0 "Maretrouh"
  STATE_733:0 "Somnambula"
@@ -754,22 +745,14 @@
  STATE_744:0 "Zadai"
  STATE_745:0 "Zatsina"
  STATE_746:0 "Senmare"
-<<<<<<< HEAD
  STATE_747:0 "Agzhat"
-=======
- STATE_747:0 "Agazedez"
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_748:0 "Zinder"
  STATE_749:0 "Zebap"
  STATE_750:0 "Manery"
  STATE_751:0 "Zahal"
  STATE_752:0 "Bulckan"
  STATE_753:0 "Dazoguz"
-<<<<<<< HEAD
- STATE_754:0 "Zawagh"
-=======
  STATE_754:0 "Maredin"
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_755:0 "Shizra"
  STATE_756:0 "Zamfara"
  STATE_757:0 "Eastern Desert"
@@ -827,11 +810,7 @@
  STATE_809:0 "Shayda"
  STATE_810:0 "Assur"
  STATE_811:0 "Ajloun"
-<<<<<<< HEAD
  STATE_812:0 "Onageran"
-=======
- STATE_812:0 "Al Kmarek"
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_813:0 "Aqabah"
  STATE_814:0 "Al Kahb"
  STATE_815:0 "Huiactlali"
@@ -846,13 +825,8 @@
  STATE_824:0 "Jeddneigha"
  STATE_825:0 "Trotubah"
  STATE_826:0 "Qunfudhah"
-<<<<<<< HEAD
  STATE_827:0 "Asinus"
  STATE_828:0 "Dur-Burro"
-=======
- STATE_827:0 "Graneigh"
- STATE_828:0 "Hafar"
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_829:0 "Saddleayr"
  STATE_830:0 "Qathoof"
  STATE_831:1 "Santa Canaria"
@@ -950,11 +924,7 @@
  STATE_923:0 "Gazakonde"
  STATE_924:0 "Gibo"
  STATE_925:0 "Gazellembique"
-<<<<<<< HEAD
  STATE_926:0 "Xizhi"
-=======
- STATE_926:0 "Buckamoyo"
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_927:0 "Ginje"
  STATE_928:0 "Kaongigi"
  STATE_929:0 "Zuta"
@@ -1087,7 +1057,6 @@
  STATE_1056:0 "Bac Trot Bo"
  STATE_1057:0 "Mane Bac"
  STATE_1058:0 "Haneigh"
-<<<<<<< HEAD
  STATE_1059:0 "Zhongzuo"
  STATE_1060:0 "Wanglin"
  STATE_1061:0 "Dongri"
@@ -1112,7 +1081,6 @@
  STATE_1080:0 "Yuanjiang"
  STATE_1081:0 "Jixi"
  STATE_1082:0 "Linshe"
-=======
  STATE_1059:0 "Hoofbei"
  STATE_1060:0 "Jianeighsu"
  STATE_1061:0 "Shaneighdong"
@@ -1137,18 +1105,12 @@
  STATE_1080:0 "Zigua"
  STATE_1081:0 "Trotvetan"
  STATE_1082:0 "Jaincoltang"
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_1083:0 "Khmare"
  STATE_1084:0 "Coltrat"
  STATE_1085:0 "Mane Xang"
  STATE_1086:0 "Luang Ponieang"
-<<<<<<< HEAD
  STATE_1087:0 "Ningyang"
  STATE_1088:0 "Wen'an"
-=======
- STATE_1087:0 "Coltchin"
- STATE_1088:0 "Naighga"
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
  STATE_1089:0 "Karmanegdan"
  STATE_1090:0 "Criamir"
  STATE_1091:0 "Kashmwa"
@@ -1264,7 +1226,3 @@
  STATE_1201:0 "Katkat"
  STATE_1202:0 "Westshore"
  STATE_1203:0 "Eastwings"
-<<<<<<< HEAD
->>>>>>> Zebrica-General-Dev
-=======
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"

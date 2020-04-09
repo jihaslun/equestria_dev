@@ -69,11 +69,8 @@ set_convoys = 70
 
 set_country_flag = big_science_base_unlocked
 add_ideas = {
-<<<<<<< HEAD
 	slavery_economy
-=======
 	CTH_slave_based_economy
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	big_science_base
 	outdated_industry
 	lack_of_scientists3

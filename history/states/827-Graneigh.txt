@@ -8,12 +8,9 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-<<<<<<< HEAD
 		victory_points = {
 			15482 1
 		}
-=======
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	}
 	provinces={
 		15463 15467 15476 15478 15482 15483 

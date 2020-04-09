@@ -16,11 +16,8 @@ state={
 			}
 		}
 		victory_points = {
-<<<<<<< HEAD
 			16255 5
-=======
 			16255 3
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 		}
 	}
 	provinces={

@@ -8,7 +8,6 @@ state={
 		add_core_of = ZAR
 		buildings = {
 			infrastructure = 1
-<<<<<<< HEAD
 			industrial_complex = 1
 			19278 = {
 				naval_base = 1
@@ -17,21 +16,13 @@ state={
 		}
 		victory_points = {
 			19278 3
-=======
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 		}
 	}
 
 	provinces={
 		19278 19280 19281 19282 19283 19287 19289 19290 19296 20019 20024 
 	}
-<<<<<<< HEAD
 	manpower=182560
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-=======
-	manpower=32560
-	buildings_max_level_factor=1.000
-	state_category=wasteland
->>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 }
