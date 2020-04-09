@@ -59,27 +59,7 @@ is_same_race_as_PREV = {
 }
 
 uses_pony_generic_portraits = {
-	capital_scope = {
-		is_on_continent = europe # equestria
-	}
-	uses_griffon_generic_portraits = no
-	uses_pony_EQS_portraits = no
-	uses_pony_CRY_portraits = no
-	uses_pony_STG_portraits = no
-	uses_pony_RIV_portraits = no
-	uses_pony_RIV_portraits = no
-	uses_thestral_portraits = no
-	uses_changeling_portraits = no
-	uses_yak_portraits = no
-	uses_diamond_dog_portraits = no
-	uses_deer_portraits = no
-	uses_dragon_portraits = no
-	uses_penguin_portraits = no
-	uses_bear_portraits = no
-	uses_buffalo_portraits = no
-	uses_griffon_WNG_portraits = no
-	uses_undead_portraits = no
-	uses_minotaur_portraits = no
+	always = no
 }
 
 uses_pony_EQS_portraits = {
@@ -120,29 +100,9 @@ uses_thestral_portraits = {
 
 uses_griffon_generic_portraits = {
 	OR = {
-		capital_scope = {
-			is_on_continent = asia # griffonia
-		}
 		original_tag = GRF
 		original_tag = GFF
 	}
-	uses_pony_EQS_portraits = no
-	uses_pony_CRY_portraits = no
-	uses_pony_STG_portraits = no
-	uses_pony_RIV_portraits = no
-	uses_pony_RIV_portraits = no
-	uses_thestral_portraits = no
-	uses_changeling_portraits = no
-	uses_yak_portraits = no
-	uses_diamond_dog_portraits = no
-	uses_deer_portraits = no
-	uses_dragon_portraits = no
-	uses_penguin_portraits = no
-	uses_bear_portraits = no
-	uses_buffalo_portraits = no
-	uses_griffon_WNG_portraits = no
-	uses_undead_portraits = no
-	uses_minotaur_portraits = no
 }
 
 uses_griffon_WNG_portraits = {
@@ -160,9 +120,6 @@ uses_changeling_portraits = {
 
 uses_zebra_portraits = {
 	OR = {
-		capital_scope = {
-			is_on_continent = africa # zebrica
-		}
 		original_tag = ZES
 	}
 }
@@ -322,7 +279,6 @@ is_country_main_culture_evi_valley = {
 	OR = {
 		original_tag = GRW
 		original_tag = BRF
-		original_tag = BAN
 		original_tag = GRY
 		original_tag = LUS
 		original_tag = GRU
@@ -351,6 +307,7 @@ is_country_main_culture_herzlander = {
 		original_tag = HAU
 		original_tag = SRS
 		original_tag = LSM
+		original_tag = BAN
 	}
 }
 
@@ -515,7 +472,6 @@ is_state_main_culture_evi_valley = {
 	OR = {
 		is_in_array = { state_original_cores = GRW }
 		is_in_array = { state_original_cores = BRF }
-		is_in_array = { state_original_cores = BAN }
 		is_in_array = { state_original_cores = GRY }
 		is_in_array = { state_original_cores = LUS }
 		is_in_array = { state_original_cores = GRU }
@@ -544,6 +500,7 @@ is_state_main_culture_herzlander = {
 		is_in_array = { state_original_cores = HAU }
 		is_in_array = { state_original_cores = SRS }
 		is_in_array = { state_original_cores = LSM }
+		is_in_array = { state_original_cores = BAN }
 	}
 }
 
@@ -708,7 +665,6 @@ is_operative_main_culture_evi_valley = {
 	OR = {
 		has_nationality = GRW
 		has_nationality = BRF
-		has_nationality = BAN
 		has_nationality = GRY
 		has_nationality = LUS
 		has_nationality = GRU
@@ -737,6 +693,7 @@ is_operative_main_culture_herzlander = {
 		has_nationality = HAU
 		has_nationality = SRS
 		has_nationality = LSM
+		has_nationality = BAN
 	}
 }
 

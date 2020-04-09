@@ -1667,6 +1667,32 @@ on_actions = {
 
 			if = {
 				limit = {
+					OR = {
+						original_tag = JER
+						original_tag = JEB
+						original_tag = JFT
+						original_tag = JRR
+						original_tag = VIN
+					}
+					FROM = {
+						OR = {
+							original_tag = JER
+							original_tag = JEB
+							original_tag = JFT
+							original_tag = JRR
+							original_tag = VIN
+						}
+					}
+				}
+				FROM = {
+					country_event = {
+						id = utility.13 hours = 1
+					}
+				}
+			}
+
+			if = {
+				limit = {
 					original_tag = FEA
 					OR = {
 						has_cosmetic_tag = FEA_PvdA_old_flag
@@ -2201,7 +2227,7 @@ on_actions = {
 		effect = {
 			log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_annex"
 			FROM = { remove_from_global_arrays_on_annex = yes }
-
+			
 			if = {
 				limit = {
 					NOT = {
@@ -2225,7 +2251,6 @@ on_actions = {
 				}
 				country_event = { id = utility.11 days = 1 }
 			}
-			
 			if = {
 				limit = {
 					FROM = { tag = event_target:griffonian_empire }
@@ -2290,7 +2315,25 @@ on_actions = {
 				}
 				FAT = { country_event = { id = griffonRepublic.83 days = 15 } }
 			}
-
+			if = {
+				limit = {
+					FROM = {
+					 tag = FAT 
+					}
+					HAU = { 
+					exists = yes 
+					is_subject = no
+					NOT = {
+					owns_state = 6
+					owns_state = 7
+					owns_state = 8
+					owns_state = 9
+					owns_state = 10
+					}
+					}
+				}
+				HAU = { country_event = { id = haukland.27 days = 8 } }
+			}
 			if = {
 				limit = {
 					OR = {
@@ -2377,7 +2420,29 @@ on_actions = {
 				country_event = aquileia_news.2
 				country_event = fezera.131
 			}
-
+			if = {
+				limit = {
+					OR = {
+						original_tag = JER
+						original_tag = JEB
+						original_tag = JFT
+						original_tag = JRR
+						original_tag = VIN
+					}
+					FROM = {
+						OR = {
+							original_tag = JER
+							original_tag = JEB
+							original_tag = JFT
+							original_tag = JRR
+							original_tag = VIN
+						}
+					}
+				}
+				country_event = {
+					id = utility.13 hours = 1
+				}
+			}
 			if = {
 				limit = {
 					tag = event_target:solar_empire
@@ -5140,6 +5205,12 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							owner = { tag = NCR }
+						}
+						add_unit_leader_trait = human_race_trait
+					}
+					else_if = {
+						limit = {
 							owner = { 
 								OR = {
 									uses_changeling_portraits = yes
@@ -5283,6 +5354,36 @@ on_actions = {
 						}
 						add_unit_leader_trait = zebra_race_trait
 					}
+					else_if = {
+						limit = {
+							owner = { 
+								capital_scope = {
+									is_on_continent = asia # griffonia
+								}
+							}
+						}
+						add_unit_leader_trait = griffon_race_trait
+					}
+					else_if = {
+						limit = {
+							owner = { 
+								capital_scope = {
+									is_on_continent = europe # equestria
+								}
+							}
+						}
+						add_unit_leader_trait = pony_race_trait
+					}
+					else_if = {
+						limit = {
+							owner = { 
+								capital_scope = {
+									is_on_continent = africa # zebrica
+								}
+							}
+						}
+						add_unit_leader_trait = zebra_race_trait
+					}
 				}
 				if = {
 					limit = { has_trait = griffon_race_trait }
@@ -5392,6 +5493,7 @@ on_actions = {
 				}
 			}
 			else = {
+				log = "on_unit_leader_created: ROOT: [Root.GetName] is operative"
 				#operative_handle_secondary_cultures_races = yes
 				operative_add_starting_nationalities_and_race = yes
 				operative_add_secondary_nationalities = yes
@@ -5404,7 +5506,7 @@ on_actions = {
 	on_operative_recruited = {
 		effect = {
 			log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_operative_recruited"
-			#operative_add_starting_nationalities_and_race = yes
+			operative_add_starting_nationalities_and_race = yes
 			operative_add_secondary_nationalities = yes
 		}
 	}

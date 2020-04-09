@@ -339,13 +339,13 @@ shared_focus = {
 		674 = {
 			add_building_construction = {
 				type = bunker
-				level = 3
+				level = 2
 				province = 1027
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = bunker
-				level = 3
+				level = 2
 				province = 4071
 				instant_build = yes
 			}
@@ -579,13 +579,13 @@ shared_focus = {
 		674 = {
 			add_building_construction = {
 				type = bunker
-				level = 3
+				level = 2
 				province = 1027
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = bunker
-				level = 3
+				level = 2
 				province = 4071
 				instant_build = yes
 			}
@@ -908,13 +908,13 @@ shared_focus = {
 		674 = {
 			add_building_construction = {
 				type = bunker
-				level = 3
+				level = 2
 				province = 1027
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = bunker
-				level = 3
+				level = 2
 				province = 4071
 				instant_build = yes
 			}
@@ -1214,13 +1214,13 @@ shared_focus = {
 		674 = {
 			add_building_construction = {
 				type = bunker
-				level = 3
+				level = 2
 				province = 1027
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = bunker
-				level = 3
+				level = 2
 				province = 4071
 				instant_build = yes
 			}
@@ -5517,7 +5517,7 @@ shared_focus = {
 		VED = { add_to_ROOT_potential_cores = yes }
 		HAU = { add_to_ROOT_potential_cores = yes }
 		hidden_effect = {
-			every_state = { limit = { OR = { is_core_of = FAT is_core_of = FAW } } remove_core_of = FAT remove_core_of = FAW }
+			every_state = { limit = { is_core_of = FAW } add_core_of = FAT remove_core_of = FAW }
 		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
