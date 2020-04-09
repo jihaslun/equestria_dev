@@ -473,7 +473,7 @@ DED_black_crusade_decisions = {
 
 	DED_shinespark = {
 		icon = generic_magic
-		cost = 0
+		cost = freedec?0
 		ai_will_do = {
 			factor = 20
 
