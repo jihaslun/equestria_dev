@@ -16,6 +16,7 @@ set_convoys = 70
 
 add_ideas = {
 	slavery_economy
+	CTH_slave_based_economy
 	agrarian_society
 	better_science_base
 	lack_of_scientists

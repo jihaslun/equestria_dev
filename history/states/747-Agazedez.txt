@@ -5,6 +5,7 @@ state={
 	resources={
 		steel=10.000
 	}
+
 	history={
 		victory_points = {
 			18590 5

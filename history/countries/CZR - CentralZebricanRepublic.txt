@@ -15,6 +15,7 @@ actually_fix_weapon_techs = yes
 
 add_ideas = {
 	slavery_economy
+	CTH_slave_based_economy
 	agrarian_society
 	poor_science_base
 	lack_of_scientists1

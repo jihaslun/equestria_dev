@@ -42,6 +42,7 @@ if = {
 set_country_flag = better_science_base_unlocked
 add_ideas = {
 	slavery_economy
+	CTH_slave_based_economy
 	agrarian_society
 	lack_of_scientists1
 	better_science_base

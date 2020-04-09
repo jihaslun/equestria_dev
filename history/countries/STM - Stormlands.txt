@@ -42,6 +42,7 @@ if = {
 
 add_ideas = {
 	slavery_economy
+	CTH_slave_based_economy
 	outdated_industry
 	better_science_base
 	lack_of_scientists2

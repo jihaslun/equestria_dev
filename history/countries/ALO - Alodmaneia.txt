@@ -20,6 +20,7 @@ add_ideas = {
 	better_science_base
 	lack_of_scientists1
 	slavery_economy
+	CTH_slave_based_economy
 }
 
 set_popularities = {

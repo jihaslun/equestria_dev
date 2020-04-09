@@ -28,6 +28,22 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
+	pre_gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	gwtank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_engineers = 1
+	trench_warfare = 1
+	motorised_infantry = 1
 }
 actually_fix_weapon_techs = yes
 if = {
@@ -102,6 +118,7 @@ set_politics = {
 	elections_allowed = no
 }
 
+
 create_import = {
 	resource = chromium
 	factories = 1
@@ -117,7 +134,6 @@ set_variable = { var = HIP_underwater_building_cost value = 75 }
 
 add_ideas = {
 	HIP_divided_society_5
-
 	undisturbed_isolation
 	modern_society
 	proper_science_base
@@ -125,6 +141,7 @@ add_ideas = {
 
 set_stability = 0.7
 set_war_support = 0.15
+
 
 create_country_leader = {
 	name = "Queen Novo"
@@ -143,6 +160,9 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	desc = "HIP_SKYRANGER_DESC"
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -353,6 +373,22 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Stardust Class"
+		type = ship_hull_light_1
+		name_group = HIP_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
 	}
 	create_equipment_variant = {
 		name = "Stardust Class"			# represents Farragut, Porter, Mahan classes

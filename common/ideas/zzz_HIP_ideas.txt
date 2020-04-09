@@ -220,6 +220,7 @@ ideas = {
 			}
 			
 			traits = { silent_workgriffon }
+			traits = { silent_workhorse }
 		}
 
 		HIP_afterlight_blaze = {
@@ -606,5 +607,22 @@ ideas = {
 			modifier = {
 			}
 		}
+
+	}
+
+	materiel_manufacturer = {
+
+	}
+
+	industrial_concern = {
+
+	}
+
+	aircraft_manufacturer = {
+
+	}
+
+	naval_manufacturer = {
+
 	}
 }

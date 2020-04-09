@@ -15,6 +15,7 @@
  HIP_fascism_party_long:0 "National Defence Council"
 
  ### FOCUS ###
+
  HIP_focus_tree:0 "Hippogriffia Focus Tree"
  #Go 
 
@@ -39,6 +40,14 @@
 
  HIP_deep_sea_oil_extraction:0 "Deep Sea Oil Extraction"
  HIP_deep_sea_oil_extraction_desc:0 "We have access to the vast oil deposits under the sea thanks to Seaquestria. This oil comes to the surface via the refinery at Canterford. With investment, we can expand our deep sea oil drilling efforts."
+=======
+ #Go 
+
+ ### IDEAS ###
+
+ ### DECISIONS ###
+ 
+
  ### EVENTS ###
 
  ### ADVISORS ###
@@ -46,6 +55,7 @@
  HIP_silverstream_desc:0 "The niece of Queen Novo, Silverstream was the first Hippogriff to graduate from Princess Twilight Sparkle's School of Friendship."
  HIP_afterlight_blaze:0 "Afterlight Blaze"
  HIP_fetch_flow:0 "Fetchflow"
+
 
  ### DESIGNERS #####
  HIP_marbreeze_herring:0 "Marbreeze-Herring"
@@ -68,6 +78,8 @@
  HIP_shell_oil:0 "Shell Oil Company"
  HIP_standard_electric:0 "Standard Electric"
  HIP_general_machines:0 "General Machines"
+
+=======
 
  ### EQUIPMENT LAND #####
  HIP_EQUIPMENT_VERSION_1:0 "A1"
@@ -219,8 +231,13 @@
  HIP_mechanized_equipment_3_short:0 "M5 Half-Track"
  HIP_mechanized_equipment_x:0 "M59"
  HIP_mechanized_equipment_x_short:0 "M59"
+
  HIP_mechanized_equipment_x_2:0 "M75"
  HIP_mechanized_equipment_x_2_short:0 "M75"
+=======
+ HIP_mechanized_equipment_x2:0 "M75"
+ HIP_mechanized_equipment_x2_short:0 "M75"
+
 
  HIP_motorized_rocket_equipment:0 "T27 Xylophone"
  HIP_motorized_rocket_equipment_1:0 "T27 Xylophone"
@@ -292,6 +309,7 @@
  HIP_magical_equipment_4_short:0 "Mk 16"
 
  ### EQUIPMENT AIR #####
+
  transport_plane_equipment_1:0 "Downwind C-47 Skytrain"
  transport_plane_equipment_1_short:0 "C-47 Skytrain"
  HIP_fighter_equipment_0:0 "Bluewing P-26 Peashooter"
@@ -378,6 +396,84 @@
  HIP_cv_jet_fighter_equipment_2_short:0 "F7U Cutlass"
  HIP_cv_jet_fighter_equipment_x:0 "Storm F8U Crusader"
  HIP_cv_jet_fighter_equipment_x_short:0 "F8U Crusader"
+=======
+ HIP_fighter_equipment_0:0 "P-26 Peashooter"
+ HIP_fighter_equipment_0_short:0 "P-26 Peashooter"
+ HIP_fighter_equipment_1:0 "P-40 Warhawk"
+ HIP_fighter_equipment_1_short:0 "P-40 Warhawk"
+ HIP_fighter_equipment_2:0 "Bellbreeze P-39 Airacobra"
+ HIP_fighter_equipment_2_short:0 "P-39 Airacobra"
+ HIP_fighter_equipment_3:0 "P-51 Mustang"
+ HIP_fighter_equipment_3_short:0 "P-51 Mustang"
+ HIP_heavy_fighter_equipment_1:0 "P-38 Lightning"
+ HIP_heavy_fighter_equipment_1_short:0 "P-38 Lightning"
+ HIP_heavy_fighter_equipment_2:0 "P-47 Thunderbolt"
+ HIP_heavy_fighter_equipment_2_short:0 "P-47 Thunderbolt"
+ HIP_heavy_fighter_equipment_3:0 "XP-58 Chain Lightning"
+ HIP_heavy_fighter_equipment_3_short:0 "XP-58 Chain Lightning"
+ HIP_strat_bomber_equipment_1:0 "B-17 Flying Fortress"
+ HIP_strat_bomber_equipment_1_short:0 "B-17 Flying Fortress"
+ HIP_strat_bomber_equipment_2:0 "B-24 Liberator"
+ HIP_strat_bomber_equipment_2_short:0 "B-24 Liberator"
+ HIP_strat_bomber_equipment_3:0 "B-29 Superfortress"
+ HIP_strat_bomber_equipment_3_short:0 "B-29 Superfortress"
+ HIP_jet_fighter_equipment_1:0 "P-80 Shooting Star"
+ HIP_jet_fighter_equipment_1_short:0 "P-80 Shooting Star"
+ HIP_jet_fighter_equipment_2:0 "F-86 Sabre"
+ HIP_jet_fighter_equipment_2_short:0 "F-86 Sabre"
+ HIP_jet_fighter_equipment_x:0 "TBC"
+ HIP_jet_fighter_equipment_x_short:0 "TBC"
+ HIP_jet_strat_bomber_equipment_1:0 "B-45 Tornado"
+ HIP_jet_strat_bomber_equipment_1_short:0 "B-45 Tornado"
+ HIP_jet_strat_bomber_equipment_x:0 "B-47 Stratojet"
+ HIP_jet_strat_bomber_equipment_x_short:0 "B-47 Stratojet"
+ HIP_tac_bomber_equipment_0:0 "B-18 Bolo"
+ HIP_tac_bomber_equipment_0_short:0 "B-18 Bolo"
+ HIP_tac_bomber_equipment_1:0 "B-23 Dragon"
+ HIP_tac_bomber_equipment_1_short:0 "B-23 Dragon"
+ HIP_tac_bomber_equipment_2:0 "B-25 Mitchell"
+ HIP_tac_bomber_equipment_2_short:0 "B-25 Mitchell"
+ HIP_tac_bomber_equipment_3:0 "XB-28 Dragon"
+ HIP_tac_bomber_equipment_3_short:0 "XB-28 Dragon"
+ HIP_jet_tac_bomber_equipment_1:0 "B-51"
+ HIP_jet_tac_bomber_equipment_1_short:0 "B-51"
+ HIP_jet_tac_bomber_equipment_2:0 "B-57"
+ HIP_jet_tac_bomber_equipment_2_short:0 "B-57"
+ HIP_jet_tac_bomber_equipment_x:0 "B-58 Hustler"
+ HIP_jet_tac_bomber_equipment_x_short:0 "B-58 Hustler"
+ HIP_nav_bomber_equipment_1:1 "PBY Catalina"
+ HIP_nav_bomber_equipment_1_short:1 "Catalina"
+ HIP_nav_bomber_equipment_2:2 "PBM Mariner"
+ HIP_nav_bomber_equipment_2_short:2 "Mariner"
+ HIP_nav_bomber_equipment_3:1 "PB4Y-2 Privateer"
+ HIP_nav_bomber_equipment_3_short:1 "Privateer"
+ HIP_cv_nav_bomber_equipment_3:1 "BTD Destroyer"
+ HIP_cv_nav_bomber_equipment_3_short:1 "BTD Destroyer"
+ HIP_cv_CAS_equipment_1:0 "BT"
+ HIP_cv_CAS_equipment_1_short:0 "BT"
+ HIP_CAS_equipment_2:1 "A-20 Havoc"
+ HIP_CAS_equipment_2_short:1 "A-20"
+ HIP_CAS_equipment_3:1 "A-26 Invader"
+ HIP_CAS_equipment_3_short:1 "A-26"
+ HIP_cv_nav_bomber_equipment_1:0 "TBD Devastator"
+ HIP_cv_nav_bomber_equipment_1_short:0 "TBD Devastator"
+ HIP_cv_nav_bomber_equipment_2:0 "TBF-1C Avenger"
+ HIP_cv_nav_bomber_equipment_2_short:0 "TBF-1C Avenger"
+ HIP_CAS_equipment_1:0 "A-17"
+ HIP_CAS_equipment_1_short:0 "A-17"
+ HIP_cv_CAS_equipment_2:0 "SBD-2 Dauntless"
+ HIP_cv_CAS_equipment_2_short:0 "SBD-2 Dauntless"
+ HIP_cv_CAS_equipment_3:0 "SB2C-1s Helldiver"
+ HIP_cv_CAS_equipment_3_short:0 "SB2C-1s Helldiver"
+ HIP_cv_fighter_equipment_0:0 "FF 'Fifi'"
+ HIP_cv_fighter_equipment_0_short:0 "FF 'Fifi'"
+ HIP_cv_fighter_equipment_1:0 "F3F"
+ HIP_cv_fighter_equipment_1_short:0 "F3F"
+ HIP_cv_fighter_equipment_2:0 "F4F Wildcat"
+ HIP_cv_fighter_equipment_2_short:0 "F4F Wildcat"
+ HIP_cv_fighter_equipment_3:0 "F6F Hellcat"
+ HIP_cv_fighter_equipment_3_short:0 "F6F Hellcat"
+
 
  ### EQUIPMENT SEA #####
  HIP_submarine_1:0 "S-Class"
@@ -416,13 +512,19 @@
  HIP_CLOUDSTRIKER_DESC:0 "§YRank§!: Lieutenant General"
  HIP_ARCUS_DESC:0 "§YRank§!: Lieutenant General\n\n§YPortrait By§!: Echo"
  HIP_SEASPRAY_DESC:0 "§YRank§!: Admiral"
+
  POLITICS_NOVO_DESC:0 "§YPortrait By§!: Hasbro"
+=======
+
  ### MISC #####
  
 
  ### TOOLTIPS ###
+
  HIP_increase_divided_society_tt:0 "Will move our divided society towards total Hippogriff control.\n"
  HIP_decrease_divided_society_tt:0 "Will move our divided society towards total Seapony control.\n"
  HIP_underwater_construction_tt:0 "We will be able to §Yconstruct buildings underwater§!. This will be costly, but for as long as Seaquestria is on our side we can rely on an untouchable industrial base."
  HIP_underwater_building_cost_up_tt:0 "The cost of constructing underwater buildings will §Rincrease§! by §Y10§!.\n"
  HIP_underwater_building_cost_down_tt:0 "The cost of constructing underwater buildings will §Gdecrease§! by §Y10§!.\n"
+=======
+

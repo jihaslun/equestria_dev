@@ -1249,6 +1249,7 @@ jungle_warfare = {
 			}
 		}
 	}
+
 	CNT_centaurs = {
 
 		research_cost = 1
