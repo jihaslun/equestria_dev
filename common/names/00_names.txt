@@ -1910,7 +1910,7 @@ RAM = {
 	callsigns = { }
 }
 
-ZUM = {
+NUM = {
 	male = {
 		names = {
 			Zabbar Zabdmelqart Zadonibaal Zagbal Zhirom Azimilik Zaal Zaalhanno Zodashtart Zodmelqart Zomilcar Zostar Zoulomenus Zarthalo Zhelbes 

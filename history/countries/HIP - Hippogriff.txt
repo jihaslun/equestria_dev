@@ -122,15 +122,6 @@ set_politics = {
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-create_import = {
-	resource = chromium
-	factories = 1
-	exporter = EQS
-}
-
->>>>>>> Zebrica-General-Dev
 set_variable = { var = HIP_underwater_civ value = 0 }
 set_variable = { var = HIP_underwater_mil value = 0 }
 set_variable = { var = HIP_underwater_dockyard value = 0 }
@@ -261,70 +252,14 @@ create_navy_leader = {
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
 	create_equipment_variant = {
-		name = "Barracuda Class"
+		name = "S-14 Class"
 		type = submarine_1
 		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-		obsolete = yes
-	}
-
-	create_equipment_variant = {
-		name = "Stardust Class"
-		type = destroyer_1
-		upgrades = {
-			ship_torpedo_upgrade = 3
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 3
-			ship_anti_air_upgrade = 3
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Magnificent Class"
-		type = heavy_cruiser_1
-		upgrades = {
 			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "Seaville Class"
-		type = battleship_1
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Queen Nova Class"
-		type = battleship_1
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 3
-			ship_armor_upgrade = 3
-			ship_gun_upgrade = 4
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Hippogriffia Class"
-		type = carrier_2
-		upgrades = {
-			ship_deckspace_upgrade = 1
-			carrier_armor_upgrade = 1
-			ship_engine_upgrade = 1
-			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 2
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 2
 		}
 	}
 }
@@ -332,7 +267,7 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	create_equipment_variant = {			# represents O/R class, S class
+	create_equipment_variant = {
 		name = "S Class"
 		type = ship_hull_submarine_1
 		name_group = HIP_SS_HISTORICAL
@@ -345,7 +280,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Barracuda Class"			# represents Barracuda, Dolphin, Cachalot classes
+		name = "Barracuda Class"
 		type = ship_hull_submarine_2
 		name_group = HIP_SS_HISTORICAL
 		parent_version = 0
@@ -357,18 +292,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Shadow Class"			# represents Barracuda, Dolphin, Cachalot classes
-		type = ship_hull_submarine_2
-		name_group = HIP_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-	create_equipment_variant = {
-		name = "Tuna Class"			# represents Porpoise, Shark, and Perch classes
+		name = "Tuna Class"
 		type = ship_hull_submarine_2
 		name_group = HIP_SS_HISTORICAL
 		parent_version = 0
@@ -380,7 +304,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Flower Class"			# represents Sampson, Caldwell, Clemson, and Wickes classes
+		name = "Flower Class"
 		type = ship_hull_light_1
 		name_group = HIP_DD_HISTORICAL
 		parent_version = 0
@@ -397,7 +321,6 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
 		name = "Stardust Class"
 		type = ship_hull_light_1
 		name_group = HIP_DD_HISTORICAL
@@ -419,9 +342,6 @@ if = {
 >>>>>>> parent of 7dca606... Revert "Merge branch 'Iswearthisisn'tindonesia'"
 	create_equipment_variant = {
 		name = "Endeavour Class"
-=======
-		name = "Stardust Class"			# represents Farragut, Porter, Mahan classes
->>>>>>> Zebrica-General-Dev
 		type = ship_hull_light_2
 		name_group = HIP_DD_HISTORICAL
 		parent_version = 0
@@ -438,7 +358,7 @@ if = {
 	}
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Crystal Class"	#Omaha Class
+		name = "Crystal Class"
 		type = ship_hull_cruiser_1
 		name_group = HIP_CL_HISTORICAL
 		parent_version = 0
@@ -473,7 +393,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Freedom Class"			#Brooklyn Class
+		name = "Freedom Class"
 		type = ship_hull_cruiser_2
 		name_group = HIP_CL_HISTORICAL
 		parent_version = 0
@@ -510,8 +430,8 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Powerful Class"				# Pensacola and Northampton classes
-		type = ship_hull_cruiser_2
+		name = "Powerful Class"
+		type = ship_hull_cruiser_1
 		name_group = HIP_CA_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -529,7 +449,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Magnificent Class"			# Portland class
+		name = "Magnificent Class"
 		type = ship_hull_cruiser_2
 		name_group = HIP_CA_HISTORICAL
 		parent_version = 0
@@ -548,7 +468,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Striker Class"				# New Orleans Class
+		name = "Striker Class"
 		type = ship_hull_cruiser_2
 		name_group = HIP_CA_HISTORICAL
 		parent_version = 0
@@ -557,7 +477,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 			mid_1_custom_slot = ship_airplane_launcher_1
@@ -567,7 +487,7 @@ if = {
 	}
 	# Heavy Cruisers #
 		create_equipment_variant = {
-			name = "Shelly Class"			# Wichita Class
+			name = "Shelly Class"
 			type = ship_hull_cruiser_2
 			name_group = HIP_CA_HISTORICAL
 			parent_version = 0
@@ -586,7 +506,7 @@ if = {
 		}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Firestone Class"	# represents Wyoming (Arkansas) and New York classes
+		name = "Firestone Class"
 		type = ship_hull_heavy_1
 		name_group = HIP_BB_HISTORICAL
 		parent_version = 0
@@ -606,7 +526,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Seaville Class"	# represents Pennsylvania, Nevada, Tennessee, and New Mexico classes
+		name = "Seaville Class"
 		type = ship_hull_heavy_1
 		name_group = HIP_BB_HISTORICAL
 		parent_version = 0
@@ -618,15 +538,15 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_heavy_battery_1
+			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_airplane_launcher_1
-			mid_2_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Queen Nova Class"		#Colorado Class
+		name = "Queen Nova Class"
 		type = ship_hull_heavy_1
 		name_group = HIP_BB_HISTORICAL
 		parent_version = 0
@@ -639,13 +559,14 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_2
 			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_heavy_battery_2
 		}
 	}
 	# Carriers #
 	create_equipment_variant = {
-		name = "Stormfall Class"		#Lexington Class
+		name = "Stormfall Class"
 		type = ship_hull_carrier_conversion_bb
 		name_group = HIP_CV_HISTORICAL
 		parent_version = 0
@@ -661,24 +582,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Ranger Class"
-		type = ship_hull_carrier_1
-		name_group = HIP_CV_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_deck_slot_1 = ship_deck_space
-			fixed_ship_deck_slot_2 = ship_deck_space
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_1
-			fixed_ship_secondaries_slot = empty
-			front_1_custom_slot = ship_deck_space
-			
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Hippogriffia Class"		#Yorktown Class
+		name = "Hippogriffia Class"
 		type = ship_hull_carrier_1
 		name_group = HIP_CV_HISTORICAL
 		parent_version = 0
