@@ -954,6 +954,9 @@
 
  NCH_idyllic_society:0 "Pacifist Tendencies"
  NCH_idyllic_society_desc:0 "Despite our biological capacity for it, Greneclyfians abhor abusing their innate talents of subterfuge for military use and espionage. As such, any research into these areas will be slow."
+ 
+ NCH_blindfold:0 "The Legacy of Dairile"
+ NCH_blindfold_desc:0 "The memoirs of the expatriate Dairile have reached a broader audience in Greneclyf despite having been published some sixty years ago. Further incidents from other Greneclyfians abroad displaying similarities to those experienced by the writer have roused a movement among the changelings protesting their treatment in the continent. The blindfold, symbolising the perceived desire of non-changelings not to speak with Greneclyfians, has become synonymous with the stewing resentment among the populace.\n\nThe growing radicalisation of the movement has shaken faith in the Leamhan approach of governance and foreign policy, and we've seen political support waning. We can expect this to continue if the people's call for a governmental response to Dairile's question that she posed sixty years ago. It'd best be a response that Greneclyfians will accept, lest we risk further aggravating the perceived slights against us..."
 
  NCH_trade_1:0 "A Small Trading Economy"
  NCH_trade_1_desc:0 "Our diplomats have managed to secure a trade partnership with a country, bringing in a much needed influx of monetary wealth and ideas for our country.\n\nWith more tranding partners, our trading economy can improve."
@@ -1249,7 +1252,6 @@
 
  NCH_infantry_equipment_x_2:0 "Raidhfil Ionsaithe Patrún Caighdeán C.26"
  NCH_infantry_equipment_x_2_short:0 "RI-P26"
-
 
  NCH_magical_equipment_1:0 "Raidhfil leath-uathoibríoch 'Druilire' Dubhloaich C.11"
  NCH_magical_equipment_1_short:0 "RLU-D11 'Druilire'"

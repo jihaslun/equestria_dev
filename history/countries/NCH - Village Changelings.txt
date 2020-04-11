@@ -41,13 +41,13 @@ set_politics = {
 	elections_allowed = no
 }
 
-
 add_ideas = {
 	primitive_economy
 	agrarian_society
 	NCH_FBK_pact
 	lack_of_scientists1
 	NCH_idyllic_society
+	NCH_blindfold
 }
 
 add_tech_bonus = {
