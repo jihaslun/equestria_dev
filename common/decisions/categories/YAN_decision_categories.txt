@@ -6,7 +6,7 @@ YAN_insurgency_category = {
  		original_tag = YAN
 	}
 
-	visible_when_empty = yes
+	visible_when_empty = no
 
 	visible = {
 		has_country_flag = YAN_colonial
@@ -27,7 +27,7 @@ YAN_independence_campaign = {
 		original_tag = YAN
 	}
 
-	visible_when_empty = yes
+	visible_when_empty = no
 
 	visible = {
 		has_country_flag = YAN_freedom
@@ -53,7 +53,24 @@ YAN_loterijen_diplomacy = {
 	}
 
 	priority = {
-		base = 110
+		base = 150
 	}
 }
 
+YAN_loterijen_fucks_the_natives_category = {
+	icon = generic_deal_with_the_devil
+	allowed = {
+		original_tag = YAN
+	}
+
+	visible_when_empty = no
+
+	visible = {
+		has_country_flag = loterijen_paradise
+		has_completed_focus = YAN_securing_power
+	}
+
+	priority = {
+		base = 155
+	}
+}
