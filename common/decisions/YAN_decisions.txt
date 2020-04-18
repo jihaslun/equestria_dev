@@ -383,3 +383,7 @@ YAN_insurgency_category = {
 	}
 
 }
+
+YAN_loterijen_fucks_the_natives_category = {
+	
+}
