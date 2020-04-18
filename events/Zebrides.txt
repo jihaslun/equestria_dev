@@ -285,6 +285,10 @@ country_event = {
 	option = {
 		name = Indozeeb.14.a
 		set_global_flag = YAN_secret_duke_check
+		swap_ideas = {
+			remove_idea = YAN_lessons_flowena_3
+			add_idea = YAN_less
+		}
 	}
 }
 
@@ -317,6 +321,7 @@ country_event = {
 		1156 = {
 			add_extra_state_shared_building_slots = 1 #NOT ADD BUILDING SLOTS - Knife	
 		}
+		remove_idea = YAN_industrial1
 	}
 }
 
@@ -510,8 +515,8 @@ country_event = {
 		add_political_power = -10
 		hidden_effect = {
 			swap_ideas = {
-				remove_idea = YAN_angery3
-				add_idea = YAN_angery2
+				remove_idea = YAN_angery4
+				add_idea = YAN_angery3
 			}
 		}
 	}
@@ -539,7 +544,13 @@ country_event = {
 		hidden_effect = {
 			add_ideas = { YAN_education_not_shitshow }
 		}
-		add_political_power = -50
+		add_political_power = -5
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = YAN_angery3
+				add_idea = YAN_angery2
+			}
+		}
 	}
 }
 #I suggest coding in a scripted effect to lower the amount of times you'll need to swap ideas, but it's not necessary. - Knife

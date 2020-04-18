@@ -191,7 +191,7 @@ shared_focus = {
 		country_event = Indozeeb.2
 		swap_ideas = {
 			remove_idea = YAN_angery
-			add_idea = YAN_angery2
+			add_idea = YAN_angery5
 		}
 	}
 }
@@ -529,7 +529,10 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus YAN_Feathisa_investment"
-			
+		swap_ideas = {
+			remove_idea = YAN_lessons_flowena_2
+			add_idea = YAN_lessons_flowena_3
+		}			
 		
 	}
 
@@ -544,6 +547,10 @@ shared_focus = {
 
 	prerequisite = {
 		focus = YAN_Feathisa_investment
+	}
+
+	available = {
+		has_completed_focus = YAN_classified_clients
 	}
 
 	ai_will_do = {
@@ -679,7 +686,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus YAN_securing_power"
 		add_political_power = -40
-		add_stability = 5
+		add_stability = 0.05
 	}
 }
 
@@ -825,7 +832,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		add_stability = 5
+		add_stability = 0.05
 	}
 
 }
@@ -837,11 +844,11 @@ shared_focus = {
 	y = 4
 	cost = 7
 	available = {
-		has_idea = YAN_angery4
+		has_idea = YAN_angery5
 	}
 	bypass = {
 		NOT = {
-			has_idea = YAN_angery4
+			has_idea = YAN_angery5
 		}
 	}
 
@@ -860,8 +867,8 @@ shared_focus = {
 		add_stability = 5
 		add_war_support = 10
 		swap_ideas = {
-			remove_idea = YAN_angery4
-			add_idea = YAN_angery3
+			remove_idea = YAN_angery5
+			add_idea = YAN_angery4
 		}
 	}
 }
@@ -875,7 +882,7 @@ shared_focus = {
 	cost = 10
 
 	available = {
-		has_idea = YAN_angery3
+		has_idea = YAN_angery4
 	}
 
 	prerequisite = {
@@ -909,7 +916,7 @@ shared_focus = {
 	}
 
 	available = {
-		has_stability >50
+		has_political_power >50
 	}
 
 	completion_reward = {
@@ -920,7 +927,34 @@ shared_focus = {
 
 shared_focus = {
 	id = YAN_hospitals
-	icon = 
+	#icon = 
+	x = 22
+	y = 5
+
+	prerequisite = {
+		focus = YAN_educational_reform
+	}
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 143
+	}
+
+	available = {
+		has_political_power > 50
+		has_idea = YAN_angery2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus YAN_hospitals"
+		add_political_power = -30
+		add_stability = 0.05
+		swap_ideas = {
+			remove_idea = YAN_angery2
+			add_idea = YAN_angery
+		}
+	}
 }
 
 shared_focus = {
