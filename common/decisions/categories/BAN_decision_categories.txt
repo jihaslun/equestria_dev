@@ -33,11 +33,8 @@ BAN_civil_war = {
 	allowed = {
 		original_tag = BAN
 	}
-	visible = {
-		has_country_flag = BAN_civil_war_started
-	}
 	priority = {
-		base = 120
+		base = 125
 	}
 }
 
@@ -45,23 +42,6 @@ BAN_bandit_caches = {
 	icon = decision_cat_bunker
 	allowed = {
 		original_tag = BAN
-	}
-	priority = {
-		base = 120
-	}
-}
-
-BAN_communes_shit = {
-	icon = decision_cat_bunker
-	allowed = {
-		original_tag = BAN
-	}
-	visible = {
-		has_government = communism
-		has_country_leader = {
-			name = "Reeve Blyeddin"
-			ruling_only = yes
-		}
 	}
 	priority = {
 		base = 120

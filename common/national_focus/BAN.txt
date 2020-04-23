@@ -7,11 +7,11 @@ focus_tree = {
 			tag = BAN
 		}
 	}
-	continuous_focus_position = { x = 200 y = 2500 }
+	continuous_focus_position = { x = 200 y = 1900 }
 	focus = {
 		id = BAN_gather_tribute
 		icon = GFX_goal_generic_demand_territory
-		mutually_exclusive = { focus = BAN_plot_against_blackrock }
+		mutually_exclusive = { focus = BAN_the_resistance }
 		available = {
 			has_government = fascism
 		}
@@ -31,7 +31,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_gather_tribute"
-			
 			custom_effect_tooltip = BAN_TT_4_loot
 
 			add_political_power = 100
@@ -39,18 +38,12 @@ focus_tree = {
 				var = loot
 				value = 4
 			}
-			set_division_template_lock = {
-				division_template = "Bandit Warband"
-				is_locked = no
-			}
-			set_division_template_lock = {
-				division_template = "Bandit Mountain Warband"
-				is_locked = no
-			}
+
 			hidden_effect = {
 				country_event = { id = bandit.12 days = 4 }
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = { ### Needs custom tooltip
@@ -72,6 +65,7 @@ focus_tree = {
 			custom_effect_tooltip = BAN_TT_mercs
 			add_political_power = 60
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = { ### Needs custom tooltip
@@ -93,6 +87,7 @@ focus_tree = {
 			custom_effect_tooltip = BAN_TT_black_market
 			add_political_power = 60
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -144,6 +139,7 @@ focus_tree = {
 			create_wargoal = { type = annex_everything target = GRW }
 			create_wargoal = { type = annex_everything target = BRF }
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -210,6 +206,7 @@ focus_tree = {
 			}
 			restore_previous_manpower = yes
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -255,6 +252,7 @@ focus_tree = {
 			}
 			restore_previous_manpower = yes
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -280,6 +278,7 @@ focus_tree = {
 			}
 			add_political_power = 50
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -303,6 +302,7 @@ focus_tree = {
 				id = bandit.5
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -394,6 +394,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -417,6 +418,7 @@ focus_tree = {
 				load_oob = "BAN_border_guard"
 			}
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -437,6 +439,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_train_bandits"
 			army_experience = 30
 		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 
 	focus = {
@@ -458,6 +461,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus BAN_strong_defenses"
 			add_ideas = BAN_stronk_defence
 		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
 	}
 
 
@@ -501,6 +505,7 @@ focus_tree = {
 
 			add_political_power = 100
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -640,6 +645,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 80
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 	}
 
 	focus = {
@@ -663,6 +669,7 @@ focus_tree = {
 				add_idea = BAN_lawless_land2
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_RESISTANCE }
 	}
 
 	focus = {
@@ -687,6 +694,7 @@ focus_tree = {
 				add_idea = BAN_lawless_land3
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESISTANCE FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -708,6 +716,7 @@ focus_tree = {
 			add_ideas = BAN_school_for_bandits
 			add_research_slot = 1
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -731,6 +740,7 @@ focus_tree = {
 				add_idea = BAN_professional_army
 			}
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_BONUS }
 	}
 
 	focus = {
@@ -754,6 +764,7 @@ focus_tree = {
 				add_idea = BAN_economic_wasteland2
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -777,6 +788,7 @@ focus_tree = {
 				add_idea = BAN_economic_wasteland3
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -826,1922 +838,514 @@ focus_tree = {
 				set_cosmetic_tag = BAN_QUEEN
 			}
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 	}
 
 
 
 
 	### Shared Communist and Monarchist tree
+	
 	focus = {
-		id = BAN_plot_against_blackrock
-		icon = GFX_goal_generic_national_unity_claws
+		id = BAN_the_resistance
+		icon = GFX_goal_revolution
 		mutually_exclusive = { focus = BAN_gather_tribute }
-		bypass = {
-			OR = {
-				has_government = neutrality
-				has_government = communism
-				has_government = democratic
-			}
-		}
-		cancel = {
-			AND = {
-				is_subject = yes
-				has_government = fascism
-			}
-		}
-		cost = 1
-		x = 17
+		x = 27
 		y = 0
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_plot_against_blackrock"
-			add_stability = -0.05
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
-			}
-		}
-	}
-
-	#focus = {
-	#	id = BAN_the_nobility
-	#	icon = GFX_goal_tfv_strengthen_commonwealth_ties
-	#	prerequisite = { focus = BAN_plot_against_blackrock }
-	#	relative_position_id = BAN_plot_against_blackrock
-	#	x = -4
-	#	y = 1
-	#	cost = 1
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_the_nobility"
-	#		country_event = {
-	#			id = bandit.49
-	#		}
-	#	}
-	#}
-
-	#focus = {
-	#	id = BAN_the_clergy
-	#	icon = GFX_goal_valkist_star
-	#	prerequisite = { focus = BAN_plot_against_blackrock }
-	#	relative_position_id = BAN_plot_against_blackrock
-	#	x = -2
-	#	y = 1
-	#	cost = 1
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_the_clergy"
-	#		country_event = {
-	#			id = bandit.50
-	#		}
-	#	}
-	#}
-
-	focus = {
-		id = BAN_the_people
-		icon = GFX_goal_conscription
-		prerequisite = { focus = BAN_plot_against_blackrock }
-		relative_position_id = BAN_plot_against_blackrock
-		x = 0
-		y = 1
 		cost = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_the_people"
-			country_event = {
-				id = bandit.49
-			}
-		}
-	}
-
-	#focus = {
-	#	id = BAN_the_minotaurs
-	#	icon = GFX_focus_indy_bullish_diplomacy
-	#	prerequisite = { focus = BAN_plot_against_blackrock }
-	#	relative_position_id = BAN_plot_against_blackrock
-	#	x = 2
-	#	y = 1
-	#	cost = 1
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_the_minotaurs"
-	#		country_event = {
-	#			id = bandit.52
-	#		}
-	#	}
-	#}
-
-	#focus = {
-	#	id = BAN_the_communes
-	#	icon = GFX_goal_commune_politics
-	#	prerequisite = { focus = BAN_plot_against_blackrock }
-	#	relative_position_id = BAN_plot_against_blackrock
-	#	x = 4
-	#	y = 1
-	#	cost = 1
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_the_communes"
-	#		country_event = {
-	#			id = bandit.53
-	#		}
-	#	}
-	#}
-
-	focus = {
-		id = BAN_the_duel
-		icon = GFX_goal_generic_major_war
-		#prerequisite = { focus = BAN_the_nobility }
-		#prerequisite = { focus = BAN_the_clergy }
-		prerequisite = { focus = BAN_the_people }
-		#prerequisite = { focus = BAN_the_minotaurs }
-		#prerequisite = { focus = BAN_the_communes }
-		available = {
-			has_country_flag = BAN_can_do_duel
-		}
-		relative_position_id = BAN_plot_against_blackrock
-		x = 0
-		y = 2
-		cost = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_the_duel"
-			country_event = {
-				id = bandit.27
-			}
-		}
 	}
 
 	focus = {
-		id = BAN_young_countess
+		id = BAN_noble_spirit
 		icon = GFX_focus_generic_home_defense
-		prerequisite = { focus = BAN_the_duel}
-		available = { has_country_flag = chose_cyril }
-		bypass = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_plot_against_blackrock
-		cost = 2.00
-		x = -5
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
+		prerequisite = { focus = BAN_the_resistance }
+		mutually_exclusive = { focus = BAN_revolutionary_spirit }
+		relative_position_id = BAN_the_resistance
+		x = -6
+		y = 1
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_young_countess"
-			add_popularity = { ideology = neutrality popularity = 0.10 }
+			custom_effect_tooltip = BAN_picking_cyrille_tt
+			custom_effect_tooltip = BAN_add_5_noble_control_naniwich_tt
 			hidden_effect = {
-				set_country_flag = neutral_desc_for_civil_war
-			}
-			create_field_marshal = {
-				name = "Cyrille Bluecrest"
-				portrait_path = "gfx/leaders/BAN/Bluecrest.tga"
-				traits = {
-					hill_fighter infantry_leader
+				activate_decision = BAN_auto_reeve_start
+				set_country_flag = BAN_reeve_start
+				489 = {
+					add_to_variable = {
+						BAN_noble_control = 5
+					}
+					add_to_variable = {
+						BAN_bandit_control = -1
+					}
+					add_to_variable = {
+						BAN_commune_control = -4
+					}
+					update_BAN_variables = yes
 				}
-				id = 69110
-				skill = 3
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 2
-			}
-			create_corps_commander = {
-				name = "Silas Blackbeak"
-				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_navy_1.dds"
-				traits = {
-					trait_mountaineer brilliant_strategist
-				}
-				id = 69112
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 2
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_speak_with_the_empire
+		id = BAN_negotiate_lushian_support
 		icon = GFX_goal_LUS_shield
-		prerequisite = { focus = BAN_young_countess }
-		mutually_exclusive = { focus = BAN_fight_our_own_battles }
-		relative_position_id = BAN_young_countess
-		cost = 2.00
-		x = -2
-		y = 1
-		ai_will_do = {
-			factor = 75
-		}
-		available = {
-			LUS = {
-				exists = yes
-				is_subject = no
-				NOT = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-		}
+		mutually_exclusive = { focus = BAN_lonesome_duty }
+		prerequisite = { focus = BAN_noble_spirit }
+		relative_position_id = BAN_the_resistance
+		x = -8
+		y = 2
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_speak_with_the_empire"
-			country_event = { id = bandit.28 }
-			custom_effect_tooltip = BAN_TT_civil_war_cyril
 			ROOT = {
 				add_opinion_modifier = { target = LUS modifier = BAN_imperial }
 			}
 			LUS = {
 				add_opinion_modifier = { target = ROOT modifier = BAN_imperial }
 			}
-			create_corps_commander = {
-				name = "Sir"
-				portrait_path = "GFX/leaders/BAN/cyrille_lushi_general.dds"
-				traits = {
-					promising_general
-				}
-				id = 69111
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 1
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_imperial_military_aid
-		icon = GFX_goal_conscription
-		prerequisite = { focus = BAN_speak_with_the_empire }
-		relative_position_id = BAN_young_countess
-		cost = 4.00
-		x = -3
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_imperial_military_aid"
-			custom_effect_tooltip = BAN_lushi_knights_tt
-			add_ideas = BAN_imperial_mission
-			add_popularity = { ideology = neutrality popularity = 0.10 }
-			hidden_effect = {
-				division_template = {
-					name = "Lushian Knights"
-					priority = 2
-					is_locked = yes
-					regiments = {
-						knights = { x = 0 y = 0}
-						knights = { x = 0 y = 1}
-						knights = { x = 0 y = 2}
-						knights = { x = 0 y = 3}
-						knights = { x = 1 y = 0}
-						knights = { x = 1 y = 1}
-						knights = { x = 1 y = 2}
-						knights = { x = 1 y = 3}
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-					}
-				}
-				490 = {
-					create_unit = {
-						division = "name = \"Lushian Knights\" division_template = \"Lushian Knights\" start_experience_factor = 0.4 start_equipment_factor = 1"
-						owner = ROOT
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_imperial_rifles
-		icon = GFX_goal_revolution
-		prerequisite = { focus = BAN_speak_with_the_empire focus = BAN_fight_our_own_battles }
-		relative_position_id = BAN_young_countess
-		cost = 4.00
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_imperial_rifles"
-			custom_effect_tooltip = BAN_peasant_rebels_tt
-			hidden_effect = {
-				division_template = {
-					name = "Peasant Rebels"
-					is_locked = yes
-					regiments = {
-						infantry = { x = 0 y = 0}
-						infantry = { x = 0 y = 1}
-						infantry = { x = 0 y = 2}
-						infantry = { x = 0 y = 3}
-						infantry = { x = 1 y = 0}
-						infantry = { x = 1 y = 1}
-						infantry = { x = 1 y = 2}
-						infantry = { x = 1 y = 3}
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-					}
-				}
-				490 = {
-					create_unit = {
-						division = "name = \"Peasant Rebels\" division_template = \"Peasant Rebels\" start_experience_factor = 0.4 start_equipment_factor = 1"
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Peasant Rebels\" division_template = \"Peasant Rebels\" start_experience_factor = 0.4 start_equipment_factor = 1"
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Peasant Rebels\" division_template = \"Peasant Rebels\" start_experience_factor = 0.4 start_equipment_factor = 1"
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Peasant Rebels\" division_template = \"Peasant Rebels\" start_experience_factor = 0.4 start_equipment_factor = 1"
-						owner = ROOT
-					}
-				}
-			}
 		}
 	}
 
 	focus = {
 		id = BAN_lushian_arms
-		icon = GFX_goal_military_academy
-		prerequisite = { focus = BAN_imperial_rifles }
-		prerequisite = { focus = BAN_imperial_military_aid }
-		prerequisite = { focus = BAN_steal_from_armories }
-		relative_position_id = BAN_young_countess
-		cost = 4.00
-		x = -2
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_lushian_arms"
-			add_war_support = 0.05
-			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 producer = LUS }
-		}
-	}
-	focus = {
-		id = BAN_empire_strikes_back
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = BAN_lushian_arms }
-		relative_position_id = BAN_young_countess
-		cost = 4.00
-		x = -2
-		y = 4
-		available = {
-			489 = { is_demilitarized_zone = no }
-			606 = { is_demilitarized_zone = no }
-			446 = { is_demilitarized_zone = no }
-			532 = { is_demilitarized_zone = no }
-			490 = { is_demilitarized_zone = no }
-			has_country_flag = BAN_civil_war_started
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_empire_strikes_back"
-			add_political_power = 100
-			set_politics = { ruling_party = neutrality elections_allowed = no }
-			set_capital = 490
-			swap_ideas = {
-				add_idea = BAN_blackhollow_knights
-				remove_idea = BAN_blackrocks_army
-			}
-			country_event = { id = bandit.35 }
-			add_ideas = BAN_noble_religious_fights
-			delete_unit_template_and_units = {
-				division_template = "Bandit Warband"
-			}
-			delete_unit_template_and_units = {
-				division_template = "Bandit Mountain Warband"
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_fight_our_own_battles
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = BAN_young_countess }
-		bypass = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		mutually_exclusive = { focus = BAN_speak_with_the_empire }
-		relative_position_id = BAN_young_countess
-		cost = 2.00
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_fight_our_own_battles"
-			country_event = { id = bandit.34 }
-			custom_effect_tooltip = BAN_TT_civil_war_cyril
-			add_political_power = 50
-			add_war_support = 0.10
-		}
-	}
-
-	focus = {
-		id = BAN_steal_from_armories
-		icon = GFX_goal_griffon_knights
-		prerequisite = { focus = BAN_fight_our_own_battles focus = BAN_speak_with_the_empire }
-		bypass = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_young_countess
-		cost = 4.00
-		x = 1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_steal_from_armories"
-			custom_effect_tooltip = BAN_knight_rebels_tt
-			hidden_effect = {
-				division_template = {
-					name = "Blackhollow Knights"
-					priority = 2
-					is_locked = yes
-					regiments = {
-						knights = { x = 0 y = 0}
-						knights = { x = 0 y = 1}
-						knights = { x = 0 y = 2}
-						knights = { x = 1 y = 0}
-						knights = { x = 1 y = 1}
-						knights = { x = 1 y = 2}
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-					}
-				}
-				490 = {
-					create_unit = {
-						division = "name = \"Blackhollow Knights\" division_template = \"Blackhollow Knights\" start_experience_factor = 0.4 start_equipment_factor = 1"
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Blackhollow Knights\" division_template = \"Blackhollow Knights\" start_experience_factor = 0.4 start_equipment_factor = 1"
-						owner = ROOT
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_rally_peasents
-		icon = GFX_goal_valkist_star
-		prerequisite = { focus = BAN_fight_our_own_battles }
-		bypass = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_young_countess
-		cost = 4.00
-		x = 3
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_rally_peasents"
-			add_manpower = 10000
-			add_political_power = 50
-			add_stability = 0.05
-			add_popularity = { ideology = neutrality popularity = 0.10 }
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 750 producer = BAN }
-		}
-	}
-
-	focus = {
-		id = BAN_noble_clergy_alliance
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = BAN_imperial_rifles }
-		prerequisite = { focus = BAN_rally_peasents }
-		prerequisite = { focus = BAN_steal_from_armories }
-		bypass = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_young_countess
-		x = 2
+		icon = GFX_goal_support_from_lushi
+		prerequisite = { focus = BAN_negotiate_lushian_support }
+		relative_position_id = BAN_the_resistance
+		x = -9
 		y = 3
 		cost = 4
-		ai_will_do = {
-			factor = 100
-		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_noble_clergy_alliance"
-			add_political_power = 50
-			add_stability = 0.05
-			add_war_support = 0.05
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.1
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_cyrils_return
-		icon = GFX_goal_crown_and_swords
-		prerequisite = { focus = BAN_noble_clergy_alliance }
-		bypass = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		available = {
-			489 = { is_demilitarized_zone = no }
-			606 = { is_demilitarized_zone = no }
-			446 = { is_demilitarized_zone = no }
-			532 = { is_demilitarized_zone = no }
-			490 = { is_demilitarized_zone = no }
-			has_country_flag = BAN_civil_war_started
-		}
-		relative_position_id = BAN_young_countess
-		cost = 4.00
-		x = 2
-		y = 4
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_cyrils_return"
-			add_popularity = { ideology = neutrality popularity = 0.10 }
-			add_political_power = 50
-			set_politics = { ruling_party = neutrality elections_allowed = no }
-			set_capital = 490
-			swap_ideas = {
-				add_idea = BAN_blackhollow_knights
-				remove_idea = BAN_blackrocks_army
-			}
-			country_event = { id = bandit.35 }
-			add_ideas = BAN_noble_religious_fights
-			delete_unit_template_and_units = {
-				division_template = "Bandit Warband"
-			}
-			delete_unit_template_and_units = {
-				division_template = "Bandit Mountain Warband"
-			}
-		}
-	}
-
-	#focus = {
-	#	id = BAN_back_in_power
-	#	icon = GFX_goal_generic_political_pressure
-	#	prerequisite = { focus = BAN_cyrils_return focus = BAN_empire_strikes_back }
-	#	relative_position_id = BAN_young_countess
-	#	available = {
-	#		489 = { is_demilitarized_zone = no }
-	#		606 = { is_demilitarized_zone = no }
-	#		446 = { is_demilitarized_zone = no }
-	#		532 = { is_demilitarized_zone = no }
-	#		490 = { is_demilitarized_zone = no }
-	#		has_country_flag = BAN_civil_war_started
-	#	}
-	#	bypass = {
-	#		OR = {
-	#			has_government = neutrality
-	#			has_government = democratic
-	#		}
-	#	}
-	#	cost = 4.00
-	#	x = 0
-	#	y = 4
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_back_in_power"
-	#		custom_effect_tooltip = BAN_TT_fix_economy
-	#		add_popularity = { ideology = neutrality popularity = 0.10 }
-	#		set_politics = { ruling_party = neutrality elections_allowed = no }
-	#		set_capital = 490
-	#		remove_ideas = BAN_blackrocks_army
-	#		country_event = { id = bandit.35 }
-	#	}
-	#}
-
-	focus = {
-		id = BAN_loyalty_to_empire
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		#prerequisite = { focus = BAN_back_in_power }
-		prerequisite = { focus = BAN_empire_strikes_back }
-		available = {
-			has_war = no
-			is_subject = no
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_young_countess
-		cost = 10.00
-		x = -2
-		y = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_loyalty_to_empire"
-			if = {
-				limit = {
-					is_subject = no
-					LUS = {
-						exists = yes
-						is_subject = no
-						NOT = {
-							has_government = fascism
-							has_government = communism
-						}
-					}
-				}
-				LUS = { country_event = { id = bandit.3 days = 1 } }
-			}
-			set_division_template_lock = {
-				division_template = "Lushian Knights"
-				is_locked = no
-			}
-			set_division_template_lock = {
-				division_template = "Blackhollow Knights"
-				is_locked = no
-			}
-			set_division_template_lock = {
-				division_template = "Peasant Rebels"
-				is_locked = no
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_return_the_favor
-		icon = GFX_goal_support_from_lushi
-		prerequisite = { focus = BAN_loyalty_to_empire }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			LUS = {
-				exists = yes
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-		}
-		relative_position_id = BAN_loyalty_to_empire
-		cost = 8.00
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				LUS = {
-					is_subject = yes
-				}
-				add = -100
-			}
-		}
-		will_lead_to_war_with = LUS
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_return_the_favor"
-			create_wargoal = {
-				target = LUS
-				type = topple_government
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_order_and_stability
-		icon = GFX_goal_tripartite_pact
-		#prerequisite = { focus = BAN_back_in_power }
-		prerequisite = { focus = BAN_cyrils_return }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_young_countess
-		cost = 10.00
-		x = 2
-		y = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_order_and_stability"
-			add_popularity = { ideology = neutrality popularity = 0.10 }
-			set_division_template_lock = {
-				division_template = "Blackhollow Knights"
-				is_locked = no
-			}
-			set_division_template_lock = {
-				division_template = "Peasant Rebels"
-				is_locked = no
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_handle_the_communes
-		icon = GFX_goal_commune_politics
-		prerequisite = { focus = BAN_order_and_stability }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_order_and_stability
-		cost = 8.00
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_handle_the_communes"
-			country_event = {
-				id = bandit.56
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_reconstruction
-		icon = GFX_goal_gold_reserve
-		prerequisite = { focus = BAN_order_and_stability focus = BAN_loyalty_to_empire }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_young_countess
-		cost = 2.00
-		x = 0
-		y = 6 
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_reconstruction"
-			add_political_power = 100
-			one_random_industrial_complex = yes
-		}
-	}
-
-	focus = {
-		id = BAN_kingdom_with_no_king
-		icon = GFX_focus_strike_griffonstone
-		prerequisite = { focus = BAN_never_another_bandit }
-		available = {
-			is_subject = no
-			is_in_faction = no
-			BOI = {
-				exists = yes
-				is_subject = no
-				is_in_faction = no
-			}
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		bypass = {
-			BOI = { exists = no }
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 0
-		y = 5
-		ai_will_do = {
-			factor = 100
-		}
-
-		will_lead_to_war_with = BOI
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_kingdom_with_no_king"
-			create_wargoal = { target = BOI type = annex_everything }
-		}
-	}
-
-	focus = {
-		id = BAN_integrate_griffonstone
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = BAN_kingdom_with_no_king }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			owns_state = 389
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 0
-		y = 6
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_integrate_griffonstone"
-			custom_effect_tooltip = BAN_TT_griffonstone
+			custom_effect_tooltip = BAN_lushian_arms_tt
+			custom_effect_tooltip = BAN_add_5_noble_control_naniwich_tt
 			hidden_effect = {
-				set_cosmetic_tag = BAN_BOI
-			}
-			set_capital = 389
-			every_state = {
-				limit = {
-					is_core_of = BOI
+				489 = {
+					add_to_variable = {
+						BAN_noble_control = 5
+					}
+					add_to_variable = {
+						BAN_bandit_control = -3
+					}
+					add_to_variable = {
+						BAN_commune_control = -2
+					}
+					update_BAN_variables = yes
 				}
-				add_core_of = ROOT
-			}
-			country_event = {
-				id = bandit.36
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_griffonstone_government
-		icon = GFX_focus_generic_home_defense
-		prerequisite = { focus = BAN_integrate_griffonstone }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = -1
-		y = 7
-		ai_will_do = {
-			factor = 100
-		}
-
+		id = BAN_lushian_knights
+		icon = GFX_goal_griffon_knights
+		prerequisite = { focus = BAN_lushian_arms }
+		relative_position_id = BAN_the_resistance
+		x = -8
+		y = 4
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_griffonstone_government"
-			add_political_power = 100
-			add_stability = 0.1
+			custom_effect_tooltip = BAN_lushian_knights_tt
+			set_country_flag = BAN_sir_available
+			custom_effect_tooltip = BAN_add_5_noble_control_naniwich_tt
+			hidden_effect = {
+				489 = {
+					add_to_variable = {
+						BAN_noble_control = 5
+					}
+					add_to_variable = {
+						BAN_bandit_control = -3
+					}
+					add_to_variable = {
+						BAN_commune_control = -2
+					}
+					update_BAN_variables = yes
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = BAN_griffonstone_generals
-		icon = GFX_goal_conscription
-		prerequisite = { focus = BAN_integrate_griffonstone }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 1
-		y = 7
-		ai_will_do = {
-			factor = 100
-		}
-
+		id = BAN_lonesome_duty
+		icon = GFX_goal_generic_political_pressure
+		mutually_exclusive = { focus = BAN_negotiate_lushian_support }
+		prerequisite = { focus = BAN_noble_spirit }
+		relative_position_id = BAN_the_resistance
+		x = -4
+		y = 2
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_griffonstone_generals"
-			army_experience = 10
-			BOI = {
-				every_unit_leader = {
+			custom_effect_tooltip = BAN_add_2_noble_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
 					limit = {
 						OR = {
-							has_id = 69200
-							has_id = 69201
-							has_id = 69202
-							has_id = 69203
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
 						}
+					}	
+					add_to_variable = {
+						BAN_noble_control = 2
+					}
+					add_to_variable = {
+						BAN_bandit_control = -1
+					}
+					add_to_variable = {
+						BAN_religious_control = -1
 					}
 				}
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_strike_at_rumare
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = BAN_griffonstone_generals }
-		prerequisite = { focus = BAN_griffonstone_government }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		bypass = {
-			LAK = {
-				exists = no
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 0
-		y = 8
-		ai_will_do = {
-			factor = 100
-		}
-		will_lead_to_war_with = LAK
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_strike_at_rumare"
-			create_wargoal = {
-				target = LAK
-				type = annex_everything
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_hunt_bandit_remnants
-		icon = GFX_goal_secret_agents
-		prerequisite = { focus = BAN_reconstruction }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = -2
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_hunt_bandit_remnants"
-			country_event = {
-				id = bandit.57
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_reassure_people
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = BAN_hunt_bandit_remnants }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = -2
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_reassure_people"
-			add_stability = 0.05
-			add_war_support = 0.05
-			add_political_power = 50
-			swap_ideas = {
-				add_idea = BAN_lawless_land3
-				remove_idea = BAN_lawless_land2
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_naniwich_trials
-		icon = GFX_goal_DOM_The_Trial
-		prerequisite = { focus = BAN_reassure_people }
-		prerequisite = { focus = BAN_restore_knightly_order }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = -1
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_naniwich_trials"
-			country_event = {
-				id = bandit.58
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_return_noble_lands
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = BAN_reconstruction }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			controls_state = 532
-			controls_state = 490
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_return_noble_lands"
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-			532 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			490 = {
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_restore_knightly_order
-		icon = GFX_goal_griffon_knights
-		prerequisite = { focus = BAN_return_noble_lands }
-		prerequisite = { focus = BAN_make_religion_important }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 0
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_restore_knightly_order"
-			swap_ideas = {
-				add_idea = BAN_blackhollow_knights2
-				remove_idea = BAN_blackhollow_knights
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_make_religion_important
-		icon = GFX_goal_valkist_star
-		prerequisite = { focus = BAN_reconstruction }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_make_religion_important"
-			add_political_power = 50
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = BAN_reconcile_nobles_and_clergy
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = BAN_return_noble_lands }
-		prerequisite = { focus = BAN_make_religion_important }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 2
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_return_noble_lands"
-			remove_ideas = BAN_noble_religious_fights
-		}
-	}
-
-	focus = {
-		id = BAN_make_university
-		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { focus = BAN_reconcile_nobles_and_clergy }
-		prerequisite = { focus = BAN_restore_knightly_order }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 1
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_make_university"
-			add_research_slot = 1
-		}
-	}
-
-	#focus = {
-	#	id = BAN_blackhollow_home
-	#	icon = GFX_goal_generic_defence
-	#	prerequisite = { focus = BAN_mountain_holds focus = BAN_integrate_griffonstone }
-	#	available = {
-	#		OR = {
-	#			has_government = neutrality
-	#			has_government = democratic
-	#		}
-	#	}
-	#	relative_position_id = BAN_reconstruction
-	#	cost = 10.00
-	#	x = 0
-	#	y = 3
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_blackhollow_home"
-	#		add_political_power = 100
-	#		add_manpower = 10000
-	#	}
-	#}
-
-	#focus = {
-	#	id = BAN_mountain_excavation
-	#	icon = GFX_goal_generic_construction
-	#	prerequisite = { focus = BAN_reconstruction }
-	#	available = {
-	#		OR = {
-	#			has_government = neutrality
-	#			has_government = democratic
-	#		}
-	#	}
-	#	relative_position_id = BAN_reconstruction
-	#	cost = 10.00
-	#	x = 1
-	#	y = 1
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_mountain_excavation"
-	#		add_tech_bonus = {
-	#			name = excavation_bonus
-	#			bonus = 1.0
-	#			uses = 2
-	#			technology = excavation5
-	#			technology = excavation4
-	#			technology = excavation3
-	#			technology = excavation2
-	#			technology = excavation1
-	#		}
-	#
-	#		add_resource = {
-	#			type = steel
-	#			amount = 8
-	#			state = 446
-	#		}
-	#		add_resource = {
-	#			type = steel
-	#			amount = 6
-	#			state = 606
-	#		}
-	#		add_resource = {
-	#			type = steel
-	#			amount = 8
-	#			state = 489
-	#		}
-	#
-	#		add_resource = {
-	#			type = tungsten
-	#			amount = 8
-	#			state = 446
-	#		}
-	#		add_resource = {
-	#			type = tungsten
-	#			amount = 4
-	#			state = 606
-	#		}
-	#	}
-	#}
-
-	#focus = {
-	#	id = BAN_mountain_holds
-	#	icon = GFX_goal_generic_fortify_city
-	#	prerequisite = { focus = BAN_mountain_excavation }
-	#	available = {
-	#		OR = {
-	#			has_government = neutrality
-	#			has_government = democratic
-	#		}
-	#	}
-	#	relative_position_id = BAN_reconstruction
-	#	cost = 10.00
-	#	x = 1
-	#	y = 2
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_mountain_holds"
-	#		custom_effect_tooltip = BAN_TT_mountain_hold
-	#
-	#		add_to_variable =  {
-	#			var = cache
-	#			value = 4
-	#		}
-	#	}
-	#}
-
-	focus = {
-		id = BAN_never_another_bandit
-		icon = GFX_goal_ban_blackrock
-		prerequisite = { focus = BAN_naniwich_trials }
-		prerequisite = { focus = BAN_make_university }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_reconstruction
-		cost = 8.00
-		x = 0
-		y = 4
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_never_another_bandit"
-			add_ideas = BAN_safe
-		}
-	}
-
-	focus = {
-		id = BAN_formalize_lushi_alliance
-		icon = GFX_goal_LUS_shield
-		prerequisite = { focus = BAN_never_another_bandit }
-		available = {
-			has_completed_focus = BAN_loyalty_to_empire
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			LUS = {
-				exists = yes
-				is_subject = no
-				OR = {
-					has_government = neutrality
-					has_government = democratic
-				}
-			}
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
-		x = -4
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_formalize_lushi_alliance"
-			if = {
-				limit = {
-					LUS = {
-						is_faction_leader = no
-					}
-				}
-				if = {
-					limit = {
-						is_faction_leader = no
-					}
-					create_faction = BAN_cyrille_faction
-				}
-				LUS = {
-					country_event = {
-						id = bandit.5
-						hours = 2
-					}
-				}
-				else_if = {
-					limit = {
-						LUS = {
-							is_faction_leader = yes
-						}
-					}
-					LUS = {
-						country_event = {
-							id = bandit.3
-							hours = 2
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_preemptive_strike
-		icon = GFX_goal_prywhen_civilwar_red
-		prerequisite = { focus = BAN_formalize_lushi_alliance }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			country_exists = GRW
-		}
-		bypass = {
-			NOT = {
-				country_exists = GRW
-			}
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
-		x = -7
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		will_lead_to_war_with = GRW
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_court_elias"
-			create_wargoal = {
-				type = annex_everything
-				target = GRW
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_friendship_brodfeld
-		icon = GFX_goal_BRF_flag
-		prerequisite = { focus = BAN_formalize_lushi_alliance }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			country_exists = BRF
-			NOT = {
-				country_exists = GRW
-			}
-		}
-		bypass = {
-			is_in_faction = yes
-			is_faction_leader = no
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
-		x = -5
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_court_elias"
-			if = {
-				limit = {
-					BRF = {
-						is_in_faction = no
-					}
-				}
-				if = {
-					limit = {
-						is_faction_leader = no
-					}
-					create_faction = BAN_cyrille_faction_not_lushi
-				}
-				BRF = {
-					country_event = {
-						id = generic.5
-					}
-				}
-				else_if = {
-					limit = {
-						BRF = {
-							is_faction_leader = yes
-						}
-						is_in_faction = no
-					}
-					BRF = {
-						country_event = {
-							id = generic.3
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_kill_cyanolisia
-		icon = GFX_focus_indy_swing_the_sword
-		prerequisite = { focus = BAN_preemptive_strike focus = BAN_friendship_brodfeld }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			country_exists = CYA
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
-		x = -7
-		y = 3
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				CYA = {
-					is_subject = yes
-				}
-				add = -100
-			}
-		}
-		will_lead_to_war_with = CYA
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_kill_cyanolisia"
-			create_wargoal = {
-				target = CYA
-				type = annex_everything
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_make_deal_with_asterion
+		id = BAN_ally_with_minotaurs
 		icon = GFX_focus_indy_bullish_diplomacy
-		prerequisite = { focus = BAN_preemptive_strike focus = BAN_friendship_brodfeld }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			country_exists = CYA
-			country_exists = MIT
-		}
-		bypass = {
-			MIT = {
-				OR = {
-					owns_state = 671
-					owns_state = 510
-					owns_state = 511
-					owns_state = 507
+		prerequisite = { focus = BAN_lonesome_duty }
+		relative_position_id = BAN_the_resistance
+		x = -3
+		y = 3
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip = BAN_add_10_noble_control_creeper_tt
+			hidden_effect = {
+				446 = {
+					add_to_variable = {
+						BAN_noble_control = 10
+					}
+					add_to_variable = {
+						BAN_commune_control = -6
+					}
+					add_to_variable = {
+						BAN_bandit_control = -3
+					}
+					add_to_variable = {
+						BAN_religious_control = -1
+					}
 				}
 			}
 		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
+	}
+
+	focus = {
+		id = BAN_minotaur_steel
+		icon = GFX_goal_MIT_The_Brutes_of_Old
+		prerequisite = { focus = BAN_ally_with_minotaurs }
+		relative_position_id = BAN_the_resistance
+		x = -4
+		y = 4
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip = BAN_minotaur_steel_tt
+			custom_effect_tooltip = BAN_add_5_noble_control_creeper_tt
+			hidden_effect = {
+				446 = {
+					add_to_variable = {
+						BAN_noble_control = 5
+					}
+					add_to_variable = {
+						BAN_commune_control = -4
+					}
+					add_to_variable = {
+						BAN_bandit_control = -1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_oppose_communism
+		icon = GFX_goal_broken_red_star
+		mutually_exclusive = { focus = BAN_pan_resistance_cooperation }
+		prerequisite = { focus = BAN_negotiate_lushian_support focus = BAN_lonesome_duty }
+		relative_position_id = BAN_the_resistance
+		x = -7
+		y = 3
+		cost = 2
+		completion_reward = {
+			custom_effect_tooltip = BAN_dividing_resistance_tt
+			custom_effect_tooltip = BAN_remove_2_commune_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_commune_control > 1 }
+						}
+						add_to_variable = {
+							BAN_commune_control = -2
+						}
+						add_to_variable = {
+							BAN_bandit_control = 1
+						}
+						add_to_variable = {
+							BAN_noble_control = 1
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_commune_control > 0 }
+							}
+							add_to_variable = {
+								BAN_commune_control = -1
+							}
+							add_to_variable = {
+								BAN_bandit_control = 1
+							}
+							else = {
+								#
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_pan_resistance_cooperation
+		icon = GFX_goal_generic_dangerous_deal
+		mutually_exclusive = { focus = BAN_oppose_communism }
+		prerequisite = { focus = BAN_negotiate_lushian_support focus = BAN_lonesome_duty }
+		relative_position_id = BAN_the_resistance
 		x = -5
 		y = 3
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				CYA = {
-					is_subject = yes
-				}
-				add = -100
-			}
-		}
-		will_lead_to_war_with = CYA
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_kill_cyanolisia"
-			MIT = {
-				country_event = {
-					id = bandit.68
+			custom_effect_tooltip = BAN_uniting_resistance_tt
+			custom_effect_tooltip = BAN_remove_1_bandit_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							ROOT = { has_completed_focus = BAN_noble_spirit }
+						}
+						add_to_variable = {
+							BAN_noble_control = 1
+						}
+					}
+					if = {
+						limit = {
+							ROOT = { has_completed_focus = BAN_revolutionary_spirit }
+						}
+						add_to_variable = {
+							BAN_commune_control = 1
+						}
+					}
+					add_to_variable = {
+						BAN_bandit_control = -1
+					}
 				}
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_court_elias
-		icon = GFX_goal_LUS_shield
-		prerequisite = { focus = BAN_formalize_lushi_alliance }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			LUS = {
-				exists = yes
-				is_subject = no
-				OR = {
-					has_government = neutrality
-					has_government = democratic
-				}
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-				}
-			}
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 2.00
-		x = -3
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
+		id = BAN_target_communists
+		icon = GFX_goal_purge_opposition
+		prerequisite = { focus = BAN_oppose_communism }
+		relative_position_id = BAN_the_resistance
+		x = -7
+		y = 5
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_court_elias"
-			country_event = {
-				id = bandit.62
+			custom_effect_tooltip = BAN_can_target_commies_tt
+			custom_effect_tooltip = BAN_remove_2_commune_control_every_state_tt
+			hidden_effect = {
+				set_variable = {
+					var = BAN_commune_assassinate_desire
+					value = 0
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = BAN_bandit_44_activated }
+					}
+					set_country_flag = BAN_bandit_44_activated
+					country_event = { id = bandit.44 }
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_commune_control > 1 }
+						}
+						add_to_variable = {
+							BAN_commune_control = -2
+						}
+						add_to_variable = {
+							BAN_bandit_control = 1
+						}
+						add_to_variable = {
+							BAN_noble_control = 1
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_commune_control > 0 }
+							}
+							add_to_variable = {
+								BAN_commune_control = -1
+							}
+							add_to_variable = {
+								BAN_bandit_control = 1
+							}
+							else = {
+								#
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_bring_nations_closer_winky_face
-		icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = BAN_court_elias }
+		id = BAN_bring_communes_to_heel
+		icon = GFX_goal_step_on_skull
+		prerequisite = { focus = BAN_target_communists }
+		relative_position_id = BAN_the_resistance
 		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			LUS = {
-				exists = yes
-				is_subject = no
-				OR = {
-					has_government = neutrality
-					has_government = democratic
-				}
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-				}
-			}
+			check_variable = { BAN_commune_control_total < 10 }
 		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 4.00
-		x = -3
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
+		x = -8
+		y = 6
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_bring_nations_closer_winky_face"
-			country_event = {
-				id = bandit.63
+			custom_effect_tooltip = BAN_communes_ded_tt
+			custom_effect_tooltip = BAN_remove_2_commune_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_commune_control > 1 }
+						}
+						add_to_variable = {
+							BAN_commune_control = -2
+						}
+						add_to_variable = {
+							BAN_bandit_control = 1
+						}
+						add_to_variable = {
+							BAN_noble_control = 1
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_commune_control > 0 }
+							}
+							add_to_variable = {
+								BAN_commune_control = -1
+							}
+							add_to_variable = {
+								BAN_bandit_control = 1
+							}
+							else = {
+								#
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_marry_elias
-		icon = GFX_goal_wedding
-		prerequisite = { focus = BAN_bring_nations_closer_winky_face }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			LUS = {
-				exists = yes
-				OR = {
-					has_government = neutrality
-					has_government = democratic
-				}
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-				}
-			}
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 4.00
-		x = -3
+		id = BAN_allies_in_temples
+		icon = GFX_goal_valkist_star
+		prerequisite = { focus = BAN_oppose_communism focus = BAN_pan_resistance_cooperation }
+		relative_position_id = BAN_the_resistance
+		x = -6
 		y = 4
-		ai_will_do = {
-			factor = 100
-		}
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_marry_elias"
-			country_event = {
-				id = bandit.64
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_dig_in
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = BAN_never_another_bandit }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			has_completed_focus = BAN_order_and_stability
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
-		x = 4
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_dig_in"
-			add_ideas = { BAN_entrenchment }
-		}
-	}
-
-	focus = {
-		id = BAN_southern_forts
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = BAN_dig_in }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-			has_completed_focus = BAN_integrate_griffonstone
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
-		x = 2
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_southern_forts"
-			# build forts
-			if = {
-				limit = {
-					controls_state = 446
-				}
-				446 = {
-					add_building_construction = {
-						type = bunker province = 1502 level = 3 instant_build = yes
+			custom_effect_tooltip = BAN_religious_support_secured_tt
+			custom_effect_tooltip = BAN_add_5_noble_control_murkbeak_tt
+			custom_effect_tooltip = BAN_add_5_noble_control_blackhollow_tt
+			hidden_effect = {
+				532 = {
+					add_to_variable = {
+						BAN_noble_control = 5
 					}
-					add_building_construction = {
-						type = bunker province = 12264 level = 3 instant_build = yes
+					add_to_variable = {
+						BAN_bandit_control = -5
 					}
-					add_building_construction = {
-						type = bunker province = 12485 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 4506 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 4529 level = 3 instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 490
 				}
 				490 = {
-					add_building_construction = {
-						type = bunker province = 7218 level = 3 instant_build = yes
+					add_to_variable = {
+						BAN_noble_control = 5
 					}
-					add_building_construction = {
-						type = bunker province = 9961 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 9988 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 1362 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 1390 level = 3 instant_build = yes
+					add_to_variable = {
+						BAN_bandit_control = -5
 					}
 				}
-			}
-			if = {
-				limit = {
-					controls_state = 531
-				}
-				531 = {
-					add_building_construction = {
-						type = bunker province = 4511 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 13019 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 4556 level = 3 instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 389
-				}
-				389 = {
-					add_building_construction = {
-						type = bunker province = 7576 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 1120 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 9970 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 10054 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 10121 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 7210 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 1087 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 11938 level = 3 instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 384
-				}
-				384 = {
-					add_building_construction = {
-						type = bunker province = 4189 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 1018 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 12192 level = 3 instant_build = yes
-					}
-				}
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_eastern_forts
-		icon = GFX_focus_generic_home_defense
-		prerequisite = { focus = BAN_dig_in }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
-		x = 4
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
+		id = BAN_free_forced_laborers
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BAN_allies_in_temples }
+		relative_position_id = BAN_the_resistance
+		x = -6
+		y = 6
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_eastern_forts"
-			# build forts
-			if = {
-				limit = {
-					controls_state = 446
-				}
-				446 = {
-					add_building_construction = {
-						type = bunker province = 1645 level = 3 instant_build = yes
+			custom_effect_tooltip = BAN_remove_5_bandit_control_murkbeak_tt
+			custom_effect_tooltip = BAN_remove_5_bandit_control_blackhollow_tt
+			hidden_effect = {
+				532 = {
+					add_to_variable = {
+						BAN_bandit_control = -5
 					}
-					add_building_construction = {
-						type = bunker province = 1588 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 12255 level = 3 instant_build = yes
+					add_to_variable = {
+						BAN_noble_control = 5
 					}
 				}
-			}
-			if = {
-				limit = {
-					controls_state = 606
-				}
-				606 = {
-					add_building_construction = {
-						type = bunker province = 12548 level = 3 instant_build = yes
+				490 = {
+					add_to_variable = {
+						BAN_bandit_control = -5
 					}
-					add_building_construction = {
-						type = bunker province = 10282 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 2043 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 10798 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 1683 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 10569 level = 3 instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 489
-				}
-				489 = {
-					add_building_construction = {
-						type = bunker province = 12516 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 11948 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 12085 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 4126 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 10400 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 8245 level = 3 instant_build = yes
+					add_to_variable = {
+						BAN_noble_control = 5
 					}
 				}
 			}
@@ -2749,3635 +1353,999 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAN_northern_forts
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = BAN_dig_in }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
+		id = BAN_compromise_with_reeve
+		icon = GFX_goal_commune_politics
+		prerequisite = { focus = BAN_pan_resistance_cooperation }
+		relative_position_id = BAN_the_resistance
+		x = -5
+		y = 5
+		cost = 4
+		completion_reward = { # ADD EVENT
+			custom_effect_tooltip = BAN_reeve_helping_cyrille_tt
+			custom_effect_tooltip = BAN_remove_5_bandit_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_bandit_control > 4 }
+						}
+						add_to_variable = {
+							BAN_bandit_control = -5
+						}
+						add_to_variable = {
+							BAN_commune_control = 2
+						}
+						add_to_variable = {
+							BAN_noble_control = 3
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_bandit_control > 3 }
+							}
+							add_to_variable = {
+								BAN_bandit_control = -4
+							}
+							add_to_variable = {
+								BAN_commune_control = 2
+							}
+							add_to_variable = {
+								BAN_noble_control = 2
+							}
+							else_if = {
+								limit = {
+									check_variable = { BAN_bandit_control > 2 }
+								}
+								add_to_variable = {
+									BAN_bandit_control = -3
+								}
+								add_to_variable = {
+									BAN_commune_control = 1
+								}
+								add_to_variable = {
+									BAN_noble_control = 2
+								}
+								else_if = {
+									limit = {
+										check_variable = { BAN_bandit_control > 1 }
+									}
+									add_to_variable = {
+										BAN_bandit_control = -2
+									}
+									add_to_variable = {
+										BAN_commune_control = 1
+									}
+									add_to_variable = {
+										BAN_noble_control = 1
+									}
+									else_if = {
+										limit = {
+											check_variable = { BAN_bandit_control > 0 }
+										}
+										add_to_variable = {
+											BAN_bandit_control = -1
+										}
+										add_to_variable = {
+											BAN_noble_control = 1
+										}
+										else = {
+											#
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
 			}
-			has_completed_focus = BAN_integrate_griffonstone
 		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
+	}
+
+	focus = {
+		id = BAN_united_resistance_cyrille
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = BAN_compromise_with_reeve }
+		relative_position_id = BAN_the_resistance
+		x = -4
+		y = 6
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip = BAN_remove_5_bandit_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_bandit_control > 4 }
+						}
+						add_to_variable = {
+							BAN_bandit_control = -5
+						}
+						add_to_variable = {
+							BAN_commune_control = 2
+						}
+						add_to_variable = {
+							BAN_noble_control = 3
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_bandit_control > 3 }
+							}
+							add_to_variable = {
+								BAN_bandit_control = -4
+							}
+							add_to_variable = {
+								BAN_commune_control = 2
+							}
+							add_to_variable = {
+								BAN_noble_control = 2
+							}
+							else_if = {
+								limit = {
+									check_variable = { BAN_bandit_control > 2 }
+								}
+								add_to_variable = {
+									BAN_bandit_control = -3
+								}
+								add_to_variable = {
+									BAN_commune_control = 1
+								}
+								add_to_variable = {
+									BAN_noble_control = 2
+								}
+								else_if = {
+									limit = {
+										check_variable = { BAN_bandit_control > 1 }
+									}
+									add_to_variable = {
+										BAN_bandit_control = -2
+									}
+									add_to_variable = {
+										BAN_commune_control = 1
+									}
+									add_to_variable = {
+										BAN_noble_control = 1
+									}
+									else_if = {
+										limit = {
+											check_variable = { BAN_bandit_control > 0 }
+										}
+										add_to_variable = {
+											BAN_bandit_control = -1
+										}
+										add_to_variable = {
+											BAN_noble_control = 1
+										}
+										else = {
+											#
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_revolutionary_spirit
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = BAN_the_resistance }
+		mutually_exclusive = { focus = BAN_noble_spirit }
+		relative_position_id = BAN_the_resistance
 		x = 6
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
+		y = 1
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_northern_forts"
-			# build forts
-			if = {
-				limit = {
-					controls_state = 489
-				}
-				489 = {
-					add_building_construction = {
-						type = bunker province = 7900 level = 3 instant_build = yes
+			custom_effect_tooltip = BAN_picking_reeve_tt
+			custom_effect_tooltip = BAN_add_5_commune_control_creeper_tt
+			hidden_effect = {
+				set_country_flag = BAN_cyrille_start
+				activate_decision = BAN_auto_cyrille_start
+				446 = {
+					add_to_variable = {
+						BAN_commune_control = 5
 					}
-					add_building_construction = {
-						type = bunker province = 12064 level = 3 instant_build = yes
+					add_to_variable = {
+						BAN_noble_control = -2
 					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 488
-				}
-				488 = {
-					add_building_construction = {
-						type = bunker province = 12684 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 11996 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 10022 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 8244 level = 3 instant_build = yes
+					add_to_variable = {
+						BAN_bandit_control = -3
 					}
 				}
-			}
-			if = {
-				limit = {
-					controls_state = 471
-				}
-				471 = {
-					add_building_construction = {
-						type = bunker province = 6039 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 10831 level = 3 instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 679
-				}
-				679 = {
-					add_building_construction = {
-						type = bunker province = 12419 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 10442 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 1509 level = 3 instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker province = 9589 level = 3 instant_build = yes
-					}
-				}
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_fallback_lines
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = BAN_southern_forts }
-		prerequisite = { focus = BAN_eastern_forts }
-		prerequisite = { focus = BAN_northern_forts }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
+		id = BAN_blackhollow_socialism_by_blackhollow
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = BAN_revolutionary_spirit }
+		mutually_exclusive = { focus = BAN_GLA_comrades }
+		relative_position_id = BAN_the_resistance
 		x = 4
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
+		y = 2
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_fallback_lines"
-			# fallback line decisions to build forts
+			custom_effect_tooltip = BAN_add_2_commune_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					add_to_variable = {
+						BAN_commune_control = 2
+					}
+					add_to_variable = {
+						BAN_bandit_control = -1
+					}
+					add_to_variable = {
+						BAN_religious_control = -1
+					}
+				}
+				update_BAN_variables = yes
+			}
 		}
 	}
 
 	focus = {
-		id = BAN_dig_in_more
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = BAN_fallback_lines }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
+		id = BAN_promises_to_minotaurs
+		icon = GFX_focus_indy_bullish_diplomacy
+		prerequisite = { focus = BAN_blackhollow_socialism_by_blackhollow }
+		relative_position_id = BAN_the_resistance
+		x = 3
+		y = 3
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip =  BAN_add_5_commune_control_creeper_tt
+			hidden_effect = {
+				446 = {
+					add_to_variable = {
+						BAN_commune_control = 5
+					}
+					add_to_variable = {
+						BAN_noble_control = -3
+					}
+					add_to_variable = {
+						BAN_bandit_control = -2
+					}
+				}
+				update_BAN_variables = yes
 			}
 		}
-		relative_position_id = BAN_never_another_bandit
-		cost = 8.00
+	}
+
+	focus = {
+		id = BAN_minotaur_guerillas
+		icon = GFX_goal_MIT_The_Brutes_of_Old
+		prerequisite = { focus = BAN_promises_to_minotaurs }
+		relative_position_id = BAN_the_resistance
 		x = 4
 		y = 4
-		ai_will_do = {
-			factor = 100
-		}
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_dig_in_more"
-			swap_ideas = {
-				add_idea = BAN_entrenchment2
-				remove_idea = BAN_entrenchment
+			custom_effect_tooltip = BAN_minotaur_guerillas_tt
+			add_to_variable = { BAN_commune_divisions = 2 }
+			custom_effect_tooltip = BAN_add_5_commune_control_creeper_tt
+			hidden_effect = {
+				446 = {
+					add_to_variable = {
+						BAN_commune_control = 5
+					}
+					add_to_variable = {
+						BAN_noble_control = -3
+					}
+					add_to_variable = {
+						BAN_bandit_control = -2
+					}
+				}
+				update_BAN_variables = yes
 			}
 		}
 	}
 
-	### Gommunism
 	focus = {
-		id = BAN_the_extreme_revolutionary
-		icon = GFX_focus_generic_join_comintern
-		prerequisite = { focus = BAN_the_duel }
-		available = {
-			has_country_flag = chose_reeve
+		id = BAN_GLA_comrades
+		icon = GFX_focus_grw_flag
+		prerequisite = { focus = BAN_revolutionary_spirit }
+		mutually_exclusive = { focus = BAN_blackhollow_socialism_by_blackhollow }
+		relative_position_id = BAN_the_resistance
+		x = 8
+		y = 2
+		cost = 2
+		completion_reward = {
+			custom_effect_tooltip = BAN_add_5_commune_control_banditplace_tt
+			hidden_effect = {
+				606 = {
+					add_to_variable = {
+						BAN_commune_control = 5
+					}
+					add_to_variable = {
+						BAN_noble_control = -1
+					}
+					add_to_variable = {
+						BAN_bandit_control = -4
+					}
+				}
+				update_BAN_variables = yes
+			}
 		}
-		bypass = {
-			has_government = communism
+	}
+
+	focus = {
+		id = BAN_GLA_guns
+		icon = GFX_goal_military_academy
+		prerequisite = { focus = BAN_GLA_comrades }
+		relative_position_id = BAN_the_resistance
+		x = 9
+		y = 3
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip = BAN_GLA_guns_tt
+			custom_effect_tooltip = BAN_add_5_commune_control_banditplace_tt
+			hidden_effect = {
+				606 = {
+					add_to_variable = {
+						BAN_commune_control = 5
+					}
+					add_to_variable = {
+						BAN_noble_control = -1
+					}
+					add_to_variable = {
+						BAN_bandit_control = -4
+					}
+				}
+				update_BAN_variables = yes
+			}
 		}
-		relative_position_id = BAN_plot_against_blackrock
-		cost = 2.00
+	}
+
+	focus = {
+		id = BAN_GLA_partisans
+		icon = GFX_goal_griffon_special_force
+		prerequisite = { focus = BAN_GLA_guns }
+		relative_position_id = BAN_the_resistance
+		x = 8
+		y = 4
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip = BAN_GLA_partisans_tt
+			add_to_variable = { BAN_special_commune_division = 1 }
+			custom_effect_tooltip = BAN_add_5_commune_control_banditplace_tt
+			hidden_effect = {
+				606 = {
+					add_to_variable = {
+						BAN_commune_control = 5
+					}
+					add_to_variable = {
+						BAN_noble_control = -1
+					}
+					add_to_variable = {
+						BAN_bandit_control = -4
+					}
+				}
+				update_BAN_variables = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_minimize_conflict
+		icon = GFX_goal_red_star_dove
+		prerequisite = { focus = BAN_blackhollow_socialism_by_blackhollow focus = BAN_GLA_comrades }
+		mutually_exclusive = { focus = BAN_no_compromise }
+		relative_position_id = BAN_the_resistance
 		x = 5
 		y = 3
-		ai_will_do = {
-			factor = 100
-		}
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_the_extreme_revolutionary"
-			add_popularity = { ideology = communism popularity = 0.10 }
-			custom_effect_tooltip = BAN_TT_civil_war_commie
-			country_event = { id = bandit.28 }
-			add_political_power = 100
-			create_field_marshal = {
-				name = "Reeve Blyeddin"
-				portrait_path = "gfx/leaders/BAN/Reeve.tga"
-				traits = {
-					trait_mountaineer commissar_general
-				}
-				id = 69104
-				skill = 3
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 3
-			}
-			create_corps_commander = {
-				name = "Giannis Horndrogiannis"
-				portrait_path = "gfx/leaders/MIT/MIT_generic_general_4.tga"
-				traits = {
-					commando
-				}
-				id = 69105
-				skill = 1
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
-				name = "Gavrila Tercel"
-				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_7.dds"
-				traits = {
-					trait_engineer
-				}
-				id = 69106
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 2
-			}
+			custom_effect_tooltip = BAN_uniting_resistance_tt
+			custom_effect_tooltip = BAN_remove_1_bandit_control_every_state_tt
 			hidden_effect = {
-				set_country_flag = commie_desc_for_civil_war
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_murkbeak_rebellion
-		icon = GFX_goal_revolution
-		prerequisite = { focus = BAN_the_extreme_revolutionary }
-		bypass = {
-			has_government = communism
-		}
-		relative_position_id = BAN_the_extreme_revolutionary
-		cost = 4.00
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_murkbeak_rebellion"
-			add_manpower = 10000
-			add_political_power = -100
-		}
-	}
-
-	focus = {
-		id = BAN_hollow_rebels
-		icon = GFX_goal_conscription
-		prerequisite = { focus = BAN_murkbeak_rebellion }
-		bypass = {
-			has_government = communism
-		}
-		relative_position_id = BAN_the_extreme_revolutionary
-		cost = 4.00
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_hollow_rebels"
-			hidden_effect = {
-				load_oob = "BAN_partisans"
-			}
-			add_manpower = 20000
-			add_political_power = -100
-			custom_effect_tooltip = BAN_TT_partisans_oob
-		}
-	}
-
-	focus = {
-		id = BAN_communist_clubs
-		icon = GFX_goal_commune_politics
-		prerequisite = { focus = BAN_the_extreme_revolutionary }
-		bypass = {
-			has_government = communism
-		}
-		relative_position_id = BAN_the_extreme_revolutionary
-		cost = 4.00
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_communist_clubs"
-			add_popularity = { ideology = communism popularity = 0.10 }
-			add_stability = 0.05
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = BAN }
-		}
-	}
-
-	focus = {
-		id = BAN_organized_militias
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = BAN_communist_clubs }
-		bypass = {
-			has_government = communism
-		}
-		relative_position_id = BAN_the_extreme_revolutionary
-		cost = 4.00
-		x = 1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_organized_militias"
-			hidden_effect = {
-				load_oob = "BAN_commune_militias"
-			}
-			add_popularity = { ideology = communism popularity = 0.10 }
-			add_war_support = 0.05
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = BAN }
-			custom_effect_tooltip = BAN_TT_commune_militia_oob
-		}
-	}
-
-	#focus = {
-	#	id = BAN_southern_commune
-	#	icon = GFX_goal_generic_political_pressure
-	#	prerequisite = { focus = BAN_organized_militias }
-	#	prerequisite = { focus = BAN_hollow_rebels }
-	#	bypass = {
-	#		has_government = communism
-	#	}
-	#	relative_position_id = BAN_the_extreme_revolutionary
-	#	cost = 5.00
-	#	x = 0
-	#	y = 3
-	#	available = {
-	#		has_war = no
-	#	}
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#	completion_reward = {
-	#		log = "[GetDateText]: [Root.GetName]: Focus BAN_southern_commune"
-	#	}
-	#}
-
-	focus = {
-		id = BAN_control_restored
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = BAN_hollow_rebels }
-		prerequisite = { focus = BAN_organized_militias }
-		bypass = {
-			has_government = communism
-		}
-		relative_position_id = BAN_the_extreme_revolutionary
-		available = {
-			489 = { is_demilitarized_zone = no }
-			606 = { is_demilitarized_zone = no }
-			446 = { is_demilitarized_zone = no }
-			532 = { is_demilitarized_zone = no }
-			490 = { is_demilitarized_zone = no }
-			has_country_flag = BAN_civil_war_started
-		}
-		cost = 8.00
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_control_restored"
-			set_politics = { ruling_party = communism elections_allowed = no }
-			swap_ideas = {
-				add_idea = BAN_partisan_army
-				remove_idea = BAN_blackrocks_army
-			}
-			country_event = {
-				id = bandit.35
-			}
-			delete_unit_template_and_units = {
-				division_template = "Bandit Warband"
-			}
-			delete_unit_template_and_units = {
-				division_template = "Bandit Mountain Warband"
-			}
-		}
-	}
-
-	focus = { # Seize Noble Strongholds
-		id = BAN_education_equality
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = BAN_control_restored }
-		available = {
-			has_government = communism
-			606 = { is_owned_and_controlled_by = ROOT }
-			489 = { is_owned_and_controlled_by = ROOT }
-			446 = { is_owned_and_controlled_by = ROOT }
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_education_equality"
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.05
-			}
-			save_current_manpower = yes
-			606 = {
-				add_manpower = -500
-				add_extra_state_shared_building_slots = 1
-			}
-			489 = {
-				add_manpower = -1000
-				add_extra_state_shared_building_slots = 1
-			}
-			446 = {
-				add_manpower = -1000
-				add_extra_state_shared_building_slots = 1
-			}
-			restore_previous_manpower = yes
-		}
-	}
-
-	focus = { # Justice At Last
-		id = BAN_equal_factories
-		icon = GFX_goal_ban_blackrock
-		prerequisite = { focus = BAN_control_restored }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_factories"
-			country_event = {
-				id = bandit.37
-				days = 2
-			}
-		}
-	}
-
-	focus = { # Distribute the Noble Lands
-		id = BAN_no_universities
-		icon = GFX_goal_chn_red_military_factories
-		prerequisite = { focus = BAN_education_equality }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = -2
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_no_universities"
-			country_event = {
-				id = bandit.38
-				days = 3
-			}
-		}
-	}
-
-	focus = { # Punish the Bandits
-		id = BAN_party_propaganda
-		icon = GFX_goal_skull_treaty
-		prerequisite = { focus = BAN_equal_factories }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = 2
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_party_propaganda"
-			country_event = {
-				id = bandit.39
-				days = 3
-			}
-		}
-	}
-
-	focus = { # Establishing Order
-		id = BAN_equal_labor
-		icon = GFX_goal_secret_agents
-		prerequisite = { focus = BAN_education_equality }
-		prerequisite = { focus = BAN_equal_factories }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = 0
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_labor"
-			country_event = {
-				id = bandit.40
-				days = 3
-			}
-		}
-	}
-
-	focus = { # Slander the Bluecrests
-		id = BAN_state_education
-		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = BAN_no_universities }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = -3
-		y = 3
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_state_education"
-			country_event = {
-				id = bandit.41
-				days = 3
-			}
-		}
-	}
-
-	focus = { # The New Government
-		id = BAN_new_government
-		icon = GFX_goal_red_star_dove
-		prerequisite = { focus = BAN_no_universities }
-		prerequisite = { focus = BAN_party_propaganda }
-		prerequisite = { focus = BAN_equal_labor }
-		available = {
-			has_government = communism
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		relative_position_id = BAN_control_restored
-		x = -1
-		y = 3
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_new_government"
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-			country_event = {
-				id = bandit.43
-				days = 3
-			}
-		}
-	}
-
-	focus = { # The New Generals
-		id = BAN_new_generals
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = BAN_no_universities }
-		prerequisite = { focus = BAN_party_propaganda }
-		prerequisite = { focus = BAN_equal_labor }
-		available = {
-			has_government = communism
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		relative_position_id = BAN_control_restored
-		x = 1
-		y = 3
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_new_generals"
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-			country_event = {
-				id = bandit.44
-				days = 3
-			}
-		}
-	}
-
-	focus = { # Slander the Republicans
-		id = BAN_mandatory_work
-		icon = GFX_goal_DEI_focus_disband_volksraad
-		prerequisite = { focus = BAN_party_propaganda }
-		available = {
-			has_government = communism
-		}
-		ai_will_do = {
-			factor = 90
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = 3
-		y = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_mandatory_work"
-			country_event = {
-				id = bandit.42
-				days = 3
-			}
-		}
-	}
-
-	focus = { # Into the Future
-		id = BAN_population_redistribution
-		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { focus = BAN_state_education focus = BAN_mandatory_work}
-		prerequisite = { focus = BAN_new_government }
-		prerequisite = { focus = BAN_new_generals }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = 0
-		y = 4
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_population_redistribution"
-			add_political_power = 50
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			add_research_slot = 1
-		}
-	}
-
-	focus = { # Transform Blackhollow
-		id = BAN_equal_minds
-		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = BAN_population_redistribution }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = -1
-		y = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_minds"
-			increase_society_development = yes
-		}
-	}
-
-	focus = { # Partisans into Soldiers
-		id = BAN_mandatory_conscription
-		icon = GFX_goal_griffon_special_force
-		prerequisite = { focus = BAN_population_redistribution }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = 1
-		y = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_mandatory_conscription"
-			if = {
-				limit = {
-					has_country_leader = {
-						name = "Reeve Blyeddin"
-						ruling_only = yes
-					}
-				}
-				swap_ideas = {
-					add_idea = BAN_reeve_army
-					remove_idea = BAN_partisan_army
-				}
-				else_if = {
+				every_owned_state = {
 					limit = {
-						has_country_leader = {
-							name = "Council of the Communes"
-							ruling_only = yes
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
 						}
 					}
-					swap_ideas = {
-						add_idea = BAN_commune_army
-						remove_idea = BAN_partisan_army
-					}
-				}
-			}
-			set_division_template_lock = {
-				division_template = "Socialist Partisans"
-				is_locked = no
-			}
-			set_division_template_lock = {
-				division_template = "Communalist Militia"
-				is_locked = no
-			}
-		}
-	}
-
-	focus = { # Free the Peasants of Griffonstone
-		id = BAN_true_equality
-		icon = GFX_focus_strike_griffonstone
-		prerequisite = { focus = BAN_mandatory_conscription }
-		prerequisite = { focus = BAN_equal_minds }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			has_government = communism
-			is_subject = no
-		}
-		relative_position_id = BAN_control_restored
-		cost = 8.00
-		x = 0
-		y = 6
-		ai_will_do = {
-			factor = 100
-		}
-		will_lead_to_war_with = BOI
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_true_equality"
-			create_wargoal = {
-				target = BOI
-				type = annex_everything
-			}
-			add_state_claim = 488
-			add_state_claim = 531
-			add_state_claim = 389
-			add_state_claim = 471
-			add_state_claim = 384
-			add_state_claim = 679
-		}
-	}
-
-	focus = {
-		id = BAN_our_comrades_in_griffonstone
-		icon = GFX_focus_strike_griffonstone
-		prerequisite = { focus = BAN_true_equality }
-		available = {
-			owns_state = 389
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		relative_position_id = BAN_true_equality
-		x = 0
-		y = 1
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_our_comrades_in_griffonstone"
-			every_state = {
-				limit = {
-					is_core_of = BOI
-				}
-				add_core_of = ROOT
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_rebuild_griffonstone
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = BAN_our_comrades_in_griffonstone }
-		available = {
-			owns_state = 389
-			controls_state = 389
-		}
-		ai_will_do = {
-			factor = 101
-		}
-		bypass = {
-			389 = {
-				free_building_slots = {
-					building = infrastructure
-					size < 2
-					include_locked = yes
-				}
-				free_building_slots = {
-					building = industrial_complex
-					size < 2
-					include_locked = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_our_comrades_in_griffonstone
-		x = -1
-		y = 1
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_rebuild_griffonstone"
-			389 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_connect_griffonstone
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = BAN_our_comrades_in_griffonstone }
-		available = {
-			OR = {
-				controls_state = 531
-				controls_state = 488
-				controls_state = 389
-				controls_state = 471
-				controls_state = 679
-				controls_state = 384
-			}
-		}
-		ai_will_do = {
-			factor = 101
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_our_comrades_in_griffonstone
-		x = 1
-		y = 1
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_connect_griffonstone"
-			if = {
-				limit = {
-					controls_state = 531
-					531 = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
+					if = {
+						limit = {
+							check_variable = { BAN_bandit_control > 0 }
 						}
-					}
-				}
-				531 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 488
-					488 = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				488 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 389
-					389 = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				389 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 679
-					679 = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				679 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 384
-					384 = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				384 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_avenge_gla
-		icon = GFX_goal_prywhen_civilwar_yellow
-		prerequisite = {
-			focus = BAN_rebuild_griffonstone
-			focus = BAN_connect_griffonstone
-		}
-		mutually_exclusive = { focus = BAN_befriend_gla }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			is_subject = no
-			country_exists = BRF
-			NOT = {
-				country_exists = GRW
-			}
-		}
-		bypass = {
-			has_war_with = BRF
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_our_comrades_in_griffonstone
-		x = -2
-		y = 2
-		cost = 8
-		will_lead_to_war_with = BRF
-		completion_reward = {
-			create_faction = BAN_Reeve_Faction
-			create_wargoal = {
-				target = BRF
-				type = annex_everything
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_lushi
-		icon = GFX_goal_support_from_lushi
-		prerequisite = { focus = BAN_avenge_gla }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			LUS = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			LUS = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_avenge_gla
-		x = -1
-		y = 1
-		cost = 8
-		will_lead_to_war_with = LUS
-		completion_reward = {
-			if = {
-				limit = {
-					LUS = {
-						has_government = communism
-					}
-				}
-				LUS = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else = {
-					create_wargoal = {
-						target = LUS
-						type = annex_everything
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_cyanolisia
-		icon = GFX_focus_indy_swing_the_sword
-		prerequisite = { focus = BAN_avenge_gla }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			CYA = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			CYA = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_avenge_gla
-		x = 1
-		y = 1
-		cost = 8
-		will_lead_to_war_with = CYA
-		completion_reward = {
-			if = {
-				limit = {
-					CYA = {
-						has_government = communism
-					}
-				}
-				CYA = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else = {
-					create_wargoal = {
-						target = CYA
-						type = annex_everything
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_the_host
-		icon = GFX_goal_support_from_GRY
-		prerequisite = { focus = BAN_conquer_lushi focus = BAN_conquer_cyanolisia }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			GRY = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			GRY = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_avenge_gla
-		x = 1
-		y = 2
-		cost = 8
-		will_lead_to_war_with = GRY
-		completion_reward = {
-			if = {
-				limit = {
-					GRY = {
-						has_government = communism
-					}
-				}
-				GRY = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else = {
-					create_wargoal = {
-						target = GRY
-						type = annex_everything
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_gryphus
-		icon = GFX_goal_support_from_GRU
-		prerequisite = { focus = BAN_conquer_lushi focus = BAN_conquer_cyanolisia }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			GRU = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			GRU = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_avenge_gla
-		x = -1
-		y = 2
-		cost = 8
-		will_lead_to_war_with = GRU
-		completion_reward = {
-			if = {
-				limit = {
-					GRU = {
-						has_government = communism
-					}
-				}
-				GRU = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else = {
-					create_wargoal = {
-						target = GRU
-						type = annex_everything
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_evi_triumph
-		icon = GFX_goal_red_star_green_wreath
-		prerequisite = { focus = BAN_conquer_the_host }
-		prerequisite = { focus = BAN_conquer_gryphus }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			BRF = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			GRW = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			LUS = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			CYA = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			GRU = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			GRY = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_avenge_gla
-		x = 0
-		y = 3
-		cost = 8
-		completion_reward = {
-			add_political_power = 200
-			add_stability = 0.1
-			add_war_support = 0.1
-			add_ideas = { BAN_triumph_in_evi }
-		}
-	}
-
-	focus = {
-		id = BAN_befriend_gla
-		icon = GFX_goal_holding_hands_over_a_red_star
-		prerequisite = {
-			focus = BAN_rebuild_griffonstone
-			focus = BAN_connect_griffonstone
-		}
-		mutually_exclusive = { focus = BAN_avenge_gla }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			has_government = communism
-			is_subject = no
-			is_in_faction = no
-			country_exists = GRW
-			NOT = {
-				has_war_with = GRW
-			}
-			GRW = {
-				OR = {
-					has_completed_focus = GRW_protectionism
-					has_completed_focus = GRW_exansionism
-					has_completed_focus = GRW_global_revolution
-				}
-			}
-		}
-		bypass = {
-			is_in_faction_with = GRW
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		relative_position_id = BAN_our_comrades_in_griffonstone
-		x = 2
-		y = 2
-		cost = 8
-		will_lead_to_war_with = BRF
-		completion_reward = {
-			if = {
-				limit = {
-					country_exists = BRF
-				}
-				create_wargoal = {
-					target = BRF
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GRW = {
-						is_faction_leader = yes
-					}
-				}
-				GRW = {
-					country_event = {
-						id = generic.2
-						days = 2
-					}
-				}
-				else_if = {
-					limit = {
-						GRW = {
-							OR = {
-								has_completed_focus = GRW_protectionism
-								has_completed_focus = GRW_exansionism
+						if = {
+							limit = {
+								ROOT = { has_completed_focus = BAN_noble_spirit }
+							}
+							add_to_variable = {
+								BAN_noble_control = 1
 							}
 						}
-					}
-					create_faction = BAN_Reeve_Faction
-					GRW = {
-						country_event = {
-							id = generic.5
-							days = 2
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_liberate_auropallieta
-		icon = GFX_goal_MIT_Red_Bull_Rising
-		prerequisite = { focus = BAN_befriend_gla }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			CYA = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			CYA = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_befriend_gla
-		x = 1
-		y = 1
-		cost = 8
-		completion_reward = {
-			if = {
-				limit = {
-					CYA = {
-						has_government = communism
-					}
-					is_faction_leader = yes
-				}
-				CYA = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else_if = {
-					limit = {
-						CYA = {
-							has_government = communism
-						}
-						is_in_faction_with = GRW
-						GRW = {
-							is_faction_leader = yes
-						}
-					}
-					CYA = { save_global_event_target_as = reeve_prywhen_invite }
-					GRW = {
-						country_event = {
-							id = bandit.45
-							days = 2
-						}
-					}
-					else_if = {
-						limit = {
-							CYA = {
-								NOT = {
-									has_government = communism
-								}
+						if = {
+							limit = {
+								ROOT = { has_completed_focus = BAN_revolutionary_spirit }
+							}
+							add_to_variable = {
+								BAN_commune_control = 1
 							}
 						}
-						create_wargoal = {
-							target = CYA
-							type = annex_everything
-						}
-						set_country_flag = BAN_salmarkt_stuff
-						else = {
-							#
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_rumare
-		icon = GFX_focus_indy_swing_the_sword
-		prerequisite = { focus = BAN_befriend_gla }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			LAK = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			LAK = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_befriend_gla
-		x = -1
-		y = 1
-		cost = 8
-		completion_reward = {
-			if = {
-				limit = {
-					LAK = {
-						has_government = communism
-					}
-					is_faction_leader = yes
-				}
-				LAK = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else_if = {
-					limit = {
-						LAK = {
-							has_government = communism
-						}
-						is_in_faction_with = GRW
-						GRW = {
-							is_faction_leader = yes
-						}
-					}
-					LAK = { save_global_event_target_as = reeve_prywhen_invite }
-					GRW = {
-						country_event = {
-							id = bandit.45
-							days = 2
-						}
-					}
-					else_if = {
-						limit = {
-							LAK = {
-								NOT = {
-									has_government = communism
-								}
-							}
-						}
-						create_wargoal = {
-							target = LAK
-							type = annex_everything
-						}
-						else = {
-							#
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_falcor
-		icon = GFX_focus_generic_eagle
-		prerequisite = { focus = BAN_conquer_rumare focus = BAN_liberate_auropallieta }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			FAL = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			FAL = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_befriend_gla
-		x = -1
-		y = 2
-		cost = 8
-		completion_reward = {
-			if = {
-				limit = {
-					FAL = {
-						has_government = communism
-					}
-					is_faction_leader = yes
-				}
-				FAL = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else_if = {
-					limit = {
-						FAL = {
-							has_government = communism
-						}
-						is_in_faction_with = GRW
-						GRW = {
-							is_faction_leader = yes
-						}
-					}
-					FAL = { save_global_event_target_as = reeve_prywhen_invite }
-					GRW = {
-						country_event = {
-							id = bandit.45
-							days = 2
-						}
-					}
-					else_if = {
-						limit = {
-							FAL = {
-								NOT = {
-									has_government = communism
-								}
-							}
-						}
-						create_wargoal = {
-							target = FAL
-							type = annex_everything
-						}
-						else = {
-							#
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_sicameon
-		icon = GFX_focus_sic_flag
-		prerequisite = { focus = BAN_conquer_rumare focus = BAN_liberate_auropallieta }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			SIC = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			SIC = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_befriend_gla
-		x = 1
-		y = 2
-		cost = 8
-		completion_reward = {
-			if = {
-				limit = {
-					SIC = {
-						has_government = communism
-					}
-					is_faction_leader = yes
-				}
-				SIC = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else_if = {
-					limit = {
-						SIC = {
-							has_government = communism
-						}
-						is_in_faction_with = GRW
-						GRW = {
-							is_faction_leader = yes
-						}
-					}
-					SIC = { save_global_event_target_as = reeve_prywhen_invite }
-					GRW = {
-						country_event = {
-							id = bandit.45
-							days = 2
-						}
-					}
-					else_if = {
-						limit = {
-							SIC = {
-								NOT = {
-									has_government = communism
-								}
-							}
-						}
-						create_wargoal = {
-							target = SIC
-							type = annex_everything
-						}
-						else = {
-							#
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_wingbardy
-		icon = GFX_focus_wng_flag
-		prerequisite = { focus = BAN_conquer_falcor focus = BAN_conquer_sicameon }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			WNG = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			WNG = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_befriend_gla
-		x = -1
-		y = 3
-		cost = 8
-		completion_reward = {
-			if = {
-				limit = {
-					WNG = {
-						has_government = communism
-					}
-					is_faction_leader = yes
-				}
-				WNG = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else_if = {
-					limit = {
-						WNG = {
-							has_government = communism
-						}
-						is_in_faction_with = GRW
-						GRW = {
-							is_faction_leader = yes
-						}
-					}
-					WNG = { save_global_event_target_as = reeve_prywhen_invite }
-					GRW = {
-						country_event = {
-							id = bandit.45
-							days = 2
-						}
-					}
-					else_if = {
-						limit = {
-							WNG = {
-								NOT = {
-									has_government = communism
-								}
-							}
-						}
-						create_wargoal = {
-							target = WNG
-							type = annex_everything
-						}
-						else = {
-							#
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_conquer_asterion
-		icon = GFX_goal_MIT_The_Brutes_of_Old
-		prerequisite = { focus = BAN_conquer_falcor focus = BAN_conquer_sicameon }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			MIT = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			MIT = {
-				OR = {
-					exists = no
-					is_subject = yes
-				}
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_befriend_gla
-		x = 1
-		y = 3
-		cost = 8
-		completion_reward = {
-			if = {
-				limit = {
-					MIT = {
-						has_government = communism
-					}
-					is_faction_leader = yes
-				}
-				MIT = {
-					country_event = {
-						id = generic.5
-						days = 2
-					}
-				}
-				else_if = {
-					limit = {
-						MIT = {
-							has_government = communism
-						}
-						is_in_faction_with = GRW
-						GRW = {
-							is_faction_leader = yes
-						}
-					}
-					MIT = { save_global_event_target_as = reeve_prywhen_invite }
-					GRW = {
-						country_event = {
-							id = bandit.45
-							days = 2
-						}
-					}
-					else_if = {
-						limit = {
-							MIT = {
-								NOT = {
-									has_government = communism
-								}
-							}
-						}
-						create_wargoal = {
-							target = MIT
-							type = annex_everything
-						}
-						else = {
-							#
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_commie_south
-		icon = GFX_goal_red_star
-		prerequisite = { focus = BAN_conquer_wingbardy focus = BAN_conquer_asterion }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-			CYA = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			LAK = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			FAL = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			SIC = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			WNG = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-			MIT = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_befriend_gla
-		x = 0
-		y = 4
-		cost = 8
-		completion_reward = {
-			add_political_power = 200
-			add_stability = 0.1
-			add_war_support = 0.1
-			add_ideas = { BAN_southern_triumph }
-		}
-	}
-
-	### Industry
-	focus = {
-		id = BAN_bandit_rifles
-		icon = GFX_goal_generic_military_sphere
-		mutually_exclusive = { focus = BAN_energize_the_economy }
-		mutually_exclusive = { focus = BAN_reeves_plan }
-		available = {
-			AND = {
-				has_completed_focus = BAN_lawless_no_more
-				has_government = fascism
-			}
-		}
-		cost = 10.00
-		x = 26
-		y = 0
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_bandit_rifles"
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.5
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_fruits_of_unpaid_labor
-		icon = GFX_goal_forced_res
-		prerequisite = { focus = BAN_bandit_rifles }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_bandit_rifles
-		cost = 10.00
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_fruits_of_unpaid_labor"
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-
-		}
-	}
-
-	focus = {
-		id = BAN_murkbeak_arms
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = BAN_fruits_of_unpaid_labor }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_bandit_rifles
-		cost = 10.00
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_murkbeak_arms"
-			532 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_roads_and_trains
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = BAN_bandit_rifles }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_bandit_rifles
-		cost = 10.00
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_roads_and_trains"
-			490 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			446 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			606 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			489 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_steal_farms
-		icon = GFX_goal_griffon_agriculture
-		prerequisite = { focus = BAN_roads_and_trains }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_bandit_rifles
-		cost = 10.00
-		x = 1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_steal_farms"
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_civilized_banditry
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = BAN_steal_farms }
-		prerequisite = { focus = BAN_murkbeak_arms }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_bandit_rifles
-		cost = 10.00
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_civilized_banditry"
-			add_ideas = BAN_banditry
-		}
-	}
-
-	focus = {
-		id = BAN_energize_the_economy
-		icon = GFX_goal_generic_production
-		mutually_exclusive = { focus = BAN_bandit_rifles }
-		mutually_exclusive = { focus = BAN_reeves_plan }
-		available = {
-			AND = {
-				has_completed_focus = BAN_reconstruction
-				OR = {
-					has_government = neutrality
-					has_government = democratic
-				}
-			}
-		}
-		cost = 4.00
-		x = 34
-		y = 0
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_energize_the_economy"
-			add_ideas = BAN_reconstruction_idea
-		}
-	}
-
-	focus = {
-		id = BAN_industry_in_murkbeak
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = BAN_energize_the_economy }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_energize_the_economy
-		cost = 8.00
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_industry_in_murkbeak"
-			532 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BAN_clear_the_forests
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = BAN_industry_in_murkbeak }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_energize_the_economy
-		cost = 8.00
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_clear_the_forests"
-			532 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			490 = {
-				add_extra_state_shared_building_slots = 2
-			}
-
-			add_ideas = BAN_remove_tree
-		}
-	}
-	focus = {
-		id = BAN_national_infrastructure
-		icon = GFX_goal_riv_river_trans
-		prerequisite = { focus = BAN_energize_the_economy }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_energize_the_economy
-		cost = 8.00
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_national_infrastructure"
-			489 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			606 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			446 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BAN_open_new_mines
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = BAN_national_infrastructure }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_energize_the_economy
-		cost = 8.00
-		x = 1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_open_new_mines"
-			add_ideas = BAN_mines
-			add_resource = {
-				type = crystals
-				amount = 8
-				state = 606
-			}
-			add_resource = {
-				type = crystals
-				amount = 4
-				state = 489
-			}
-		}
-	}
-	focus = {
-		id = BAN_risen_from_the_ashes
-		icon = GFX_goal_bag_of_money
-		prerequisite = { focus = BAN_open_new_mines }
-		prerequisite = { focus = BAN_clear_the_forests }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_energize_the_economy
-		cost = 8.00
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_risen_from_the_ashes"
-			add_ideas = export_focus
-			remove_ideas = BAN_reconstruction_idea
-			increase_society_development = yes
-			add_offsite_building = {
-				type = industrial_complex
-				level = 1
-			}
-		}
-	}
-	focus = {
-		id = BAN_blackhollow_trade_committee
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = BAN_risen_from_the_ashes }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = 0
-		y = 2
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_blackhollow_trade_committee"
-			add_ideas = BAN_trade_committee
-			swap_ideas = {
-				add_idea = BAN_economic_wasteland2
-				remove_idea = BAN_economic_wasteland
-			}
-		}
-	}
-	focus = {
-		id = BAN_industrial_research_dept
-		icon = GFX_goal_generic_production2
-		prerequisite = { focus = BAN_risen_from_the_ashes }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = -1
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_industrial_research_dept"
-			add_ideas = BAN_industry_research_dept
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
-	}
-	focus = {
-		id = BAN_bluecrest_uni
-		icon = GFX_focus_research
-		prerequisite = { focus = BAN_industrial_research_dept }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = -2
-		y = 2
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_bluecrest_uni"
-			add_research_slot = 1
-			Improve_Science_Base = yes
-		}
-	}
-	focus = {
-		id = BAN_expand_industrial_research_dept
-		icon = GFX_goal_goal_machine
-		prerequisite = { focus = BAN_bluecrest_uni }
-		prerequisite = { focus = BAN_blackhollow_trade_committee }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = -1
-		y = 3
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_expand_industrial_research_dept"
-			swap_ideas = {
-				add_idea = BAN_industry_research_dept2
-				remove_idea = BAN_industry_research_dept
-			}
-			add_tech_bonus = {
-				name = electronics_bonus
-				bonus = 1.0
-				uses = 2
-				category = electronics
-			}
-		}
-	}
-	focus = {
-		id = BAN_improve_factories
-		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = BAN_risen_from_the_ashes }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = 1
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_improve_factories"
-			add_ideas = BAN_good_factories
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
-	}
-	focus = {
-		id = BAN_attract_foreign_investment
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = BAN_improve_factories }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = 2
-		y = 2
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_attract_foreign_investment"
-			swap_ideas = {
-				add_idea = BAN_good_factories2
-				remove_idea = BAN_good_factories
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
-		}
-	}
-	focus = {
-		id = BAN_military_investments
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = BAN_attract_foreign_investment }
-		prerequisite = { focus = BAN_blackhollow_trade_committee }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = 1
-		y = 3
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_attract_foreign_investment"
-			swap_ideas = {
-				add_idea = BAN_good_factories3
-				remove_idea = BAN_good_factories2
-			}
-			add_offsite_building = {
-				type = arms_factory
-				level = 1
-			}
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-	}
-	focus = {
-		id = BAN_expand_trade_committees_powers
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = BAN_expand_industrial_research_dept }
-		prerequisite = { focus = BAN_military_investments }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = 0
-		y = 4
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_blackhollow_trade_committee"
-			swap_ideas = {
-				add_idea = BAN_trade_committee2
-				remove_idea = BAN_trade_committee
-			}
-			swap_ideas = {
-				add_idea = BAN_economic_wasteland3
-				remove_idea = BAN_economic_wasteland2
-			}
-		}
-	}
-	focus = {
-		id = BAN_blackhollow_phoenix
-		icon = GFX_goal_solar_phoenix_defence
-		prerequisite = { focus = BAN_expand_industrial_research_dept }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_risen_from_the_ashes
-		x = 0
-		y = 5
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_blackhollow_trade_committee"
-			add_ideas = BAN_rise_up
-			remove_ideas = BAN_economic_wasteland3
-			increase_society_development = yes
-		}
-	}
-
-	focus = {
-		id = BAN_reeves_plan
-		icon = GFX_focus_generic_join_comintern
-		mutually_exclusive = { focus = BAN_bandit_rifles }
-		mutually_exclusive = { focus = BAN_energize_the_economy }
-		available = {
-			AND = {
-				has_completed_focus = BAN_control_restored
-				has_government = communism
-			}
-		}
-		cost = 4.00
-		x = 42
-		y = 0
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeves_plan"
-			add_ideas = { BAN_reconstruction_comittee }
-		}
-	}
-
-	focus = {
-		id = BAN_peoples_industry
-		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = BAN_reeves_plan }
-		available = {
-			has_government = communism
-			controls_state = 490
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_reeves_plan
-		cost = 10.00
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_peoples_industry"
-			490 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BAN_peoples_arms
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = BAN_peoples_industry }
-		available = {
-			has_government = communism
-			controls_state = 532
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_reeves_plan
-		cost = 4.00
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_peoples_arms"
-			custom_effect_tooltip = BAN_TT_commune_support_decrease
-			add_to_variable = {
-				var = BAN_commune_support_var
-				value = -1
-			}
-			532 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BAN_equal_infrastructure
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = BAN_reeves_plan }
-		available = {
-			has_government = communism
-			controls_state = 489
-			controls_state = 606
-			controls_state = 446
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_reeves_plan
-		cost = 4.00
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_infrastructure"
-			custom_effect_tooltip = BAN_TT_commune_support_increase
-			add_to_variable = {
-				var = BAN_commune_support_var
-				value = 1
-			}
-			606 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			489 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			446 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BAN_state_industrial_community
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = BAN_equal_infrastructure }
-		available = {
-			has_government = communism
-			has_completed_focus = BAN_no_universities
-			controls_state = 489
-			controls_state = 606
-			controls_state = 446
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_reeves_plan
-		cost = 12.00
-		x = 1
-		y = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_state_industrial_community"
-			if = {
-				limit = {
-					has_country_flag = BAN_noble_lands_state
-				}
-				custom_effect_tooltip = BAN_TT_commune_support_decrease
-				add_to_variable = {
-					var = BAN_commune_support_var
-					value = -1
-				}
-				489 = {
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-				606 = {
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-				446 = {
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = BAN_noble_lands_compromise
-					}
-					489 = {
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-					}
-					606 = {
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-					}
-					446 = {
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-					}
-					else_if = {
-						limit = {
-							has_country_flag = BAN_noble_lands_communes
-						}
-						custom_effect_tooltip = BAN_TT_commune_support_increase
 						add_to_variable = {
-							var = BAN_commune_support_var
-							value = 1
-						}
-						489 = {
-							add_building_construction = {
-								type = industrial_complex
-								level = 2
-								instant_build = yes
-							}
-						}
-						606 = {
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
-							}
-						}
-						446 = {
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
-							}
+							BAN_bandit_control = -1
 						}
 					}
+					
 				}
-			}
-		}
-	}
-	focus = {
-		id = BAN_equal_economy
-		icon = GFX_focus_prc_agrarian_socialism
-		prerequisite = { focus = BAN_peoples_arms }
-		prerequisite = { focus = BAN_state_industrial_community }
-		available = {
-			AND = {
-				has_completed_focus = BAN_equal_minds
-				has_government = communism
-			}
-		}
-		relative_position_id = BAN_reeves_plan
-		cost = 8.00
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_economy"
-			add_ideas = BAN_reeve_war_machine
-		}
-	}
-
-	focus = {
-		id = BAN_industrialization_comittee
-		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = BAN_equal_economy }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_equal_economy
-		x = 0
-		y = 1
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_industrialization_comittee"
-			swap_ideas = {
-				add_idea = BAN_industry_comittee
-				remove_idea = BAN_reconstruction_comittee
-			}
-			swap_ideas = {
-				add_idea = BAN_economic_wasteland2
-				remove_idea = BAN_economic_wasteland
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_communes_on_comittee
-		icon = GFX_goal_commune_politics
-		prerequisite = { focus = BAN_industrialization_comittee }
-		mutually_exclusive = { focus = BAN_focus_comittee_on_war }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_industrialization_comittee
-		x = -1
-		y = 1
-		cost = 4
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_communes_on_comittee"
-			custom_effect_tooltip = BAN_TT_commune_support_increase
-			add_to_variable = {
-				var = BAN_commune_support_var
-				value = 1
-			}
-			swap_ideas = {
-				add_idea = BAN_commune_industry_comittee
-				remove_idea = BAN_industry_comittee
-			}
-			swap_ideas = {
-				add_idea = BAN_economic_wasteland3
-				remove_idea = BAN_economic_wasteland2
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_focus_comittee_on_war
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = BAN_industrialization_comittee }
-		mutually_exclusive = { focus = BAN_communes_on_comittee }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_industrialization_comittee
-		x = 1
-		y = 1
-		cost = 4
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_focus_comittee_on_war"
-			custom_effect_tooltip = BAN_TT_commune_support_decrease
-			add_to_variable = {
-				var = BAN_commune_support_var
-				value = -1
-			}
-			swap_ideas = {
-				add_idea = BAN_war_industry_comittee
-				remove_idea = BAN_industry_comittee
-			}
-			swap_ideas = {
-				add_idea = BAN_economic_wasteland3
-				remove_idea = BAN_economic_wasteland2
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_commie_modern_society
-		icon = GFX_focus_generic_join_comintern
-		prerequisite = { focus = BAN_communes_on_comittee focus = BAN_focus_comittee_on_war }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_industrialization_comittee
-		x = 0
-		y = 2
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_commie_modern_society"
-			increase_society_development = yes
-			remove_ideas = BAN_economic_wasteland3
-		}
-	}
-
-	focus = {
-		id = BAN_reeve_militarization
-		icon = GFX_goal_chn_red_military_factories
-		prerequisite = { focus = BAN_equal_economy }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_equal_economy
-		x = 2
-		y = 1
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_militarization"
-			if = {
-				limit = {
-					has_idea = low_economic_mobilisation
-				}
-				add_ideas = partial_economic_mobilisation
-				else_if = {
-					limit = {
-						has_idea = civilian_economy
-					}
-					add_ideas = low_economic_mobilisation
-				}
-			}
-			swap_ideas = {
-				add_idea = BAN_reeve_war_machine2
-				remove_idea = BAN_reeve_war_machine
-			}
-			one_random_arms_factory = yes
-		}
-	}
-
-	focus = {
-		id = BAN_reeve_more_militarization
-		icon = GFX_goal_construction_engineering
-		prerequisite = { focus = BAN_reeve_militarization }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_equal_economy
-		x = 3
-		y = 2
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_more_militarization"
-			swap_ideas = {
-				add_idea = BAN_reeve_war_machine3
-				remove_idea = BAN_reeve_war_machine2
-			}
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 2
-				category = industry
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_reeve_even_more_militarization
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = BAN_reeve_more_militarization }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_equal_economy
-		x = 2
-		y = 3
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_even_more_militarization"
-			swap_ideas = {
-				add_idea = BAN_reeve_war_machine4
-				remove_idea = BAN_reeve_war_machine3
-			}
-			add_tech_bonus = {
-				name = race_tech_bonus
-				bonus = 1.0
-				uses = 2
-				category = race_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_reeve_finish_militarization
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = BAN_reeve_even_more_militarization }
-		available = {
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_equal_economy
-		x = 1
-		y = 4
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_reeve_finish_militarization"
-			add_ideas = war_economy
-			swap_ideas = {
-				add_idea = BAN_reeve_war_machine5
-				remove_idea = BAN_reeve_war_machine4
-			}
-			one_random_arms_factory = yes
-		}
-	}
-
-	focus = {
-		id = BAN_computer_research
-		icon = GFX_goal_goal_machine
-		prerequisite = { focus = BAN_equal_economy }
-		relative_position_id = BAN_equal_economy
-		x = -2
-		y = 1
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_computer_research"
-			add_tech_bonus = {
-				name = electronics_bonus
-				bonus = 1.0
-				uses = 2
-				category = electronics
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_military_intelligence
-		icon = GFX_goal_document
-		prerequisite = { focus = BAN_computer_research }
-		relative_position_id = BAN_equal_economy
-		x = -3
-		y = 2
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_military_intelligence"
-			add_tech_bonus = {
-				name = computer_bonus
-				bonus = 1.0
-				uses = 4
-				category = encryption_tech
-				category = decryption_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_bandit_labor
-		icon = GFX_goal_forced_inf
-		prerequisite = { focus = BAN_military_intelligence }
-		available = {
-			has_idea = BAN_penal_labor
-		}
-		relative_position_id = BAN_equal_economy
-		x = -2
-		y = 3
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_bandit_labor"
-			two_random_infrastructure_and_slot = yes
-			two_random_infrastructure_and_slot = yes
-			two_random_infrastructure_and_slot = yes
-		}
-	}
-
-	focus = {
-		id = BAN_tap_mountains
-		icon = GFX_goal_forced_res
-		prerequisite = { focus = BAN_bandit_labor }
-		available = {
-			has_idea = BAN_penal_labor
-			controls_state = 489
-			controls_state = 606
-			controls_state = 490
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_equal_economy
-		x = -1
-		y = 4
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_tap_mountains"
-			add_resource = {
-				type = crystals
-				amount = 8
-				state = 606
-			}
-			add_resource = {
-				type = crystals
-				amount = 4
-				state = 489
-			}
-			add_resource = {
-				type = steel
-				amount = 10
-				state = 490
-			}
-			add_resource = {
-				type = rubber
-				amount = 15
-				state = 490
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_military_research_dept
-		icon = GFX_goal_socialist_science
-		prerequisite = { focus = BAN_commie_modern_society }
-		prerequisite = { focus = BAN_tap_mountains focus = BAN_reeve_finish_militarization }
-		available = {
-			has_government = communism
-		}
-		cancel_if_invalid = yes
-		relative_position_id = BAN_equal_economy
-		x = 0
+		id = BAN_compromise_with_cyrille
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = BAN_minimize_conflict }
+		relative_position_id = BAN_the_resistance
+		x = 5
 		y = 5
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_military_research_dept"
-			add_research_slot = 1
-		}
-	}
-
-	### Army Focuses ##
-	focus = {
-		id = BAN_blackrocks_better_army
-		mutually_exclusive  = {
-			focus = BAN_peoples_army
-			focus = BAN_cyrils_retinue
-		}
-		available = {
-			AND = {
-				has_completed_focus = BAN_bandits_into_soldiers
-				has_government = fascism
+		cost = 2
+		completion_reward = { # ADD EVENT
+			custom_effect_tooltip = BAN_cyrille_helping_reeve_tt
+			custom_effect_tooltip = BAN_remove_5_bandit_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_bandit_control > 4 }
+						}
+						add_to_variable = {
+							BAN_bandit_control = -5
+						}
+						add_to_variable = {
+							BAN_commune_control = 3
+						}
+						add_to_variable = {
+							BAN_noble_control = 2
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_bandit_control > 3 }
+							}
+							add_to_variable = {
+								BAN_bandit_control = -4
+							}
+							add_to_variable = {
+								BAN_commune_control = 2
+							}
+							add_to_variable = {
+								BAN_noble_control = 2
+							}
+							else_if = {
+								limit = {
+									check_variable = { BAN_bandit_control > 2 }
+								}
+								add_to_variable = {
+									BAN_bandit_control = -3
+								}
+								add_to_variable = {
+									BAN_commune_control = 2
+								}
+								add_to_variable = {
+									BAN_noble_control = 1
+								}
+								else_if = {
+									limit = {
+										check_variable = { BAN_bandit_control > 1 }
+									}
+									add_to_variable = {
+										BAN_bandit_control = -2
+									}
+									add_to_variable = {
+										BAN_commune_control = 1
+									}
+									add_to_variable = {
+										BAN_noble_control = 1
+									}
+									else_if = {
+										limit = {
+											check_variable = { BAN_bandit_control > 0 }
+										}
+										add_to_variable = {
+											BAN_bandit_control = -1
+										}
+										add_to_variable = {
+											BAN_commune_control = 1
+										}
+										else = {
+											#
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
 			}
 		}
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10
-		x = 28
-		y = 9
-		ai_will_do = {
-			factor = 80
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_blackrocks_better_army"
-			add_political_power = 100
-			army_experience = 20
-		}
 	}
 
 	focus = {
-		id = BAN_rifle_for_every_bandit
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = BAN_blackrocks_better_army }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_blackrocks_better_army
-		cost = 10
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 80
-		}
+		id = BAN_united_resistance_reeve
+		icon = GFX_goal_generic_national_unity_claws
+		prerequisite = { focus = BAN_compromise_with_cyrille }
+		relative_position_id = BAN_the_resistance
+		x = 4
+		y = 6
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_rifle_for_every_bandit"
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = BAN }
-		}
-	}
-
-	focus = {
-		id = BAN_hire_gunsmiths
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = BAN_rifle_for_every_bandit }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_blackrocks_better_army
-		cost = 10
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 80
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_hire_gunsmiths"
-			add_political_power = -100
-			add_tech_bonus = {
-				name = infantry_research
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
+			custom_effect_tooltip = BAN_remove_5_bandit_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_bandit_control > 4 }
+						}
+						add_to_variable = {
+							BAN_bandit_control = -5
+						}
+						add_to_variable = {
+							BAN_commune_control = 3
+						}
+						add_to_variable = {
+							BAN_noble_control = 2
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_bandit_control > 3 }
+							}
+							add_to_variable = {
+								BAN_bandit_control = -4
+							}
+							add_to_variable = {
+								BAN_commune_control = 2
+							}
+							add_to_variable = {
+								BAN_noble_control = 2
+							}
+							else_if = {
+								limit = {
+									check_variable = { BAN_bandit_control > 2 }
+								}
+								add_to_variable = {
+									BAN_bandit_control = -3
+								}
+								add_to_variable = {
+									BAN_commune_control = 2
+								}
+								add_to_variable = {
+									BAN_noble_control = 1
+								}
+								else_if = {
+									limit = {
+										check_variable = { BAN_bandit_control > 1 }
+									}
+									add_to_variable = {
+										BAN_bandit_control = -2
+									}
+									add_to_variable = {
+										BAN_commune_control = 1
+									}
+									add_to_variable = {
+										BAN_noble_control = 1
+									}
+									else_if = {
+										limit = {
+											check_variable = { BAN_bandit_control > 0 }
+										}
+										add_to_variable = {
+											BAN_bandit_control = -1
+										}
+										add_to_variable = {
+											BAN_commune_control = 1
+										}
+										else = {
+											#
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_integrate_sons_of_arcturius
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = BAN_blackrocks_better_army }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_blackrocks_better_army
-		cost = 10
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 80
-		}
+		id = BAN_common_goals_with_clergy
+		icon = GFX_goal_valkist_star
+		prerequisite = { focus = BAN_minimize_conflict focus = BAN_no_compromise }
+		relative_position_id = BAN_the_resistance
+		x = 6
+		y = 4
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_integrate_sons_of_arcturius"
-			custom_effect_tooltip = BAN_TT_arcturius
+			custom_effect_tooltip = BAN_religious_support_secured_tt
+			custom_effect_tooltip = BAN_add_5_commune_control_murkbeak_tt
+			custom_effect_tooltip = BAN_add_5_commune_control_blackhollow_tt
+			hidden_effect = {
+				532 = {
+					add_to_variable = {
+						BAN_commune_control = 5
+					}
+					add_to_variable = {
+						BAN_bandit_control = -5
+					}
+				}
+				490 = {
+					add_to_variable = {
+						BAN_commune_control = 5
+					}
+					add_to_variable = {
+						BAN_bandit_control = -5
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_freedom_for_oppressed
+		icon = GFX_goal_liberty
+		prerequisite = { focus = BAN_common_goals_with_clergy }
+		relative_position_id = BAN_the_resistance
+		x = 6
+		y = 6
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip = BAN_add_10_commune_control_every_state_less_than_bandit_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 532
+							state = 489
+							state = 490
+							state = 606
+							state = 446
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_commune_control < BAN_bandit_control }
+						}
+						add_to_variable = {
+							BAN_commune_control = 10
+						}
+						add_to_variable = {
+							BAN_bandit_control = -10
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_no_compromise
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = BAN_blackhollow_socialism_by_blackhollow focus = BAN_GLA_comrades }
+		mutually_exclusive = { focus = BAN_minimize_conflict }
+		relative_position_id = BAN_the_resistance
+		x = 7
+		y = 3
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip = BAN_dividing_resistance_tt
+			custom_effect_tooltip = BAN_remove_2_noble_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_noble_control > 1 }
+						}
+						add_to_variable = {
+							BAN_noble_control = -2
+						}
+						add_to_variable = {
+							BAN_bandit_control = 1
+						}
+						add_to_variable = {
+							BAN_commune_control = 1
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_noble_control > 0 }
+							}
+							add_to_variable = {
+								BAN_noble_control = -1
+							}
+							add_to_variable = {
+								BAN_bandit_control = 1
+							}
+							else = {
+								#
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_target_nobles
+		icon = GFX_goal_secret_agents_red
+		prerequisite = { focus = BAN_no_compromise }
+		relative_position_id = BAN_the_resistance
+		x = 7
+		y = 5
+		cost = 4
+		completion_reward = {
+			custom_effect_tooltip = BAN_can_target_nobles_tt
+			custom_effect_tooltip = BAN_remove_2_noble_control_every_state_tt
+
 			hidden_effect = {
 				if = {
-					limit = { NOT = { has_tech = tech_knights } }
-					set_technology = { tech_knights = 1 }
+					limit = {
+						NOT = { has_country_flag = BAN_bandit_46_activated }
+					}
+					set_country_flag = BAN_bandit_46_activated
+					country_event = { id = bandit.46 }
 				}
-				load_oob = "BAN_knights"
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_bandit_knights
-		icon = GFX_goal_griffon_knights
-		prerequisite = { focus = BAN_integrate_sons_of_arcturius }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_blackrocks_better_army
-		cost = 10
-		x = 1
-		y = 2
-		ai_will_do = {
-			factor = 80
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_bandit_knights"
-			add_tech_bonus = {
-				name = knights_tech
-				bonus = 1.0
-				uses = 2
-				category = knights_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_blackrocks_land
-		icon = GFX_goal_ban_blackrock
-		prerequisite = { focus = BAN_bandit_knights }
-		prerequisite = { focus = BAN_hire_gunsmiths }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_blackrocks_better_army
-		cost = 10
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 80
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_blackrocks_land"
-			add_ideas = BAN_blackrocks_land_idea
-		}
-	}
-
-	focus = {
-		id = BAN_lightning_raids
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = BAN_blackrocks_land }
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = BAN_blackrocks_better_army
-		cost = 10
-		x = 0
-		y = 4
-		ai_will_do = {
-			factor = 80
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_lightning_raids"
-			add_tech_bonus = {
-				name = cat_mobile_warfare
-				bonus = 1.0
-				uses = 2
-				category = cat_mobile_warfare
-			}
-		}
-	}
-
-
-
-	focus = {
-		id = BAN_cyrils_retinue
-		icon = GFX_focus_generic_home_defense
-		mutually_exclusive  = {
-			focus = BAN_blackrocks_better_army
-			focus = BAN_peoples_army
-		}
-		available = {
-			AND = {
-				has_completed_focus = BAN_restore_knightly_order
-				OR = {
-					has_government = neutrality
-					has_government = democratic
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_noble_control > 1 }
+						}
+						add_to_variable = {
+							BAN_noble_control = -2
+						}
+						add_to_variable = {
+							BAN_bandit_control = 1
+						}
+						add_to_variable = {
+							BAN_commune_control = 1
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_noble_control > 0 }
+							}
+							add_to_variable = {
+								BAN_noble_control = -1
+							}
+							add_to_variable = {
+								BAN_commune_control = 1
+							}
+							else = {
+								#
+							}
+						}
+					}
 				}
-			}
-		}
-		cost = 8
-		x = 36
-		y = 9
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_cyrils_retinue"
-			army_experience = 30
-		}
-	}
-
-	focus = {
-		id = BAN_peasant_knights
-		icon = GFX_goal_conscription
-		prerequisite = { focus = BAN_cyrils_retinue }
-		mutually_exclusive = { focus = BAN_noble_knights }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_our_mountains"
-			swap_ideas = {
-				add_idea = BAN_blackhollow_knights_p
-				remove_idea = BAN_blackhollow_knights3
+				update_BAN_variables = yes
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_noble_knights
-		icon = GFX_goal_griffon_knights
-		prerequisite = { focus = BAN_cyrils_retinue }
-		mutually_exclusive = { focus = BAN_peasant_knights }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 60
-		}
+		id = BAN_contain_nobles
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = BAN_target_nobles }
+		available = { check_variable = { BAN_noble_control_total < 10 } }
+		relative_position_id = BAN_the_resistance
+		x = 8
+		y = 6
+		cost = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_our_mountains"
-			swap_ideas = {
-				add_idea = BAN_blackhollow_knights_n
-				remove_idea = BAN_blackhollow_knights3
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_develop_arty
-		icon = GFX_goal_artillery
-		prerequisite = { focus = BAN_peasant_knights focus = BAN_noble_knights }
-		mutually_exclusive = { focus = BAN_peasant_knights }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = 0
-		y = 2
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_develop_arty"
-			add_tech_bonus = {
-				name = doctrine_bonus
-				bonus = 1
-				uses = 1
-				category = cat_superior_firepower
-			}
-			add_tech_bonus = {
-				name = artillery_bonus
-				bonus = 1
-				uses = 2
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_our_mountains
-		icon = GFX_goal_griffon_special_force
-		prerequisite = { focus = BAN_cyrils_retinue }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = -3
-		y = 1
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_our_mountains"
-			custom_effect_tooltip = YAK_homeland_tt
+			custom_effect_tooltip = BAN_nobles_ded_tt
+			custom_effect_tooltip = BAN_remove_2_noble_control_every_state_tt
 			hidden_effect = {
-				set_technology = {
-					mountain_warfare = 1
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_noble_control > 1 }
+						}
+						add_to_variable = {
+							BAN_noble_control = -2
+						}
+						add_to_variable = {
+							BAN_bandit_control = 1
+						}
+						add_to_variable = {
+							BAN_commune_control = 1
+						}
+						else_if = {
+							limit = {
+								check_variable = { BAN_noble_control > 0 }
+							}
+							add_to_variable = {
+								BAN_noble_control = -1
+							}
+							add_to_variable = {
+								BAN_commune_control = 1
+							}
+							else = {
+								#
+							}
+						}
+					}
+				}
+				update_BAN_variables = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_undermine_bandits
+		icon = GFX_goal_ban_blackrock
+		prerequisite = { focus = BAN_noble_spirit focus = BAN_revolutionary_spirit }
+		relative_position_id = BAN_the_resistance
+		x = 0
+		y = 2
+		cost = 2
+		completion_reward = {
+			#custom_effect_tooltip = BAN_undermine_bandit_decisions_unlock_tt
+			custom_effect_tooltip = BAN_remove_1_bandit_control_every_state_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 446
+							state = 606
+							state = 489
+							state = 490
+							state = 532
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { BAN_bandit_control > 0 }
+						}
+						if = {
+							limit = {
+								ROOT = { has_completed_focus = BAN_noble_spirit }
+							}
+							add_to_variable = {
+								BAN_noble_control = 1
+							}
+						}
+						if = {
+							limit = {
+								ROOT = { has_completed_focus = BAN_revolutionary_spirit }
+							}
+							add_to_variable = {
+								BAN_commune_control = 1
+							}
+						}
+						add_to_variable = {
+							BAN_bandit_control = -1
+						}
+					}
+					
+				}
+				update_BAN_variables = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BAN_sway_generals
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = BAN_undermine_bandits }
+		relative_position_id = BAN_the_resistance
+		x = 0
+		y = 3
+		cost = 2
+		completion_reward = {
+			custom_effect_tooltip = BAN_unlock_sway_general_decisions_tt
+		}
+	}
+
+	focus = {
+		id = BAN_infiltrate_warbands
+		icon = GFX_goal_conscription
+		prerequisite = { focus = BAN_sway_generals }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAN_bandits_have_available_divisions
+				hidden_trigger = {
+					check_variable = { BAN_available_bandit_divisions > 0 }
 				}
 			}
 		}
-	}
-
-	focus = {
-		id = BAN_modern_weapons
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = BAN_our_mountains }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = -3
-		y = 2
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_modern_weapons"
-			add_tech_bonus = {
-				name = infantry_research
-				bonus = 1
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_support_companies
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = BAN_cyrils_retinue }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = 3
-		y = 1
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_support_companies"
-			add_tech_bonus = {
-				name = support_bonus
-				bonus = 1
-				uses = 2
-				category = engineers_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_special_forces
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = BAN_support_companies }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = 3
-		y = 2
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_special_forces"
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1.0
-				uses = 2
-				category = special_forces_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_counter_tanks
-		icon = GFX_goal_anti_tank
-		prerequisite = { focus = BAN_develop_arty }
-		prerequisite = { focus = BAN_modern_weapons }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = -2
-		y = 3
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_counter_tanks"
-			add_tech_bonus = {
-				name = artillery_bonus
-				bonus = 1
-				uses = 2
-				category = cat_anti_tank
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_counter_planes
-		icon = GFX_goal_anti_air
-		prerequisite = { focus = BAN_counter_tanks }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = -2
+		relative_position_id = BAN_the_resistance
+		x = -1
 		y = 4
-		ai_will_do = {
-			factor = 60
-		}
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_counter_planes"
-			add_tech_bonus = {
-				name = artillery_bonus
-				bonus = 1.0
-				uses = 2
-				technology = interwar_antiair
-				technology = antiair1
-				technology = antiair2
-				technology = antiair3
-				technology = antiair4
-				technology = antiair5
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_expand_knights
-		icon = GFX_goal_griffon_knights
-		prerequisite = { focus = BAN_develop_arty }
-		prerequisite = { focus = BAN_special_forces }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = 2
-		y = 3
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_expand_knights"
-			add_tech_bonus = {
-				name = knights_tech
-				bonus = 1.0
-				uses = 2
-				category = knights_tech
-			}
-			if = {
-				limit = {
-					has_idea = BAN_blackhollow_knights_p
-				}
-				swap_ideas = {
-					add_idea = BAN_blackhollow_knights_p2
-					remove_idea = BAN_blackhollow_knights_p
-				}
-				else = {
-					swap_ideas = {
-						add_idea = BAN_blackhollow_knights_n2
-						remove_idea = BAN_blackhollow_knights_n
+			custom_effect_tooltip = BAN_infiltrate_warbands_tt
+			hidden_effect = {
+				add_to_variable = { BAN_bandit_divisions = -1 }
+				if = {
+					limit = {
+						has_completed_focus = BAN_noble_spirit
+					}
+					add_to_variable = { BAN_noble_divisions = 1 }
+					else = {
+						add_to_variable = { BAN_commune_divisions = 1 }
 					}
 				}
 			}
@@ -6385,793 +2353,60 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAN_more_support
-		icon = GFX_goal_griffon_arms_focus_com
-		prerequisite = { focus = BAN_expand_knights }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = 2
-		y = 4
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_more_support"
-			add_tech_bonus = {
-				name = support_bonus
-				bonus = 1
-				uses = 2
-				category = support_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_defence_of_blackhollow
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = BAN_special_forces }
-		prerequisite = { focus = BAN_modern_weapons }
-		prerequisite = { focus = BAN_develop_arty }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_defence_of_blackhollow"
-			add_ideas = BAN_blackhollow_defence
-			every_unit_leader = {
-				add_defense = 1
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_grand_battleplans
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = BAN_defence_of_blackhollow }
-		available = {
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
-		relative_position_id = BAN_cyrils_retinue
-		cost = 8
-		x = 0
-		y = 4
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_grand_battleplans"
-			add_tech_bonus = {
-				name = doctrine_bonus
-				bonus = 1
-				uses = 2
-				category = cat_superior_firepower
-			}
-		}
-	}
-
-
-
-	### Commie
-	focus = { # Weapons for the Army
-		id = BAN_peoples_army
-		mutually_exclusive  = {
-			focus = BAN_blackrocks_better_army
-			focus = BAN_cyrils_retinue
-		}
-		available = {
-			has_completed_focus = BAN_mandatory_conscription
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		icon = GFX_goal_support_communism
-		cost = 8
-		x = 44
-		y = 9
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_peoples_army"
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-			}
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = BAN }
-		}
-	}
-
-	focus = {
-		id = BAN_everyone_serves
-		icon = GFX_goal_griffon_special_force
-		prerequisite = { focus = BAN_peoples_army }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		cost = 8
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_everyone_serves"
-			add_tech_bonus = {
-				name = mass_assault
-				bonus = 1.0
-				uses = 1
-				category = cat_mass_assault
-			}
-			swap_ideas = {
-				add_idea = BAN_reeve_army2
-				remove_idea = BAN_reeve_army
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_guns_for_everyone
-		icon = GFX_goal_revolution
-		prerequisite = { focus = BAN_everyone_serves }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		cost = 8
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_guns_for_everyone"
-			swap_ideas = {
-				remove_idea = BAN_reeve_army2
-				add_idea = BAN_reeve_army3
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_equal_command
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = BAN_peoples_army }
-		available = {
-			has_government = communism
-		}
-		relative_position_id = BAN_peoples_army
-		cost = 8
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_equal_command"
-			add_tech_bonus = {
-				name = infantry_bonus
-				bonus = 1.0
-				uses = 1
-				category = support_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_reserve_forces
-		icon = GFX_focus_healthcare_program
-		prerequisite = { focus = BAN_equal_command }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		cost = 8
-		x = 1
-		y = 2
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_reserve_forces"
-			add_tech_bonus = {
-				name = hospital_research
-				bonus = 1.0
-				uses = 2
-				category = hospital_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_march_to_victory
-		icon = GFX_focus_YUG_pan_slavic_congress
-		prerequisite = { focus = BAN_reserve_forces }
-		prerequisite = { focus = BAN_guns_for_everyone }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		cost = 8
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_march_to_victory"
-			swap_ideas = {
-				add_idea = BAN_reeve_army4
-				remove_idea = BAN_reeve_army3
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_griffon_wave_tactics
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = BAN_march_to_victory }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		cost = 8
-		x = 0
-		y = 4
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_griffon_wave_tactics"
-			add_tech_bonus = {
-				name = mass_assault
-				bonus = 1.0
-				uses = 2
-				category = cat_mass_assault
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_command_staff
-		icon = GFX_goal_officers
-		prerequisite = { focus = BAN_guns_for_everyone }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		x = -2
-		y = 3
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_command_staff"
-			add_ideas = { BAN_reeve_general_staff }
-		}
-	}
-
-	focus = {
-		id = BAN_precise_offensives
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = BAN_command_staff }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		x = -2
-		y = 4
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_precise_offensives"
-			swap_ideas = {
-				add_idea = BAN_reeve_general_staff2
-				remove_idea = BAN_reeve_general_staff
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_modern_rifles
-		icon = GFX_goal_military_academy
-		prerequisite = { focus = BAN_reserve_forces }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		x = 2
-		y = 3
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_modern_rifles"
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_magic_guns
-		icon = GFX_goal_magical_weapon_focus
-		prerequisite = { focus = BAN_modern_rifles }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		x = 2
-		y = 4
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_magic_guns"
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1.0
-				uses = 2
-				technology = magical_weapons
-				technology = magical_weapons1
-				technology = magical_weapons2
-				technology = magical_weapons3
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_supply_optimization
+		id = BAN_infiltrate_strongholds
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = BAN_precise_offensives }
-		prerequisite = { focus = BAN_griffon_wave_tactics}
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
-		x = -1
-		y = 5
-		cost = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_supply_optimization"
-			swap_ideas = {
-				add_idea = BAN_reeve_general_staff3
-				remove_idea = BAN_reeve_general_staff2
-			}
-			every_unit_leader = {
-				add_logistics = 1
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_efficient_designs
-		icon = GFX_focus_secret_rearmament
-		prerequisite = { focus = BAN_magic_guns }
-		prerequisite = { focus = BAN_griffon_wave_tactics}
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
+		prerequisite = { focus = BAN_sway_generals }
+		relative_position_id = BAN_the_resistance
 		x = 1
-		y = 5
-		cost = 8
+		y = 4
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_efficient_designs"
-			swap_ideas = {
-				add_idea = BAN_reeve_army5
-				remove_idea = BAN_reeve_army4
-			}
+			custom_effect_tooltip = BAN_infiltrate_strongholds_tt
+			set_country_flag = BAN_free_win_flag
 		}
 	}
 
 	focus = {
-		id = BAN_rally_people_army
-		icon = GFX_goal_conscription
-		prerequisite = { focus = BAN_supply_optimization }
-		prerequisite = { focus = BAN_efficient_designs }
-		available = {
-			has_government = communism
-			has_country_leader = {
-				name = "Reeve Blyeddin"
-				ruling_only = yes
-			}
-		}
-		relative_position_id = BAN_peoples_army
+		id = BAN_assassinate_bandits
+		icon = GFX_goal_gunpoint_diplomacy
+		prerequisite = { focus = BAN_infiltrate_warbands focus = BAN_infiltrate_strongholds }
+		relative_position_id = BAN_the_resistance
 		x = 0
-		y = 6
-		cost = 8
+		y = 5
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_rally_people_army"
-			add_manpower = 50000
-			add_war_support = 0.1
-			army_experience = 10
-		}
-	}
-
-	### Air
-	focus = {
-		id = BAN_naniwich_airbase
-		icon = GFX_goal_generic_air_doctrine
-		cost = 10
-		x = 48
-		y = 0
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_naniwich_airbase"
-			air_experience = 25
-			489 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
+			custom_effect_tooltip = BAN_assassinate_bandits_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = BAN_bandit_44_activated }
+						has_completed_focus = BAN_noble_spirit
+					}
+					set_country_flag = BAN_bandit_44_activated
+					country_event = { id = bandit.44 }
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = BAN_bandit_46_activated }
+						has_completed_focus = BAN_revolutionary_spirit
+					}
+					set_country_flag = BAN_bandit_46_activated
+					country_event = { id = bandit.46 }
 				}
 			}
 		}
 	}
 
 	focus = {
-		id = BAN_buy_fighters
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = BAN_naniwich_airbase }
-		relative_position_id = BAN_naniwich_airbase
-		cost = 10
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_buy_fighters"
-			add_political_power = -75
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 3
-				uses = 1
-				category = light_fighter
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_buy_bombers
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = BAN_naniwich_airbase }
-		relative_position_id = BAN_naniwich_airbase
-		cost = 10
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_buy_bombers"
-			add_political_power = -75
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 3
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_aviation_innovation
-		icon = GFX_focus_research
-		prerequisite = { focus = BAN_buy_bombers focus = BAN_buy_fighters }
-		relative_position_id = BAN_naniwich_airbase
-		cost = 10
+		id = BAN_bribe_bandits
+		icon = GFX_goal_bag_of_money
+		prerequisite = { focus = BAN_assassinate_bandits }
+		relative_position_id = BAN_the_resistance
 		x = 0
-		y = 2
-		ai_will_do = {
-			factor = 0
-		}
+		y = 6
+		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_aviation_innovation"
-			add_tech_bonus = {
-				name = air_doctrines
-				bonus = 0.5
-				uses = 2
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_secure_skies
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = BAN_aviation_innovation }
-		relative_position_id = BAN_naniwich_airbase
-		cost = 10
-		x = -2
-		y = 3
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_secure_skies"
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.5
-				uses = 2
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_death_from_above
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = BAN_aviation_innovation }
-		relative_position_id = BAN_naniwich_airbase
-		cost = 10
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_death_from_above"
-			add_tech_bonus = {
-				name = bomber_effort
-				bonus = 0.5
-				uses = 2
-				technology = CAS1
-				technology = CAS2
-				technology = CAS3
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_bombs_from_above
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = BAN_aviation_innovation }
-		relative_position_id = BAN_naniwich_airbase
-		cost = 10
-		x = 2
-		y = 3
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_bombs_from_above"
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 0.5
-				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
-				category = tactical_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_advanced_doctrine
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = BAN_bombs_from_above }
-		prerequisite = { focus = BAN_death_from_above }
-		prerequisite = { focus = BAN_secure_skies }
-		relative_position_id = BAN_naniwich_airbase
-		cost = 10
-		x = 0
-		y = 4
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_advanced_doctrine"
-			add_tech_bonus = {
-				name = air_doctrines
-				bonus = 1.0
-				uses = 2
-				category = air_doctrine
-			}
-		}
-	}
-
-	### Navy
-
-	focus = {
-		id = BAN_sailing_the_high_seas
-		icon = GFX_goal_generic_build_navy
-		cost = 10
-		x = 54
-		y = 0
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			any_controlled_state_is_coastal = yes
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_sailing_the_high_seas"
-			navy_experience = 25
-		}
-	}
-
-	focus = {
-		id = BAN_battleships
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = BAN_sailing_the_high_seas }
-		mutually_exclusive = { focus = BAN_plunderin }
-		relative_position_id = BAN_sailing_the_high_seas
-		cost = 10
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_battleships"
-			add_tech_bonus = {
-				name = naval_doctrine_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_fleet_in_being
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_plunderin
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = BAN_sailing_the_high_seas }
-		mutually_exclusive = { focus = BAN_battleships }
-		relative_position_id = BAN_sailing_the_high_seas
-		cost = 10
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_plunderin"
-			add_tech_bonus = {
-				name = navdoctrine_bonus
-				bonus = 1.0
-				uses = 2
-				category = cat_trade_interdiction
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_submarines
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = BAN_plunderin }
-		relative_position_id = BAN_sailing_the_high_seas
-		cost = 10
-		x = 1
-		y = 2
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_submarines"
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 1.0
-				uses = 4
-				category = ss_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_destroyers
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = BAN_submarines focus = BAN_battlecruiser_operational }
-		relative_position_id = BAN_sailing_the_high_seas
-		cost = 10
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_destroyers"
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BAN_battlecruiser_operational
-		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = BAN_battleships }
-		relative_position_id = BAN_sailing_the_high_seas
-		cost = 10
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BAN_battlecruiser_operational"
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 1.0
-				uses = 2
-				category = cv_tech
-			}
+			custom_effect_tooltip = BAN_bribe_bandits_tt
 		}
 	}
 }
