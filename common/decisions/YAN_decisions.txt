@@ -385,21 +385,5 @@ YAN_insurgency_category = {
 }
 
 YAN_loterijen_fucks_the_natives_category = {
-	YAN_paythem = {
-		visible = {
-				has_idea = YAN_Angery3
-		}
-		days_remove = 14
-
-		available = {
-			has_political_power = 50
-		}
-
-		complete_effect = {
-			swap_ideas = {
-				remove_idea = YAN_Angery3
-				add_idea = YAN_Angery2
-			}
-		}
-	}
+	
 }
