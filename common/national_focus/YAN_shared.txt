@@ -732,6 +732,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus YAN_calming_a_storm"
 		add_political_power = 50
+		activate_mission = YAN_situation_update
 	}
 }
 

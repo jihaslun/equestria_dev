@@ -206,6 +206,17 @@
  YAN_securing_power:0 "Securing Power"
  YAN_loterijen_fucks_the_natives_category:0 "Dealing with the natives"
  YAN_loterijen_fucks_the_natives_category_desc:0 ""
+ YAN_situation_update:0 "The Situation Continues"
+ YAN_situation_update_desc:0 ""
+ YAN_arrest_more_bastards:0 "Arrest the lot of them"
+ YAN_arrest_more_bastards_desc:0 ""
+ YAN_arrest_more_bastards1:0 "Arrest the lot of them"
+ YAN_arrest_more_bastards1_desc:0 ""
+ YAN_arrest_more_bastards2:0 "Arrest the lot of them"
+ YAN_arrest_more_bastards2_desc:0 ""
+ YAN_ban_protests:0 "Ban Protests"
+ YAN_ban_protests_desc:0 ""
+
 
  ### EVENTS ###
  #Indozeeb.1.t:0 "The Chaos Back Home" #Support Loterijen or the Duke
