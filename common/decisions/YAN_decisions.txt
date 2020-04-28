@@ -385,5 +385,40 @@ YAN_insurgency_category = {
 }
 
 YAN_loterijen_fucks_the_natives_category = {
-	
+	YAN_situation_update = {
+		allowed = { tag = YAN }
+
+		icon = eng_propaganda_campaigns
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_completed_focus = YAN_calming_a_storm
+			NOT = {
+				has_idea = YAN_angery5
+			}
+		}
+
+		fixed_random_seed = no
+
+		selectable_mission = yes
+		cost = 50
+		days_mission_timeout = 120
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision YAN_situation_update"
+			activate_mission = YAN_situation_update
+		}
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision YAN_situation_update"
+			activate_mission = YAN_situation_update
+		}
+	}
 }

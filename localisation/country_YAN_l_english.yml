@@ -305,8 +305,25 @@
 
  Indozeeb.21.t:0 ""
  Indozeeb.21.d:0 "" #Basically, Loterijen's fixing the education system, and some of his advisors go 'Hey, sonce we're doing thos, should we keep the religious in it?',And he considers the two things, which is basicclly, keep the religoius in, people are like 'Hey I like this! GO Loterijen!'', but if he dosen't and put all the secular stuff, the people go "BOOOO!" (Think of it like attacking traditions)
- Indozeeb.21.a:0 "" #Keep no religion
+ Indozeeb.21.a:0 "" #Keep no religion (Secularize the system)
  Indozeeb.21.b:0 "" #Keep all religion
+
+ Indozeeb.99.t:0 "Nipped in the Bud"
+ Indozeeb.99.d:0 ""
+ Indozeeb.99.a:0 "Thank goodness..."
+
+ Indozeeb.99a.t:0 "The Situation Worsens"
+ Indozeeb.99a.d:0 ""
+ Indozeeb.99a.a:0 "Boreas help us"
+ Indozeeb.99a.b:0 "Boreas Help us"
+ Indozeeb.99a.c:0 "boreas help us"
+ Indozeeb.99a.d:0 "Boreas help Us"
+
+ Indozeeb.100.t:0 "The End of the Feathisian Zebrides"
+ Indozeeb.100.d:0 ""
+ Indozeeb.100.a:0 "" #Kudakelasi seizes power
+ Indozeeb.100.d:0 "" #Semuakwan sezies power
+
 
 
  ### ADVISORS ###

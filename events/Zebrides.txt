@@ -554,3 +554,89 @@ country_event = {
 	}
 }
 #I suggest coding in a scripted effect to lower the amount of times you'll need to swap ideas, but it's not necessary. - Knife
+
+
+###Uprising Nipped in the Bud Event###
+country_event = {
+	id = Indozeeb.99
+	log = "[GetDateText]: [Root.GetName]: event Indozeeb.99"
+	title = Indozeeb.99.t
+	desc = Indozeeb.99.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = Indozeeb.99.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = Indozeeb.99a
+	log = "[GetDateText]: [Root.GetName]: event Indozeeb.99a"
+	title = Indozeeb.99a.t
+	desc = Indozeeb.99a.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		visible = {
+			has_idea = YAN_angery
+		}
+		swap_ideas = {
+			remove_idea = YAN_angery
+			add_idea = YAN_angery2
+		}
+		name = Indozeeb.99a.a
+	}
+	option = {
+		visible = {
+			has_idea = YAN_angery2
+		}
+		swap_ideas = {
+			remove_idea = YAN_angery2
+			add_idea = YAN_angery3
+		}
+		name = Indozeeb.99a.b
+	}
+	option = {
+		visible = {
+			has_idea = YAN_angery3
+		}
+		swap_ideas = {
+			remove_idea = YAN_angery3
+			add_idea = YAN_angery4
+		}
+		name = Indozeeb.99a.c
+	}
+	option = {
+		visible = {
+			has_idea = YAN_angery4
+		}
+		swap_ideas = {
+			remove_idea = YAN_angery4
+			add_idea = YAN_angery5
+		}
+		name = Indozeeb.99a.d
+		hidden_effect = {
+			country_event = { id = Indozeeb.100 days = 10}
+		}
+	}
+
+
+
+}
+
+##The Below Event is the way to get the Mad Kudakelasi path
+country_event = {
+	id = Indozeeb.100
+	log = "[GetDateText]: [Root.GetName]: event Indozeeb.100"
+	title = Indozeeb.100.t
+	desc = Indozeeb.100.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		#place all the flags here, only visible with them
+	}
+	option = {
+		#Semuakawan gains power through popular revolution
+	}
+}
