@@ -980,6 +980,6 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: focus YAN_greatest_crackdown"
 		add_stability = 0.1
 		add_political_power = -50
-		
+		country_event = {id = Indozeeb.22 days = 5}
 	}
 }
