@@ -177,6 +177,7 @@ country_event = {
 
 		load_focus_tree = loterijen_paradise
 		set_country_flag = loterijen_paradise
+		activate_mission = YAN_situation_update
 	}
 }
 
@@ -552,6 +553,59 @@ country_event = {
 			}
 		}
 	}
+}
+
+
+country_event = {
+	id = Indozeeb.22 #We captured Semuakawan and the Resistance is subdued
+	log = "[GetDateText]: [Root.GetName]: event Indozeeb.22"
+	title = Indozeeb.22.t
+	desc = Indozeeb.22.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		set_country_flag = YAN_semuakawan_dead
+		visible = {
+			has_idea = YAN_angery4
+		}
+		remove_idea = YAN_angery4
+		add_manpower = -5000
+		add_political_power = -100
+		name = Indozeeb.22.a
+	}
+	option = {
+		set_country_flag = YAN_semuakawan_dead
+		visible = {
+			has_idea = YAN_angery3
+		}
+		remove_idea = YAN_angery3
+		add_manpower = -2000
+		add_political_power = -50
+		name = Indozeeb.22.b
+	}
+	option = {
+		set_country_flag = YAN_semuakawan_dead
+		visible = {
+			has_idea = YAN_angery2
+		}
+		remove_idea = YAN_angery2
+		add_manpower = -1000
+		add_political_power = -20
+		name = Indozeeb.22.c
+	}
+	option = {
+		set_country_flag = YAN_semuakawan_dead
+		visible = {
+			has_idea = YAN_angery
+		}
+		remove_idea = YAN_angery
+		add_manpower = -500
+		add_political_power = -10
+		Indozeeb.22.e
+	}
+
+
+
 }
 #I suggest coding in a scripted effect to lower the amount of times you'll need to swap ideas, but it's not necessary. - Knife
 

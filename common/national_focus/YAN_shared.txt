@@ -732,7 +732,6 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus YAN_calming_a_storm"
 		add_political_power = 50
-		activate_mission = YAN_situation_update
 	}
 }
 
@@ -959,7 +958,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = YAN_greatest_crackdown
+	id = YAN_greatest_crackdown #You capture Semuakawan and proceed to demontize him
 	icon = GFX_goal_generic_attack_allies
 	x = 20 
 	y = 6
@@ -979,5 +978,8 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus YAN_greatest_crackdown"
+		add_stability = 0.1
+		add_political_power = -50
+		
 	}
 }

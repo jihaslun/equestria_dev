@@ -319,6 +319,14 @@
  Indozeeb.21.a:0 "" #Keep no religion (Secularize the system)
  Indozeeb.21.b:0 "" #Keep all religion
 
+ Indozeeb.22.t:0 "The Greatest Crackdown" #Essentially, Semuakawan is launching his final attack against the adminstration, at this point it is a guranteed win for Loterijen, but the casulities are varying and based upon how much resistance there was already.
+ Indozeeb.22.d:0 "" 
+ Indozeeb.22.a:0 "" #Second Highest Resistance - 5000 dead
+ Indozeeb.22.b:0 "" #THird Highest Resistance - 2000 dead
+ Indozeeb.22.c:0 "" #Fourth Highest Resistance - 1000 dead
+ Indozeeb.22.e:0 "" #Lowest Resistance - 500 dead
+
+
  Indozeeb.99.t:0 "Nipped in the Bud"
  Indozeeb.99.d:0 ""
  Indozeeb.99.a:0 "Thank goodness..."
