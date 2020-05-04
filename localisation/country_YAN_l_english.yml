@@ -58,6 +58,20 @@
  YAN_dire_news:0 "The Griffonian Crisis" #ram it all the way up to "strong" independence movement, the idea is that everything is falling apart. 
  YAN_dire_news_desc:0 "When it rains, it pours, and this holds doubly true for these accursed islands. With the news out of Griffonia, everything is coming to a head faster than anygriff hoped for. The Administration is bracing itself, hoping for the best and fearing the worst."
 
+
+ ##Military Focus##
+ YAN_starting_army:0 "Building an army"
+ YAN_starting_army_desc:0 ""
+ YAN_army1:0 "A Question of Doctrine"
+ YAN_army1_desc:0 ""
+ YAN_doc1:0 ""
+ YAN_doc1_desc:0 ""
+ YAN_doc2:0 ""
+ YAN_doc2_desc:0 ""
+ YAN_doc3:0 ""
+ YAN_doc3_desc:0 
+ YAN_doc4:0 ""
+ YAN_doc4_desc:0 ""
  ##LOTERIJEN FOCUS##
  YAN_loterijen_power:0 "Loterijen's Zebrides"
  YAN_loterijen_power_desc:0 "" 

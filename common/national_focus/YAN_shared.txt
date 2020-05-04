@@ -196,7 +196,151 @@ shared_focus = {
 	}
 }
 
-##LOTERIJEN TREE##
+##Generic Military Tree#################
+#######################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+shared_focus = {
+	id = YAN_starting_army
+	#icon = 
+	x = 35
+	y = 0
+	cost = 5
+
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 130
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_army1 #Question of doctrine? 
+	#icon = 
+	x = 35 
+	y = 1
+	cost = 3 
+
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 131
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+shared_focus = {
+	id = YAN_doc1 #Mob.War
+	x = 32
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 135
+	}
+
+	mutually_exclusive = {focus = YAN_doc2 }
+
+	mutually_exclusive = {focus = YAN_doc3 }
+
+	mutually_exclusive = {focus = YAN_doc4 }
+
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_doc2 #Superior Firepower
+	x = 34
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+
+	ai_will_do = {
+		factor = 130
+	}
+
+	mutually_exclusive = {focus = YAN_doc1 }
+
+	mutually_exclusive = {focus = YAN_doc3 }
+
+	mutually_exclusive = {focus = YAN_doc4 }
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_doc3 #Grand Plan
+	x = 36
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+
+	ai_will_do = {
+		factor = 130
+	}
+
+	mutually_exclusive = {focus = YAN_doc1 }
+
+	mutually_exclusive = {focus = YAN_doc2 }
+
+	mutually_exclusive = {focus = YAN_doc4 }
+
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_doc4 #MASS
+	x = 38
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+
+	ai_will_do = {
+		factor = 130
+	}
+
+	mutually_exclusive = {focus = YAN_doc1 }
+
+	mutually_exclusive = {focus = YAN_doc2 }
+
+	mutually_exclusive = {focus = YAN_doc3}
+
+	
+	completion_reward = {
+
+	}
+}
+
+
+##LOTERIJEN TREE############################
+###########################################
+###########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
 shared_focus = {
 	id = YAN_loterijen_power
