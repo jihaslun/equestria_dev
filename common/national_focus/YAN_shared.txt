@@ -190,7 +190,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus YAN_dire_news"
 		country_event = Indozeeb.2
 		swap_ideas = {
-			remove_idea = YAN_angery
+			remove_idea = YAN_angery2
 			add_idea = YAN_angery5
 		}
 	}
@@ -234,6 +234,10 @@ shared_focus = {
 	y = 1
 	cost = 3 
 
+	prerequisite = {
+		focus = YAN_starting_army
+	}
+
 	available_if_capitulated = yes
 
 	ai_will_do = {
@@ -248,6 +252,7 @@ shared_focus = {
 
 shared_focus = {
 	id = YAN_doc1 #Mob.War
+	#icon = 
 	x = 32
 	y = 2
 	cost = 5
@@ -255,6 +260,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 135
+	}
+
+	prerequisite = {
+		focus = YAN_army1
 	}
 
 	mutually_exclusive = {focus = YAN_doc2 }
@@ -271,6 +280,7 @@ shared_focus = {
 
 shared_focus = {
 	id = YAN_doc2 #Superior Firepower
+	#icon = 
 	x = 34
 	y = 2
 	cost = 5
@@ -278,6 +288,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 130
+	}
+
+	prerequisite = {
+		focus = YAN_army1
 	}
 
 	mutually_exclusive = {focus = YAN_doc1 }
@@ -293,6 +307,7 @@ shared_focus = {
 
 shared_focus = {
 	id = YAN_doc3 #Grand Plan
+	#icon = 
 	x = 36
 	y = 2
 	cost = 5
@@ -300,6 +315,11 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 130
+	}
+
+
+	prerequisite = {
+		focus = YAN_army1
 	}
 
 	mutually_exclusive = {focus = YAN_doc1 }
@@ -316,6 +336,7 @@ shared_focus = {
 
 shared_focus = {
 	id = YAN_doc4 #MASS
+	#icon = 
 	x = 38
 	y = 2
 	cost = 5
@@ -323,6 +344,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 130
+	}
+
+	prerequisite = {
+		focus = YAN_army1
 	}
 
 	mutually_exclusive = {focus = YAN_doc1 }
@@ -336,6 +361,172 @@ shared_focus = {
 
 	}
 }
+
+##Left Side
+
+shared_focus = {
+	id = YAN_army2
+	#icon = 
+	x = 30
+	y = 2
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_army1
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_army3
+	#icon = 
+	x = 30 
+	y = 3
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_army2
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_army4
+	#icon = 
+	x = 31
+	y = 4
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_army3 focus = YAN_army_c1
+	}
+
+	completion_reward = {
+
+	}
+}
+
+##Right Side
+
+shared_focus = {
+	id = YAN_army_l1
+	#icon = 
+	x = 40
+	y = 2
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_army1 
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_army_l2
+	#icon = 
+	x = 40
+	y = 3
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_army_l1
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_army_l3
+	#icon = 
+	x = 39
+	y = 4
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_army_l2 focus = YAN_army_c3
+	}
+
+	completion_reward = {
+
+	}
+}
+
+##Central
+
+shared_focus = {
+	id = YAN_army_c1
+	#icon = 
+	x = 33
+	y = 3
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_doc1 focus = YAN_doc2 focus = YAN_doc3 focus = YAN_doc4
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_army_c2
+	#icon = 
+	x = 35
+	y = 3
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_doc1 focus = YAN_doc2 focus = YAN_doc3 focus = YAN_doc4		
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = YAN_army_c3
+	#icon = 
+	x = 37
+	y = 3
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_doc1 focus = YAN_doc2 focus = YAN_doc3 focus = YAN_doc4		
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+##Final Line. 
+
+shared_focus = {
+	id = YAN_central_army
+	#icon = 
+	x = 35
+	y = 4
+	cost = 5
+
+	prerequisite = {
+		focus = YAN_army_c1 focus = YAN_army_c2 focus = YAN_army_c3
+	}
+}
+
 
 
 ##LOTERIJEN TREE############################
@@ -815,7 +1006,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_securing_power
 	#icon = 
-	x = 19
+	x = 16
 	y = 1
 	cost = 10
 
@@ -837,7 +1028,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_shame_landlords
 	icon = GFX_goal_generic_major_alliance
-	x = 18
+	x = 15
 	y = 2
 	cost = 7
 
@@ -861,7 +1052,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_calming_a_storm
 	icon = GFX_focus_generic_treaty
-	x = 20
+	x = 17
 	y = 2
 	cost = 10
 
@@ -882,7 +1073,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_raise_landtax
 	icon = GFX_goal_reichsautobahn
-	x = 18
+	x = 15
 	y = 3
 	cost = 10
 
@@ -906,7 +1097,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_propaganda_landlord
 	icon = GFX_focus_generic_anti_fascist_diplomacy
-	x = 18 
+	x = 15
 	y = 4
 	cost = 7
 
@@ -929,7 +1120,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_final_blow_landlord
 	icon = GFX_focus_generic_strike_at_democracy
-	x = 18
+	x = 15
 	y = 5
 	cost = 10
 	prerequisite = {
@@ -950,7 +1141,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_matters_of_the_populace
 	icon = GFX_goal_generic_construct_infrastructure
-	x = 20 
+	x = 17 
 	y = 3
 	cost = 6
 	prerequisite = {
@@ -984,7 +1175,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_breads_and_circuses
 	#icon = 
-	x = 20
+	x = 17
 	y = 4
 	cost = 7
 	available = {
@@ -1020,7 +1211,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_cancel_enemies
 	icon = GFX_goal_generic_attack_allies
-	x = 20 
+	x = 17
 	y = 5
 
 	cost = 10
@@ -1046,7 +1237,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_educational_reform
 	icon = GFX_goal_generic_construct_infrastructure
-	x = 22
+	x = 19
 	y = 4
 
 	prerequisite = {
@@ -1072,7 +1263,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_hospitals
 	#icon = 
-	x = 22
+	x = 19
 	y = 5
 
 	prerequisite = {
@@ -1104,7 +1295,7 @@ shared_focus = {
 shared_focus = {
 	id = YAN_greatest_crackdown #You capture Semuakawan and proceed to demontize him
 	icon = GFX_goal_generic_attack_allies
-	x = 20 
+	x = 17
 	y = 6
 
 	cost = 15
