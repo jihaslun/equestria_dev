@@ -75,9 +75,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus YAN_powers_of_governor"
-	FEA = {
-			country_event = Indozeeb.3
-		}
+		FEA = {	country_event = Indozeeb.3	}
 	}
 }
 
