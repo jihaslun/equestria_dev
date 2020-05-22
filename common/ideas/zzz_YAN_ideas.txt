@@ -240,7 +240,7 @@
 					neutrality_drift = -0.05
 					democratic_drift = 0.05
 					communism_drift = 0.05
-					stablity_factor = -0.15
+					stability_factor = -0.15
 					war_support_factor = -0.15
 					autonomy_gain = 5
 					conscription_factor = -0.15
@@ -286,8 +286,9 @@
 				picture = generic_central_management
 				removal_cost = -1
 				modifier = {
-					political_power_gain = -0.10
-					construction_modifier = 0.1
+					political_power_gain = -0.15
+					production_speed_infrastructure_factor = 0.1
+					production_speed_industrial_complex_factor = 0.2
 				}
 
 			}
@@ -379,6 +380,24 @@
 				modifier = {
 					consumer_goods_factor = -0.07
 					political_power_gain = -0.05
+				}
+			}
+		}
+
+		country = {
+			YAN_lessons_flowena_4 = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				picture = new_deal
+				removal_cost = -1
+				modifier = {
+					consumer_goods_factor = -0.08
+					political_power_gain = -0.10
+					stability_factor = 0.5
 				}
 			}
 		}

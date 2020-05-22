@@ -554,9 +554,7 @@ shared_focus = {
 		focus = YAN_navy_start
 	}
 
-	mutally_exclusive = {
-		focus = YAN_navy_1_r
-	}
+	mutally_exclusive = { focus = YAN_navy_1_r }
 
 	completion_reward = {
 
@@ -574,9 +572,7 @@ shared_focus = {
 		focus = YAN_navy_start
 	}
 
-	mutally_exclusive = {
-		focus = YAN_navy_1_l
-	}
+	mutally_exclusive = { focus = YAN_navy_1_l }
 
 	completion_reward = {
 
@@ -590,7 +586,7 @@ shared_focus = {
 	y = 2
 	cost = 7
 
-	prerequisite = { focus = YAN_navy_1_r  focys = YAN_navy_1_l}
+	prerequisite = { focus = YAN_navy_1_r  focus = YAN_navy_1_l}
 
 	completion_reward = {
 
@@ -604,7 +600,7 @@ shared_focus = {
 	y = 2
 	cost = 7
 
-	prerequisite = { focus = YAN_navy_1_r  focys = YAN_navy_1_l}
+	prerequisite = { focus = YAN_navy_1_r  focus = YAN_navy_1_l}
 
 	completion_reward = {
 		
@@ -618,7 +614,7 @@ shared_focus = {
 	y = 2
 	cost = 7
 
-	prerequisite = { focus = YAN_navy_1_r  focys = YAN_navy_1_l}
+	prerequisite = { focus = YAN_navy_1_r  focus = YAN_navy_1_l}
 
 	completion_reward = {
 		

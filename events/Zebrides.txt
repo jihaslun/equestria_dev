@@ -288,7 +288,7 @@ country_event = {
 		set_global_flag = YAN_secret_duke_check
 		swap_ideas = {
 			remove_idea = YAN_lessons_flowena_3
-			add_idea = YAN_less
+			add_idea = YAN_lessons_flowena_4
 		}
 	}
 }
